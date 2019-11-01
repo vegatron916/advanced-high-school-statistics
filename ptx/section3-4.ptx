@@ -483,10 +483,9 @@
         The histogram below shows the distribution of average commute times in 3,142 US counties in 2017.
         Also shown below is a spatial intensity map of the same data.
         <url href="\oiRedirectUrl{tableau-histogramschoose}"><image width="46%" source="images/county_commute_times_hist.png" /></url>
-        <url href="\oiRedirectUrl{<url href="\oiRedirectUrl{tableau-intensitymapsall}">\includegraphics[height=tableau-histogramschoose]{extraTeX/icons/tableau}</url>
         <image width="46%" source="images/county_commute_times_map.png" /> }">
         <url href="\oiRedirectUrl">\includegraphics[height=tableau-intensitymapsall]{extraTeX/icons/tableau}</url>
-      </p></url>
+      </p>
       <ol>
         <li>
           <p>
@@ -510,7 +509,6 @@
         The histogram below shows the distribution of the percentage of the population that is Hispanic in 3,142 counties in the US in 2017.
         Also shown is a histogram of logs of these values.
         <url href="\oiRedirectUrl{tableau-histogramschoose}"><image width="47%" source="images/county_hispanic_pop_hist.png" /></url>
-        <url href="\oiRedirectUrl{<image width="47%" source="images/county_hispanic_pop_log_hist.png" />}">\includegraphics[height=tableau-histogramschoose]{extraTeX/icons/tableau}</url>
         <url href="\oiRedirectUrl{tableau-intensitymapsall}"><image width="48%" source="images/county_hispanic_pop_map.png" /></url>
         <url href="\oiRedirectUrl">\includegraphics[height=tableau-intensitymapsall]{extraTeX/icons/tableau}</url>
         <ol>
