@@ -1,0 +1,419 @@
+<section>
+  <title>Exercises</title>
+  <exercise xml:id="identify_critical_t">
+    <title>Identify the critical $t$</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-identify_critical_t<nbsp/> An independent random sample is selected from an approximately normal population with unknown standard deviation.
+        Find the degrees of freedom and the critical <m>t</m>-value (t<m>^\star</m>) for the given sample size and confidence level.
+        <ol>
+          <li>
+            <p>
+              <m>n = 6</m>, CL = 90
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>n = 21</m>, CL = 98
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>n = 29</m>, CL = 95
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>n = 12</m>, CL = 99
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="t_distribution">
+    <title>$t$-distribution</title>
+    <statement>
+      <p>
+        The figure on the right shows three unimodal and symmetric curves:
+        the standard normal (z) distribution,
+        the <m>t</m>-distribution with 5 degrees of freedom,
+        and the <m>t</m>-distribution with 1 degree of freedom.
+        Determine which is which, and explain your reasoning.
+        <image width="40%" source="images/t_distribution.png" />
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="find_T_pval_1_2_sided">
+    <title>Find the p-value, Part I</title>
+    <statement>
+      <p>
+        An independent random sample is selected from an approximately normal population with an unknown standard deviation.
+        Find the p-value for the given sample size and test statistic.
+        Also determine if the null hypothesis would be rejected at <m>\alpha = 0.05</m>.
+        <ol>
+          <li>
+            <p>
+              <m>n = 11</m>, <m>T = 1.91</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>n = 17</m>, <m>T = -3.45</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>n = 7</m>, <m>T = 0.83</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>n = 28</m>, <m>T = 2.13</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="find_T_pval_2_2_sided">
+    <title>Find the p-value, Part II</title>
+    <statement>
+      <p>
+        An independent random sample is selected from an approximately normal population with an unknown standard deviation.
+        Find the p-value for the given sample size and test statistic.
+        Also determine if the null hypothesis would be rejected at <m>\alpha = 0.01</m>.
+        <ol>
+          <li>
+            <p>
+              <m>n = 26</m>, <m>T = 2.485</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>n = 18</m>, <m>T = 0.5</m>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="work_backwards_1">
+    <title>Working backwards, Part I</title>
+    <statement>
+      <p>
+        A 95% confidence interval for a population mean,
+        <m>\mu</m>, is given as (18.985, 21.015).
+        This confidence interval is based on a simple random sample of 36 observations.
+        Calculate the sample mean and standard deviation.
+        Assume that all conditions necessary for inference are satisfied.
+        Use the <m>t</m>-distribution in any calculations.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="work_backwards_2">
+    <title>Working backwards, Part II</title>
+    <statement>
+      <p>
+        A 90% confidence interval for a population mean is (65, 77).
+        The population distribution is approximately normal and the population standard deviation is unknown.
+        This confidence interval is based on a simple random sample of 25 observations.
+        Calculate the sample mean,
+        the margin of error, and the sample standard deviation.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="ny_sleep_habits_2_sided">
+    <title>Sleep habits of New Yorkers</title>
+    <statement>
+      <p>
+        New York is known as
+        <q>the city that never sleeps</q>. A random sample of 25 New Yorkers were asked how much sleep they get per night.
+        Statistical summaries of these data are shown below.
+        The point estimate suggests New Yorkers sleep less than 8<nbsp/>hours a night on average.
+        Is the result statistically significant?
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>n</cell>
+          <cell><m>\bar{x}</m></cell>
+          <cell>s</cell>
+          <cell>min</cell>
+          <cell>max</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>25</cell>
+          <cell>7.73</cell>
+          <cell>0.77</cell>
+          <cell>6.17</cell>
+          <cell>9.78</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Write the hypotheses in symbols and in words.
+          </p>
+        </li>
+        <li>
+          <p>
+            Check conditions, then calculate the test statistic, <m>T</m>,
+            and the associated degrees of freedom.
+          </p>
+        </li>
+        <li>
+          <p>
+            Find and interpret the p-value in this context.
+            Drawing a picture may be helpful.
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the conclusion of the hypothesis test?
+          </p>
+        </li>
+        <li>
+          <p>
+            If you were to construct a 90% confidence interval that corresponded to this hypothesis test,
+            would you expect 8 hours to be in the interval?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="adult_heights">
+    <title>Heights of adults</title>
+    <statement>
+      <p>
+        Researchers studying anthropometry collected body girth measurements and skeletal diameter measurements,
+        as well as age, weight,
+        height and gender, for 507 physically active individuals.
+        The histogram below shows the sample distribution of heights in centimeters. \footfullcite{Heinz:2003}
+      </p>
+      <sidebyside>
+        <image width="73%" source="images/adult_heights_hist.png" />
+        <tabular>
+          <row>
+            <cell>Min</cell>
+            <cell>147.2</cell>
+          </row>
+          <row>
+            <cell>Q1</cell>
+            <cell>163.8</cell>
+          </row>
+          <row>
+            <cell>Median</cell>
+            <cell>170.3</cell>
+          </row>
+          <row>
+            <cell>Mean</cell>
+            <cell>171.1</cell>
+          </row>
+          <row>
+            <cell>SD</cell>
+            <cell>9.4</cell>
+          </row>
+          <row>
+            <cell>Q3</cell>
+            <cell>177.8</cell>
+          </row>
+          <row>
+            <cell>Max</cell>
+            <cell>198.1</cell>
+          </row>
+        </tabular>
+      </sidebyside>
+      <ol>
+        <li>
+          <p>
+            What is the point estimate for the average height of active individuals?
+            What about the median?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the point estimate for the standard deviation of the heights of active individuals?
+            What about the IQR?
+          </p>
+        </li>
+        <li>
+          <p>
+            Is a person who is 1m 80cm (180 cm) tall considered unusually tall?
+            And is a person who is 1m 55cm (155cm) considered unusually short?
+            Explain your reasoning.
+          </p>
+        </li>
+        <li>
+          <p>
+            The researchers take another random sample of physically active individuals.
+            Would you expect the mean and the standard deviation of this new sample to be the ones given above?
+            Explain your reasoning.
+          </p>
+        </li>
+        <li>
+          <p>
+            The sample means obtained are point estimates for the mean height of all active individuals,
+            if the sample of individuals is equivalent to a simple random sample.
+            What measure do we use to quantify the variability of such an estimate?
+            Compute this quantity using the data from the original sample under the condition that the data are a simple random sample.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="find_mean_2_sided">
+    <title>Find the mean</title>
+    <statement>
+      <p>
+        You are given the following hypotheses:
+        <md>
+          <mrow>H_0\amp : \mu = 60</mrow>
+          <mrow>H_A\amp : \mu \neq 60</mrow>
+        </md>
+      </p>
+      <p>
+        We know that the sample standard deviation is 8 and the sample size is 20.
+        For what sample mean would the p-value be equal to 0.05?
+        Assume that all conditions necessary for inference are satisfied.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="critical_t_vs_z">
+    <title>$t^\star$ vs. $z^\star$</title>
+    <statement>
+      <p>
+        For a given confidence level,
+        <m>t^{\star}_{df}</m> is larger than <m>z^{\star}</m>.
+        Explain how <m>t^{*}_{df}</m> being slightly larger than <m>z^{*}</m> affects the width of the confidence interval.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="play_piano_one_sided">
+    <title>Play the piano</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-play_piano<nbsp/> Georgianna claims that in a small city renowned for its music school,
+        the average child takes at least 5 years of piano lessons.
+        We have a random sample of 30 children from the city,
+        with a mean of 4.6 years of piano lessons and a standard deviation of 2.2 years.
+        <ol>
+          <li>
+            <p>
+              Use a hypothesis test to determine if there is sufficient evidence against Georgianna's claim.
+            </p>
+          </li>
+          <li>
+            <p>
+              Construct a 95% confidence interval for the number of years students in this city take piano lessons,
+              and interpret it in context of the data.
+            </p>
+          </li>
+          <li>
+            <p>
+              Do your results from the hypothesis test and the confidence interval agree?
+              Explain your reasoning.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="auto_exhaust_lead_exposure_2_sided">
+    <title>Auto exhaust and
+    lead exposure</title>
+    <statement>
+      <p>
+        Researchers interested in lead exposure due to car exhaust sampled the blood of 52 police officers subjected to constant inhalation of automobile exhaust fumes while working traffic enforcement in a primarily urban environment.
+        The blood samples of these officers had an average lead concentration of 124.32 <m>\mu</m>g/l and a SD of 37.74 <m>\mu</m>g/l;
+        a previous study of individuals from a nearby suburb,
+        with no history of exposure,
+        found an average blood level concentration of 35 <m>\mu</m>g/l.\footfullcite{Mortada:2000}
+        <ol>
+          <li>
+            <p>
+              Write down the hypotheses that would be appropriate for testing if the police officers appear to have been exposed to a different concentration of lead.
+            </p>
+          </li>
+          <li xml:id="auto_exhaust_lead_exposure_2_sided_cond">
+            <p>
+              Explicitly state and check all conditions necessary for inference on these data.
+            </p>
+          </li>
+          <li>
+            <p>
+              Regardless of your answers in part<nbsp/><xref ref="auto_exhaust_lead_exposure_2_sided_cond" />,
+              test the hypothesis that the downtown police officers have a higher lead exposure than the group in the previous study.
+              Interpret your results in context.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="car_insurance_savings">
+    <title>Car insurance savings</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-car_insurance_savings<nbsp/> A market researcher wants to evaluate car insurance savings at a competing company.
+        Based on past studies he is assuming that the standard deviation of savings is $100.
+        He wants to collect data such that he can get a margin of error of no more than $10 at a 95% confidence level.
+        How large of a sample should he collect?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="sat_scores_CI">
+    <title>SAT scores</title>
+    <statement>
+      <p>
+        The standard deviation of SAT scores for students at a particular Ivy League college is 250 points.
+        Two statistics students, Raina and Luke,
+        want to estimate the average SAT score of students at this college as part of a class project.
+        They want their margin of error to be no more than 25 points.
+        <ol>
+          <li>
+            <p>
+              Raina wants to use a 90% confidence interval.
+              How large a sample should she collect?
+            </p>
+          </li>
+          <li>
+            <p>
+              Luke wants to use a 99% confidence interval.
+              Without calculating the actual sample size,
+              determine whether his sample should be larger or smaller than Raina's, and explain your reasoning.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the minimum required sample size for Luke.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</section>

@@ -18,7 +18,10 @@
     </p>
   </introduction>
   <xi:include  href="pointEstimates.ptx" />
+  <xi:include  href="section6-2.ptx" />
   <xi:include  href="ConfidenceIntervals.ptx" />
-  <xi:include  href="hypothesisTesting.ptx" />
   <xi:include  href="section6-4.ptx" />
+  <xi:include  href="hypothesisTesting.ptx" />
+  <xi:include  href="section6-6.ptx" />
+  <xi:include  href="section6-7.ptx" />
 </chapter>

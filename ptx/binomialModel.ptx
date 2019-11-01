@@ -50,7 +50,7 @@
       We can make a distribution table with these outcomes.
       Recall that the probability of a randomly sampled person being blood type O+ is about<nbsp/>0.35.
     </p>
-    <table xml:id="oPositive4">
+    <figure xml:id="oPositive4">
       <caption>Probability distribution for the number with blood type O+ in a random sample of 4 people. This is a binomial distribution. Correcting for rounding error, the probabilities add up to<nbsp/>1, as they must for any probability distribution.</caption>
       <sidebyside>
         <tabular>
@@ -89,7 +89,7 @@
         </tabular>
         \Figure{0.95}{oPositive4}
       </sidebyside>
-    </table>
+    </figure>
   </subsection>
   <subsection>
     <title>The mean and standard deviation of a binomial distribution</title>
@@ -99,7 +99,7 @@
       so it is fortunate there's an easier way to compute the mean and standard deviation for a binomial random variable.
     </p>
     <assemblage>
-      <title></title>
+      <title>Mean and standard deviation of the binomial distribution</title>
       <p>
         For a binomial distribution with parameters <m>n</m> and <m>p</m>,
         where <m>n</m> is the number of trials and <m>p</m> is the probability of a success,
@@ -190,6 +190,11 @@
           How does the binomial distribution change as <m>n</m> gets larger?
         </p>
       </statement>
+      <answer>
+        <p>
+          The distribution is transformed from a blocky and skewed distribution into one that rather resembles the normal distribution in the last hollow histogram.
+        </p>
+      </answer>
     </exercise>
     <figure xml:id="fourBinomialModelsShowingApproxToNormal">
       <caption>Hollow histograms of samples from the binomial model when <m>p=0.10</m>. The sample sizes for the four plots are <m>n=10</m>, 30, 100, and 300, respectively.</caption>
@@ -201,7 +206,7 @@
       We will use this rule of thumb in many applications going forward.
     </p>
     <assemblage>
-      <title></title>
+      <title>Normal approximation of the binomial distribution</title>
       <p>
         The binomial distribution with probability of success <m>p</m> is nearly normal when the sample size <m>n</m> is sufficiently large that
         <m>np\ge 10</m> and <m>n(1-p)\ge 10</m>.
@@ -291,7 +296,7 @@
   <subsection>
     <title>Normal approximation breaks down on small intervals (special topic)</title>
     <assemblage>
-      <title></title>
+      <title>The normal approximation may fail on small intervals</title>
       <p>
         {The normal approximation to the binomial distribution tends to perform poorly when estimating the probability of a small range of counts,
         even when the conditions are met.}
@@ -325,7 +330,7 @@
       <image width="73%" source="images/normApproxToBinomFail-n400-p35.png" />
     </figure>
     <assemblage>
-      <title></title>
+      <title>Improving accuracy of the normal approximation to the binomial distribution</title>
       <p>
         The normal approximation to the binomial distribution for intervals of values is usually improved if cutoff values for the lower end of a shaded region are reduced by 0.5 and the cutoff value for the upper end are increased by 0.5.
         This correction is called the continuity correction and accounts for the fact that the binomial distribution is discrete.
@@ -340,8 +345,16 @@
       </statement>
       <solution>
         <p>
-          Use the method described to find a more accurate estimate for the probability of observing 129, 130,
-          or 131 people with blood type O+ in 400 randomly selected people when <m>p=0.35</m>.
+          Instead of standardizing 129 and 131,
+          we will standardize 128.5 and 131.5:
+          <md>
+            <mrow>Z_{left} \amp = \frac{128.5-140}{9.5} = -1.263</mrow>
+            <mrow>Z_{right} \amp = \frac{131.5-140}{9.5} = -0.895</mrow>
+            <mrow>P(-1.263 \amp \lt  Z \lt  -0.895) = 0.0772</mrow>
+          </md>
+        </p>
+        <p>
+          The probability 0.0772 is much closer to the true value of 0.0732 than the previous estimate of 0.0483 we calculated using normal approximation without the continuity correction.
         </p>
       </solution>
     </example>
@@ -452,141 +465,5 @@
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise xml:id="underage_drinking_normal_approx">
-      <title>Underage drinking, Part II</title>
-      <statement>
-        <p>
-          MISSINGVIDEOLINK<nbsp/> We learned in <xref ref="underage_drinking_intro">Exercise</xref>
-          that about 70% of 18-20 year olds consumed alcoholic beverages in any given year.
-          We now consider a random sample of fifty 18-20 year olds.
-          <ol>
-            <li>
-              <p>
-                How many people would you expect to have consumed alcoholic beverages?
-                And with what standard deviation?
-              </p>
-            </li>
-            <li>
-              <p>
-                Would you be surprised if there were 45 or more people who have consumed alcoholic beverages?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that 45 or more people in this sample have consumed alcoholic beverages?
-                How does this probability relate to your answer to part (b)?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="chicken_pox_normal_approx">
-      <title>Chickenpox, Part II</title>
-      <statement>
-        <p>
-          We learned in <xref ref="chicken_pox_intro">Exercise</xref>
-          that about 90% of American adults had chickenpox before adulthood.
-          We now consider a random sample of 120 American adults.
-          <ol>
-            <li>
-              <p>
-                How many people in this sample would you expect to have had chickenpox in their childhood?
-                And with what standard deviation?
-              </p>
-            </li>
-            <li>
-              <p>
-                Would you be surprised if there were 105 people who have had chickenpox in their childhood?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that 105 or fewer people in this sample have had chickenpox in their childhood?
-                How does this probability relate to your answer to part (b)?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="dreidel">
-      <title>Game of dreidel</title>
-      <statement>
-        <p>
-          A dreidel is a four-sided spinning top with the Hebrew letters <em>nun</em>,
-          <em>gimel</em>, <em>hei</em>,
-          and <em>shin</em>, one on each side.
-          Each side is equally likely to come up in a single spin of the dreidel.
-          Suppose you spin a dreidel three times.
-          Calculate the probability of getting
-        </p>
-        <sidebyside>
-          <ol>
-            <li>
-              <p>
-                at least one <em>nun</em>?
-              </p>
-            </li>
-            <li>
-              <p>
-                exactly 2 <em>nun</em>s?
-              </p>
-            </li>
-            <li>
-              <p>
-                exactly 1 <em>hei</em>?
-              </p>
-            </li>
-            <li>
-              <p>
-                at most 2 <em>gimel</em>s?
-              </p>
-            </li>
-          </ol>
-          <image width="90%" source="images/dreidel.png" />
-        </sidebyside>
-      </statement>
-    </exercise>
-    <exercise xml:id="sickle_cell_anemia">
-      <title>Sickle cell anemia</title>
-      <statement>
-        <p>
-          Sickle cell anemia is a genetic blood disorder where red blood cells lose their flexibility and assume an abnormal, rigid,
-          <q>sickle</q>
-          shape, which results in a risk of various complications.
-          If both parents are carriers of the disease,
-          then a child has a 25% chance of having the disease, 50% chance of being a carrier,
-          and 25% chance of neither having the disease nor being a carrier.
-          If two parents who are carriers of the disease have 3 children,
-          what is the probability that
-          <ol>
-            <li>
-              <p>
-                two will have the disease?
-              </p>
-            </li>
-            <li>
-              <p>
-                none will have the disease?
-              </p>
-            </li>
-            <li>
-              <p>
-                at least one will neither have the disease nor be a carrier?
-              </p>
-            </li>
-            <li>
-              <p>
-                the first child with the disease will the be <m>3^{rd}</m> child?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>

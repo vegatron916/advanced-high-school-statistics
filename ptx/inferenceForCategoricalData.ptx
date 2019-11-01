@@ -14,8 +14,11 @@
     </p>
   </introduction>
   <xi:include  href="singleProportion.ptx" />
+  <xi:include  href="section7-2.ptx" />
   <xi:include  href="differenceOfTwoProportions.ptx" />
+  <xi:include  href="section7-4.ptx" />
   <xi:include  href="oneWayChiSquare.ptx" />
+  <xi:include  href="section7-6.ptx" />
   <xi:include  href="twoWayTablesAndChiSquare.ptx" />
-  <xi:include  href="section7-5.ptx" />
+  <xi:include  href="section7-8.ptx" />
 </chapter>

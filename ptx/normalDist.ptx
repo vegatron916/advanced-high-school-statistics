@@ -100,7 +100,7 @@
           <idx><h>normal distribution</h><h>standard|textbf</h></idx>
     </p>
     <assemblage>
-      <title></title>
+      <title>Normal distribution facts</title>
       <p>
         Many variables are nearly normal,
         but none are exactly normal.
@@ -135,7 +135,7 @@
         </p>
       </answer>
     </example>
-    <table xml:id="satACTstats">
+    <figure xml:id="satACTstats">
       <caption>Mean and standard deviation for the SAT and ACT.</caption>
       <tabular>
         <row bottom="minor">
@@ -169,7 +169,7 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <figure xml:id="satActNormals">
       <caption>Ann's and Tom's scores shown with the distributions
       of SAT and ACT scores.</caption>
@@ -256,7 +256,7 @@
       <caption>The area to the left of <m>Z</m> represents the percentile of the observation.</caption>
       <image width="70%" source="images/normalTails.png" />
     </figure>
-    <table xml:id="zTableShort">
+    <figure xml:id="zTableShort">
       <caption>A section of the normal probability table. The percentile for a normal random variable with <m>Z=0.45</m> has been <em>highlighted</em>, and the percentile closest to 0.8000 has also been <em>highlighted</em>.</caption>
       <tabular>
         <row>
@@ -453,7 +453,7 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <p>
       We can also find the Z-score associated with a percentile.
       For example, to identify Z for the <m>80^{th}</m> percentile,
@@ -466,6 +466,13 @@
           Determine the proportion of SAT test takers who scored better than Ann on the SAT.
         </p>
       </statement>
+      <answer>
+        <p>
+          If 84% had lower scores than Ann,
+          the proportion of people who had better scores must be 16%. (Generally ties are ignored when the normal model,
+          or any other continuous distribution, is used.)
+        </p>
+      </answer>
     </exercise>
   </subsection>
   <subsection>
@@ -479,14 +486,35 @@
           What is the probability that a randomly selected SAT taker scores at least 1190 on the SAT?
         </p>
       </statement>
-      <solution>
+      <solution xml:id="satAbove1190Exam">
         <p>
-          What is the probability that a randomly selected SAT taker scores at least 1190 on the SAT?
+          The probability that a randomly selected SAT taker scores at least 1190 on the SAT is equivalent to the proportion of all SAT takers that score at least 1190 on the SAT. First,
+          always draw and label a picture of the normal distribution.
+          (Drawings need not be exact to be useful.)
+          We are interested in the probability that a randomly selected score will be above 1190, so we shade this upper tail:
+          <image width="73%" source="images/satAbove1190.png" /> The picture shows the mean and the values at 2 standard deviations above and below the mean.
+          The simplest way to find the shaded area under the curve makes use of the Z-score of the cutoff value.
+          With <m>\mu=\satmean{}</m>, <m>\sigma=\satsd{}</m>,
+          and the cutoff value <m>x=1190</m>,
+          the Z-score is computed as
+          <md>
+            <mrow>Z = \frac{x - \mu}{\sigma} = \frac{1190 - \satmean{}}{\satsd{}} = \frac{90}{200} = 0.45</mrow>
+          </md>
+        </p>
+        <p>
+          We look up the percentile of <m>Z=0.45</m> in the normal probability table shown in <xref ref="zTableShort">Figure</xref>
+          or in <xref ref="normalProbabilityTable">Appendix</xref>,
+          which yields 0.6736.
+          However, the percentile describes those who had a Z-score
+          <em>lower</em> than 0.45.
+          To find the area <em>above</em> <m>Z=0.45</m>,
+          we compute one minus the area of the lower tail:
+          <image width="73%" source="images/subtractingArea.png" /> The probability that a randomly selected score is at least 1190 on the SAT is 0.3264.
         </p>
       </solution>
     </example>
     <assemblage>
-      <title></title>
+      <title>Always draw a picture first, and find the Z-score second</title>
       <p>
         For any normal probability situation,
         <em>always always always</em> draw and label the normal curve and shade the area of interest first.
@@ -513,9 +541,23 @@
           Edward earned a 1030 on his SAT. What is his percentile?
         </p>
       </statement>
-      <solution>
+      <solution xml:id="edwardSatBelow1030">
         <p>
-          Edward earned a 1030 on his SAT. What is his percentile?
+          First, a picture is needed.
+          Edward's percentile is the proportion of people who do not get as high as a 1030.
+          These are the scores to the left of 1030.
+          <image width="73%" source="images/satBelow1030.png" /> Identifying the mean <m>\mu=1100</m>,
+          the standard deviation <m>\sigma=200</m>,
+          and the cutoff for the tail area <m>x=1030</m> makes it easy to compute the Z-score:
+          <md>
+            <mrow>Z = \frac{x - \mu}{\sigma} = \frac{1030 - 1100}{200} = -0.35</mrow>
+          </md>
+        </p>
+        <p>
+          Using the normal probability table,
+          identify the row of <m>-0.3</m> and column of <m>0.05</m>,
+          which corresponds to the probability <m>0.3632</m>.
+          Edward is at the <m>36^{th}</m> percentile.
         </p>
       </solution>
     </example>
@@ -529,7 +571,7 @@
       </statement>
     </exercise>
     <assemblage>
-      <title></title>
+      <title>Areas to the right</title>
       <p>
         The normal probability table in most books gives the area to the left.
         If you would like the area to the right,
@@ -548,7 +590,28 @@
       </statement>
       <solution>
         <p>
-          Carlos believes he can get into his preferred college if he scores at least in the 80th percentile on the SAT. What score should he aim for?
+          Here, we are given a percentile rather than a Z-score,
+          so we work backwards.
+          As always, first draw the picture.
+          <image width="73%" source="images/sat80thPercentile.png" /> We want to find the observation that corresponds to the 80th percentile.
+          First, we find the Z-score associated with the 80th percentile using the normal probability table.
+          Looking at <xref ref="zTableShort">Figure</xref>., we look for the number closest to 0.80
+          <em>inside</em> the table.
+          The closest number we find is 0.7995
+          (highlighted). 0.7995 falls on row 0.8 and column 0.04,
+          therefore it corresponds to a Z-score of 0.84.
+          In any normal distribution,
+          a value with a Z-score of 0.84 will be at the 80th percentile.
+          Once we have the Z-score, we work backwards to find x.
+          <md>
+            <mrow>Z \amp = \frac{x-\mu}{\sigma}</mrow>
+            <mrow>0.84 \amp = \frac{x-1100}{200}</mrow>
+            <mrow>0.84 \times 200+1100 \amp = x</mrow>
+            <mrow>x\amp  = 1268</mrow>
+          </md>
+        </p>
+        <p>
+          The 80th percentile on the SAT corresponds to a score of 1268.
         </p>
       </solution>
     </example>
@@ -560,7 +623,7 @@
       </statement>
     </exercise>
     <assemblage>
-      <title></title>
+      <title>If the data are not nearly normal, don't use a normal table</title>
       <p>
         {Before using the normal table,
         verify that the data or distribution is approximately normal.
@@ -572,7 +635,7 @@
   <subsection xml:id="normal">
     <title>Calculator: finding normal probabilities</title>
     <assemblage>
-      <title></title>
+      <title>MISSINGVIDEOLINK ti84_normal_curve_area TI-84: Finding area under the normal curve</title>
       <p>
         Use <c>2ND</c> <c>VARS</c>, <c>normalcdf</c> to find an area/proportion/probability between two Z-scores or to the left or right of a Z-score.
         <ol>
@@ -626,7 +689,7 @@
       </p>
     </assemblage>
     <assemblage>
-      <title></title>
+      <title>MISSINGVIDEOLINK casio_normal_curve_area Casio fx-9750GII: Finding area under the normal curve</title>
       <ol>
         <li>
           <p>
@@ -682,7 +745,14 @@
       </statement>
       <solution>
         <p>
-          Use a calculator to determine what percentile corresponds to a Z-score of 1.5.
+          Always first sketch a graph:
+          <image width="50%" source="images/zscoreleftof1point5.png" /> To find an area under the normal curve using a calculator,
+          first identify a lower bound and an upper bound.
+          Theoretically,
+          we want all of the area to the left of 1.5, so the left endpoint should be -<m>\infty</m>.
+          However, the area under the curve is nearly negligible when <m>Z</m> is smaller than -4, so we will use -5 as the lower bound when not given a lower bound
+          (any other negative number smaller than -5 will also work).
+          Using a lower bound of -5 and an upper bound of 1.5, we get <m>P(Z \lt 1.5) = 0.933</m>.
         </p>
       </solution>
     </example>
@@ -692,6 +762,14 @@
           Find the area under the normal curve to right of <m>Z=2</m>.<nbsp/>
         </p>
       </statement>
+      <answer>
+        <p>
+          Now we want to shade to the right.
+          Therefore our lower bound will be 2 and the upper bound will be +5
+          (or a number bigger than 5)
+          to get <m>P(Z > 2) = 0.023</m>.
+        </p>
+      </answer>
     </exercise>
     <exercise>
       <statement>
@@ -699,9 +777,16 @@
           Find the area under the normal curve between -1.5 and<nbsp/>1.5.<nbsp/>
         </p>
       </statement>
+      <answer>
+        <p>
+          Here we are given both the lower and the upper bound.
+          Lower bound is -1.5 and upper bound is 1.5.
+          The area under the normal curve between -1.5 and 1.5 = <m>P(-1.5 \lt Z \lt 1.5) = 0.866</m>.
+        </p>
+      </answer>
     </exercise>
     <assemblage>
-      <title></title>
+      <title>MISSINGVIDEOLINK ti84_Z_score_for_a_percentile TI-84: Find a Z-score that corresponds to a percentile</title>
       <p>
         Use <c>2ND</c> <c>VARS</c>, <c>invNorm</c> to find the Z-score that corresponds to a given percentile.
         <ol>
@@ -741,7 +826,7 @@
       </p>
     </assemblage>
     <assemblage>
-      <title></title>
+      <title>MISSINGVIDEOLINK casio_Z_score_for_a_percentile Casio fx-9750GII: Find a Z-score that corresponds to a percentile</title>
       <ol>
         <li>
           <p>
@@ -781,7 +866,9 @@
       </statement>
       <solution>
         <p>
-          Use a calculator to find the Z-score that corresponds to the 40th percentile.
+          Letting Area be 0.40, a calculator gives -0.253.
+          This means that <m>Z = -0.253</m> corresponds to the 40th percentile,
+          that<nbsp/>is, <m>P(Z \lt -0.253) = 0.40</m>.
         </p>
       </solution>
     </example>
@@ -791,6 +878,13 @@
           Find the Z-score such that 20 percent of the area is to the right of that Z-score.
         </p>
       </statement>
+      <answer>
+        <p>
+          If 20% of the area is the right,
+          then 80% of the area is to the left.
+          Letting area be 0.80, we get <m>Z = 0.841</m>.
+        </p>
+      </answer>
     </exercise>
     <example>
       <statement>
@@ -804,11 +898,19 @@
       </statement>
       <solution>
         <p>
-          In a large study of birth weight of newborns,
-          the weights of 23,419 newborn boys were recorded.
-          The distribution of weights was approximately normal with a mean of 7.44 lbs (3376 grams) and a standard deviation of 1.33 lbs (603 grams).
-          The government classifies a newborn as having low birth weight if the weight is less than 5.5 pounds.
-          What percent of these newborns had a low birth weight?
+          We find an area under the normal curve between -5
+          (or a number smaller than -5, e.g. -10)
+          and a Z-score that we will calculate.
+          There is no need to write calculator commands in a solution.
+          Instead, continue to use standard statistical notation.
+          <md>
+            <mrow>Z\amp =\frac{5.5-7.44}{1.33}</mrow>
+            <mrow>\amp =-1.49</mrow>
+            <mrow>P(Z \lt  -1.49) \amp = 0.068</mrow>
+          </md>
+        </p>
+        <p>
+          Approximately 6.8% of the newborns were of low birth weight.
         </p>
       </solution>
     </example>
@@ -826,6 +928,13 @@
           of these newborns weighed greater than 10 pounds?
         </p>
       </statement>
+      <answer>
+        <p>
+          Approximately 2.7% of the newborns weighed over 10 pounds.
+          Because there were 23,419 of them,
+          about <m>0.027 \times 23419 \approx 632</m> weighed greater than 10 pounds.
+        </p>
+      </answer>
     </exercise>
     <exercise>
       <statement>
@@ -857,6 +966,15 @@
           Similarly there should be an area of about 0.95 between <m>Z=-2</m> and <m>Z=2</m>.
         </p>
       </statement>
+      <answer>
+        <p>
+          First draw the pictures.
+          To find the area between <m>Z=-1</m> and <m>Z=1</m>,
+          use the normal probability table to determine the areas below <m>Z=-1</m> and above <m>Z=1</m>.
+          Next verify the area between <m>Z=-1</m> and <m>Z=1</m> is about 0.68.
+          Repeat this for <m>Z=-2</m> to <m>Z=2</m> and also for <m>Z=-3</m> to <m>Z=3</m>.
+        </p>
+      </answer>
     </exercise>
     <p>
       It is possible for a normal random variable to fall 4,<nbsp/>5,
@@ -1005,6 +1123,20 @@
           in the four plots.
         </p>
       </statement>
+      <answer>
+        <p>
+          Answers may vary a little.
+          The top-left plot shows some deviations in the smallest values in the data set;
+          specifically,
+          the left tail of the data set has some outliers we should be wary of.
+          The top-right and bottom-left plots do not show any obvious or extreme deviations from the lines for their respective sample sizes,
+          so a normal model would be reasonable for these data sets.
+          The bottom-right plot has a consistent curvature that suggests it is not from the normal distribution.
+          If we examine just the vertical coordinates of these observations,
+          we see that there is a lot of data between -20 and 0, and then about five observations scattered between 0 and 70.
+          This describes a distribution that has a strong right skew.
+        </p>
+      </answer>
     </exercise>
     <figure xml:id="normalQuantileExer">
       <caption>Four normal probability plots for Guided <xref ref="normalQuantileExercise">Practice</xref>.</caption>
@@ -1022,6 +1154,16 @@
           Which is which?
         </p>
       </statement>
+      <answer>
+        <p>
+          Examine where the points fall along the vertical axis.
+          In the first plot,
+          most points are near the low end with fewer observations scattered along the high end;
+          this describes a distribution that is skewed to the high end.
+          The second plot shows the opposite features,
+          and this distribution is skewed to the low end.
+        </p>
+      </answer>
     </exercise>
     <figure xml:id="normalQuantileExerAdditional">
       <caption>Normal probability plots for Guided <xref ref="normalQuantileExerciseAdditional">Practice</xref>.</caption>
@@ -1250,467 +1392,5 @@
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise xml:id="area_under_curve_1">
-      <title>Area under the curve, Part I</title>
-      <statement>
-        <p>
-          What percent of a standard normal distribution
-          <m>N(\mu=0, \sigma=1)</m> is found in each region?
-          Be sure to draw a graph.
-          <ol>
-            <li>
-              <p>
-                <m>Z \lt -1.35</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>Z > 1.48</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>-0.4 \lt Z \lt 1.5</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>|Z| > 2</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="area_under_curve_2">
-      <title>Area under the curve, Part II</title>
-      <statement>
-        <p>
-          What percent of a standard normal distribution
-          <m>N(\mu=0, \sigma=1)</m> is found in each region?
-          Be sure to draw a graph.
-          <ol>
-            <li>
-              <p>
-                <m>Z > -1.13</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>Z \lt 0.18</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>Z > 8</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>|Z| \lt 0.5</m>
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="GRE_intro">
-      <title>GRE scores, Part I</title>
-      <statement>
-        <p>
-          Sophia who took the Graduate Record Examination (GRE) scored 160 on the Verbal Reasoning section and 157 on the Quantitative Reasoning section.
-          The mean score for Verbal Reasoning section for all test takers was 151 with a standard deviation of 7, and the mean score for the Quantitative Reasoning was 153 with a standard deviation of 7.67.
-          Suppose that both distributions are nearly normal.
-          <ol>
-            <li>
-              <p>
-                What is Sophia's Z-score on the Verbal Reasoning section?
-                On the Quantitative Reasoning section?
-                Draw a standard normal distribution curve and mark these two Z-scores.
-              </p>
-            </li>
-            <li>
-              <p>
-                What do these Z-scores tell you?
-              </p>
-            </li>
-            <li>
-              <p>
-                Relative to others, which section did she do better on?
-              </p>
-            </li>
-            <li>
-              <p>
-                Find her percentile scores for the two exams.
-              </p>
-            </li>
-            <li>
-              <p>
-                What percent of the test takers did better than her on the Verbal Reasoning section?
-                On the Quantitative Reasoning section?
-              </p>
-            </li>
-            <li>
-              <p>
-                Explain why simply comparing raw scores from the two sections could lead to an incorrect conclusion as to which section a student did better on.
-              </p>
-            </li>
-            <li>
-              <p>
-                If the distributions of the scores on these exams are not nearly normal,
-                would your answers to parts (b) - (e) change?
-                Explain your reasoning.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="triathlon_times_intro">
-      <title>Triathlon times, Part I</title>
-      <statement>
-        <p>
-          In triathlons,
-          it is common for racers to be placed into age and gender groups.
-          Friends Leo and Mary both completed the Hermosa Beach Triathlon,
-          where Leo competed in the <em>Men, Ages 30 - 34</em>
-          group while Mary competed in the
-          <em>Women, Ages 25 - 29</em> group.
-          Leo completed the race in 1:22:28 (4948 seconds),
-          while Mary completed the race in 1:31:53 (5513 seconds).
-          Obviously Leo finished faster,
-          but they are curious about how they did within their respective groups.
-          Can you help them?
-          Here is some information on the performance of their groups:
-          <ul>
-            <li>
-              <p>
-                The finishing times of the <em>Men, Ages 30 - 34</em>
-                group has a mean of 4313 seconds with a standard deviation of 583 seconds.
-              </p>
-            </li>
-            <li>
-              <p>
-                The finishing times of the <em>Women, Ages 25 - 29</em>
-                group has a mean of 5261 seconds with a standard deviation of 807 seconds.
-              </p>
-            </li>
-            <li>
-              <p>
-                The distributions of finishing times for both groups are approximately Normal.
-              </p>
-            </li>
-          </ul>
-        </p>
-        <p>
-          Remember: a better performance corresponds to a faster finish.
-          <ol>
-            <li>
-              <p>
-                What are the Z-scores for Leo's and Mary's finishing times?
-                What do these Z-scores tell you?
-              </p>
-            </li>
-            <li>
-              <p>
-                Did Leo or Mary rank better in their respective groups?
-                Explain your reasoning.
-              </p>
-            </li>
-            <li>
-              <p>
-                What percent of the triathletes did Leo finish faster than in his group?
-              </p>
-            </li>
-            <li>
-              <p>
-                What percent of the triathletes did Mary finish faster than in her group?
-              </p>
-            </li>
-            <li>
-              <p>
-                If the distributions of finishing times are not nearly normal,
-                would your answers to parts (a)<nbsp/>-<nbsp/>(d) change?
-                Explain your reasoning.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="GRE_cutoffs">
-      <title>GRE scores, Part II</title>
-      <statement>
-        <p>
-          In <xref ref="GRE_intro">Exercise</xref>
-          we saw two distributions for GRE scores:
-          <m>N(\mu=151, \sigma=7)</m> for the verbal part of the exam and
-          <m>N(\mu=153, \sigma=7.67)</m> for the quantitative part.
-          Use this information to compute each of the following:
-          <ol>
-            <li>
-              <p>
-                The score of a student who scored in the <m>80^{th}</m> percentile on the Quantitative Reasoning section.
-              </p>
-            </li>
-            <li>
-              <p>
-                The score of a student who scored worse than 70% of the test takers in the Verbal Reasoning section.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="triathlon_times_cutoffs">
-      <title>Triathlon times, Part II</title>
-      <statement>
-        <p>
-          In <xref ref="triathlon_times_intro">Exercise</xref>
-          we saw two distributions for triathlon times:
-          <m>N(\mu=4313, \sigma=583)</m> for
-          <em>Men, Ages 30 - 34</em>
-          and <m>N(\mu=5261, \sigma=807)</m> for the
-          <em>Women, Ages 25 - 29</em> group.
-          Times are listed in seconds.
-          Use this information to compute each of the following:
-          <ol>
-            <li>
-              <p>
-                The cutoff time for the fastest 5% of athletes in the men's group,
-                i.e. those who took the shortest 5% of time to finish.
-              </p>
-            </li>
-            <li>
-              <p>
-                The cutoff time for the slowest 10% of athletes in the women's group.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="la_weather_intro">
-      <title>LA weather, Part I</title>
-      <statement>
-        <p>
-          MISSINGVIDEOLINK<nbsp/> The average daily high temperature in June in LA is 77^\circ F with a standard deviation of 5^\circ F. Suppose that the temperatures in June closely follow a normal distribution.
-          <ol>
-            <li>
-              <p>
-                What is the probability of observing an 83^\circ F temperature or higher in LA during a randomly chosen day in June?
-              </p>
-            </li>
-            <li>
-              <p>
-                How cool are the coldest 10% of the days
-                (days with lowest average high temperature)
-                during June in LA?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="CAPM">
-      <title>CAPM</title>
-      <statement>
-        <p>
-          The Capital Asset Pricing Model (CAPM) is a financial model that assumes returns on a portfolio are normally distributed.
-          Suppose a portfolio has an average annual return of 14.7% (i.e. an average gain of 14.7%) with a standard deviation of 33%. A return of 0% means the value of the portfolio doesn't change,
-          a negative return means that the portfolio loses money,
-          and a positive return means that the portfolio gains money.
-          <ol>
-            <li>
-              <p>
-                What percent of years does this portfolio lose money,
-                i.e. have a return less than 0%?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the cutoff for the highest 15% of annual returns with this portfolio?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="la_weather_unit_change">
-      <title>LA weather, Part II</title>
-      <statement>
-        <p>
-          <xref ref="la_weather_intro">Exercise</xref>
-          states that average daily high temperature in June in LA is 77^\circ F with a standard deviation of 5^\circ F, and it can be assumed that they to follow a normal distribution.
-          We use the following equation to convert ^\circ F (Fahrenheit) to ^\circ C (Celsius):
-          <me>
-            C = (F - 32) \times \frac{5}{9}
-          </me>.
-          <ol>
-            <li>
-              <p>
-                What is the probability of observing a 28^\circ C
-                (which roughly corresponds to 83^\circ F)
-                temperature or higher in June in LA? Calculate using the ^\circ C model from part (a).
-              </p>
-            </li>
-            <li>
-              <p>
-                Did you get the same answer or different answers in part (b) of this question and part (a) of <xref ref="la_weather_intro">Exercise</xref>?
-                Are you surprised?
-                Explain.
-              </p>
-            </li>
-            <li>
-              <p>
-                Estimate the IQR of the temperatures (in ^\circ C) in June in LA.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="find_sd">
-      <title>Find the SD</title>
-      <statement>
-        <p>
-          Cholesterol levels for women aged 20 to 34 follow an approximately normal distribution with mean 185 milligrams per deciliter
-          (mg/dl).
-          Women with cholesterol levels above 220 mg/dl are considered to have high cholesterol and about 18.5% of women fall into this category.
-          Find the standard deviation of this distribution.
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="statsScores">
-      <title>Scores on stats final, Part I</title>
-      <statement>
-        <p>
-          Below are final exam scores of 20 Introductory Statistics students.
-          <me>
-            \stackrel{1}{57}, \stackrel{2}{66}, \stackrel{3}{69}, \stackrel{4}{71}, \stackrel{5}{72}, \stackrel{6}{73}, \stackrel{7}{74}, \stackrel{8}{77}, \stackrel{9}{78}, \stackrel{10}{78}, \stackrel{11}{79}, \stackrel{12}{79}, \stackrel{13}{81}, \stackrel{14}{81}, \stackrel{15}{82}, \stackrel{16}{83}, \stackrel{17}{83}, \stackrel{18}{88}, \stackrel{19}{89}, \stackrel{20}{94}
-          </me>
-        </p>
-        <p>
-          The mean score is 77.7 points. with a standard deviation of 8.44 points.
-          Use this information to determine if the scores approximately follow the 68-95-99.7% Rule.
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="collegeFemHeights">
-      <title>Heights of female college students, Part I</title>
-      <statement>
-        <p>
-          Below are heights of 25 female college students.
-          <me>
-            \stackrel{1}{54}, \stackrel{2}{55}, \stackrel{3}{56}, \stackrel{4}{56}, \stackrel{5}{57}, \stackrel{6}{58}, \stackrel{7}{58}, \stackrel{8}{59}, \stackrel{9}{60}, \stackrel{10}{60}, \stackrel{11}{60}, \stackrel{12}{61}, \stackrel{13}{61}, \stackrel{14}{62}, \stackrel{15}{62}, \stackrel{16}{63}, \stackrel{17}{63}, \stackrel{18}{63}, \stackrel{19}{64}, \stackrel{20}{65}, \stackrel{21}{65}, \stackrel{22}{67}, \stackrel{23}{67}, \stackrel{24}{69}, \stackrel{25}{73}
-          </me>
-        </p>
-        <p>
-          The mean height is 61.52 inches with a standard deviation of 4.58 inches.
-          Use this information to determine if the heights approximately follow the 68-95-99.7% Rule.
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Lemonade at The Cafe</title>
-      <statement>
-        <p>
-          Drink pitchers at The Cafe are intended to hold about 64 ounces of lemonade and glasses hold about 12 ounces.
-          However, when the pitchers are filled by a server,
-          they do not always fill it with exactly 64 ounces.
-          There is some variability.
-          Similarly, when they pour out some of the lemonade,
-          they do not pour exactly 12 ounces.
-          The amount of lemonade in a pitcher is normally distributed with mean 64 ounces and standard deviation 1.732 ounces.
-          The amount of lemonade in a glass is normally distributed with mean 12 ounces and standard deviation 1 ounce.
-          <ol>
-            <li>
-              <p>
-                How much lemonade would you expect to be left in a pitcher after pouring one glass of lemonade?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the standard deviation of the amount left in a pitcher after pouring one glass of lemonade?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that more than 50 ounces of lemonade is left in a pitcher after pouring one glass of lemonade?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="sprayPaint">
-      <title>Spray paint, Part I</title>
-      <statement>
-        <p>
-          Suppose the area that can be painted using a single can of spray paint is slightly variable and follows a nearly normal distribution with a mean of 25 square feet and a standard deviation of 3 square feet.
-          Suppose also that you buy three cans of spray paint.
-          <ol>
-            <li>
-              <p>
-                How much area would you expect to cover with these three cans of spray paint?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the standard deviation of the area you expect to cover with these three cans of spray paint?
-              </p>
-            </li>
-            <li>
-              <p>
-                The area you wanted to cover is 80 square feet.
-                What is the probability that you will be able to cover this entire area with these three cans of spray paint?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="GRE_scores_3">
-      <title>GRE scores, Part III</title>
-      <statement>
-        <p>
-          MISSINGVIDEOLINK<nbsp/> In <xref ref="GRE_intro">Exercises</xref>
-          and <xref ref="GRE_cutoffs"></xref>
-          we saw two distributions for GRE scores:
-          <m>N(\mu=151, \sigma=7)</m> for the verbal part of the exam and
-          <m>N(\mu=153, \sigma=7.67)</m> for the quantitative part.
-          Suppose performance on these two sections is independent.
-          Use this information to compute each of the following:
-          <ol>
-            <li>
-              <p>
-                The probability of a combined (verbal + quantitative) score above 320.
-              </p>
-            </li>
-            <li>
-              <p>
-                The score of a student who scored better than 90% of the test takers overall.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="dinnerBet">
-      <title>Betting on dinner, Part I</title>
-      <statement>
-        <p>
-          Suppose a restaurant is running a promotion where prices of menu items are random following some underlying distribution.
-          If you're lucky,
-          you can get a basket of fries for $3, or if you're not so lucky you might end up having to pay $10 for the same menu item.
-          The price of basket of fries is drawn from a normal distribution with mean $6 and standard deviation of $2.
-          The price of a fountain drink is drawn from a normal distribution with mean $3 and standard deviation of $1.
-          What is the probability that you pay more than $10 for a dinner consisting of a basket of fries and a fountain drink?
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>

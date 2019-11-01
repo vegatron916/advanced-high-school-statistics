@@ -54,7 +54,7 @@
     </p>
     <p>
       <xref ref="loan_home_app_type_totals">Figure</xref>
-      summarizes two variables: <c>app\ustype</c> and <c>homeownership</c>.
+      summarizes two variables: <c>app_type</c> and <c>homeownership</c>.
       A table that summarizes data for two categorical variables in this way is called a
       <term>contingency table</term>.
       Each value in the table represents the number of times a particular combination of variable outcomes occurred.
@@ -69,9 +69,9 @@
       such as the one shown in <xref ref="loan_homeownership_totals">Figure</xref>
       for the <c>homeownership</c> variable.
     </p>
-    <table xml:id="loan_home_app_type_totals">
+    <figure xml:id="loan_home_app_type_totals">
       <caption>A contingency table for
-<c>app\ustype</c> and <c>homeownership</c>.</caption>
+<c>app_type</c> and <c>homeownership</c>.</caption>
       <tabular>
         <row>
           <cell></cell>
@@ -97,7 +97,7 @@
           <cell>\loanapphomeAD</cell>
         </row>
         <row>
-          <cell><c>app\ustype</c></cell>
+          <cell><c>app_type</c></cell>
           <cell>joint</cell>
           <cell>\loanapphomeBA</cell>
           <cell>\loanapphomeBB</cell>
@@ -116,8 +116,8 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
-    <table xml:id="loan_homeownership_totals">
+    </figure>
+    <figure xml:id="loan_homeownership_totals">
       <caption>A table summarizing the frequencies of each
       value for the <c>homeownership</c> variable.</caption>
       <tabular>
@@ -158,7 +158,7 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <p>
       A <term>bar<nbsp/>chart</term>
       (also called bar<nbsp/>plot or bar<nbsp/>graph)
@@ -189,9 +189,9 @@
       So what does 0.411 represent?
       It corresponds to the proportion of individual applicants who rent.
     </p>
-    <table xml:id="rowPropAppTypeHomeownership">
+    <figure xml:id="rowPropAppTypeHomeownership">
       <caption>A contingency table with row proportions
-      for the <c>app\ustype</c> and
+      for the <c>app_type</c> and
 <c>homeownership</c> variables.
       The row total is off by 0.001 for the
 <c>joint</c> row due to a rounding error.</caption>
@@ -253,18 +253,18 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <p>
       A contingency table of the column proportions is computed in a similar way,
       where each <em>column proportion</em><idx><h>contingency table</h><h>column proportion|textbf</h></idx> is computed as the count divided by the corresponding column total.
       <xref ref="colPropAppTypeHomeownership">Figure</xref> shows such a table,
       and here the value 0.906 indicates that 90.6% of renters applied as individuals for the loan.
       This rate is higher compared to loans from people with mortgages (80.2%) or who own their home (85.1%).
-      Because these rates vary between the three levels of <c>homeownership</c> (<c>rent</c>, <c>mortgage</c>, <c>own</c>), this provides evidence that the <c>app\ustype</c> and <c>homeownership</c> variables are associated.
+      Because these rates vary between the three levels of <c>homeownership</c> (<c>rent</c>, <c>mortgage</c>, <c>own</c>), this provides evidence that the <c>app_type</c> and <c>homeownership</c> variables are associated.
     </p>
-    <table xml:id="colPropAppTypeHomeownership">
+    <figure xml:id="colPropAppTypeHomeownership">
       <caption>A contingency table with column proportions for the
-<c>app\ustype</c> and <c>homeownership</c>
+<c>app_type</c> and <c>homeownership</c>
       variables.
       The total for the last column is off by 0.001 due
       to a rounding error.</caption>
@@ -326,9 +326,9 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <p>
-      We could also have checked for an association between <c>app\ustype</c> and <c>homeownership</c> in <xref ref="rowPropAppTypeHomeownership">Figure</xref> using row proportions.
+      We could also have checked for an association between <c>app_type</c> and <c>homeownership</c> in <xref ref="rowPropAppTypeHomeownership">Figure</xref> using row proportions.
       When comparing these row proportions,
       we would look down columns to see if the fraction of loans where the borrower rents,
       has a mortgage,
@@ -343,6 +343,11 @@
           (b)<nbsp/>What does 0.802 represent in <xref ref="colPropAppTypeHomeownership">Figure</xref>?
         </p>
       </statement>
+      <answer>
+        <p>
+          (a)<nbsp/>0.451 represents the proportion of individual applicants who have a mortgage. (b)<nbsp/>0.802 represents the fraction of applicants with mortgages who applied as individuals.
+        </p>
+      </answer>
     </exercise>
     <exercise>
       <statement>
@@ -353,6 +358,11 @@
           (b)<nbsp/>What does 0.135 represent in the <xref ref="colPropAppTypeHomeownership">Figure</xref>?
         </p>
       </statement>
+      <answer>
+        <p>
+          (a)<nbsp/>0.122 represents the fraction of joint borrowers who own their home. (b)<nbsp/>0.135 represents the home-owning borrowers who had a joint application for the loan.
+        </p>
+      </answer>
     </exercise>
     <example xml:id="weighingRowColumnProportions">
       <statement>
@@ -388,7 +398,7 @@
         </p>
       </answer>
     </example>
-    <table xml:id="emailSpamHTMLTableTotals">
+    <figure xml:id="emailSpamHTMLTableTotals">
       <caption>A contingency table for <c>spam</c> and <c>format</c>.</caption>
       <tabular>
         <row bottom="minor">
@@ -440,7 +450,7 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <p>
       <xref ref="weighingRowColumnProportions">Example</xref>
       points out that row and column proportions are not equivalent.
@@ -460,7 +470,7 @@
       <answer>
         <p>
           None that we thought were obvious!
-          What is distinct about <c>app\ustype</c> and <c>homeownership</c> vs the email example is that these two variables don't have a clear explanatory-response variable relationship that we might hypothesize
+          What is distinct about <c>app_type</c> and <c>homeownership</c> vs the email example is that these two variables don't have a clear explanatory-response variable relationship that we might hypothesize
           (see <xref ref="explanatoryAndResponse">Section</xref> for these terms).
           Usually it is most useful to
           <q>condition</q>
@@ -486,7 +496,7 @@
       For example,
       a<nbsp/>segmented bar<nbsp/>chart representing <xref ref="colPropAppTypeHomeownership">Figure</xref>
       is shown in <xref ref="loan_app_type_home_seg_bar">Figure</xref>,
-      where we have first created a bar<nbsp/>chart using the <c>homeownership</c> variable and then divided each group by the levels of \mbox{\texttt{app\us{}type}} .
+      where we have first created a bar<nbsp/>chart using the <c>homeownership</c> variable and then divided each group by the levels of <c>app_type</c> .
     </p>
     <p>
       One related visualization to the segmented bar<nbsp/>chart is the
@@ -496,26 +506,38 @@
     </p>
     <p>
       For the last type of bar<nbsp/>chart we introduce,
-      the column proportions for the <c>app\ustype</c> and <c>homeownership</c> contingency table have been translated into a standardized segmented bar<nbsp/>chart in <xref ref="loan_app_type_home_seg_bar_standardized">Figure</xref>.
+      the column proportions for the <c>app_type</c> and <c>homeownership</c> contingency table have been translated into a standardized segmented bar<nbsp/>chart in <xref ref="loan_app_type_home_seg_bar_standardized">Figure</xref>.
       This type of visualization is helpful in understanding the fraction of individual or joint loan applications for borrowers in each level of <c>homeownership</c>.
       Additionally,
       since the proportions of <c>joint</c> and <c>individual</c> vary across the groups,
       we can conclude that the two variables are associated.
     </p>
-    <figure xml:id="loan_app_type_home_seg_bar_plot">
+    <figure xml:id="loan_app_type_home_seg_bar">
       <caption>\subref{loan_app_type_home_seg_bar} segmented
       bar<nbsp/>chart for <c>homeownership</c>,
       where the counts have been further broken down
-      by <c>app\ustype</c>.
+      by <c>app_type</c>.
       \subref{loan_app_type_home_sbs_bar}<nbsp/>Side-by-side
       bar<nbsp/>chart for <c>homeownership</c>
-      and <c>app\ustype</c>.
+      and <c>app_type</c>.
       \subref{loan_app_type_home_seg_bar_standardized}<nbsp/>Standardized
       version of the segmented bar<nbsp/>chart.
       \subref{loan_app_type_home_sbs_bar_standardized}<nbsp/>Standardized
       side-by-side bar<nbsp/>chart.
       See these bar charts on Tableau Public<nbsp/>\tableauhref{tableau-bargraphs2V}.</caption>
-      MISSINGoiRedirect
+      \oiRedirect{tableau-bargraphs2V}{
+      \Figuress{\loanapptypehomesegbarplotwidth}
+      {loan_app_type_home_seg_bar}
+      {loan_app_type_home_seg_bar} }
+      \Figuress{\loanapptypehomesegbarplotwidth}
+      {loan_app_type_home_seg_bar}
+      {loan_app_type_home_sbs_bar} }
+      \Figuress{\loanapptypehomesegbarplotwidth}
+      {loan_app_type_home_seg_bar}
+      {loan_app_type_home_seg_bar_standardized} }
+      \Figuress{\loanapptypehomesegbarplotwidth}
+      {loan_app_type_home_seg_bar}
+      {loan_app_type_home_sbs_bar_standardized} }}
     </figure>
     <example>
       <statement>
@@ -577,7 +599,7 @@
       plot for <c>homeownership</c>.
       \subref{loan_app_type_home_mosaic}<nbsp/>Two-variable mosaic
       plot for both <c>homeownership</c>
-      and <c>app\ustype</c>.</caption>
+      and <c>app_type</c>.</caption>
       \Figures{0.36}
       {loan_app_type_home_mosaic_plot}
       {loan_home_mosaic} }
@@ -588,7 +610,7 @@
     <p>
       To create a completed mosaic plot,
       the single-variable mosaic plot is further divided into pieces in <xref ref="loan_app_type_home_mosaic">Figure</xref>
-      using the <c>app\ustype</c> variable.
+      using the <c>app_type</c> variable.
       Each column is split proportional to the number of loans from individual and joint borrowers.
       For example,
       the second column represents loans where the borrower has a mortgage,
@@ -597,7 +619,7 @@
       As another example,
       the bottom segment of the third column represents loans where the borrower owns their home and applied jointly,
       while the upper segment of this column represents borrowers who are homeowners and filed individually.
-      We can again use this plot to see that the <c>homeownership</c> and <c>app\ustype</c> variables are associated,
+      We can again use this plot to see that the <c>homeownership</c> and <c>app_type</c> variables are associated,
       since some columns are divided in different vertical locations than others,
       which was the same technique used for checking an association in the standardized segmented bar<nbsp/>chart.
     </p>
@@ -636,7 +658,8 @@
     </p>
     <figure xml:id="loan_homeownership_pie_chart">
       <caption>A pie chart and bar<nbsp/>chart of <c>homeownership</c>.  Compare multiple ways of summarizing a single categorical variable on Tableau Public<nbsp/>\tableauhref{tableau-bargraphs1V}.</caption>
-      MISSINGoiRedirect
+      \oiRedirect{tableau-bargraphs1V}{
+      \Figure{loan_homeownership_pie_chart}}
     </figure>
     <p>
           <idx><h>data</h><h>loans</h></idx>
@@ -685,155 +708,5 @@
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise xml:id="antibiotic_use_children">
-      <title>Antibiotic use in children</title>
-      <statement>
-        <p>
-          The bar plot and the pie chart below show the distribution of pre-existing medical conditions of children involved in a study on the optimal duration of antibiotic use in treatment of tracheitis,
-          which is an upper respiratory infection.
-          <image width="45%" source="images/antibiotic_use_children_bar.png" /> <image width="45%" source="images/antibiotic_use_children_pie.png" />
-          <ol>
-            <li>
-              <p>
-                What features are apparent in the bar plot but not in the pie chart?
-              </p>
-            </li>
-            <li>
-              <p>
-                What features are apparent in the pie chart but not in the bar plot?
-              </p>
-            </li>
-            <li>
-              <p>
-                Which graph would you prefer to use for displaying these categorical data?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="immigration">
-      <title>Views on immigration</title>
-      <statement>
-        <p>
-          910 randomly sampled registered voters from Tampa, FL were asked if they thought workers who have illegally entered the US should be (i) allowed to keep their jobs and apply for US citizenship, (ii) allowed to keep their jobs as temporary guest workers but not allowed to apply for US citizenship,
-          or (iii) lose their jobs and have to leave the country.
-          The results of the survey by political ideology are shown below.\footfullcite{survey:immigFL:2012}
-        </p>
-        <tabular>
-          <row>
-            <cell></cell>
-            <cell></cell>
-            <cell>\multicolumn{3}{c}{<em>Political ideology</em>}</cell>
-          </row>
-          <row>
-            <cell></cell>
-            <cell></cell>
-            <cell>Conservative</cell>
-            <cell>Moderate</cell>
-            <cell>Liberal</cell>
-            <cell>Total</cell>
-          </row>
-          <row>
-            <cell></cell>
-            <cell>(i) Apply for citizenship</cell>
-            <cell>57</cell>
-            <cell>120</cell>
-            <cell>101</cell>
-            <cell>278</cell>
-          </row>
-          <row>
-            <cell></cell>
-            <cell>(ii) Guest worker</cell>
-            <cell>121</cell>
-            <cell>113</cell>
-            <cell>28</cell>
-            <cell>262</cell>
-          </row>
-          <row>
-            <cell><em>Response</em></cell>
-            <cell>(iii) Leave the country</cell>
-            <cell>179</cell>
-            <cell>126</cell>
-            <cell>45</cell>
-            <cell>350</cell>
-          </row>
-          <row>
-            <cell></cell>
-            <cell>(iv) Not sure</cell>
-            <cell>15</cell>
-            <cell>4</cell>
-            <cell>1</cell>
-            <cell>20</cell>
-          </row>
-          <row>
-            <cell></cell>
-            <cell>Total</cell>
-            <cell>372</cell>
-            <cell>363</cell>
-            <cell>175</cell>
-            <cell>910</cell>
-          </row>
-        </tabular>
-        <ol>
-          <li>
-            <p>
-              What percent of these Tampa, FL voters identify themselves as conservatives?
-            </p>
-          </li>
-          <li>
-            <p>
-              What percent of these Tampa, FL voters are in favor of the citizenship option?
-            </p>
-          </li>
-          <li>
-            <p>
-              What percent of these Tampa, FL voters identify themselves as conservatives and are in favor of the citizenship option?
-            </p>
-          </li>
-          <li>
-            <p>
-              What percent of these Tampa, FL voters who identify themselves as conservatives are also in favor of the citizenship option?
-              What percent of moderates share this view?
-              What percent of liberals share this view?
-            </p>
-          </li>
-          <li>
-            <p>
-              Do political ideology and views on immigration appear to be independent?
-              Explain your reasoning.
-            </p>
-          </li>
-        </ol>
-      </statement>
-    </exercise>
-    <exercise xml:id="dream_act_mosaic">
-      <title>Views on the DREAM Act</title>
-      <statement>
-        <p>
-          A random sample of registered voters from Tampa, FL were asked if they support the DREAM Act,
-          a proposed law which would provide a path to citizenship for people brought illegally to the US as children.
-          The survey also collected information on the political ideology of the respondents.
-          Based on the mosaic plot shown below,
-          do views on the DREAM Act and political ideology appear to be independent?
-          Explain your reasoning. \footfullcite{survey:immigFL:2012} <image width="80%" source="images/dream_act_mosaic.png" />
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="raise_taxes_mosaic">
-      <title>Raise taxes</title>
-      <statement>
-        <p>
-          A random sample of registered voters nationally were asked whether they think it's better to raise taxes on the rich or raise taxes on the poor.
-          The survey also collected information on the political party affiliation of the respondents.
-          Based on the mosaic plot shown below,
-          do views on raising taxes and political affiliation appear to be independent?
-          Explain your reasoning. \footfullcite{survey:raiseTaxes:2015} <image width="75%" source="images/raise_taxes_mosaic.png" />
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>

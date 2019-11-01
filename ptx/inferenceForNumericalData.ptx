@@ -38,7 +38,9 @@
     </p>
   </introduction>
   <xi:include  href="oneSampleMeansWithTDistribution.ptx" />
+  <xi:include  href="section8-2.ptx" />
   <xi:include  href="pairedData.ptx" />
-  <xi:include  href="theTDistributionForTheDifferenceOfTwoMeans.ptx" />
   <xi:include  href="section8-4.ptx" />
+  <xi:include  href="theTDistributionForTheDifferenceOfTwoMeans.ptx" />
+  <xi:include  href="section8-6.ptx" />
 </chapter>

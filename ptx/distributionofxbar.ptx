@@ -49,11 +49,11 @@
     <p>
       In this section we consider a data set called <c>run17</c>,
       which represents all 19,961 runners who finished the 2017 Cherry Blossom 10 mile run in Washington, DC.<fn>
-      MISSINGoiRedirect
+      \oiRedirect{textbook-cherryblossom_org}{www.cherryblossom.org}
       </fn> Part of this data set is shown in <xref ref="run17DF">Figure</xref>,
       and the variables are described in <xref ref="run17Variables">Figure</xref>.
     </p>
-    <table xml:id="run17DF">
+    <figure xml:id="run17DF">
       <caption>Four observations from the <c>run17</c> data set.</caption>
       <tabular>
         <row bottom="minor">
@@ -120,8 +120,8 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
-    <table xml:id="run17Variables">
+    </figure>
+    <figure xml:id="run17Variables">
       <caption>Variables and their descriptions for the <c>run17</c> data set.</caption>
       <tabular>
         <row bottom="minor">
@@ -154,7 +154,7 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <p>
           <idx><h>data</h><h>run17samp</h></idx>
     </p>
@@ -164,7 +164,7 @@
       which is represented in <xref ref="run17sampDF">Figure</xref>.
       A histogram summarizing the time variable in the <c>run17samp</c> data set is shown in <xref ref="run17sampHistograms">Figure</xref>.
     </p>
-    <table xml:id="run17sampDF">
+    <figure xml:id="run17sampDF">
       <caption>Three observations for the <c>run17samp</c> data set, which represents a simple random sample of 100 runners from the 2017 Cherry Blossom Run.</caption>
       <tabular>
         <row bottom="minor">
@@ -224,7 +224,7 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <figure xml:id="run17sampHistograms">
       <caption>Histogram of <c>time</c> for a single sample of size 100. The average of the sample is in the mid-90s and the standard deviation of the sample <m>s\approx 17</m> minutes.
       <idx><h>skew</h><h>example: moderate</h></idx>
@@ -247,7 +247,7 @@
       <image width="73%" source="images/netTime1000SamplingDistribution.png" />
     </figure>
     <assemblage>
-      <title></title>
+      <title>Sampling distribution</title>
       <p>
         The sampling distribution represents the distribution of the point estimates based on samples of a fixed size from a certain population.
         It is useful to think of a point estimate as being drawn from such a distribution.
@@ -272,7 +272,7 @@
       and is denoted by the symbol <m>\sigma_{\bar{x}}</m>.
     </p>
     <assemblage>
-      <title></title>
+      <title>Standard deviation of an estimate</title>
       <p>
         The standard deviation associated with an estimate describes the typical error or uncertainty associated with the estimate.
       </p>
@@ -305,6 +305,17 @@
           would you expect a point estimate based on a small sample to have smaller or larger standard deviation than a point estimate based on a larger sample?
         </p>
       </statement>
+      <answer>
+        <p>
+          (a) Consider two random samples:
+          one of size 10 and one of size 1000.
+          Individual observations in the small sample are highly influential on the estimate while in larger samples these individual observations would more often average each other out.
+          The larger sample would tend to provide a more accurate estimate. (b) If we think an estimate is better,
+          we probably mean it typically has less error.
+          Based on (a),
+          our intuition suggests that a larger sample size corresponds to a smaller standard deviation.
+        </p>
+      </answer>
     </exercise>
     <p>
       When considering how to calculate the standard deviation of a sample mean,
@@ -326,7 +337,7 @@
       We can show mathematically that this equation is correct when the observations are independent using the probability tools of <xref ref="randomVariablesSection">Section</xref>.
     </p>
     <assemblage>
-      <title></title>
+      <title>Computing SD for the sample mean</title>
       <p>
         Given <m>n</m> independent observations from a population with standard deviation <m>\sigma</m>,
         the standard deviation of the sample mean is equal to
@@ -399,6 +410,13 @@
           becomes larger?
         </p>
       </statement>
+      <answer>
+        <p>
+          The normal approximation becomes better as larger samples are used.
+          However, in the case when the population is normally distributed,
+          the normal distribution of the sample mean is normal for all sample sizes.
+        </p>
+      </answer>
     </exercise>
     <example>
       <statement>
@@ -408,12 +426,16 @@
       </statement>
       <solution>
         <p>
-          In general, would normal approximation for a sample mean be appropriate when the sample size is at least 30?
+          Yes, the sampling distributions when <m>n = 30</m> all look very much like the normal distribution.
+        </p>
+        <p>
+          However, the more non-normal a population distribution,
+          the larger a sample size is necessary for the sampling distribution to look nearly normal.
         </p>
       </solution>
     </example>
     <assemblage>
-      <title></title>
+      <title>Determining if the sample mean is normally distributed</title>
       <p>
         If the population is normal,
         the sampling distribution of <m>\bar{x}</m> will be normal for any sample size.
@@ -430,7 +452,7 @@
       the most fundamental theorem in Statistics.
     </p>
     <assemblage>
-      <title></title>
+      <title>Central Limit Theorem</title>
       <p>
         When taking a random sample of independent observations from a population with a fixed mean and standard deviation,
         the distribution of <m>\bar{x}</m> approaches the normal distribution as <m>n</m> increases.
@@ -491,7 +513,7 @@
       <image width="73%" source="images/pokerProfitsCanApplyNormalToSampMean.png" />
     </figure>
     <assemblage>
-      <title></title>
+      <title>Examine data structure when considering independence</title>
       <p>
         {Some data sets are collected in such a way that they have a natural underlying structure between observations,
         e.g. when observations occur consecutively.
@@ -499,14 +521,17 @@
       </p>
     </assemblage>
     <assemblage>
-    <title></title>
+      <title>Watch out for strong skew and outliers</title>
+      <p>
+        {Strong skew in the population is often identified by the presence of clear outliers in the data.
+        If a data set has prominent outliers,
+        then a larger sample size will be needed for the sampling distribution of <m>\bar{x}</m> to be normal.
+        There are no simple guidelines for what sample size is big enough for each situation.
+        However, we can use the rule of thumb that, in general,
+        an <m>n</m> of at least 30 is sufficient for most cases.} <idx><h>skew</h><h>strongly skewed guideline</h></idx>
+      </p>
+    </assemblage>
     <p>
-      {Strong skew in the population is often identified by the presence of clear outliers in the data.
-      If a data set has prominent outliers,
-      then a larger sample size will be needed for the sampling distribution of <m>\bar{x}</m> to be normal.
-      There are no simple guidelines for what sample size is big enough for each situation.
-      However, we can use the rule of thumb that, in general,
-      an <m>n</m> of at least 30 is sufficient for most cases.} <idx><h>skew</h><h>strongly skewed guideline</h></idx> \end{onebox}
           <idx><h>Central Limit Theorem</h></idx>
     </p>
   </subsection>
@@ -557,10 +582,15 @@
       </statement>
       <solution>
         <p>
-          In the 2012 Cherry Blossom 10 mile run,
-          the average time for all of the runners is 94.52 minutes with a standard deviation of 8.97 minutes.
-          The distribution of run times is approximately normal.
-          Find the probabiliy that a randomly selected runner completes the run in less than 90 minutes.
+          Because the distribution of run times is approximately normal,
+          we can use normal approximation.
+          <md>
+            <mrow>\amp Z = \frac{x - \mu}{\sigma}=\frac{90-94.52}{8.97}=-0.504</mrow>
+            <mrow>\amp P(Z \lt  -0.504) = 0.3072</mrow>
+          </md>
+        </p>
+        <p>
+          There is a 30.72% probability that a randomly selected runner will complete the run in less than 90<nbsp/>minutes.
         </p>
       </solution>
     </example>
@@ -572,7 +602,19 @@
       </statement>
       <solution>
         <p>
-          Find the probabiliy that the average of 20 runners is less than 90<nbsp/>minutes.
+          Here, <m>n=20\lt 30</m>,
+          but the distribution of the population, that<nbsp/>is,
+          the distribution of run times is stated to be approximately normal.
+          Because of this,
+          the sampling distribution will be normal for any sample size.
+          <md>
+            <mrow>\amp \sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}=\frac{8.97}{\sqrt{20}}=2.01</mrow>
+            <mrow>\amp Z = \frac{\bar{x} - \mu_{\bar{x}}}{\sigma_{\bar{x}}}=\frac{90-94.52}{2.01}=-2.25</mrow>
+            <mrow>\amp P(Z \lt  -2.25) = 0.0123</mrow>
+          </md>
+        </p>
+        <p>
+          There is a 1.23% probability that the average run time of 20 randomly selected runners will be less than 90<nbsp/>minutes.
         </p>
       </solution>
     </example>
@@ -586,9 +628,10 @@
       </statement>
       <solution>
         <p>
-          The average of all the runners' ages is 35.05 years with a standard deviation of <m>\sigma = 8.97</m>.
-          The distribution of age is somewhat skewed.
-          What is the probability that a randomly selected runner is older than 37 years?
+          Because the distribution of age is skewed and is not normal,
+          we cannot use normal approximation for this problem.
+          In order to answer this question,
+          we would need to look at all of the data.
         </p>
       </solution>
     </example>
@@ -722,333 +765,5 @@
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise xml:id="penniesAges">
-      <title>Ages of pennies, Part I</title>
-      <statement>
-        <p>
-          The histogram below shows the distribution of ages of pennies at a bank.
-        </p>
-        <sidebyside>
-          <ol>
-            <li>
-              <p>
-                Describe the distribution.
-              </p>
-            </li>
-            <li>
-              <p>
-                Sampling distributions for means from simple random samples of 5, 30,
-                and 100 pennies is shown in the histograms below.
-                Describe the shapes of these distributions and comment on whether they look like what you would expect to see based on the Central Limit Theorem.
-              </p>
-            </li>
-          </ol>
-          <image width="73%" source="images/penniesAges_pop.png" />
-        </sidebyside>
-        <p>
-          <image width="32%" source="images/penniesAges_n5.png" /> <image width="32%" source="images/penniesAges_n30.png" /> <image width="32%" source="images/penniesAges_n100.png" />
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Ages of pennies, Part II</title>
-      <statement>
-        <p>
-          The mean age of the pennies from <xref ref="penniesAges">Exercise</xref>
-          is 10.44 years with a standard deviation of 9.2 years.
-          Using the Central Limit Theorem,
-          calculate the means and standard deviations of the distribution of the mean from random samples of size 5, 30, and 100.
-          Comment on whether the sampling distributions shown in <xref ref="penniesAges">Exercise</xref>
-          agree with the values you compute.
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="Topanga">
-      <title>Housing prices, Part I</title>
-      <statement>
-        <p>
-          MISSINGVIDEOLINK<nbsp/> A housing survey was conducted to determine the price of a typical home in Topanga, CA. The mean price of a house was roughly $1.3 million with a standard deviation of $300,000.
-          There were no houses listed below $600,000 but a few houses above $3 million.
-          <ol>
-            <li>
-              <p>
-                Is the distribution of housing prices in Topanga symmetric,
-                right skewed, or left skewed?
-                <em>Hint:</em> Sketch the distribution.
-              </p>
-            </li>
-            <li>
-              <p>
-                Would you expect most houses in Topanga to cost more or less than $1.3 million?
-              </p>
-            </li>
-            <li>
-              <p>
-                Can we estimate the probability that a randomly chosen house in Topanga costs more than $1.4 million using the normal distribution?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that the mean of 60 randomly chosen houses in Topanga is more than $1.4 million?
-              </p>
-            </li>
-            <li>
-              <p>
-                How would doubling the sample size affect the standard deviation of the mean?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="stats_final_scores">
-      <title>Stats final scores</title>
-      <statement>
-        <p>
-          Each year about 1500 students take the introductory statistics course at a large university.
-          This year scores on the final exam are distributed with a median of 74 points,
-          a mean of 70 points, and a standard deviation of 10 points.
-          There are no students who scored above 100
-          (the maximum score attainable on the final)
-          but a few students scored below 20 points.
-          <ol>
-            <li>
-              <p>
-                Is the distribution of scores on this final exam symmetric,
-                right skewed, or left skewed?
-              </p>
-            </li>
-            <li>
-              <p>
-                Would you expect most students to have scored above or below 70 points?
-              </p>
-            </li>
-            <li>
-              <p>
-                Can we calculate the probability that a randomly chosen student scored above 75 using the normal distribution?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that the average score for a random sample of 40 students is above 75?
-              </p>
-            </li>
-            <li>
-              <p>
-                How would cutting the sample size in half affect the standard deviation of the mean?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Identify distributions, Part I</title>
-      <statement>
-        <p>
-          Four plots are presented below.
-          The plot at the top is a distribution for a population.
-          The mean is 10 and the standard deviation is 3.
-          Also shown below is a distribution of (1) a single random sample of 100 values from this population, (2) a distribution of 100 sample means from random samples with size 5, and (3) a distribution of 100 sample means from random samples with size 25.
-          Determine which plot (A, B, or C) is which and explain your reasoning.
-          <image width="55%" source="images/cltSimSYM_pop.png" /> <image width="32%" source="images/cltSimSYM_n5.png" /> <image width="32%" source="images/cltSimSYM_samp.png" /> <image width="32%" source="images/cltSimSYM_n25.png" />
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Identify distributions, Part II</title>
-      <statement>
-        <p>
-          Four plots are presented below.
-          The plot at the top is a distribution for a population.
-          The mean is 60 and the standard deviation is 18.
-          Also shown below is a distribution of (1) a single random sample of 500 values from this population, (2) a distribution of 500 sample means from random samples of each size 18,
-          and (3) a distribution of 500 sample means from random samples of each size 81.
-          Determine which plot (A, B, or C) is which and explain your reasoning.
-          <image width="55%" source="images/cltSimLS_pop.png" /> <image width="32%" source="images/cltSimLS_n81.png" /> <image width="32%" source="images/cltSimLS_samp.png" /> <image width="32%" source="images/cltSimLS_n18.png" />
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Weights of pennies</title>
-      <statement>
-        <p>
-          The distribution of weights of United States pennies is approximately normal with a mean of 2.5 grams and a standard deviation of 0.03 grams.
-          <ol>
-            <li>
-              <p>
-                What is the probability that a randomly chosen penny weighs less than 2.4 grams?
-              </p>
-            </li>
-            <li>
-              <p>
-                Describe the sampling distribution of the mean weight of 10 randomly chosen pennies.
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that the mean weight of 10 pennies is less than 2.4 grams?
-              </p>
-            </li>
-            <li>
-              <p>
-                Sketch the two distributions
-                (population and sampling)
-                on the same scale.
-              </p>
-            </li>
-            <li>
-              <p>
-                Could you estimate the probabilities from (a) and (c) if the weights of pennies had a skewed distribution?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>CFLs</title>
-      <statement>
-        <p>
-          A manufacturer of compact fluorescent light bulbs advertises that the distribution of the lifespans of these light bulbs is nearly normal with a mean of 9,000 hours and a standard deviation of 1,000 hours.
-          <ol>
-            <li>
-              <p>
-                What is the probability that a randomly chosen light bulb lasts more than 10,500 hours?
-              </p>
-            </li>
-            <li>
-              <p>
-                Describe the distribution of the mean lifespan of 15 light bulbs.
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that the mean lifespan of 15 randomly chosen light bulbs is more than 10,500 hours?
-              </p>
-            </li>
-            <li>
-              <p>
-                Sketch the two distributions
-                (population and sampling)
-                on the same scale.
-              </p>
-            </li>
-            <li>
-              <p>
-                Could you estimate the probabilities from parts<nbsp/>(a) and<nbsp/>(c) if the lifespans of light bulbs had a skewed distribution?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Songs on an  iPod</title>
-      <statement>
-        <p>
-          Suppose an iPod has 3,000 songs.
-          The histogram below shows the distribution of the lengths of these songs.
-          We also know that, for this iPod,
-          the mean length is 3.45 minutes and the standard deviation is 1.63 minutes.
-          <image width="50%" source="images/ipod_popdist.png" />
-          <ol>
-            <li>
-              <p>
-                Estimate the probability that a randomly selected song lasts more than 5 minutes.
-              </p>
-            </li>
-            <li>
-              <p>
-                You are about to go for an hour run and you make a random playlist of 15 songs.
-                What is the probability that your playlist lasts for the entire duration of your run?
-                <em>Hint:</em> If you want the playlist to last 60 minutes,
-                what should be the minimum average length of a song?
-              </p>
-            </li>
-            <li>
-              <p>
-                You are about to take a trip to visit your parents and the drive is 6 hours.
-                You make a random playlist of 100 songs.
-                What is the probability that your playlist lasts the entire drive?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Spray paint, Part II</title>
-      <statement>
-        <p>
-          As described in <xref ref="sprayPaint">Exercise</xref>,
-          the area that can be painted using a single can of spray paint is slightly variable and follows a nearly normal distribution with a mean of 25 square feet and a standard deviation of 3 square feet.
-          <ol>
-            <li>
-              <p>
-                What is the probability that the area covered by a can of spray paint is more than 27 square feet?
-              </p>
-            </li>
-            <li>
-              <p>
-                Suppose you want to spray paint an area of 540 square feet using 20 cans of spray paint.
-                On average, how many square feet must each can be able to cover to spray paint all 540 square feet?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that you can cover a 540 square feet area using 20 cans of spray paint?
-              </p>
-            </li>
-            <li>
-              <p>
-                If the area covered by a can of spray paint had a slightly skewed distribution,
-                could you still calculate the probabilities in parts<nbsp/>(a) and<nbsp/>(c) using the normal distribution?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Wireless routers</title>
-      <statement>
-        <p>
-          John is shopping for wireless routers and is overwhelmed by the number of available options.
-          In order to get a feel for the average price,
-          he takes a random sample of 75 routers and finds that the average price for this sample is $75 and the standard deviation is $25.
-          <ol>
-            <li>
-              <p>
-                Based on this information,
-                how much variability should he expect to see in the mean prices of repeated samples,
-                each containing 75 randomly selected wireless routers?
-              </p>
-            </li>
-            <li>
-              <p>
-                A consumer website claims that the average price of routers is $80.
-                Is a true average of $80 consistent with John's sample?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Betting on dinner, Part II</title>
-      <statement>
-        <p>
-          <xref ref="dinnerBet">Exercise</xref>
-          introduces a promotion at a restaurant where prices of menu items are determined randomly following some underlying distribution.
-          We are told that the price of basket of fries is drawn from a normal distribution with mean 6 and standard deviation of 2.
-          You want to get 5 baskets of fries but you only have $28 in your pocket.
-          What is the probability that you would have enough money to pay for all five baskets of fries?
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>

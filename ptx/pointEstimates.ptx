@@ -146,6 +146,12 @@
           what quantity should we use as a point estimate for the population standard deviation <m>\sigma</m>?
         </p>
       </statement>
+      <answer>
+        <p>
+          Again, intuitively we would use the sample standard deviation
+          <m>s = 13,130</m> as our best estimate for <m>\sigma</m>.
+        </p>
+      </answer>
     </exercise>
   </subsection>
   <subsection xml:id="simulationForUnderstandingVariabilitySection">
@@ -211,18 +217,18 @@
       <term>code comment</term>,
       which is used to describe in regular language what the
       code is doing. We've provided software labs in \R at
-      MISSINGoiRedirect
+      \oiRedirect{openintroorg_labs}{openintro.org/stat/labs}
       for anyone interested in learning more.</caption>
-<c># 1.<nbsp/>Create a set of 250 million entries,
+<c># 1. Create a set of 250 million entries,
 where \pewsolarparpercent of them are "support"
-#<nbsp/> <nbsp/> and \pewsolarparpercentcomplement are "not".
-pop\ussize <- 250000000
-possible_entries <- c(rep("support", \pewsolarparprop * pop\ussize), rep("not", \pewsolarparpropcomplement * pop\ussize))
-# 2.<nbsp/>Sample \pewsolarpollsize entries without replacement.
-sampled_entries <- sample(possible_entries, size = \pewsolarpollsize)
-# 3.<nbsp/>Compute p-hat:<nbsp/>count the number that are "support",
+#    and \pewsolarparpercentcomplement are "not".
+pop_size &lt;- 250000000
+possible_entries &lt;- c(rep("support", \pewsolarparprop * pop_size), rep("not", \pewsolarparpropcomplement * pop_size))
+# 2. Sample \pewsolarpollsize entries without replacement.
+sampled_entries &lt;- sample(possible_entries, size = \pewsolarpollsize)
+# 3. Compute p-hat: count the number that are "support",
 then divide by
-#<nbsp/> <nbsp/> the sample size.
+#    the sample size.
 sum(sampled_entries == "support") / \pewsolarpollsize</c>
     </figure>
     <p>
@@ -238,31 +244,19 @@ sum(sampled_entries == "support") / \pewsolarpollsize</c>
       This distribution of sample proportions is called a
       <term>sampling distribution</term>.
       We can characterize this sampling distribution as follows:
-      <ul>
-        <li>
-          <title>Center.</title>
-          <p>
-            The center of the distribution is <m>\mu_{\hat{p}} = \pewsolarparprop{}0</m>,
-            which is the same as the parameter.
-            Notice that the simulation mimicked a simple random sample of the population,
-            which is a straightforward sampling strategy that helps avoid sampling bias.
-          </p>
-        </li>
-        <li>
-          <title>Spread.</title>
-          <p>
-            The standard deviation of the distribution is <m>\sigma_{\hat{p}} = \pewsolarpollse{}</m>.
-          </p>
-        </li>
-        <li>
-          <title>Shape.</title>
-          <p>
-            The distribution is symmetric and bell-shaped,
-            and it <em>resembles a normal distribution</em>.
-          </p>
-        </li>
-      </ul>
     </p>
+    <solution>
+      <p>
+        \item[Center.] The center of the distribution is <m>\mu_{\hat{p}} = \pewsolarparprop{}0</m>,
+        which is the same as the parameter.
+        Notice that the simulation mimicked a simple random sample of the population,
+        which is a straightforward sampling strategy that helps avoid sampling bias. \item[Spread.] The standard deviation of the distribution is <m>\sigma_{\hat{p}} = \pewsolarpollse{}</m>.
+      </p>
+      <p>
+        \item[Shape.] The distribution is symmetric and bell-shaped,
+        and it <em>resembles a normal distribution</em>.
+      </p>
+    </solution>
     <p>
       These findings are encouraging!
       When the population proportion is
@@ -277,7 +271,8 @@ sum(sampled_entries == "support") / \pewsolarpollsize</c>
       \Figure{0.85}{sampling_10k_prop_88p}
     </figure>
     <assemblage>
-      <title></title>
+      <title>Sampling distributions are
+      never observed, but we keep them in mind</title>
       <p>
         In real-world applications,
         we never actually observe the sampling distribution,
@@ -338,9 +333,14 @@ sum(sampled_entries == "support") / \pewsolarpollsize</c>
       </statement>
       <solution>
         <p>
-          Consider a random sample of size 80 from a population.
-          We find that 15% of the sample support a controversial new ballot measure.
-          How far is our estimate likely to be from the true percent that support the measure?
+          We would like to calculate the standard deviation of <m>\hat{p}</m>,
+          but we run into a serious problem:
+          <m>p</m> is <em>unknown</em>.
+          In fact, when doing inference,
+          <m>p</m> must be unknown, otherwise it is illogical to try to estimate it.
+          We cannot calculate the <m>SD</m>,
+          but we can estimate it using,
+          you might have guessed, the sample proportion <m>\hat{p}</m>.
         </p>
       </solution>
     </example>
@@ -378,9 +378,16 @@ sum(sampled_entries == "support") / \pewsolarpollsize</c>
         </p>
       </statement>
       <solution>
+        <md>
+          <mrow>SE_{\hat{p}}=\sqrt{\frac{\hat{p}(1-\hat{p})}{n}} =\sqrt{\frac{0.15(1-0.15)}{320}}=0.02</mrow>
+        </md>
         <p>
-          If we quadruple the sample size from 80 to 320,
-          what will happen to the <m>SE</m>?
+          The larger the sample size, the smaller our standard error.
+          This is consistent with intuition:
+          the more data we have, the more reliable an estimate will tend to be.
+          However, quadrupling the sample size does not reduce the error by a factor of 4.
+          Because of the square root,
+          the effect is to reduce the error by a factor <m>\sqrt{4}</m>, or 2.
         </p>
       </solution>
     </example>
@@ -407,9 +414,10 @@ sum(sampled_entries == "support") / \pewsolarpollsize</c>
       the sampling distribution will have a low standard error,
       and we call the method <term>precise</term>.
     </p>
-    <figure>
-      MISSINGoiRedirect
-      Four sampling distributions shown, with parameter identified. Explore these distributions through a Desmos activity at MISSINGoiRedirect
+    <figure xml:id="fourSamplingDistributions">
+      <caption>Four sampling distributions shown, with parameter identified. Explore these distributions through a Desmos activity at \oiRedirect{openintro-ahss-desmos}openintro.org/ahss/desmos.</caption>
+      \oiRedirect{desmos-foursamplingdistributions}{
+      <image width="59%" source="images/fourSamplingDistributions.png" /> }
     </figure>
     <example>
       <statement>
@@ -441,7 +449,16 @@ sum(sampled_entries == "support") / \pewsolarpollsize</c>
       </statement>
       <solution>
         <p>
-          Why do we want a point estimate to be both precise and accurate?
+          If the point estimate is precise,
+          but highly biased, then we will consistently get a bad estimate.
+          On the other hand,
+          if the point estimate is unbiased but not at all precise,
+          then by random chance, we may get an estimate far from the true value.
+        </p>
+        <p>
+          Remember, when taking a sample,
+          we generally get only one chance.
+          It is the properties of the sampling distribution that tell us how much confidence we can have in the estimate.
         </p>
       </solution>
     </example>
@@ -526,272 +543,5 @@ sum(sampled_entries == "support") / \pewsolarpollsize</c>
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise xml:id="identify_parameter_1">
-      <title>Identify the parameter, Part I</title>
-      <statement>
-        <p>
-          For each of the following situations,
-          state whether the parameter of interest is a mean or a proportion.
-          It may be helpful to examine whether individual responses are numerical or categorical.
-          <ol>
-            <li>
-              <p>
-                In a survey,
-                one hundred college students are asked how many hours per week they spend on the Internet.
-              </p>
-            </li>
-            <li>
-              <p>
-                In a survey,
-                one hundred college students are asked: ``What percentage of the time you spend on the Internet is part of your course work?"
-              </p>
-            </li>
-            <li>
-              <p>
-                In a survey,
-                one hundred college students are asked whether or not they cited information from Wikipedia in their papers.
-              </p>
-            </li>
-            <li>
-              <p>
-                In a survey,
-                one hundred college students are asked what percentage of their total weekly spending is on alcoholic beverages.
-              </p>
-            </li>
-            <li>
-              <p>
-                In a sample of one hundred recent college graduates,
-                it is found that 85 percent expect to get a job within one year of their graduation date.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="identify_parameter_2">
-      <title>Identify the parameter, Part II</title>
-      <statement>
-        <p>
-          For each of the following situations,
-          state whether the parameter of interest is a mean or a proportion.
-          <ol>
-            <li>
-              <p>
-                A poll shows that 64% of Americans personally worry a great deal about federal spending and the budget deficit.
-              </p>
-            </li>
-            <li>
-              <p>
-                A survey reports that local TV news has shown a 17% increase in revenue within a two year period while newspaper revenues decreased by 6.4% during this time period.
-              </p>
-            </li>
-            <li>
-              <p>
-                In a survey,
-                high school and college students are asked whether or not they use geolocation services on their smart phones.
-              </p>
-            </li>
-            <li>
-              <p>
-                In a survey,
-                smart phone users are asked whether or not they use a web-based taxi service.
-              </p>
-            </li>
-            <li>
-              <p>
-                In a survey,
-                smart phone users are asked how many times they used a web-based taxi service over the last year.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="comp_chips_quality_ctrl_prop">
-      <title>Quality control</title>
-      <statement>
-        <p>
-          As part of a quality control process for computer chips,
-          an engineer at a factory randomly samples 212 chips during a week of production to test the current rate of chips with severe defects.
-          She finds that 27 of the chips are defective.
-          <ol>
-            <li>
-              <p>
-                What population is under consideration in the data set?
-              </p>
-            </li>
-            <li>
-              <p>
-                What parameter is being estimated?
-              </p>
-            </li>
-            <li xml:id="comp_chips_quality_ctrl_prop_pt_est">
-              <p>
-                What is the point estimate for the parameter?
-              </p>
-            </li>
-            <li xml:id="comp_chips_quality_ctrl_prop_se_name">
-              <p>
-                What is the name of the statistic can we use to measure the uncertainty of the point estimate?
-              </p>
-            </li>
-            <li xml:id="comp_chips_quality_ctrl_prop_se_calc_w_pt_est">
-              <p>
-                Compute the value from part<nbsp/><xref ref="comp_chips_quality_ctrl_prop_se_name" /> for this context.
-              </p>
-            </li>
-            <li>
-              <p>
-                The historical rate of defects is 10%. Should the engineer be surprised by the observed rate of defects during the current week?
-              </p>
-            </li>
-            <li>
-              <p>
-                Suppose the true population value was found to be 10%. If we use this proportion to recompute the value in part<nbsp/><xref ref="comp_chips_quality_ctrl_prop_se_calc_w_pt_est" /> using <m>p = 0.1</m> instead of <m>\hat{p}</m>,
-                does the resulting value change much?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="us_emergency_expense_prop">
-      <title>Unexpected expense</title>
-      <statement>
-        <p>
-          In a random sample 765 adults in the United States, 322 say they could not cover a $400 unexpected expense without borrowing money or going into debt.
-          <ol>
-            <li>
-              <p>
-                What population is under consideration in the data set?
-              </p>
-            </li>
-            <li>
-              <p>
-                What parameter is being estimated?
-              </p>
-            </li>
-            <li xml:id="us_emergency_expense_prop_pt_est">
-              <p>
-                What is the point estimate for the parameter?
-              </p>
-            </li>
-            <li xml:id="us_emergency_expense_prop_se_name">
-              <p>
-                What is the name of the statistic can we use to measure the uncertainty of the point estimate?
-              </p>
-            </li>
-            <li xml:id="us_emergency_expense_prop_se_calc_w_pt_est">
-              <p>
-                Compute the value from part<nbsp/><xref ref="us_emergency_expense_prop_se_name" /> for this context.
-              </p>
-            </li>
-            <li>
-              <p>
-                A cable news pundit thinks the value is actually 50%. Should she be surprised by the data?
-              </p>
-            </li>
-            <li>
-              <p>
-                Suppose the true population value was found to be 40%. If we use this proportion to recompute the value in part<nbsp/><xref ref="us_emergency_expense_prop_se_calc_w_pt_est" /> using <m>p = 0.4</m> instead of <m>\hat{p}</m>,
-                does the resulting value change much?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="repeated_water_samples_prop">
-      <title>Repeated water samples</title>
-      <statement>
-        <p>
-          A nonprofit wants to understand the fraction of households that have elevated levels of lead in their drinking water.
-          They expect at least 5% of homes will have elevated levels of lead,
-          but not more than about 30%. They randomly sample 800 homes and work with the owners to retrieve water samples,
-          and they compute the fraction of these homes with elevated lead levels.
-          They repeat this 1,000 times and build a distribution of sample proportions.
-          <ol>
-            <li>
-              <p>
-                What is this distribution called?
-              </p>
-            </li>
-            <li>
-              <p>
-                Would you expect the shape of this distribution to be symmetric,
-                right skewed, or left skewed?
-                Explain your reasoning.
-              </p>
-            </li>
-            <li>
-              <p>
-                If the proportions are distributed around 8%, what is the variability of the distribution?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the formal name of the value you computed in<nbsp/>(c)?
-              </p>
-            </li>
-            <li>
-              <p>
-                Suppose the researchers' budget is reduced,
-                and they are only able to collect 250 observations per sample,
-                but they can still collect 1,000 samples.
-                They build a new distribution of sample proportions.
-                How will the variability of this new distribution compare to the variability of the distribution when each sample contained 800 observations?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="repeated_student_samples_prop">
-      <title>Repeated student samples</title>
-      <statement>
-        <p>
-          Of all freshman at a large college, 16% made the dean's list in the current year.
-          As part of a class project,
-          students randomly sample 40 students and check if those students made the list.
-          They repeat this 1,000 times and build a distribution of sample proportions.
-          <ol>
-            <li>
-              <p>
-                What is this distribution called?
-              </p>
-            </li>
-            <li>
-              <p>
-                Would you expect the shape of this distribution to be symmetric,
-                right skewed, or left skewed?
-                Explain your reasoning.
-              </p>
-            </li>
-            <li>
-              <p>
-                Calculate the variability of this distribution.
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the formal name of the value you computed in<nbsp/>(c)?
-              </p>
-            </li>
-            <li>
-              <p>
-                Suppose the students decide to sample again,
-                this time collecting 90 students per sample,
-                and they again collect 1,000 samples.
-                They build a new distribution of sample proportions.
-                How will the variability of this new distribution compare to the variability of the distribution when each sample contained 40 observations?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>

@@ -13,8 +13,11 @@
     </p>
   </introduction>
   <xi:include  href="numericalData.ptx" />
+  <xi:include  href="section3-2.ptx" />
   <xi:include  href="numericalSummariesAndBoxPlots.ptx" />
+  <xi:include  href="section3-4.ptx" />
   <xi:include  href="categoricalData.ptx" />
+  <xi:include  href="section3-6.ptx" />
   <xi:include  href="caseStudyMalariaVaccine.ptx" />
-  <xi:include  href="section3-5.ptx" />
+  <xi:include  href="section3-8.ptx" />
 </chapter>

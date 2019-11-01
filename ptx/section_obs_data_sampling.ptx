@@ -81,6 +81,12 @@
           Does this mean sunscreen <em>causes</em> skin cancer?
         </p>
       </statement>
+      <answer>
+        <p>
+          No.
+          See the paragraph following the exercise for an explanation.
+        </p>
+      </answer>
     </exercise>
     <p>
       Some previous research tells us that using sunscreen actually reduces skin cancer risk,
@@ -94,7 +100,7 @@
       <image width="56%" source="images/sunCausesCancer.png" />
     </p>
     <assemblage>
-      <title></title>
+      <title>Confounding variable</title>
       <p>
         A confounding variable is a variable that is associated with both the explanatory
         <em>and</em> response variables.
@@ -123,15 +129,13 @@
           Can we conclude that the consumption of chocolate caused the people to live longer?
         </p>
       </statement>
-      <solution>
+      <solution xml:id="confounding_2008_chocolate_health_study">
         <p>
-          In a study that followed 1,169 non-diabetic men and women who had been hospitalized for a first heart attack,
-          the people that reported eating chocolate had increased survival rate over the next 8 years than those that reported not eating chocolate.
-          Also, those who ate more chocolate also tended to live longer on average.
-          The researched controlled for several confounding factors,
-          such as age,
-          physical activity, smoking, and many other factors.
-          Can we conclude that the consumption of chocolate caused the people to live longer?
+          This is an observational study,
+          not a controlled randomized experiment.
+          Even though the researchers controlled for many possible variables,
+          there may still be other confounding factors. (Can you think of any that weren't mentioned?) While it is possible that the chocolate had an effect,
+          this study cannot prove that chocolate increased the survival rate of patients.
         </p>
       </solution>
     </example>
@@ -146,10 +150,17 @@
       </statement>
       <solution>
         <p>
-          The authors who conducted the study did warn in the article that additional studies would be necessary to determine whether the correlation between chocolate consumption and survival translates to any causal relationship.
-          That is, they acknowledged that there may be confounding factors.
-          One possible confounding factor not considered was mental health.
-          In context, explain what it would mean for mental health to be a confounding factor in this study.
+          Mental health would be a confounding factor if, for example,
+          people with better mental health tended to eat more chocolate,
+          and those with better mental health <em>also</em>
+          were less likely to die within the 8 year study period.
+          Notice that if better mental health were not associated with eating more chocolate,
+          it would not be considered a confounding factor since it wouldn't explain the observed associated between eating chocolate and having a better survival rate.
+          If better mental health were associated only with eating chocolate and not with a better survival rate,
+          then it would also not be confounding for the same reason.
+          Only if a variable that is associated with both the explanatory variable of interest (chocolate) and the outcome variable in the study
+          (survival during the 8 year study period)
+          can it be considered a confounding factor.
         </p>
       </solution>
     </example>
@@ -171,6 +182,17 @@
           Suggest one or more other variables that might explain the relationship visible in <xref ref="multiunitsVsOwnership">Figure</xref>.
         </p>
       </statement>
+      <answer>
+        <p>
+          Answers will vary.
+          Population density may be important.
+          If a county is very dense,
+          then this may require a larger fraction of residents to live in multi-unit structures.
+          Additionally,
+          the high density may contribute to increases in property value,
+          making homeownership infeasible for many residents.
+        </p>
+      </answer>
     </exercise>
     <p>
       Observational studies come in two forms:
@@ -180,7 +202,7 @@
       medical researchers may identify and follow a group of similar individuals over many years to assess the possible influences of behavior on cancer risk.
       One example of such a study is The Nurses' Health Study,
       started in 1976 and expanded in 1989.<fn>
-      MISSINGoiRedirect
+      \oiRedirect{textbook-channing_nurse_study}{www.channing.harvard.edu/nhs}
       </fn> This prospective study recruits registered nurses and then collects data from them using questionnaires.
       <em>Retrospective studies</em><idx><h>retrospective studies|textbf</h></idx> collect data after events have taken place,
       e.g. researchers may review past events in medical records.
@@ -228,9 +250,11 @@
       </statement>
       <solution>
         <p>
-          Suppose we ask a student who happens to be majoring in nutrition to select several graduates for the study.
-          What kind of students do you think she might select?
-          Do you think her sample would be representative of all graduates?
+          Perhaps she would pick a disproportionate number of graduates from health-related fields.
+          Or perhaps her selection would be well-representative of the population.
+          When selecting samples by hand,
+          we run the risk of picking a <em>biased</em> sample,
+          even if that bias is unintentional or difficult to discern.
         </p>
       </solution>
     </example>
@@ -293,6 +317,17 @@
           do you think this means that 50% of buyers are dissatisfied with the product?
         </p>
       </statement>
+      <answer>
+        <p>
+          Answers will vary.
+          From our own anecdotal experiences,
+          we believe people tend to rant more about products that fell below expectations than rave about those that perform as expected.
+          For this reason,
+          we suspect there is a negative bias in product ratings on sites like Amazon.
+          However, since our experiences may not be representative,
+          we also keep an open mind.
+        </p>
+      </answer>
     </exercise>
     <p>
       The act of taking a random sample helps minimize bias;
@@ -333,14 +368,19 @@
       </statement>
       <solution>
         <p>
-          Suppose a high school student wants to investigate the student body's opinions on the food in the cafeteria.
-          Let's assume that she manages to survey every student in the school.
-          How might response bias arise in this context?
+          There are many possible correct answers to this question.
+          For example,
+          students might respond differently depending upon who asks the question,
+          such as a school friend or someone who works in the cafeteria.
+          The wording of the question could introduce response bias.
+          Students would likely respond differently if asked
+          <q>Do you like the food in the cafeteria?</q>
+          versus ``The food in the cafeteria is pretty bad, don't you think?"
         </p>
       </solution>
     </example>
     <assemblage>
-      <title></title>
+      <title>Watch out for bias</title>
       <p>
         Undercoverage bias, non-response bias,
         and response bias can still exist within a random sample.
@@ -365,6 +405,15 @@
           Comment on the usefulness of this approach.
         </p>
       </statement>
+      <answer>
+        <p>
+          The researcher should be concerned about non-response bias,
+          and sampling more people will not eliminate this issue.
+          The same type of people that did not respond to the first survey are likely not going to respond to the second survey.
+          Instead, she should make an effort to reach out to the households from the original sample that did not respond and solicit their feedback,
+          possibly by going door-to-door.
+        </p>
+      </answer>
     </exercise>
     <p>
           <idx><h>sample</h><h>random sample</h></idx>
@@ -453,8 +502,10 @@
       </statement>
       <solution>
         <p>
-          A systematic sample is not the same as a simple random sample.
-          Provide an example of a sample that can come from a simple random sample but not from a systematic random sample.
+          Answers can vary.
+          If we take a sample of size 3, then it is possible that we could sample players numbered 1, 2, and 3 in a simple random sample.
+          Such a sample would be impossible from a systematic sample.
+          Property<nbsp/>2 of simple random samples does not hold for other types of random samples.
         </p>
       </solution>
     </example>
@@ -578,10 +629,16 @@
       </statement>
       <solution>
         <p>
-          Suppose we are interested in estimating the proportion of students at a certain school that have part-time jobs.
-          It is believed that older students are more likely to work than younger students.
-          What sampling method should be employed?
-          Describe how to collect such a sample to get a sample size of 60.
+          Because grade level affects the likelihood of having a part-time job,
+          we should take a stratified random sample.
+          To do this, we can take a simple random sample of 15 students from each grade.
+          This will give us equal representation from each grade.
+          Note: in a simple random sample,
+          just by random chance we might get too many students who are older or younger,
+          which could make the estimate too high or too low.
+          Also, there are no well-defined clusters in this example.
+          We<nbsp/>wouldn't want to use the grades as clusters and sample everyone from a couple of the grades.
+          This would create too large a sample and would not give us the nice representation from each grade afforded by the stratified random sample.
         </p>
       </solution>
     </example>
@@ -597,16 +654,18 @@
       </statement>
       <solution>
         <p>
-          Suppose we are interested in estimating the malaria rate in a densely tropical portion of rural Indonesia.
-          We learn that there are 30 villages in that part of the Indonesian jungle,
-          each more or less similar to the next.
-          Our goal is to test 150 individuals for malaria.
-          What sampling method should be employed?
+          A simple random sample would likely draw individuals from all 30 villages,
+          which could make data collection extremely expensive.
+          Stratified sampling would be a challenge since it is unclear how we would build strata of similar individuals.
+          However, multistage cluster sampling seems like a very good idea.
+          First, we might randomly select half the villages,
+          then randomly select 10 people from each.
+          This would probably reduce our data collection costs substantially in comparison to a simple random sample and would still give us reliable information.
         </p>
       </solution>
     </example>
     <assemblage>
-      <title></title>
+      <title>Advanced sampling techniques require advanced methods</title>
       <p>
         {The methods of inference covered in this book generally only apply to simple random samples.
         More advanced analysis techniques are required for systematic,
@@ -710,297 +769,5 @@
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise xml:id="course_satisfaction_sections">
-      <title>Course satisfaction across sections</title>
-      <statement>
-        <p>
-          A large college class has 160 students.
-          All 160 students attend the lectures together,
-          but the students are divided into 4 groups, each of 40 students,
-          for lab sections administered by different teaching assistants.
-          The professor wants to conduct a survey about how satisfied the students are with the course,
-          and he believes that the lab section a student is in might affect the student's overall satisfaction with the course.
-          <ol>
-            <li>
-              <p>
-                What type of study is this?
-              </p>
-            </li>
-            <li>
-              <p>
-                Suggest a sampling strategy for carrying out this study.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="housing_proposal_dorms">
-      <title>Housing proposal across dorms</title>
-      <statement>
-        <p>
-          On a large college campus first-year students and sophomores live in dorms located on the eastern part of the campus and juniors and seniors live in dorms located on the western part of the campus.
-          Suppose you want to collect student opinions on a new housing structure the college administration is proposing and you want to make sure your survey equally represents opinions from students from all years.
-          <ol>
-            <li>
-              <p>
-                What type of study is this?
-              </p>
-            </li>
-            <li>
-              <p>
-                Suggest a sampling strategy for carrying out this study.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="internet_life_expectancy">
-      <title>Internet use and life expectancy</title>
-      <statement>
-        <p>
-          The following scatterplot was created as part of a study evaluating the relationship between estimated life expectancy at birth
-          (as of 2014)
-          and percentage of internet users
-          (as of 2009)
-          in 208 countries for which such data were available.\footfullcite{data:ciaFactbook}
-        </p>
-        <sidebyside>
-          <ol>
-            <li>
-              <p>
-                Describe the relationship between life expectancy and percentage of internet users.
-              </p>
-            </li>
-            <li>
-              <p>
-                What type of study is this?
-              </p>
-            </li>
-            <li>
-              <p>
-                State a possible confounding variable that might explain this relationship and describe its potential effect.
-              </p>
-            </li>
-          </ol>
-          \vspace{15mm}
-        </sidebyside>
-        <image source="images/b855d5b21d93e69bfae0b6f89ba231a3a28439d7.png"/>
-      </statement>
-    </exercise>
-    <exercise xml:id="stressed_out_observational">
-      <title>Stressed out, Part I</title>
-      <statement>
-        <p>
-          A study that surveyed a random sample of otherwise healthy high school students found that they are more likely to get muscle cramps when they are stressed.
-          The study also noted that students drink more coffee and sleep less when they are stressed.
-          <ol>
-            <li>
-              <p>
-                What type of study is this?
-              </p>
-            </li>
-            <li>
-              <p>
-                Can this study be used to conclude a causal relationship between increased stress and muscle cramps?
-              </p>
-            </li>
-            <li>
-              <p>
-                State possible confounding variables that might explain the observed relationship between increased stress and muscle cramps.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="evaluate_sampling_methods">
-      <title>Evaluate sampling methods</title>
-      <statement>
-        <p>
-          A university wants to determine what fraction of its undergraduate student body support a new $25 annual fee to improve the student union.
-          For each proposed method below,
-          indicate whether the method is reasonable or not.
-          <ol>
-            <li>
-              <p>
-                Survey a simple random sample of 500 students.
-              </p>
-            </li>
-            <li>
-              <p>
-                Stratify students by their field of study,
-                then sample 10% of students from each stratum.
-              </p>
-            </li>
-            <li>
-              <p>
-                Cluster students by their ages (e.g. 18 years old in one cluster, 19 years old in one cluster,
-                etc.), then randomly sample three clusters and survey all students in those clusters.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="random_digit_dialing">
-      <title>Random digit dialing</title>
-      <statement>
-        <p>
-          The Gallup Poll uses a procedure called random digit dialing,
-          which creates phone numbers based on a list of all area codes in America in conjunction with the associated number of residential households in each area code.
-          Give a possible reason the Gallup Poll chooses to use random digit dialing instead of picking phone numbers from the phone book.
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="scope_haters">
-      <title>Haters are gonna hate, study confirms</title>
-      <statement>
-        <p>
-          A study published in the <em>Journal of Personality and Social Psychology</em>
-          asked a group of 200 randomly sampled men and women to evaluate how they felt about various subjects,
-          such as camping, health care,
-          architecture, taxidermy, crossword puzzles,
-          and Japan in order to measure their dispositional attitude towards mostly independent stimuli.
-          Then, they presented the participants with information about a new product:
-          a microwave oven.
-          This microwave oven does not exist,
-          but the participants didn't know this,
-          and were given three positive and three negative fake reviews.
-          People who reacted positively to the subjects on the dispositional attitude measurement also tended to react positively to the microwave oven,
-          and those who reacted negatively also tended to react negatively to it.
-          Researchers concluded that ``some people tend to like things,
-          whereas others tend to dislike things,
-          and a more thorough understanding of this tendency will lead to a more thorough understanding of the psychology of attitudes." \footfullcite{Hepler:2013}
-          <ol>
-            <li>
-              <p>
-                What are the cases?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is (are) the response variable(s) in this study?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is (are) the explanatory variable(s) in this study?
-              </p>
-            </li>
-            <li>
-              <p>
-                Does the study employ random sampling?
-              </p>
-            </li>
-            <li>
-              <p>
-                Is this an observational study or an experiment?
-                Explain your reasoning.
-              </p>
-            </li>
-            <li>
-              <p>
-                Can we establish a causal link between the explanatory and response variables?
-              </p>
-            </li>
-            <li>
-              <p>
-                Can the results of the study be generalized to the population at large?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="family_size">
-      <title>Family size</title>
-      <statement>
-        <p>
-          Suppose we want to estimate household size, where a
-          <q>household</q>
-          is defined as people living together in the same dwelling,
-          and sharing living accommodations.
-          If we select students at random at an elementary school and ask them what their family size is,
-          will this be a good measure of household size?
-          Or will our average be biased?
-          If so, will it overestimate or underestimate the true value?
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="sampling_strategies">
-      <title>Sampling strategies</title>
-      <statement>
-        <p>
-          A statistics student who is curious about the relationship between the amount of time students spend on social networking sites and their performance at school decides to conduct a survey.
-          Various research strategies for collecting data are described below.
-          In each, name the sampling method proposed and any bias you might expect.
-          <ol>
-            <li>
-              <p>
-                He randomly samples 40 students from the study's population,
-                gives them the survey,
-                asks them to fill it out and bring it back the next day.
-              </p>
-            </li>
-            <li>
-              <p>
-                He gives out the survey only to his friends,
-                making sure each one of them fills out the survey.
-              </p>
-            </li>
-            <li>
-              <p>
-                He posts a link to an online survey on Facebook and asks his friends to fill out the survey.
-              </p>
-            </li>
-            <li>
-              <p>
-                He randomly samples 5 classes and asks a random sample of students from those classes to fill out the survey.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="reading_paper">
-      <title>Reading the paper</title>
-      <statement>
-        <p>
-          Below are excerpts from two articles published in the <em>NY Times</em>:
-          <ol>
-            <li>
-              <p>
-                An article titled <em>Risks: Smokers Found More Prone to Dementia</em>
-                states the following: \footfullcite{news:smokingDementia} { ``Researchers analyzed data from 23,123 health plan members who participated in a voluntary exam and health behavior survey from 1978 to 1985,
-                when they were 50-60 years old. 23 years later,
-                about 25% of the group had dementia,
-                including 1,136 with Alzheimer's disease and 416 with vascular dementia.
-                After adjusting for other factors,
-                the researchers concluded that pack-a-day smokers were 37% more likely than nonsmokers to develop dementia,
-                and the risks went up with increased smoking; 44% for one to two packs a day;
-                and twice the risk for more than two packs."} Based on this study,
-                can we conclude that smoking causes dementia later in life?
-                Explain your reasoning.
-              </p>
-            </li>
-            <li>
-              <p>
-                Another article titled <em>The School Bully Is Sleepy</em>
-                states the following: \footfullcite{news:bullySleep} { ``The University of Michigan study,
-                collected survey data from parents on each child's sleep habits and asked both parents and teachers to assess behavioral concerns.
-                About a third of the students studied were identified by parents or teachers as having problems with disruptive behavior or bullying.
-                The researchers found that children who had behavioral issues and those who were identified as bullies were twice as likely to have shown symptoms of sleep disorders."} A friend of yours who read the article says, ``The study shows that sleep disorders lead to bullying in school children." Is this statement justified?
-                If not, how best can you describe the conclusion that can be drawn from this study?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>
