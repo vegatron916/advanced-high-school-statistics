@@ -114,7 +114,7 @@ IIIII
 \newcommand{\loanDdev}{-1.65}
 \newcommand{\termO}[1]{\textbf{\color{termOColor}#1}}
 \newcommand{\loanYdev}{-2.14}
-\newcommand{\datalink}[1]{\index{#1|textbf}\texttt{MISSINGoiRedirect}}
+\newcommand{\datalink}[1]{\index{#1|textbf}\texttt{\oiRedirect{data_#1}{#1}}}
 \newcommand{\loanZdev}{-5.49}
 \newcommand{\lmlevel}[1]{:~\emph{#1}}
 \newcommand{\loanSmallestValue}{5.31}
@@ -128,6 +128,7 @@ IIIII
 \newcommand{\numcountieswithoutgains}{1672}
 \newcommand{\oiRedirectUrl}[1]{http://www.openintro.org/redirect.php?go=#1\amp referrer=ahss2_pdf}
 \newcommand{\numcountieswithoutgainsC}{1,672}
+\newcommand{\oiRedirect}[2]{\href{\oiRedirectUrl{#1}}{#2}}
 \newcommand{\npgpad}[1]{\hspace{2mm}#1\hspace{1.5mm}\ }
 \newcommand{\videoicon}[1][4.5mm]{\includegraphics[height=#1]{extraTeX/icons/video_camera.png}~}
 \newcommand{\loanapphomeAA}{3496}
@@ -192,17 +193,16 @@ IIIII
 \newcommand{\qtq}[1]{{ \textcolor{oiB}{\textbf{#1?}}}}
 \newcommand{\malariaIRDiffPerc}{64.3\%}
 \newcommand{\ec}[1]{\textcolor{oiB}{{~(#1)}}}
-\renewcommand{\arraystretch}{1.5}
-\newcommand{\eoceNeedSolution}[1][]{\textbf{ \color{red}ADD SOLUTION. #1}}
 \renewcommand{\chapterfolder}{ch_probability}
-\newcommand{\eoceReplace}[1][]{\textbf{ \color{red}REPLACE THIS EXERCISE. #1}}
+\newcommand{\eoceNeedSolution}[1][]{\textbf{ \color{red}ADD SOLUTION. #1}}
 \newcommand{\fashN}{1822}
-\newcommand{\eoceFF}[1][]{\textbf{ \color{red}FINAL FORMATTING.}}
+\newcommand{\eoceReplace}[1][]{\textbf{ \color{red}REPLACE THIS EXERCISE. #1}}
 \newcommand{\fashYY}{197}
-\newcommand{\tBoxTitleBuffer}{\\[1.5mm]}
+\newcommand{\eoceFF}[1][]{\textbf{ \color{red}FINAL FORMATTING.}}
 \newcommand{\fashYN}{22}
-\renewcommand{\contentsname}{Table of Contents}
+\newcommand{\tBoxTitleBuffer}{\\[1.5mm]}
 \newcommand{\fashYA}{219}
+\renewcommand{\contentsname}{Table of Contents}
 \newcommand{\fashNY}{112}
 \newcommand{\fashNN}{1491}
 \newcommand{\fashNA}{1603}

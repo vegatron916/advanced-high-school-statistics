@@ -1,0 +1,271 @@
+<section>
+  <title>Exercises</title>
+  <exercise xml:id="body_measurements_weight_height_inf">
+    <title>Body measurements, Part IV</title>
+    <statement>
+      <p>
+        The scatterplot and least squares summary below show the relationship between weight measured in kilograms and height measured in centimeters of 507 physically active individuals.
+      </p>
+      <sidebyside>
+        <image width="73%" source="images/body_measurements_weight_height.png" />
+      </sidebyside>
+      <ol>
+        <li>
+          <p>
+            Describe the relationship between height and weight.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write the equation of the regression line.
+            Interpret the slope and intercept in context.
+          </p>
+        </li>
+        <li>
+          <p>
+            Do the data provide strong evidence that an increase in height is associated with an increase in weight?
+            State the null and alternative hypotheses,
+            report the p-value, and state your conclusion.
+          </p>
+        </li>
+        <li>
+          <p>
+            The correlation coefficient for height and weight is 0.72.
+            Calculate <m>R^2</m> and interpret it in context.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="beer_blood_alcohol_inf">
+    <title>Beer and blood alcohol content</title>
+    <statement>
+      <p>
+        Many people believe that gender, weight, drinking habits,
+        and many other factors are much more important in predicting blood alcohol content (BAC) than simply considering the number of drinks a person consumed.
+        Here we examine data from sixteen student volunteers at Ohio State University who each drank a randomly assigned number of cans of beer.
+        These students were different genders,
+        and they differed in weight and drinking habits.
+        Thirty minutes later,
+        a police officer measured their blood alcohol content (BAC) in grams of alcohol per deciliter of blood. \footfullcite{Malkevitc+Lesser:2008} The scatterplot and regression table summarize the findings.
+      </p>
+      <sidebyside>
+        <image width="73%" source="images/beer_blood_alcohol.png" />
+      </sidebyside>
+      <ol>
+        <li>
+          <p>
+            Describe the relationship between the number of cans of beer and BAC.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write the equation of the regression line.
+            Interpret the slope and intercept in context.
+          </p>
+        </li>
+        <li>
+          <p>
+            Do the data provide strong evidence that drinking more cans of beer is associated with an increase in blood alcohol?
+            State the null and alternative hypotheses,
+            report the p-value, and state your conclusion.
+          </p>
+        </li>
+        <li>
+          <p>
+            The correlation coefficient for number of cans of beer and BAC is 0.89.
+            Calculate <m>R^2</m> and interpret it in context.
+          </p>
+        </li>
+        <li>
+          <p>
+            Suppose we visit a bar, ask people how many drinks they have had,
+            and also take their BAC. Do you think the relationship between number of drinks and BAC would be as strong as the relationship found in the Ohio State study?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="husbands_wives_height_inf">
+    <title>Spouses, Part II</title>
+    <statement>
+      <p>
+        The scatterplot below summarizes womens' heights and their spouses' heights for a random sample of 170 married women in Britain,
+        where both partners' ages are below 65 years.
+        Summary output of the least squares fit for predicting spouse's height from the woman's height is also provided in the table.
+      </p>
+      <sidebyside>
+        <image width="73%" source="images/husbands_wives_height_inf_2s.png" />
+      </sidebyside>
+      <ol>
+        <li>
+          <p>
+            Is there strong evidence in this sample that taller women have taller spouses?
+            State the hypotheses and include any information used to conduct the test.
+          </p>
+        </li>
+        <li>
+          <p>
+            Write the equation of the regression line for predicting the height of a woman's spouse based on the woman's height.
+          </p>
+        </li>
+        <li>
+          <p>
+            Interpret the slope and intercept in the context of the application.
+          </p>
+        </li>
+        <li>
+          <p>
+            Given that <m>R^2 = 0.09</m>,
+            what is the correlation of heights in this data set?
+          </p>
+        </li>
+        <li>
+          <p>
+            You meet a married woman from Britain who is 5'9" (69 inches).
+            What would you predict her spouse's height to be?
+            How reliable is this prediction?
+          </p>
+        </li>
+        <li>
+          <p>
+            You meet another married woman from Britain who is 6'7" (79 inches).
+            Would it be wise to use the same linear model to predict her spouse's height?
+            Why or why not?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="urban_homeowners_cond">
+    <title>Urban homeowners, Part II</title>
+    <statement>
+      <p>
+        <xref ref="urban_homeowners_outlier">Exercise</xref>
+        gives a scatterplot displaying the relationship between the percent of families that own their home and the percent of the population living in urban areas.
+        Below is a similar scatterplot,
+        excluding District of Columbia,
+        as well as the residuals plot.
+        There were 51 cases.
+      </p>
+      <sidebyside>
+        <m>\:</m>
+      </sidebyside>
+      <image source="images/a3e68136b592ea119e82e2ce2aba4c90ee722b7f.png"/>
+    </statement>
+  </exercise>
+  <exercise xml:id="murders_poverty_inf">
+    <title>Murders and poverty, Part II</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-murders_poverty_inf<nbsp/> <xref ref="murders_poverty_reg">Exercise</xref>
+        presents regression output from a model for predicting annual murders per million from percentage living in poverty based on a random sample of 20 metropolitan areas.
+        The model output is also provided below.
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Estimate</cell>
+          <cell>Std. Error</cell>
+          <cell>t value</cell>
+          <cell>Pr(<m>></m><m>|</m>t<m>|</m>)</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>(Intercept)</cell>
+          <cell>-29.901</cell>
+          <cell>7.789</cell>
+          <cell>-3.839</cell>
+          <cell>0.001</cell>
+        </row>
+        <row>
+          <cell>poverty%</cell>
+          <cell>2.559</cell>
+          <cell>0.390</cell>
+          <cell>6.562</cell>
+          <cell>0.000</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <me>
+        s = 5.512 \qquad R^2 = 70.52\% \qquad R^2_{adj} = 68.89\%
+      </me>
+      <ol>
+        <li>
+          <p>
+            What are the hypotheses for evaluating whether poverty percentage is a significant predictor of murder rate?
+          </p>
+        </li>
+        <li>
+          <p>
+            State the conclusion of the hypothesis test from part (a) in context of the data.
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate a 95% confidence interval for the slope of poverty percentage,
+            and interpret it in context of the data.
+          </p>
+        </li>
+        <li>
+          <p>
+            Do your results from the hypothesis test and the confidence interval agree?
+            Explain.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="babies_head_gestation_inf">
+    <title>Babies</title>
+    <statement>
+      <p>
+        Is the gestational age
+        (time between conception and birth)
+        of a low birth-weight baby useful in predicting head circumference at birth?
+        Twenty-five low birth-weight babies were studied at a Harvard teaching hospital;
+        the investigators calculated the regression of head circumference
+        (measured in centimeters)
+        against gestational age
+        (measured in weeks).
+        The estimated regression line is
+        <me>
+          \widehat{head~circumference} = 3.91 + 0.78 \times gestational~age
+        </me>
+        <ol>
+          <li>
+            <p>
+              What is the predicted head circumference for a baby whose gestational age is 28 weeks?
+            </p>
+          </li>
+          <li>
+            <p>
+              The standard error for the coefficient of gestational age is 0. 35,
+              which is associated with <m>df=23</m>.
+              Does the model provide strong evidence that gestational age is significantly associated with head circumference?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</section>

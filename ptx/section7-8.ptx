@@ -1,0 +1,355 @@
+<section>
+  <title>Exercises</title>
+  <exercise xml:id="quitters_chisq_independence">
+    <title>Quitters</title>
+    <statement>
+      <p>
+        Does being part of a support group affect the ability of people to quit smoking?
+        A county health department enrolled 300 smokers in a randomized experiment. 150 participants were assigned to a group that used a nicotine patch and met weekly with a support group;
+        the other 150 received the patch and did not meet with a support group.
+        At the end of the study, 40 of the participants in the patch plus support group had quit smoking while only 30 smokers had quit in the other group.
+        <ol>
+          <li>
+            <p>
+              Create a two-way table presenting the results of this study.
+            </p>
+          </li>
+          <li>
+            <p>
+              Answer each of the following questions under the null hypothesis that being part of a support group does not affect the ability of people to quit smoking,
+              and indicate whether the expected values are higher or lower than the observed values.
+              <task>
+                How many subjects in the
+                <q>patch + support</q>
+                group would you expect to quit?
+              </task>
+              <task>
+                How many subjects in the
+                <q>patch only</q>
+                group would you expect to not quit?
+              </task>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="full_body_scan_chisq_indep">
+    <title>Full body scan, Part II</title>
+    <statement>
+      <p>
+        The table below summarizes a data set we first encountered in <xref ref="full_body_scan_HT_Error">Exercise</xref>
+        regarding views on full-body scans and political affiliation.
+        The differences in each political group may be due to chance.
+        Complete the following computations under the null hypothesis of independence between an individual's party affiliation and his support of full-body scans.
+        It may be useful to first add on an extra column for row totals before proceeding with the computations.
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>\multicolumn{3}{c}{<em>Party Affiliation</em>}</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>Republican</cell>
+          <cell>Democrat</cell>
+          <cell>Independent</cell>
+        </row>
+        <row>
+          <cell>\multirow{3}{*}{<em>Answer</em>}</cell>
+          <cell>Should</cell>
+          <cell>264</cell>
+          <cell>299</cell>
+          <cell>351</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Should not</cell>
+          <cell>38</cell>
+          <cell>55</cell>
+          <cell>77</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Don't know/No answer</cell>
+          <cell>16</cell>
+          <cell>15</cell>
+          <cell>22</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Total</cell>
+          <cell>318</cell>
+          <cell>369</cell>
+          <cell>450</cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            How many Republicans would you expect to not support the use of full-body scans?
+          </p>
+        </li>
+        <li>
+          <p>
+            How many Democrats would you expect to support the use of full- body scans?
+          </p>
+        </li>
+        <li>
+          <p>
+            How many Independents would you expect to not know or not answer?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="offshore_drilling_chisq_indep">
+    <title>Offshore drilling, Part III</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-offshore_drilling_chisq_indep<nbsp/> The table below summarizes a data set we first encountered in <xref ref="offshore_drill_edu_dontknow_HT">Exercise</xref>
+        that examines the responses of a random sample of college graduates and non-graduates on the topic of oil drilling.
+        Complete a chi-square test for these data to check whether there is a statistically significant difference in responses from college graduates and non-graduates.
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell>\multicolumn{2}{c}{<em>College Grad</em>}</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Yes</cell>
+          <cell>No</cell>
+        </row>
+        <row>
+          <cell>Support</cell>
+          <cell>154</cell>
+          <cell>132</cell>
+        </row>
+        <row>
+          <cell>Oppose</cell>
+          <cell>180</cell>
+          <cell>126</cell>
+        </row>
+        <row>
+          <cell>Do not know</cell>
+          <cell>104</cell>
+          <cell>131</cell>
+        </row>
+        <row>
+          <cell>Total</cell>
+          <cell>438</cell>
+          <cell>389</cell>
+        </row>
+      </tabular>
+    </statement>
+  </exercise>
+  <exercise xml:id="parasitic_worm_chisq">
+    <title>Parasitic worm</title>
+    <statement>
+      <p>
+        Lymphatic filariasis is a disease caused by a parasitic worm.
+        Complications of the disease can lead to extreme swelling and other complications.
+        Here we consider results from a randomized experiment that compared three different drug treatment options to clear people of the this parasite,
+        which people are working to eliminate entirely.
+        The results for the second year of the study are given below:\footfullcite{King_Suamani_2018}
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Clear at Year 2</cell>
+          <cell>Not Clear at Year 2</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Three drugs</cell>
+          <cell>52</cell>
+          <cell>2</cell>
+        </row>
+        <row>
+          <cell>Two drugs</cell>
+          <cell>31</cell>
+          <cell>24</cell>
+        </row>
+        <row>
+          <cell>Two drugs annually</cell>
+          <cell>42</cell>
+          <cell>14</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <ol>
+        <li xml:id="parasitic_worm_chisq_hyp">
+          <p>
+            Set up hypotheses for evaluating whether there is any difference in the performance of the treatments,
+            and also check conditions.
+          </p>
+        </li>
+        <li>
+          <p>
+            Statistical software was used to run a chi-square test,
+            which output:
+            <md>
+              <mrow>\amp X^2 = 23.7 \amp \amp df = 2 \amp \amp \text{ p-value }  = \text{ 7.2e-6 }</mrow>
+            </md>
+            Use these results to evaluate the hypotheses from part<nbsp/><xref ref="parasitic_worm_chisq_hyp" />,
+            and provide a conclusion in the context of the problem.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <p>
+    \clearpageforsection {{\titlerule[1mm]} \setupfont {\titlerule[1mm]} }
+  </p>
+  <p>
+    <em>Calculating</em> a confidence interval or a test statistic and p-value are generally done with statistical software.
+    It is important,
+    then, to focus not on the calculations, but rather on
+    <ol>
+      <li>
+        <p>
+          choosing the correct procedure
+        </p>
+      </li>
+      <li>
+        <p>
+          understanding when the procedures do or do not apply, and
+        </p>
+      </li>
+      <li>
+        <p>
+          interpreting the results.
+        </p>
+      </li>
+    </ol>
+  </p>
+  <p>
+    Choosing the correct procedure requires understanding the <em>type of data</em>
+    and the <em>method of data collection</em>.
+    All of the inference procedures in Chapter<nbsp/>\thechapter<nbsp/>are for categorical variables.
+    Here we list the five tests encountered in this chapter and when to use them.
+  </p>
+  <ul>
+    <li>
+      <p>
+        <term>1-proportion Z-test</term>
+      </p>
+      <ul>
+        <li>
+          <p>
+            <em>1 random sample</em>, a yes/no variable
+          </p>
+        </li>
+        <li>
+          <p>
+            Compare the sample proportion to a fixed / hypothesized proportion.
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        <term>2-proportion Z-test</term>
+        <ul>
+          <li>
+            <p>
+              <em>2 independent random samples or randomly allocated treatments</em>
+            </p>
+          </li>
+          <li>
+            <p>
+              Compare two populations or treatments to each other with respect to one yes/no variable;
+              e.g. comparing the proportion over age 65 in two distinct populations.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em><m>\chi^2</m> goodness of fit test</em><idx><h>chi-square goodness of fit test@<m>\chi^2</m> goodness of fit test|textbf</h></idx>
+        <ul>
+          <li>
+            <p>
+              <em>1 random sample</em>,
+              a categorical variable (generally at least three categories)
+            </p>
+          </li>
+          <li>
+            <p>
+              Compare the distribution of a categorical variable to a fixed or known population distribution;
+              e.g. looking at distribution of color among M&amp;M's.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em><m>\chi^2</m> test of homogeneity</em><idx><h>chi-square test of homogeneity@<m>\chi^2</m> test of homogeneity|textbf</h></idx>:
+        <ul>
+          <li>
+            <p>
+              <em>2 or more independent random samples or randomly allocated treatments</em>
+            </p>
+          </li>
+          <li>
+            <p>
+              Compare the distribution of a categorical variable across several populations or treatments;
+              e.g. party affiliation over various years,
+              or patient improvement compared over 3 treatments.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <p>
+        <em><m>\chi^2</m> test of independence</em><idx><h>chi-square test of independence@<m>\chi^2</m> test of independence|textbf</h></idx>
+        <ul>
+          <li>
+            <p>
+              <em>1 random sample</em>, 2 categorical variables
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine if, in a single population,
+              there is an association between two categorical variables;
+              e.g. grade level and favorite class.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </li>
+  </ul>
+  <p>
+    Even when the data and data collection method correspond to a particular test,
+    we must <em>verify that conditions are met</em>
+    to see if the assumptions of the test are reasonable.
+    All of the inferential procedures of this chapter require some type of random sample or process.
+    In addition,
+    the 1-proportion Z-test/interval and the 2-proportion Z-test/interval require that the success-failure condition is met and the three <m>\chi^2</m> tests require that all expected counts are at least 5.
+  </p>
+  <p>
+    Finally, understanding and communicating the logic of a test and being able to accurately <em>interpret</em>
+    a confidence interval or p-value are essential.
+    For a refresher on this, review Chapter 5: Foundations for inference.
+  </p>
+</section>

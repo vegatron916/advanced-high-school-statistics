@@ -1,0 +1,619 @@
+<section>
+  <title>Exercises</title>
+  <exercise xml:id="social_experiment_conditions">
+    <title>Social experiment, Part I</title>
+    <statement>
+      <p>
+        A ``social experiment" conducted by a TV program questioned what people do when they see a very obviously bruised woman getting picked on by her boyfriend.
+        On two different occasions at the same restaurant,
+        the same couple was depicted.
+        In one scenario the woman was dressed
+        <q>provocatively</q>
+        and in the other scenario the woman was dressed
+        <q>conservatively</q>. The table below shows how many restaurant diners were present under each scenario,
+        and whether or not they intervened.
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>\multicolumn{2}{c}{<em>Scenario</em>}</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>Provocative</cell>
+          <cell>Conservative</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell>\multirow{2}{*}{<em>Intervene</em>}</cell>
+          <cell>Yes</cell>
+          <cell>5</cell>
+          <cell>15</cell>
+          <cell>20</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>No</cell>
+          <cell>15</cell>
+          <cell>10</cell>
+          <cell>25</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Total</cell>
+          <cell>20</cell>
+          <cell>25</cell>
+          <cell>45</cell>
+        </row>
+      </tabular>
+      <p>
+        Explain why the sampling distribution of the difference between the proportions of interventions under provocative and conservative scenarios does not follow an approximately normal distribution.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="heart_transplant_conditions">
+    <title>Heart transplant success</title>
+    <statement>
+      <p>
+        The Stanford University Heart Transplant Study was conducted to determine whether an experimental heart transplant program increased lifespan.
+        Each patient entering the program was officially designated a heart transplant candidate,
+        meaning that he was gravely ill and might benefit from a new heart.
+        Patients were randomly assigned into treatment and control groups.
+        Patients in the treatment group received a transplant,
+        and those in the control group did not.
+        The table below displays how many patients survived and died in each group. \footfullcite{Turnbull+Brown+Hu:1974}
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>control</cell>
+          <cell>treatment</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>alive</cell>
+          <cell>4</cell>
+          <cell>24</cell>
+        </row>
+        <row>
+          <cell>dead</cell>
+          <cell>30</cell>
+          <cell>45</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <p>
+        Suppose we are interested in estimating the difference in survival rate between the control and treatment groups using a confidence interval.
+        Explain why we cannot construct such an interval using the normal approximation.
+        What might go wrong if we constructed the confidence interval despite this problem?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="gender_color_preference_CI_concept">
+    <title>Gender and color preference</title>
+    <statement>
+      <p>
+        A study asked 1,924 male and 3,666 female undergraduate college students their favorite color.
+        A 95% confidence interval for the difference between the proportions of males and females whose favorite color is black
+        <m>(p_{male} - p_{female})</m> was calculated to be (0.02, 0.06).
+        Based on this information,
+        determine if the following statements are true or false,
+        and explain your reasoning for each statement you identify as false. \footfullcite{Ellis:2001}
+        <ol>
+          <li>
+            <p>
+              We are 95% confident that the true proportion of males whose favorite color is black is 2% lower to 6% higher than the true proportion of females whose favorite color is black.
+            </p>
+          </li>
+          <li>
+            <p>
+              We are 95% confident that the true proportion of males whose favorite color is black is 2% to 6% higher than the true proportion of females whose favorite color is black.
+            </p>
+          </li>
+          <li>
+            <p>
+              95% of random samples will produce 95% confidence intervals that include the true difference between the population proportions of males and females whose favorite color is black.
+            </p>
+          </li>
+          <li>
+            <p>
+              We can conclude that there is a significant difference between the proportions of males and females whose favorite color is black and that the difference between the two sample proportions is too large to plausibly be due to chance.
+            </p>
+          </li>
+          <li>
+            <p>
+              The 95% confidence interval for
+              <m>(p_{female} - p_{male})</m> cannot be calculated with only the information given in this exercise.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="daily_show_edu_CI_concept">
+    <title>The Daily Show</title>
+    <statement>
+      <p>
+        A Pew Research foundation poll indicates that among 1,099 college graduates, 33% watch The Daily Show.
+        Meanwhile, 22% of the 1,110 people with a high school degree but no college degree in the poll watch The Daily Show.
+        A 95% confidence interval for <m>(p_\text{ college grad } - p_\text{ HS or less } )</m>,
+        where <m>p</m> is the proportion of those who watch The Daily Show,
+        is (0.07, 0.15).
+        Based on this information,
+        determine if the following statements are true or false,
+        and explain your reasoning if you identify the statement as false. \footfullcite{data:dailyShow}
+        <ol>
+          <li>
+            <p>
+              At the 5% significance level,
+              the data provide convincing evidence of a difference between the proportions of college graduates and those with a high school degree or less who watch The Daily Show.
+            </p>
+          </li>
+          <li>
+            <p>
+              We are 95% confident that 7% less to 15% more college graduates watch The Daily Show than those with a high school degree or less.
+            </p>
+          </li>
+          <li>
+            <p>
+              95% of random samples of 1,099 college graduates and 1,110 people with a high school degree or less will yield differences in sample proportions between 7% and 15%.
+            </p>
+          </li>
+          <li>
+            <p>
+              A 90% confidence interval for <m>(p_\text{ college grad } - p_\text{ HS or less } )</m> would be wider.
+            </p>
+          </li>
+          <li>
+            <p>
+              A 95% confidence interval for <m>(p_\text{ HS or less } - p_\text{ college grad } )</m> is (-0.15,-0.07).
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="national_health_plan_CI_replaced">
+    <title>National Health Plan,
+    Part III</title>
+    <statement>
+      <p>
+        <xref ref="national_health_plan_HT">Exercise</xref>
+        presents the results of a poll evaluating support for a generically branded
+        <q>National Health Plan</q>
+        in the United States. 79% of 347 Democrats and 55% of 617 Independents support a National Health Plan.
+        <ol>
+          <li>
+            <p>
+              Calculate a 95% confidence interval for the difference between the proportion of Democrats and Independents who support a National Health Plan <m>(p_{D} - p_{I})</m>,
+              and interpret it in this context.
+              We have already checked conditions for you.
+            </p>
+          </li>
+          <li>
+            <p>
+              True or false: If we had picked a random Democrat and a random Independent at the time of this poll,
+              it is more likely that the Democrat would support the National Health Plan than the Independent.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="sleep_OR_CA_CI">
+    <title>Sleep deprivation, CA vs. OR, Part I</title>
+    <statement>
+      <p>
+        According to a report on sleep deprivation by the Centers for Disease Control and Prevention,
+        the proportion of California residents who reported insufficient rest or sleep during each of the preceding 30 days is 8.0%, while this proportion is 8.8% for Oregon residents.
+        These data are based on simple random samples of 11,545 California and 4,691 Oregon residents.
+        Calculate a 95% confidence interval for the difference between the proportions of Californians and Oregonians who are sleep deprived and interpret it in context of the data.\footfullcite{data:sleepCAandOR}
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="offshore_drill_edu_dontknow_HT">
+    <title>Offshore drilling, Part I</title>
+    <statement>
+      <p>
+        A survey asked 827 randomly sampled registered voters in California
+        <q>Do you support?
+        Or do you oppose?
+        Drilling for oil and natural gas off the Coast of California?
+        Or do you not know enough to say?</q>
+        Below is the distribution of responses,
+        separated based on whether or not the respondent graduated from college. \footfullcite{data:prop19_and_offshoreDrill}
+      </p>
+      <sidebyside>
+        <ol>
+          <li>
+            <p>
+              What percent of college graduates and what percent of the non-college graduates in this sample do not know enough to have an opinion on drilling for oil and natural gas off the Coast of California?
+            </p>
+          </li>
+          <li>
+            <p>
+              Conduct a hypothesis test to determine if the data provide strong evidence that the proportion of college graduates who do not have an opinion on this issue is different than that of non-college graduates.
+            </p>
+          </li>
+        </ol>
+        <tabular>
+          <row>
+            <cell></cell>
+            <cell>\multicolumn{2}{c}{<em>College Grad</em>}</cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Yes</cell>
+            <cell>No</cell>
+          </row>
+          <row>
+            <cell>Support</cell>
+            <cell>154</cell>
+            <cell>132</cell>
+          </row>
+          <row>
+            <cell>Oppose</cell>
+            <cell>180</cell>
+            <cell>126</cell>
+          </row>
+          <row>
+            <cell>Do not know</cell>
+            <cell>104</cell>
+            <cell>131</cell>
+          </row>
+          <row>
+            <cell>Total</cell>
+            <cell>438</cell>
+            <cell>389</cell>
+          </row>
+        </tabular>
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="sleep_OR_CA_HT">
+    <title>Sleep deprivation, CA vs. OR, Part II</title>
+    <statement>
+      <p>
+        <xref ref="sleep_OR_CA_CI">Exercise</xref>
+        provides data on sleep deprivation rates of Californians and Oregonians.
+        The proportion of California residents who reported insufficient rest or sleep during each of the preceding 30 days is 8.0%, while this proportion is 8.8% for Oregon residents.
+        These data are based on simple random samples of 11,545 California and 4,691 Oregon residents.
+        <ol>
+          <li>
+            <p>
+              Conduct a hypothesis test to determine if these data provide strong evidence the rate of sleep deprivation is different for the two states. (Reminder: Check conditions)
+            </p>
+          </li>
+          <li>
+            <p>
+              It is possible the conclusion of the test in part (a) is incorrect.
+              If this is the case, what type of error was made?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="offshore_drill_edu_support_HT">
+    <title>Offshore drilling, Part II</title>
+    <statement>
+      <p>
+        Results of a poll evaluating support for drilling for oil and natural gas off the coast of California were introduced in <xref ref="offshore_drill_edu_dontknow_HT">Exercise</xref>.
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell>\multicolumn{2}{c}{<em>College Grad</em>}</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Yes</cell>
+          <cell>No</cell>
+        </row>
+        <row>
+          <cell>Support</cell>
+          <cell>154</cell>
+          <cell>132</cell>
+        </row>
+        <row>
+          <cell>Oppose</cell>
+          <cell>180</cell>
+          <cell>126</cell>
+        </row>
+        <row>
+          <cell>Do not know</cell>
+          <cell>104</cell>
+          <cell>131</cell>
+        </row>
+        <row>
+          <cell>Total</cell>
+          <cell>438</cell>
+          <cell>389</cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            What percent of college graduates and what percent of the non-college graduates in this sample support drilling for oil and natural gas off the Coast of California?
+          </p>
+        </li>
+        <li>
+          <p>
+            Conduct a hypothesis test to determine if the data provide strong evidence that the proportion of college graduates who support off-shore drilling in California is different than that of non-college graduates.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="full_body_scan_HT_Error">
+    <title>Full body scan, Part I</title>
+    <statement>
+      <p>
+        A news article reports that ``Americans have differing views on two potentially inconvenient and invasive practices that airports could implement to uncover potential terrorist attacks." This news piece was based on a survey conducted among a random sample of 1,137 adults nationwide,
+        where one of the questions on the survey was ``Some airports are now using <sq>full-body</sq> digital x-ray machines to electronically screen passengers in airport security lines.
+        Do you think these new x-ray machines should or should not be used at airports?" Below is a summary of responses based on party affiliation. \footfullcite{news:fullBodyScan}
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>\multicolumn{3}{c}{<em>Party Affiliation</em>}</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>Republican</cell>
+          <cell>Democrat</cell>
+          <cell>Independent</cell>
+        </row>
+        <row>
+          <cell>\multirow{3}{*}{<em>Answer</em>}</cell>
+          <cell>Should</cell>
+          <cell>264</cell>
+          <cell>299</cell>
+          <cell>351</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Should not</cell>
+          <cell>38</cell>
+          <cell>55</cell>
+          <cell>77</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Don't know/No answer</cell>
+          <cell>16</cell>
+          <cell>15</cell>
+          <cell>22</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Total</cell>
+          <cell>318</cell>
+          <cell>369</cell>
+          <cell>450</cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Conduct an appropriate hypothesis test evaluating whether there is a difference in the proportion of Republicans and Democrats who think the full- body scans should be applied in airports.
+            Assume that all relevant conditions are met.
+          </p>
+        </li>
+        <li>
+          <p>
+            The conclusion of the test in part (a) may be incorrect,
+            meaning a testing error was made.
+            If an error was made, was it a Type<nbsp/>1 or a Type<nbsp/>2 Error?
+            Explain.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="sleep_deprived_driver_HT">
+    <title>Sleep deprived transportation workers</title>
+    <statement>
+      <p>
+        The National Sleep Foundation conducted a survey on the sleep habits of randomly sampled transportation workers and a control sample of non-transportation workers.
+        The results of the survey are shown below. \footfullcite{data:sleepTransport}
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>\multicolumn{4}{c}{<em>Transportation Professionals</em>}</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell>Truck</cell>
+          <cell>Train</cell>
+          <cell>Bus/Taxi/Limo</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell><em>Control</em></cell>
+          <cell>Pilots</cell>
+          <cell>Drivers</cell>
+          <cell>Operators</cell>
+          <cell>Drivers</cell>
+        </row>
+        <row>
+          <cell>Less than 6 hours of sleep</cell>
+          <cell>35</cell>
+          <cell>19</cell>
+          <cell>35</cell>
+          <cell>29</cell>
+          <cell>21</cell>
+        </row>
+        <row>
+          <cell>6 to 8 hours of sleep</cell>
+          <cell>193</cell>
+          <cell>132</cell>
+          <cell>117</cell>
+          <cell>119</cell>
+          <cell>131</cell>
+        </row>
+        <row>
+          <cell>More than 8 hours</cell>
+          <cell>64</cell>
+          <cell>51</cell>
+          <cell>51</cell>
+          <cell>32</cell>
+          <cell>58</cell>
+        </row>
+        <row>
+          <cell>Total</cell>
+          <cell>292</cell>
+          <cell>202</cell>
+          <cell>203</cell>
+          <cell>180</cell>
+          <cell>210</cell>
+        </row>
+      </tabular>
+      <p>
+        Conduct a hypothesis test to evaluate if these data provide evidence of a difference between the proportions of truck drivers and non-transportation workers
+        (the control group)
+        who get less than 6 hours of sleep per day,
+        i.e. are considered sleep deprived.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="prenatal_vitamin_autism_HT">
+    <title>Prenatal vitamins and Autism</title>
+    <statement>
+      <p>
+        Researchers studying the link between prenatal vitamin use and autism surveyed the mothers of a random sample of children aged 24 - 60 months with autism and conducted another separate random sample for children with typical development.
+        The table below shows the number of mothers in each group who did and did not use prenatal vitamins during the three months before pregnancy (periconceptional period).\footfullcite{Schmidt:2011}
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>\multicolumn{2}{c}{<em>Autism</em>}</cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>Autism</cell>
+          <cell>Typical development</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell><em>Periconceptional</em></cell>
+          <cell>No vitamin</cell>
+          <cell>111</cell>
+          <cell>70</cell>
+          <cell>181</cell>
+        </row>
+        <row>
+          <cell><em>prenatal vitamin</em></cell>
+          <cell>Vitamin</cell>
+          <cell>143</cell>
+          <cell>159</cell>
+          <cell>302</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Total</cell>
+          <cell>254</cell>
+          <cell>229</cell>
+          <cell>483</cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            State appropriate hypotheses to test for independence of use of prenatal vitamins during the three months before pregnancy and autism.
+          </p>
+        </li>
+        <li>
+          <p>
+            Complete the hypothesis test and state an appropriate conclusion.
+            (Reminder: Verify any necessary conditions for the test.)
+          </p>
+        </li>
+        <li>
+          <p>
+            A New York Times article reporting on this study was titled ``Prenatal Vitamins May Ward Off Autism". Do you find the title of this article to be appropriate?
+            Explain your answer.
+            Additionally,
+            propose an alternative title. \footfullcite{news:prenatalVitAutism}
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="hiv_africa_HT">
+    <title>HIV in sub-Saharan Africa</title>
+    <statement>
+      <p>
+        In July 2008 the US National Institutes of Health announced that it was stopping a clinical study early because of unexpected results.
+        The study population consisted of HIV-infected women in sub-Saharan Africa who had been given single dose Nevaripine (a treatment for HIV) while giving birth,
+        to prevent transmission of HIV to the infant.
+        The study was a randomized comparison of continued treatment of a woman
+        (after successful childbirth)
+        with Nevaripine vs Lopinavir,
+        a second drug used to treat HIV. 240 women participated in the study; 120 were randomized to each of the two treatments.
+        Twenty-four weeks after starting the study treatment,
+        each woman was tested to determine if the HIV infection was becoming worse
+        (an outcome called <em>virologic failure</em>).
+        Twenty-six of the 120 women treated with Nevaripine experienced virologic failure,
+        while 10 of the 120 women treated with the other drug experienced virologic failure.\footfullcite{Lockman:2007}
+        <ol>
+          <li>
+            <p>
+              Create a two-way table presenting the results of this study.
+            </p>
+          </li>
+          <li>
+            <p>
+              State appropriate hypotheses to test for difference in virologic failure rates between treatment groups.
+            </p>
+          </li>
+          <li>
+            <p>
+              Complete the hypothesis test and state an appropriate conclusion.
+              (Reminder: Verify any necessary conditions for the test.)
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="apple_doctor_HT_concept">
+    <title>An apple a day keeps the doctor
+    away</title>
+    <statement>
+      <p>
+        A physical education teacher at a high school wanting to increase awareness on issues of nutrition and health asked her students at the beginning of the semester whether they believed the expression
+        <q>an apple a day keeps the doctor away</q>, and 40% of the students responded yes.
+        Throughout the semester she started each class with a brief discussion of a study highlighting positive effects of eating more fruits and vegetables.
+        She conducted the same apple-a-day survey at the end of the semester,
+        and this time 60% of the students responded yes.
+        Can she used a two-proportion method from this section for this analysis?
+        Explain your reasoning.
+      </p>
+    </statement>
+  </exercise>
+</section>

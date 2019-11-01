@@ -1,0 +1,160 @@
+<section>
+  <title>Exercises</title>
+  <exercise xml:id="smogCheck">
+    <title>Smog check, Part I</title>
+    <statement>
+      <p>
+        Suppose 16% of cars fail pollution tests
+        (smog checks)
+        in California.
+        We would like to estimate the probability that an entire fleet of seven cars would pass using a simulation.
+        We assume each car is independent.
+        We only want to know if the entire fleet passed,
+        i.e. none of the cars failed.
+        What is wrong with each of the following simulations to represent whether an entire (simulated) fleet passed?
+        <ol>
+          <li>
+            <p>
+              Flip a coin seven times where each toss represents a car.
+              A head means the car passed and a tail means it failed.
+              If all cars passed, we report PASS for the fleet.
+              If at least one car failed, we report FAIL.
+            </p>
+          </li>
+          <li>
+            <p>
+              Read across a random number table starting at line 5.
+              If a number is a 0 or 1, let it represent a failed car.
+              Otherwise the car passes.
+              We report PASS if all cars passed and FAIL otherwise.
+            </p>
+          </li>
+          <li>
+            <p>
+              Read across a random number table,
+              looking at two digits for each simulated car.
+              If a pair is in the range [00-16], then the corresponding car failed.
+              If it is in [17-99], the car passed.
+              We report PASS if all cars passed and FAIL otherwise.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Left-handed</title>
+    <statement>
+      <p>
+        Studies suggest that approximately 10% of the world population is left-handed.
+        Use ten simulations to answer each of the following questions.
+        For each question, describe your simulation scheme clearly.
+        <ol>
+          <li>
+            <p>
+              What is the probability that at least one out of eight people are left-handed?
+            </p>
+          </li>
+          <li>
+            <p>
+              On average, how many people would you have to sample until the first person who is left-handed?
+            </p>
+          </li>
+          <li>
+            <p>
+              On average, how many left-handed people would you expect to find among a random sample of six people?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Smog check, Part II</title>
+    <statement>
+      <p>
+        Consider the fleet of seven cars in <xref ref="smogCheck">Exercise</xref>.
+        Remember that 16% of cars fail pollution tests
+        (smog checks)
+        in California, and that we assume each car is independent.
+        <ol>
+          <li>
+            <p>
+              Write out how to calculate the probability of the fleet failing,
+              i.e. at least one of the cars in the fleet failing, via simulation.
+            </p>
+          </li>
+          <li>
+            <p>
+              Simulate 5 fleets.
+              Based on these simulations,
+              estimate the probability at least one car will fail in a fleet.
+            </p>
+          </li>
+          <li>
+            <p>
+              Compute the probability at least one car fails in a fleet of seven.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="thief">
+    <title>To catch a thief</title>
+    <statement>
+      <p>
+        Suppose that at a retail store,
+        <m>1/5^{th}</m> of all employees steal some amount of merchandise.
+        The stores would like to put an end to this practice,
+        and one idea is to use lie detector tests to catch and fire thieves.
+        However, there is a problem:
+        lie detectors are not 100% accurate.
+        Suppose it is known that a lie detector has a failure rate of 25%. A thief will slip by the test 25% of the time and an honest employee will only pass 75% of the time.
+        <ol>
+          <li>
+            <p>
+              Describe how you would simulate whether an employee is honest or is a thief using a random number table.
+              Write your simulation very carefully so someone else can read it and follow the directions exactly.
+            </p>
+          </li>
+          <li>
+            <p>
+              Using a random number table,
+              simulate 20 employees working at this store and determine if they are honest or not.
+              Make sure to record the random digits assigned to each employee as you will refer back to these in part (c).
+            </p>
+          </li>
+          <li>
+            <p>
+              Determine the result of the lie detector test for each simulated employee from part (b) using a new simulation scheme.
+            </p>
+          </li>
+          <li>
+            <p>
+              How many of these employees are
+              <q>honest and passed</q>
+              and how many are
+              <q>honest and failed</q>?
+            </p>
+          </li>
+          <li>
+            <p>
+              How many of these employees are
+              <q>thief and passed</q>
+              and how many are
+              <q>thief and failed</q>?
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose the management decided to fire everyone who failed the lie detector test.
+              What percent of fired employees were honest?
+              What percent of not fired employees were thieves?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</section>

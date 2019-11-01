@@ -66,7 +66,7 @@
       You'll find that occasionally we may have the same number in a row <mdash/> sometimes multiple times <mdash/> but in the long run,
       each digit should appear 1/10th of the time.
     </p>
-    <table xml:id="sampleRandomNumberTable">
+    <figure xml:id="sampleRandomNumberTable">
       <caption>Random number table. A full page of random numbers may be found in <xref ref="randomNumberTable">Appendix</xref> on <xref ref="randomNumberTable">page</xref>.</caption>
       <tabular>
         <row>
@@ -220,7 +220,7 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <example>
       <statement>
         <p>
@@ -232,10 +232,46 @@
       </statement>
       <solution>
         <p>
-          Mika's favorite brand of cereal is running a special where 20% of the cereal boxes contain a prize.
-          Mika really wants that prize.
-          If her mother buys 6 boxes of the cereal over the next few months,
-          what is the probability Mika will get a prize?
+          To solve this problem using simulation,
+          we need to be able to assign digits to outcomes.
+          Each box should have a 20% chance of having a prize and an 80% chance of not having a prize.
+          Therefore, a valid assignment would be:
+          <md>
+            <mrow>\emph{0, 1} \amp \rightarrow \text{ prize }</mrow>
+            <mrow>\emph{2-9} \amp \rightarrow \text{ no prize }</mrow>
+          </md>
+        </p>
+        <p>
+          Of the ten possible digits (<em>0, 1, 2, ..., 8, 9</em>),
+          two of them, i.e. 20% of them,
+          correspond to winning a prize,
+          which exactly matches the odds that a cereal box contains a prize.
+        </p>
+        <p>
+          In Mika's simulation, one trial will consist of 6 boxes of cereal,
+          and therefore a trial will require six digits
+          (each digit will correspond to one box of cereal).
+          We will repeat the simulation for 20 trials.
+          Therefore we will need 20 sets of 6 digits.
+          Let's begin on row 1 of the random digit table,
+          shown in <xref ref="sampleRandomNumberTable">Figure</xref>.
+          If a trial consisted of 5 digits,
+          we could use the first 5 digits going across: <em>43087</em>.
+          Because here a trial consists of 6 digits,
+          it may be easier to read down the table, rather than read across.
+          We will let trial 1 consist of the first 6 digits in column 1 (<em>461819</em>),
+          trial 2 consist of the first 6 digits in column 2 (<em>339564</em>), etc.
+          For this simulation,
+          we will end up using the first 6 rows of each of the 20 columns.
+        </p>
+        <p>
+          In trial 1, there are two <em>1</em>'s, so we record that as a success;
+          in this trial there were actually two prizes.
+          In trial 2 there were no <em>0</em>'s or
+          <em>1</em>'s, therefore we do not record this as a success.
+          In trial 3 there were three prizes,
+          so we record this as a success.
+          The rest of this exercise is left as a Guided Practice problem for you to complete.
         </p>
       </solution>
     </example>
@@ -245,6 +281,13 @@
           Finish the simulation above and report the estimate for the probability that Mika will get a prize if her mother buys 6 boxes of cereal where each one has a 20% chance of containing a prize.
         </p>
       </statement>
+      <answer>
+        <p>
+          The trials that contain at least one 0 or 1 and therefore are successes are trials: 1, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, and 20.
+          There were 17 successes among the 20 trials,
+          so our estimate of the probability based on this simulation is 17/20 = 0.85.
+        </p>
+      </answer>
     </exercise>
     <exercise>
       <statement>
@@ -314,7 +357,14 @@
       </statement>
       <solution>
         <p>
-          Now, consider a case where the probability of interest is not 20%, but rather 28%. Which digits should correspond to success and which to failure?
+          This example is more complicated because with only 10 digits,
+          there is no way to select exactly 28% of them.
+          Therefore, each observation will have to consist of <em>two</em> digits.
+          We can use two digits at a time and assign pairs of digits as follows:
+          <md>
+            <mrow>\textit{{00-27}} \amp \rightarrow \text{ success }</mrow>
+            <mrow>\textit{{28-99}} \amp \rightarrow \text{ failure }</mrow>
+          </md>
         </p>
       </solution>
     </example>
@@ -384,165 +434,5 @@
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise xml:id="smogCheck">
-      <title>Smog check, Part I</title>
-      <statement>
-        <p>
-          Suppose 16% of cars fail pollution tests
-          (smog checks)
-          in California.
-          We would like to estimate the probability that an entire fleet of seven cars would pass using a simulation.
-          We assume each car is independent.
-          We only want to know if the entire fleet passed,
-          i.e. none of the cars failed.
-          What is wrong with each of the following simulations to represent whether an entire (simulated) fleet passed?
-          <ol>
-            <li>
-              <p>
-                Flip a coin seven times where each toss represents a car.
-                A head means the car passed and a tail means it failed.
-                If all cars passed, we report PASS for the fleet.
-                If at least one car failed, we report FAIL.
-              </p>
-            </li>
-            <li>
-              <p>
-                Read across a random number table starting at line 5.
-                If a number is a 0 or 1, let it represent a failed car.
-                Otherwise the car passes.
-                We report PASS if all cars passed and FAIL otherwise.
-              </p>
-            </li>
-            <li>
-              <p>
-                Read across a random number table,
-                looking at two digits for each simulated car.
-                If a pair is in the range [00-16], then the corresponding car failed.
-                If it is in [17-99], the car passed.
-                We report PASS if all cars passed and FAIL otherwise.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Left-handed</title>
-      <statement>
-        <p>
-          Studies suggest that approximately 10% of the world population is left-handed.
-          Use ten simulations to answer each of the following questions.
-          For each question, describe your simulation scheme clearly.
-          <ol>
-            <li>
-              <p>
-                What is the probability that at least one out of eight people are left-handed?
-              </p>
-            </li>
-            <li>
-              <p>
-                On average, how many people would you have to sample until the first person who is left-handed?
-              </p>
-            </li>
-            <li>
-              <p>
-                On average, how many left-handed people would you expect to find among a random sample of six people?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Smog check, Part II</title>
-      <statement>
-        <p>
-          Consider the fleet of seven cars in <xref ref="smogCheck">Exercise</xref>.
-          Remember that 16% of cars fail pollution tests
-          (smog checks)
-          in California, and that we assume each car is independent.
-          <ol>
-            <li>
-              <p>
-                Write out how to calculate the probability of the fleet failing,
-                i.e. at least one of the cars in the fleet failing, via simulation.
-              </p>
-            </li>
-            <li>
-              <p>
-                Simulate 5 fleets.
-                Based on these simulations,
-                estimate the probability at least one car will fail in a fleet.
-              </p>
-            </li>
-            <li>
-              <p>
-                Compute the probability at least one car fails in a fleet of seven.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="thief">
-      <title>To catch a thief</title>
-      <statement>
-        <p>
-          Suppose that at a retail store,
-          <m>1/5^{th}</m> of all employees steal some amount of merchandise.
-          The stores would like to put an end to this practice,
-          and one idea is to use lie detector tests to catch and fire thieves.
-          However, there is a problem:
-          lie detectors are not 100% accurate.
-          Suppose it is known that a lie detector has a failure rate of 25%. A thief will slip by the test 25% of the time and an honest employee will only pass 75% of the time.
-          <ol>
-            <li>
-              <p>
-                Describe how you would simulate whether an employee is honest or is a thief using a random number table.
-                Write your simulation very carefully so someone else can read it and follow the directions exactly.
-              </p>
-            </li>
-            <li>
-              <p>
-                Using a random number table,
-                simulate 20 employees working at this store and determine if they are honest or not.
-                Make sure to record the random digits assigned to each employee as you will refer back to these in part (c).
-              </p>
-            </li>
-            <li>
-              <p>
-                Determine the result of the lie detector test for each simulated employee from part (b) using a new simulation scheme.
-              </p>
-            </li>
-            <li>
-              <p>
-                How many of these employees are
-                <q>honest and passed</q>
-                and how many are
-                <q>honest and failed</q>?
-              </p>
-            </li>
-            <li>
-              <p>
-                How many of these employees are
-                <q>thief and passed</q>
-                and how many are
-                <q>thief and failed</q>?
-              </p>
-            </li>
-            <li>
-              <p>
-                Suppose the management decided to fire everyone who failed the lie detector test.
-                What percent of fired employees were honest?
-                What percent of not fired employees were thieves?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>

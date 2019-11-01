@@ -12,8 +12,11 @@
     </p>
   </introduction>
   <xi:include  href="lineFittingResidualsCorrelation.ptx" />
+  <xi:include  href="section9-2.ptx" />
   <xi:include  href="fittingALineByLSR.ptx" />
+  <xi:include  href="section9-4.ptx" />
   <xi:include  href="inferenceForLinearRegression.ptx" />
+  <xi:include  href="section9-6.ptx" />
   <xi:include  href="transformationForNonlinearData.ptx" />
-  <xi:include  href="section9-5.ptx" />
+  <xi:include  href="section9-8.ptx" />
 </chapter>

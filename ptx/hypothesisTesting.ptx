@@ -80,7 +80,12 @@
       </statement>
       <solution>
         <p>
-          Is it possible to prove that the consultant's work reduces complications?
+          No.
+          The claim implies that there is a causal connection,
+          but the data are observational.
+          For example,
+          maybe patients who can afford a medical consultant can afford better medical care,
+          which can also lead to a lower complication rate.
         </p>
       </solution>
     </example>
@@ -116,7 +121,7 @@
       and represents a new perspective such as the possibility that there has been a change or that there is a treatment effect in an experiment.
     </p>
     <assemblage>
-      <title></title>
+      <title>Null and alternative hypotheses</title>
       <p>
         The <term>null hypothesis</term> is abbreviated <m>H_0</m>.
         It represents a skeptical perspective and is often a claim of no change or no difference.
@@ -140,9 +145,21 @@
         </p>
       </statement>
       <solution>
-        <p>
-          Identify the null and alternative claim regarding the consultant's complication rate.
-        </p>
+        <ul>
+          <li>
+            <title>invalidlabel</title>
+            <p>
+              The true complication rate for the consultant's clients is the <em>same as</em>
+              the US complication rate of<nbsp/>10%.
+            </p>
+          </li>
+          <li>
+            <title>invalidlabel</title>
+            <p>
+              The true complication rate for the consultant's clients is different than<nbsp/>10%.
+            </p>
+          </li>
+        </ul>
       </solution>
     </example>
     <p>
@@ -151,24 +168,19 @@
       This quantity of interest is known as the parameter for a hypothesis test.
     </p>
     <assemblage>
-      <title></title>
-      <ul>
-        <li class="custom-list-style-type" label="">
-          <p>
-            A <term>parameter</term> for a hypothesis test is the
-            <q>true</q>
-            value of the population of interest.
-            When the parameter is a proportion, we call it <m>p</m>.
-          </p>
-        </li>
-        <li class="custom-list-style-type" label="">
-          <p>
-            A <term>point estimate</term> is calculated from a sample.
-            When the point estimate is a proportion,
-            we call it <m>\hat{p}</m>.
-          </p>
-        </li>
-      </ul>
+      <title>Parameters and point estimates</title>
+      <solution>
+        <p>
+          \item[] A <term>parameter</term> for a hypothesis test is the
+          <q>true</q>
+          value of the population of interest.
+          When the parameter is a proportion,
+          we call it <m>p</m>. \item[] A <term>point estimate</term>
+          is calculated from a sample.
+          When the point estimate is a proportion,
+          we call it <m>\hat{p}</m>.
+        </p>
+      </solution>
     </assemblage>
     <p>
       The observed or sample proportion of 0.063 is a point estimate for the true proportion.
@@ -179,7 +191,7 @@
       This hypothesized value is called the null value.
     </p>
     <assemblage>
-      <title></title>
+      <title>Null value of a hypothesis test</title>
       <p>
         The <term>null value</term> is the value hypothesized for the parameter in <m>H_0</m>,
         and it is sometimes represented with a<nbsp/>subscript 0, e.g.<nbsp/><m>p_0</m>
@@ -204,7 +216,7 @@
       </ul>
     </p>
     <assemblage>
-      <title></title>
+      <title>Hypothesis testing</title>
       <p>
         These hypotheses are part of what is called a
         <term>hypothesis test</term>.
@@ -228,7 +240,7 @@
       or not equal to the null value.
     </p>
     <assemblage>
-      <title></title>
+      <title>Always write the null hypothesis as an equality</title>
       <p>
         We will find it most useful if we always list the null hypothesis as an equality (e.g.<nbsp/><m>p = 7</m>) while the alternative always uses an inequality (e.g.
         <m>p \neq 0.7</m>, <m>p>0.7</m>,
@@ -252,7 +264,7 @@
       we call it a <term>one-sided</term> test.
     </p>
     <assemblage>
-      <title></title>
+      <title>One-sided and two-sided tests</title>
       <p>
         If the researchers are only interested in showing an increase or a decrease,
         but not both, use a one-sided test.
@@ -270,15 +282,17 @@
       </statement>
       <solution>
         <p>
-          For the example of the consultant's complication rate,
-          we knew that her sample complication rate was 0.063,
-          which was lower than the US complication rate of 0.10.
-          Why did we conduct a two-sided hypothesis test for this setting?
+          The setting was framed in the context of the consultant being helpful,
+          but what if the consultant actually performed worse than the US complication rate?
+          Would we care?
+          More than ever!
+          Since we care about a finding in either direction,
+          we should run a two-sided<nbsp/>test.
         </p>
       </solution>
     </example>
     <assemblage>
-      <title></title>
+      <title>One-sided hypotheses are allowed only <em>before</em> seeing data</title>
       <p>
         {After observing data,
         it is tempting to turn a two-sided test into a one-sided test.
@@ -300,9 +314,9 @@
       </statement>
       <solution>
         <p>
-          There were 142 patients in the consultant's sample.
           If the null claim is true,
-          how many would we expect to have had a complication?
+          we would expect about 10% of the patients,
+          or about 14.2 to have a complication.
         </p>
       </solution>
     </example>
@@ -326,39 +340,31 @@
       <image width="73%" source="images/sidedness_example_figures.png" />
     </figure>
     <assemblage>
-      <title></title>
+      <title>Finding and interpreting the p-value</title>
       <p>
         We find and interpret the <term>p-value</term><idx><h>hypothesis testing</h><h>p-value|textbf</h></idx> according to the nature of the alternative hypothesis.
-        <ul>
-          <li>
-            <title>invalidlabel</title>
-            <p>
-              The p-value corresponds to the area in the <em>upper</em>
-              tail and is probability of getting a test statistic larger than the observed test statistic if the null hypothesis is true and the probability model is accurate.
-            </p>
-          </li>
-          <li>
-            <title>invalidlabel</title>
-            <p>
-              The p-value corresponds to the area in the <em>lower</em>
-              tail and is the probability of observing a test statistic smaller than the observed test statistic if the null hypothesis is true and the probability model is accurate.
-            </p>
-          </li>
-          <li>
-            <title>invalidlabel</title>
-            <p>
-              The p-value corresponds to the area in <em>both</em>
-              tails and is the probability of observing a test statistic larger in magnitude than the observed test statistic if the null hypothesis is true and the probability model is accurate.
-            </p>
-          </li>
-          <li class="custom-list-style-type" label="">
-            <p>
-              More generally,
-              we can say that the p-value is the probability of getting a test statistic as extreme or more extreme than the observed test statistic in the direction of <m>H_A</m> if the null hypothesis is true and the probability model is accurate.
-            </p>
-          </li>
-        </ul>
       </p>
+      <solution>
+        <p>
+          \item[<m>H_A</m>:
+          parameter <m>></m> null value.] The p-value corresponds to the area in the <em>upper</em>
+          tail and is probability of getting a test statistic larger than the observed test statistic if the null hypothesis is true and the probability model is accurate.
+        </p>
+        <p>
+          \item[<m>H_A</m>:
+          parameter <m>\lt</m> null value.] The p-value corresponds to the area in the <em>lower</em>
+          tail and is the probability of observing a test statistic smaller than the observed test statistic if the null hypothesis is true and the probability model is accurate.
+        </p>
+        <p>
+          \item[<m>H_A</m>:
+          parameter <m>\ne</m> null value.] The p-value corresponds to the area in <em>both</em>
+          tails and is the probability of observing a test statistic larger in magnitude than the observed test statistic if the null hypothesis is true and the probability model is accurate.
+        </p>
+        <p>
+          \item[] More generally,
+          we can say that the p-value is the probability of getting a test statistic as extreme or more extreme than the observed test statistic in the direction of <m>H_A</m> if the null hypothesis is true and the probability model is accurate.
+        </p>
+      </solution>
     </assemblage>
     <p>
       When working with proportions,
@@ -376,7 +382,7 @@
       but can vary depending on the field or the application.
     </p>
     <assemblage>
-      <title></title>
+      <title>Statistical significance</title>
       <p>
         If the p-value is less than the significance level <m>\alpha</m> (usually 0.05),
         we say that the result is <term>statistically significant</term>.
@@ -406,6 +412,11 @@
           Explain what this means in the context of the problem using plain language.
         </p>
       </statement>
+      <answer>
+        <p>
+          The data do not provide evidence that the consultant's complication rate is significantly lower or higher than the US complication rate of 10%.
+        </p>
+      </answer>
     </exercise>
     <example>
       <statement>
@@ -417,14 +428,21 @@
       </statement>
       <solution>
         <p>
-          In the previous exercise, we did not reject <m>H_0</m>.
-          This means that we did not disprove the null claim.
-          Is this equivalent to proving the null claim is<nbsp/>true?
+          No.
+          We did not prove that the consultant's complication rate is <em>exactly</em>
+          equal to 10%. Recall that the test of hypothesis starts by
+          <em>assuming the null claim is true</em>.
+          That<nbsp/>is, the test proceeds as an argument by contradiction.
+          <em>If the null claim is true</em>,
+          there is a 0.1754 chance of seeing sample data as divergent from 10% as we saw in our sample.
+          Because 0.1754 is large,
+          it is within the realm of chance error,
+          and we cannot say the null hypothesis is unreasonable.
         </p>
       </solution>
     </example>
     <assemblage>
-      <title></title>
+      <title>Double negatives can sometimes be used in statistics</title>
       <p>
         In many statistical explanations, we use double negatives.
         For instance, we might say that the null hypothesis is
@@ -467,19 +485,15 @@
       </statement>
       <solution>
         <p>
-          An experiment was conducted where study participants were randomly divided into two groups.
-          Both were given the opportunity to purchase a DVD, but one half was reminded that the money,
-          if not spent on the DVD, could be used for other purchases in the future,
-          while the other half was not.
-          The half that was reminded that the money could be used on other purchases was 20% less likely to continue with a DVD purchase.
-          We determined that such a large difference would only occur about 1-in-150 times if the reminder actually had no influence on student decision-making.
-          What is the p-value in this study?
-          Was the result statistically significant?
+          The p-value was 0.006
+          (about 1/150).
+          Since the p-value is less than 0.05,
+          the data provide statistically significant evidence that US college students were actually influenced by the reminder.
         </p>
       </solution>
     </example>
     <assemblage>
-      <title></title>
+      <title>What's so special about 0.05?</title>
       <p>
         We often use a threshold of 0.05 to determine whether a result is statistically significant.
         But why 0.05?
@@ -487,8 +501,9 @@
         or maybe a smaller number.
         If you're a little puzzled,
         that probably means you're reading with a critical eye <mdash/> good job!
-        We've made a video to help clarify
-        <em>why 0.05</em>: MISSINGoiRedirect Sometimes it's a good idea to deviate from the standard.
+        We've made a video to help clarify <em>why 0.05</em>:
+        <url href="\oiRedirectUrl{textbook-why05}">www.openintro.org/why05</url>
+        Sometimes it's a good idea to deviate from the standard.
         We'll discuss when to choose a threshold different than 0.05 in <xref ref="significanceLevel">Section</xref>.
       </p>
     </assemblage>
@@ -569,7 +584,7 @@
       <em>signficance level</em>, <m>\alpha</m>.
     </p>
     <assemblage>
-      <title></title>
+      <title>(AP exam tip) When carrying out a hypothesis test procedure, follow these five steps:</title>
       <ul>
         <li>
           <p>
@@ -623,12 +638,15 @@
           which would be the null hypothesis and which the alternative?
         </p>
       </statement>
-      <solution>
+      <solution xml:id="hypTestCourtExample">
         <p>
-          A US court considers two possible claims about a defendant:
-          she is either innocent or guilty.
-          If we set these claims up in a hypothesis framework,
-          which would be the null hypothesis and which the alternative?
+          The jury considers whether the evidence is so convincing (strong) that there is evidence beyond a reasonable doubt of the person's guilt.
+          That is, the starting assumption
+          (null hypothesis)
+          is that the person is innocent until evidence is presented that convinces the jury that the person is guilty
+          (alternative hypothesis).
+          In statistics, our evidence comes in the form of data,
+          and we use the significance level to decide what is beyond a reasonable doubt.
         </p>
       </solution>
     </example>
@@ -663,7 +681,7 @@
       There are four possible scenarios in a hypothesis test,
       which are summarized in <xref ref="fourHTScenarios">Figure</xref>.
     </p>
-    <table xml:id="fourHTScenarios">
+    <figure xml:id="fourHTScenarios">
       <caption>Four different scenarios for hypothesis tests.</caption>
       <tabular>
         <row>
@@ -700,9 +718,9 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <assemblage>
-      <title></title>
+      <title>Type<nbsp/>I and Type<nbsp/>II Errors</title>
       <p>
         A <term>Type<nbsp/>I Error</term>
         is rejecting <m>H_0</m> when <m>H_0</m> is actually true.
@@ -745,8 +763,14 @@
       </statement>
       <solution>
         <p>
-          How could we reduce the Type<nbsp/>I Error rate in US courts?
-          What influence would this have on the Type<nbsp/>II Error rate?
+          To lower the Type<nbsp/>I Error rate,
+          we might raise our standard for conviction from
+          <q>beyond a reasonable doubt</q>
+          to
+          <q>beyond a conceivable doubt</q>
+          so fewer people would be wrongly convicted.
+          However, this would also make it more difficult to convict the people who are actually guilty,
+          so we would make more Type<nbsp/>II Errors.
         </p>
       </solution>
     </example>
@@ -757,6 +781,17 @@
           What influence would this have on the Type<nbsp/>I Error rate?
         </p>
       </statement>
+      <answer>
+        <p>
+          To lower the Type<nbsp/>II Error rate,
+          we want to convict more guilty people.
+          We could lower the standards for conviction from
+          <q>beyond a reasonable doubt</q>
+          to
+          <q>beyond a little doubt</q>. Lowering the bar for guilt will also result in more wrongful convictions,
+          raising the Type<nbsp/>I Error rate.
+        </p>
+      </answer>
     </exercise>
     <exercise>
       <statement>
@@ -793,7 +828,7 @@
       It depends on the gravity of the consequences of a Type<nbsp/>I Error.
     </p>
     <assemblage>
-      <title></title>
+      <title>Relationship between Type<nbsp/>I and Type<nbsp/>II Errors</title>
       <p>
         The probability of a Type<nbsp/>I Error is called <m>\alpha</m> and corresponds to the significance level of a test.
         The probability of a Type<nbsp/>II Error is called <m>\beta</m>.
@@ -810,8 +845,11 @@
       </statement>
       <solution>
         <p>
-          If making a Type<nbsp/>I Error is especially dangerous or especially costly,
-          should we choose a smaller significance level or a higher significance level?
+          Under this scenario,
+          we want to be very cautious about rejecting the null hypothesis,
+          so we demand very strong evidence before we are willing to reject the null hypothesis.
+          Therefore, we want a smaller significance level,
+          maybe <m>\alpha = 0.01</m>.
         </p>
       </solution>
     </example>
@@ -824,13 +862,13 @@
       </statement>
       <solution>
         <p>
-          If making a Type<nbsp/>II Error is especially dangerous or especially costly,
-          should we choose a smaller significance level or a higher significance level?
+          We should choose a higher significance level (e.g. 0.10).
+          Here we want to be cautious about failing to reject <m>H_0</m> when the null is actually false.
         </p>
       </solution>
     </example>
     <assemblage>
-      <title></title>
+      <title>Significance levels should reflect consequences of errors</title>
       <p>
         The significance level selected for a test should reflect the real-world consequences associated with making a Type<nbsp/>I or Type<nbsp/>II Error.
         If a Type<nbsp/>I Error is very dangerous,
@@ -1103,277 +1141,5 @@
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise>
-      <title>Identify hypotheses, Part I</title>
-      <statement>
-        <p>
-          Write the null and alternative hypotheses in words and then symbols for each of the following situations.
-          <ol>
-            <li>
-              <p>
-                A tutoring company would like to understand if most students tend to improve their grades
-                (or not)
-                after they use their services.
-                They sample 200 of the students who used their service in the past year and ask them if their grades have improved or declined from the previous year.
-              </p>
-            </li>
-            <li>
-              <p>
-                Employers at a firm are worried about the effect of March Madness,
-                a basketball championship held each spring in the US, on employee productivity.
-                They estimate that on a regular business day employees spend on average 15 minutes of company time checking personal email,
-                making personal phone calls, etc.
-                They also collect data on how much company time employees spend on such non-business activities during March Madness.
-                They want to determine if these data provide convincing evidence that employee productivity changed during March Madness.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="identify_hypotheses_prop_and_mean_2">
-      <title>Identify hypotheses, Part II</title>
-      <statement>
-        <p>
-          Write the null and alternative hypotheses in words and using symbols for each of the following situations.
-          <ol>
-            <li>
-              <p>
-                Since 2008, chain restaurants in California have been required to display calorie counts of each menu item.
-                Prior to menus displaying calorie counts,
-                the average calorie intake of diners at a restaurant was 1100 calories.
-                After calorie counts started to be displayed on menus,
-                a nutritionist collected data on the number of calories consumed at this restaurant from a random sample of diners.
-                Do these data provide convincing evidence of a difference in the average calorie intake of a diners at this restaurant?
-              </p>
-            </li>
-            <li>
-              <p>
-                The state of Wisconsin would like to understand the fraction of its adult residents that consumed alcohol in the last year,
-                specifically if the rate is different from the national rate of 70%. To help them answer this question,
-                they conduct a random sample of 852 residents and ask them about their alcohol consumption.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="online_communication_prop_ht_errors">
-      <title>Online communication</title>
-      <statement>
-        <p>
-          A study suggests that 60% of college student spend 10<nbsp/>or more hours per week communicating with others online.
-          You believe that this is incorrect and decide to collect your own sample for a hypothesis test.
-          You randomly sample 160 students from your dorm and find that 70% spent 10<nbsp/>or more hours a week communicating with others online.
-          A<nbsp/>friend of yours,
-          who offers to help you with the hypothesis test,
-          comes up with the following set of hypotheses.
-          Indicate any errors you see.
-          <md>
-            <mrow>H_0\amp : \hat{p} \lt  0.6</mrow>
-            <mrow>H_A\amp : \hat{p} > 0.7</mrow>
-          </md>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="married_at_25_prop_ht_errors">
-      <title>Married at 25</title>
-      <statement>
-        <p>
-          A study suggests that the 25% of 25 year olds have gotten married.
-          You believe that this is incorrect and decide to collect your own sample for a hypothesis test.
-          From a random sample of 25 year olds in census data with size 776,
-          you find that 24% of them are married.
-          A friend of yours offers to help you with setting up the hypothesis test and comes up with the following hypotheses.
-          Indicate any errors you see.
-          <md>
-            <mrow>H_0\amp : \hat{p} = 0.24</mrow>
-            <mrow>H_A\amp : \hat{p} \neq 0.24</mrow>
-          </md>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="cyberbullying_prop_ci_ht">
-      <title>Cyberbullying rates</title>
-      <statement>
-        <p>
-          Teens were surveyed about cyberbullying,
-          and 54% to 64% reported experiencing cyberbullying (95% confidence interval).\footfullcite{pew_cyber_bully_2018} Answer the following questions based on this interval.
-          <ol>
-            <li>
-              <p>
-                A newspaper claims that a majority of teens have experienced cyberbullying.
-                Is this claim supported by the confidence interval?
-                Explain your reasoning.
-              </p>
-            </li>
-            <li xml:id="cyberbullying_prop_ci_ht_researcher">
-              <p>
-                A researcher conjectured that 70% of teens have experienced cyberbullying.
-                Is this claim supported by the confidence interval?
-                Explain your reasoning.
-              </p>
-            </li>
-            <li>
-              <p>
-                Without actually calculating the interval,
-                determine if the claim of the researcher from part<nbsp/><xref ref="cyberbullying_prop_ci_ht_researcher" /> would be supported based on a 90% confidence interval?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="er_wait_ci_ht_prop_ok">
-      <title>Waiting at an ER, Part II</title>
-      <statement>
-        <p>
-          <xref ref="er_wait_intro_prop_ok">Exercise</xref>
-          provides a 95% confidence interval for the mean waiting time at an emergency room (ER) of (128 minutes, 147 minutes).
-          Answer the following questions based on this interval.
-          <ol>
-            <li>
-              <p>
-                A local newspaper claims that the average waiting time at this ER exceeds 3 hours.
-                Is this claim supported by the confidence interval?
-                Explain your reasoning.
-              </p>
-            </li>
-            <li xml:id="er_wait_ci_ht_prop_ok_dean">
-              <p>
-                The Dean of Medicine at this hospital claims the average wait time is 2.2 hours.
-                Is this claim supported by the confidence interval?
-                Explain your reasoning.
-              </p>
-            </li>
-            <li>
-              <p>
-                Without actually calculating the interval,
-                determine if the claim of the Dean from part<nbsp/><xref ref="er_wait_ci_ht_prop_ok_dean" /> would be supported based on a 99% confidence interval?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="minimum_wage_prop_1">
-      <title>Minimum wage, Part 1</title>
-      <statement>
-        <p>
-          Do a majority of US adults believe raising the minimum wage will help the economy,
-          or is there a majority who do not believe this?
-          A<nbsp/>Rasmussen Reports survey of 1,000 US adults found that 42% believe it will help the economy.\footfullcite{webpage:rasmussen-2019-raise-minimum-wage} Conduct an appropriate hypothesis test to help answer the research question.
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="univ_students_enough_sleep">
-      <title>Getting enough sleep</title>
-      <statement>
-        <p>
-          400 students were randomly sampled from a large university,
-          and 289 said they did not get enough sleep.
-          Conduct a hypothesis test to check whether this represents a statistically significant difference from 50%, and use a significance level of 0.01.
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="backwards_prop_1">
-      <title>Working backwards, Part I</title>
-      <statement>
-        <p>
-          You are given the following hypotheses:
-          <md>
-            <mrow>H_0\amp : p = 0.3</mrow>
-            <mrow>H_A\amp : p \ne 0.3</mrow>
-          </md>
-        </p>
-        <p>
-          We know the sample size is 90.
-          For what sample proportion would the p-value be equal to 0.05?
-          Assume that all conditions necessary for inference are satisfied.
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="backwards_prop_2">
-      <title>Working backwards, Part II</title>
-      <statement>
-        <p>
-          You are given the following hypotheses:
-          <md>
-            <mrow>H_0\amp : p = 0.9</mrow>
-            <mrow>H_A\amp : p \ne 0.9</mrow>
-          </md>
-        </p>
-        <p>
-          We know that the sample size is 1,429.
-          For what sample proportion would the p-value be equal to 0.01?
-          Assume that all conditions necessary for inference are satisfied.
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="errors_fibromyalgia">
-      <title>Testing for Fibromyalgia</title>
-      <statement>
-        <p>
-          A patient named Diana was diagnosed with Fibromyalgia,
-          a long-term syndrome of body pain,
-          and was prescribed anti-depressants.
-          Being the skeptic that she is, Diana didn't initially believe that anti-depressants would help her symptoms.
-          However after a couple months of being on the medication she decides that the anti-depressants are working,
-          because she feels like her symptoms are in fact getting better.
-          <ol>
-            <li>
-              <p>
-                Write the hypotheses in words for Diana's skeptical position when she started taking the anti-depressants.
-              </p>
-            </li>
-            <li>
-              <p>
-                What is a Type<nbsp/>1 Error in this context?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is a Type<nbsp/>2 Error in this context?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="prop_which_higher_found_inf">
-      <statement>
-        <p>
-          { <em>Which is higher ?</em>} In each part below,
-          there is a value of interest and two scenarios (I and II).
-          For each part,
-          report if the value of interest is larger under scenario I, scenario II, or whether the value is equal under the scenarios.
-          <ol>
-            <li>
-              <p>
-                The standard error of <m>\hat{p}</m> when (I)<nbsp/><m>n = 125</m> or (II)<nbsp/><m>n = 500</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                The margin of error of a confidence interval when the confidence level is (I)<nbsp/>90% or (II)<nbsp/>80%.
-              </p>
-            </li>
-            <li>
-              <p>
-                The p-value for a Z-statistic of 2.5 calculated based on a (I)<nbsp/>sample with <m>n = 500</m> or based on a (II)<nbsp/>sample with <m>n = 1000</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                The probability of making a Type<nbsp/>2 Error when the alternative hypothesis is true and the significance level is (I)<nbsp/>0.05 or (II)<nbsp/>0.10.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>

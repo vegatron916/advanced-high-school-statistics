@@ -155,7 +155,7 @@
       Rolling a die or flipping a coin is a seemingly random process and each gives rise to an outcome.
     </p>
     <assemblage>
-      <title></title>
+      <title>Probability</title>
       <p>
         The <term>probability</term> of an outcome is the proportion of times the outcome would occur if we observed the random process an infinite number of times.
       </p>
@@ -188,7 +188,7 @@
       <image width="80%" source="images/dieProp.png" />
     </figure>
     <assemblage>
-      <title></title>
+      <title>Law of Large Numbers</title>
       <p>
         As more observations are collected,
         the observed proportion <m>\hat{p}_n</m> of occurrences with a particular outcome after <m>n</m> trials converges to the true probability <m>p</m> of that outcome.
@@ -230,7 +230,7 @@
       modeling her behavior as a random process can still be useful.
     </p>
     <assemblage>
-      <title></title>
+      <title>Modeling a process as random</title>
       <p>
         It can be helpful to model a process as random even if it is not truly random.
       </p>
@@ -282,7 +282,7 @@
       The <term>Addition Rule</term> guarantees the accuracy of this approach when the outcomes are disjoint.
     </p>
     <assemblage>
-      <title></title>
+      <title>Addition Rule of disjoint outcomes</title>
       <p>
         If <m>A_1</m> and <m>A_2</m> represent two disjoint outcomes,
         then the probability that one of them occurs is given by
@@ -399,76 +399,76 @@
       Each suit has its 13 cards labeled: <c>2</c>, <c>3</c>, ..., <c>10</c>, <c>J</c> (jack), <c>Q</c> (queen), <c>K</c> (king),
       and <c>A</c> (ace).
       Thus, each card is a unique combination of a suit and a label,
-      e.g. {<c>4<m>\heartsuit</m></c>} and <c>J<m>\clubsuit</m></c>.
+      e.g. {<c>4 \heartsuit </c>} and <c>J \clubsuit </c>.
       The 12 cards represented by the jacks, queens,
       and kings are called \termsub{<c>face cards</c>}{face card}. The cards that are {<m>\diamondsuit</m>} or {<m>\heartsuit</m>} are typically colored {red} while the other two suits are typically colored black.
       </fn>
     </p>
-    <table xml:id="deckOfCards">
+    <figure xml:id="deckOfCards">
       <caption>Representations of the 52 unique cards in a deck.</caption>
       <tabular>
         <row>
-          <cell><c>2<m>\clubsuit</m></c></cell>
-          <cell><c>3<m>\clubsuit</m></c></cell>
-          <cell><c>4<m>\clubsuit</m></c></cell>
-          <cell><c>5<m>\clubsuit</m></c></cell>
-          <cell><c>6<m>\clubsuit</m></c></cell>
-          <cell><c>7<m>\clubsuit</m></c></cell>
-          <cell><c>8<m>\clubsuit</m></c></cell>
-          <cell><c>9<m>\clubsuit</m></c></cell>
-          <cell><c>10<m>\clubsuit</m></c></cell>
-          <cell><c>J<m>\clubsuit</m></c></cell>
-          <cell><c>Q<m>\clubsuit</m></c></cell>
-          <cell><c>K<m>\clubsuit</m></c></cell>
-          <cell><c>A<m>\clubsuit</m></c></cell>
+          <cell><c>2 \clubsuit </c></cell>
+          <cell><c>3 \clubsuit </c></cell>
+          <cell><c>4 \clubsuit </c></cell>
+          <cell><c>5 \clubsuit </c></cell>
+          <cell><c>6 \clubsuit </c></cell>
+          <cell><c>7 \clubsuit </c></cell>
+          <cell><c>8 \clubsuit </c></cell>
+          <cell><c>9 \clubsuit </c></cell>
+          <cell><c>10 \clubsuit </c></cell>
+          <cell><c>J \clubsuit </c></cell>
+          <cell><c>Q \clubsuit </c></cell>
+          <cell><c>K \clubsuit </c></cell>
+          <cell><c>A \clubsuit </c></cell>
         </row>
         <row>
-          <cell>\color{redcards} <c>2<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>3<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>4<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>5<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>6<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>7<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>8<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>9<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>10<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>J<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>Q<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>K<m>\diamondsuit</m></c></cell>
-          <cell>\color{redcards}<c>A<m>\diamondsuit</m></c></cell>
+          <cell>\color{redcards} <c>2 \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>3 \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>4 \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>5 \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>6 \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>7 \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>8 \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>9 \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>10 \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>J \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>Q \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>K \diamondsuit </c></cell>
+          <cell>\color{redcards}<c>A \diamondsuit </c></cell>
         </row>
         <row>
-          <cell>\color{redcards}<c>2<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>3<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>4<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>5<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>6<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>7<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>8<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>9<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>10<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>J<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>Q<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>K<m>\heartsuit</m></c></cell>
-          <cell>\color{redcards}<c>A<m>\heartsuit</m></c></cell>
+          <cell>\color{redcards}<c>2 \heartsuit </c></cell>
+          <cell>\color{redcards}<c>3 \heartsuit </c></cell>
+          <cell>\color{redcards}<c>4 \heartsuit </c></cell>
+          <cell>\color{redcards}<c>5 \heartsuit </c></cell>
+          <cell>\color{redcards}<c>6 \heartsuit </c></cell>
+          <cell>\color{redcards}<c>7 \heartsuit </c></cell>
+          <cell>\color{redcards}<c>8 \heartsuit </c></cell>
+          <cell>\color{redcards}<c>9 \heartsuit </c></cell>
+          <cell>\color{redcards}<c>10 \heartsuit </c></cell>
+          <cell>\color{redcards}<c>J \heartsuit </c></cell>
+          <cell>\color{redcards}<c>Q \heartsuit </c></cell>
+          <cell>\color{redcards}<c>K \heartsuit </c></cell>
+          <cell>\color{redcards}<c>A \heartsuit </c></cell>
         </row>
         <row>
-          <cell><c>2<m>\spadesuit</m></c></cell>
-          <cell><c>3<m>\spadesuit</m></c></cell>
-          <cell><c>4<m>\spadesuit</m></c></cell>
-          <cell><c>5<m>\spadesuit</m></c></cell>
-          <cell><c>6<m>\spadesuit</m></c></cell>
-          <cell><c>7<m>\spadesuit</m></c></cell>
-          <cell><c>8<m>\spadesuit</m></c></cell>
-          <cell><c>9<m>\spadesuit</m></c></cell>
-          <cell><c>10<m>\spadesuit</m></c></cell>
-          <cell><c>J<m>\spadesuit</m></c></cell>
-          <cell><c>Q<m>\spadesuit</m></c></cell>
-          <cell><c>K<m>\spadesuit</m></c></cell>
-          <cell><c>A<m>\spadesuit</m></c></cell>
+          <cell><c>2 \spadesuit </c></cell>
+          <cell><c>3 \spadesuit </c></cell>
+          <cell><c>4 \spadesuit </c></cell>
+          <cell><c>5 \spadesuit </c></cell>
+          <cell><c>6 \spadesuit </c></cell>
+          <cell><c>7 \spadesuit </c></cell>
+          <cell><c>8 \spadesuit </c></cell>
+          <cell><c>9 \spadesuit </c></cell>
+          <cell><c>10 \spadesuit </c></cell>
+          <cell><c>J \spadesuit </c></cell>
+          <cell><c>Q \spadesuit </c></cell>
+          <cell><c>K \spadesuit </c></cell>
+          <cell><c>A \spadesuit </c></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <exercise>
       <statement>
         <p>
@@ -531,7 +531,7 @@
       <term>General Addition Rule</term>.
     </p>
     <assemblage>
-      <title></title>
+      <title>General Addition Rule</title>
       <p>
         If <m>A</m> and <m>B</m> are any two events,
         disjoint or not, then the probability that A or B will occur is
@@ -542,7 +542,11 @@
       </p>
     </assemblage>
     <assemblage>
-      <title></title>
+      <title>Symbolic notation for
+      <q>and</q>
+      and
+      <q>or</q>
+      </title>
       <p>
         The symbol <m>\cap</m> means intersection and is equivalent to
         <q>and</q>.
@@ -559,7 +563,9 @@
       </p>
     </assemblage>
     <assemblage>
-      <title></title>
+      <title>
+      <q>or</q>
+      is inclusive</title>
       <p>
         When we write,
         <q>or</q>
@@ -601,6 +607,12 @@
               <idx><h>data</h><h>email</h></idx>
         </p>
       </statement>
+      <answer>
+        <p>
+          (a)<nbsp/>The solution is represented by the intersection of the two circles: 0.043. (b)<nbsp/>This is the sum of the three disjoint probabilities shown in the circles:
+          <m>0.678 + 0.043 + 0.051 = 0.772</m>.
+        </p>
+      </answer>
     </exercise>
   </subsection>
   <subsection>
@@ -646,7 +658,7 @@
       Because of this we can say that <m>P(A) + P(A^c) = 1</m>.
     </p>
     <assemblage>
-      <title></title>
+      <title>Complement</title>
       <p>
         The complement of event <m>A</m> is denoted <m>A^c</m>,
         and <m>A^c</m> represents all outcomes not in<nbsp/><m>A</m>.
@@ -667,6 +679,12 @@
           A die is rolled 10 times. (a)<nbsp/>What is the complement of getting at least one 6 in 10 rolls of the die? (b)<nbsp/>What is the complement of getting at most three 6's in 10 rolls of the die?
         </p>
       </statement>
+      <answer>
+        <p>
+          (a)<nbsp/>The complement of getting at least one 6 in ten rolls of a die is getting zero 6's in the 10 rolls. (b)<nbsp/>The complement of getting at most three 6's in 10 rolls is getting four,
+          five, ..., nine, or ten 6's in 10<nbsp/>rolls.
+        </p>
+      </answer>
     </exercise>
   </subsection>
   <subsection xml:id="probabilityIndependence">
@@ -732,7 +750,7 @@
       illustrate what is called the Multiplication Rule for independent processes.
     </p>
     <assemblage>
-      <title></title>
+      <title>Multiplication Rule for independent processes</title>
       <p>
             <idx><h>Multiplication Rule</h></idx>
         If <m>A</m> and <m>B</m> represent events from two different and independent processes, then the probability that both <m>A</m> and <m>B</m> occur can be calculated as the product of their separate probabilities:
@@ -757,6 +775,21 @@
           it is reasonable to assume these two people are independent. (a)<nbsp/>What is the probability that both are left-handed? (b)<nbsp/>What is the probability that both are right-handed?
         </p>
       </statement>
+      <answer>
+        <p>
+          (a) The probability the first person is left-handed is <m>0.09</m>,
+          which is the same for the second person.
+          We apply the Multiplication Rule for independent processes to determine the probability that both will be left-handed:
+          <m>0.09\times 0.09 = 0.0081</m>.
+        </p>
+        <p>
+          (b) It is reasonable to assume the proportion of people who are ambidextrous
+          (both right- and left-handed)
+          is nearly 0, which results in <m>P(</m>right-handed<m>)=1-0.09=0.91</m>.
+          Using the same reasoning as in part<nbsp/>(a),
+          the probability that both will be right-handed is <m>0.91\times 0.91 = 0.8281</m>.
+        </p>
+      </answer>
     </exercise>
     <exercise xml:id="ex5Handedness">
       <statement>
@@ -829,6 +862,11 @@
           </ol>
         </p>
       </statement>
+      <answer>
+        <p>
+          Brief answers are provided. (a)<nbsp/>This can be written in probability notation as <m>P(</m>a randomly selected person is male and right-handed<m>)=0.455</m>. (b) 0.207. (c) 0.045. (d) 0.0093.
+        </p>
+      </answer>
     </exercise>
     <p>
       Sometimes we wonder if one outcome provides useful information about another outcome.
@@ -845,8 +883,16 @@
       </statement>
       <solution>
         <p>
-          If we shuffle up a deck of cards and draw one,
-          is the event that the card is a heart independent of the event that the card is an ace?
+          The probability the card is a heart is <m>1/4</m> and the probability that it is an ace is <m>1/13</m>.
+          The probability the card is the ace of hearts is <m>1/52</m>.
+          We check whether <xref ref="eqForIndependentEvents">Equation</xref> is satisfied:
+          <md>
+            <mrow>P({\color{redcards}\heartsuit})\times P(\text{ ace } ) = \frac{1}{4}\times \frac{1}{13} = \frac{1}{52} = P({\color{redcards}\heartsuit}\text{ and ace } )</mrow>
+          </md>
+        </p>
+        <p>
+          Because the equation holds,
+          the event that the card is a heart and the event that the card is an ace are independent events.
         </p>
       </solution>
     </example>
@@ -948,463 +994,5 @@
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise xml:id="tf_prob_definitions">
-      <title>True or false</title>
-      <statement>
-        <p>
-          Determine if the statements below are true or false,
-          and explain your reasoning.
-          <ol>
-            <li>
-              <p>
-                If a fair coin is tossed many times and the last eight tosses are all heads,
-                then the chance that the next toss will be heads is somewhat less than 50%.
-              </p>
-            </li>
-            <li>
-              <p>
-                Drawing a face card (jack, queen,
-                or king) and drawing a red card from a full deck of playing cards are mutually exclusive events.
-              </p>
-            </li>
-            <li>
-              <p>
-                Drawing a face card and drawing an ace from a full deck of playing cards are mutually exclusive events.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="roulette_wheel">
-      <title>Roulette wheel</title>
-      <statement>
-        <p>
-          The game of roulette involves spinning a wheel with 38 slots: 18 red, 18 black,
-          and 2 green.
-          A ball is spun onto the wheel and will eventually land in a slot,
-          where each slot has an equal chance of capturing the ball.
-        </p>
-        <sidebyside>
-          <ol>
-            <li>
-              <p>
-                You watch a roulette wheel spin 3 consecutive times and the ball lands on a red slot each time.
-                What is the probability that the ball will land on a red slot on the next spin?
-              </p>
-            </li>
-            <li>
-              <p>
-                You watch a roulette wheel spin 300 consecutive times and the ball lands on a red slot each time.
-                What is the probability that the ball will land on a red slot on the next spin?
-              </p>
-            </li>
-            <li>
-              <p>
-                Are you equally confident of your answers to parts<nbsp/>(a) and<nbsp/>(b)?
-                Why or why not?
-              </p>
-            </li>
-          </ol>
-          \
-          <image width="73%" source="images/roulette_wheel.png" />
-          { Photo by H&#229;kan Dahlstr&#xf6;m
-          (MISSINGoiRedirect)
-          MISSINGoiRedirect}
-        </sidebyside>
-      </statement>
-    </exercise>
-    <exercise xml:id="four_games_one_winner">
-      <title>Four games, one winner</title>
-      <statement>
-        <p>
-          MISSINGVIDEOLINK<nbsp/> Below are four versions of the same game.
-          Your archnemesis gets to pick the version of the game,
-          and then you get to choose how many times to flip a coin: 10 times or 100 times.
-          Identify how many coin flips you should choose for each version of the game.
-          It costs $1 to play each game.
-          Explain your reasoning.
-          <ol>
-            <li>
-              <p>
-                If the proportion of heads is larger than 0.60, you win $1.
-              </p>
-            </li>
-            <li>
-              <p>
-                If the proportion of heads is larger than 0.40, you win $1.
-              </p>
-            </li>
-            <li>
-              <p>
-                If the proportion of heads is between 0.40 and 0.60, you win $1.
-              </p>
-            </li>
-            <li>
-              <p>
-                If the proportion of heads is smaller than 0.30, you win $1.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="backgammon">
-      <title>Backgammon</title>
-      <statement>
-        <p>
-          Backgammon is a board game for two players in which the playing pieces are moved according to the roll of two dice.
-          Players win by removing all of their pieces from the board,
-          so it is usually good to roll high numbers.
-          You are playing backgammon with a friend and you roll two 6s in your first roll and two 6s in your second roll.
-          Your friend rolls two 3s in his first roll and again in his second row.
-          Your friend claims that you are cheating,
-          because rolling double 6s twice in a row is very unlikely.
-          Using probability,
-          show that your rolls were just as likely as<nbsp/>his.
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="coin_flips">
-      <title>Coin flips</title>
-      <statement>
-        <p>
-          If you flip a fair coin 10 times,
-          what is the probability of
-          <ol>
-            <li>
-              <p>
-                getting all tails?
-              </p>
-            </li>
-            <li>
-              <p>
-                getting all heads?
-              </p>
-            </li>
-            <li>
-              <p>
-                getting at least one tails?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="dice_rolls">
-      <title>Dice rolls</title>
-      <statement>
-        <p>
-          If you roll a pair of fair dice,
-          what is the probability of
-          <ol>
-            <li>
-              <p>
-                getting a sum of 1?
-              </p>
-            </li>
-            <li>
-              <p>
-                getting a sum of 5?
-              </p>
-            </li>
-            <li>
-              <p>
-                getting a sum of 12?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="swing_voters">
-      <title>Swing voters</title>
-      <statement>
-        <p>
-          MISSINGVIDEOLINK<nbsp/> A Pew Research survey asked 2,373 randomly sampled registered voters their political affiliation (Republican, Democrat,
-          or Independent) and whether or not they identify as swing voters. 35% of respondents identified as Independent, 23% identified as swing voters,
-          and 11% identified as both.\footfullcite{indepSwing}
-          <ol>
-            <li>
-              <p>
-                Are being Independent and being a swing voter disjoint,
-                i.e. mutually exclusive?
-              </p>
-            </li>
-            <li>
-              <p>
-                Draw a Venn diagram summarizing the variables and their associated probabilities.
-              </p>
-            </li>
-            <li>
-              <p>
-                What percent of voters are Independent but not swing voters?
-              </p>
-            </li>
-            <li>
-              <p>
-                What percent of voters are Independent or swing voters?
-              </p>
-            </li>
-            <li>
-              <p>
-                What percent of voters are neither Independent nor swing voters?
-              </p>
-            </li>
-            <li>
-              <p>
-                Is the event that someone is a swing voter independent of the event that someone is a political Independent?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="poverty_language">
-      <title>Poverty and language</title>
-      <statement>
-        <p>
-          The American Community Survey is an ongoing survey that provides data every year to give communities the current information they need to plan investments and services.
-          The 2010 American Community Survey estimates that 14.6% of Americans live below the poverty line, 20.7% speak a language other than English
-          (foreign language)
-          at home, and 4.2% fall into both categories. \footfullcite{poorLang}
-          <ol>
-            <li>
-              <p>
-                Are living below the poverty line and speaking a foreign language at home disjoint?
-              </p>
-            </li>
-            <li>
-              <p>
-                Draw a Venn diagram summarizing the variables and their associated probabilities.
-              </p>
-            </li>
-            <li>
-              <p>
-                What percent of Americans live below the poverty line and only speak English at home?
-              </p>
-            </li>
-            <li>
-              <p>
-                What percent of Americans live below the poverty line or speak a foreign language at home?
-              </p>
-            </li>
-            <li>
-              <p>
-                What percent of Americans live above the poverty line and only speak English at home?
-              </p>
-            </li>
-            <li>
-              <p>
-                Is the event that someone lives below the poverty line independent of the event that the person speaks a foreign language at home?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="disjoint_indep">
-      <title>Disjoint vs. independent</title>
-      <statement>
-        <p>
-          In parts<nbsp/>(a) and<nbsp/>(b),
-          identify whether the events are disjoint, independent,
-          or neither
-          (events cannot be both disjoint and independent).
-          <ol>
-            <li>
-              <p>
-                You and a randomly selected student from your class both earn A's in this course.
-              </p>
-            </li>
-            <li>
-              <p>
-                You and your class study partner both earn A's in this course.
-              </p>
-            </li>
-            <li>
-              <p>
-                If two events can occur at the same time, must they be dependent?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="guessing_on_exam">
-      <title>Guessing on an exam</title>
-      <statement>
-        <p>
-          In a multiple choice exam,
-          there are 5 questions and 4 choices for each question (a, b, c, d).
-          Nancy has not studied for the exam at all and decides to randomly guess the answers.
-          What is the probability that:
-          <ol>
-            <li>
-              <p>
-                the first question she gets right is the <m>5^{th}</m> question?
-              </p>
-            </li>
-            <li>
-              <p>
-                she gets all of the questions right?
-              </p>
-            </li>
-            <li>
-              <p>
-                she gets at least one question right?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="edu_attain_couples">
-      <title>Educational attainment of couples</title>
-      <statement>
-        <p>
-          The table below shows the distribution of education level attained by US residents by gender based on data collected in the 2010 American Community Survey. \footfullcite{eduSex}
-        </p>
-        <tabular>
-          <row>
-            <cell></cell>
-            <cell></cell>
-            <cell>\multicolumn{2}{c}{<em>Gender</em>}</cell>
-          </row>
-          <row>
-            <cell></cell>
-            <cell></cell>
-            <cell>Male</cell>
-            <cell>Female</cell>
-          </row>
-          <row>
-            <cell></cell>
-            <cell>Less than 9th grade</cell>
-            <cell>0.07</cell>
-            <cell>0.13</cell>
-          </row>
-          <row>
-            <cell></cell>
-            <cell>9th to 12th grade, no diploma</cell>
-            <cell>0.10</cell>
-            <cell>0.09</cell>
-          </row>
-          <row>
-            <cell><em>Highest</em></cell>
-            <cell>HS graduate (or equivalent)</cell>
-            <cell>0.30</cell>
-            <cell>0.20</cell>
-          </row>
-          <row>
-            <cell><em>education</em></cell>
-            <cell>Some college, no degree</cell>
-            <cell>0.22</cell>
-            <cell>0.24</cell>
-          </row>
-          <row>
-            <cell><em>attained</em></cell>
-            <cell>Associate's degree</cell>
-            <cell>0.06</cell>
-            <cell>0.08</cell>
-          </row>
-          <row>
-            <cell></cell>
-            <cell>Bachelor's degree</cell>
-            <cell>0.16</cell>
-            <cell>0.17</cell>
-          </row>
-          <row>
-            <cell></cell>
-            <cell>Graduate or professional degree</cell>
-            <cell>0.09</cell>
-            <cell>0.09</cell>
-          </row>
-          <row>
-            <cell></cell>
-            <cell>Total</cell>
-            <cell>1.00</cell>
-            <cell>1.00</cell>
-          </row>
-        </tabular>
-        <ol>
-          <li>
-            <p>
-              What is the probability that a randomly chosen man has at least a Bachelor's degree?
-            </p>
-          </li>
-          <li>
-            <p>
-              What is the probability that a randomly chosen woman has at least a Bachelor's degree?
-            </p>
-          </li>
-          <li>
-            <p>
-              What is the probability that a man and a woman getting married both have at least a Bachelor's degree?
-              Note any assumptions you must make to answer this question.
-            </p>
-          </li>
-          <li>
-            <p>
-              If you made an assumption in part<nbsp/>(c),
-              do you think it was reasonable?
-              If you didn't make an assumption,
-              double check your earlier answer and then return to this part.
-            </p>
-          </li>
-        </ol>
-      </statement>
-    </exercise>
-    <exercise xml:id="school_absences">
-      <title>School absences</title>
-      <statement>
-        <p>
-          Data collected at elementary schools in DeKalb County, GA suggest that each year roughly 25% of students miss exactly one day of school, 15% miss 2 days,
-          and 28% miss 3 or more days due to sickness. \footfullcite{Mizan:2011}
-          <ol>
-            <li>
-              <p>
-                What is the probability that a student chosen at random doesn't miss any days of school due to sickness this year?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that a student chosen at random misses no more than one day?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that a student chosen at random misses at least one day?
-              </p>
-            </li>
-            <li>
-              <p>
-                If a parent has two kids at a DeKalb County elementary school,
-                what is the probability that neither kid will miss any school?
-                Note any assumption you must make to answer this question.
-              </p>
-            </li>
-            <li>
-              <p>
-                If a parent has two kids at a DeKalb County elementary school,
-                what is the probability that both kids will miss some school,
-                i.e. at least one day?
-                Note any assumption you make.
-              </p>
-            </li>
-            <li>
-              <p>
-                If you made an assumption in part<nbsp/>(d) or<nbsp/>(e),
-                do you think it was reasonable?
-                If you didn't make any assumptions,
-                double check your earlier answers.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>

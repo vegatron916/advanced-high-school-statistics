@@ -1,0 +1,181 @@
+<section>
+  <title>Exercises</title>
+  <exercise xml:id="tf_chisq_1">
+    <title>True or false, Part I</title>
+    <statement>
+      <p>
+        Determine if the statements below are true or false.
+        For each false statement,
+        suggest an alternative wording to make it a true statement.
+        <ol>
+          <li>
+            <p>
+              The chi-square distribution,
+              just like the normal distribution,
+              has two parameters, mean and standard deviation.
+            </p>
+          </li>
+          <li>
+            <p>
+              The chi-square distribution is always right skewed,
+              regardless of the value of the degrees of freedom parameter.
+            </p>
+          </li>
+          <li>
+            <p>
+              The chi-square statistic is always positive.
+            </p>
+          </li>
+          <li>
+            <p>
+              As the degrees of freedom increases,
+              the shape of the chi-square distribution becomes more skewed.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="tf_chisq_2">
+    <title>True or false, Part II</title>
+    <statement>
+      <p>
+        Determine if the statements below are true or false.
+        For each false statement,
+        suggest an alternative wording to make it a true statement.
+        <ol>
+          <li>
+            <p>
+              As the degrees of freedom increases,
+              the mean of the chi-square distribution increases.
+            </p>
+          </li>
+          <li>
+            <p>
+              If you found <m>\chi^2 = 10</m> with <m>df = 5</m> you would fail to reject <m>H_0</m> at the 5% significance level.
+            </p>
+          </li>
+          <li>
+            <p>
+              When finding the p-value of a chi-square test,
+              we always shade the tail areas in both tails.
+            </p>
+          </li>
+          <li>
+            <p>
+              As the degrees of freedom increases,
+              the variability of the chi-square distribution decreases.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="opensource_text_chisq_GOF">
+    <title>Open source textbook</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-opensource_text_chisq_GOF<nbsp/> A professor using an open source introductory statistics book predicts that 60% of the students will purchase a hard copy of the book, 25% will print it out from the web,
+        and 15% will read it online.
+        At the end of the semester he asks his students to complete a survey where they indicate what format of the book they used.
+        Of the 126 students, 71 said they bought a hard copy of the book, 30 said they printed it out from the web,
+        and 25 said they read it online.
+        <ol>
+          <li>
+            <p>
+              State the hypotheses for testing if the professor's predictions were inaccurate.
+            </p>
+          </li>
+          <li>
+            <p>
+              How many students did the professor expect to buy the book,
+              print the book, and read the book exclusively online?
+            </p>
+          </li>
+          <li>
+            <p>
+              This is an appropriate setting for a chi-square test.
+              List the conditions required for a test and verify they are satisfied.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the chi-squared statistic,
+              the degrees of freedom associated with it, and the p-value.
+            </p>
+          </li>
+          <li>
+            <p>
+              Based on the p-value calculated in part (d),
+              what is the conclusion of the hypothesis test?
+              Interpret your conclusion in this context.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="barking_deer_chisq_GOF">
+    <title>Barking deer</title>
+    <statement>
+      <p>
+        Microhabitat factors associated with forage and bed sites of barking deer in Hainan Island, China were examined.
+        In this region woods make up 4.8% of the land,
+        cultivated grass plot makes up 14.7%, and deciduous forests make up 39.6%. Of the 426 sites where the deer forage, 4 were categorized as woods, 16 as cultivated grassplot,
+        and 61 as deciduous forests.
+        The table below summarizes these data.\footfullcite{Teng:2004}
+      </p>
+      <tabular>
+        <row>
+          <cell>Woods</cell>
+          <cell>Cultivated grassplot</cell>
+          <cell>Deciduous forests</cell>
+          <cell>Other</cell>
+          <cell>Total</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>16</cell>
+          <cell>61</cell>
+          <cell>345</cell>
+          <cell>426</cell>
+        </row>
+      </tabular>
+      <sidebyside>
+        <ol>
+          <li>
+            <p>
+              Write the hypotheses for testing if barking deer prefer to forage in certain habitats over others.
+            </p>
+          </li>
+          <li>
+            <p>
+              What type of test can we use to answer this research question?
+            </p>
+          </li>
+          <li>
+            <p>
+              Check if the assumptions and conditions required for this test are satisfied.
+            </p>
+          </li>
+          <li>
+            <p>
+              Do these data provide convincing evidence that barking deer prefer to forage in certain habitats over others?
+              Conduct an appropriate hypothesis test to answer this research question.
+            </p>
+          </li>
+        </ol>
+        <m>\:</m>
+        <image width="70%" source="images/barking_deer.png" />
+        { Photo by Shrikant Rao (\oiRedirect{textbook-flickr_shrikant_rao_barking_deer}{http://flic.kr/p/4Xjdkk}) \oiRedirect{textbook-CC_BY_2}{CC<nbsp/>BY<nbsp/>2.0<nbsp/>license}}
+      </sidebyside>
+    </statement>
+  </exercise>
+</section>

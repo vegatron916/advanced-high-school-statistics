@@ -83,7 +83,7 @@
       </md>
     </p>
     <assemblage>
-      <title></title>
+      <title>Mean and standard deviation of a sample proportion</title>
       <p>
         The mean and standard deviation of the sample proportion describe the center and spread of the distribution of all possible sample proportions <m>\hat{p}</m> from a random sample of size <m>n</m> with true population proportion <m>p</m>.
         <md>
@@ -123,7 +123,20 @@
       </statement>
       <solution>
         <p>
-          If the proportion of people in the county with blood type O+ is really 35%, find and interpret the mean and standard deviation of the sample proportion for a random sample of size 400.
+          The mean of the sample proportion is the population proportion: 0.35.
+          That is, if we took many,
+          many samples and calculated <m>\hat{p}</m>,
+          these values would average out to <m>p = 0.35</m>.
+        </p>
+        <p>
+          The standard deviation of <m>\hat{p}</m> is described by the standard deviation for the proportion:
+          <md>
+            <mrow>\sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}} = \sqrt{\frac{0.35(0.65)}{400}} = 0.024</mrow>
+          </md>
+        </p>
+        <p>
+          The sample proportion will typically be about 0.024 or 2.4% away from the true proportion of <m>p = 0.35</m>.
+          We'll become more rigorous about quantifying how close <m>\hat{p}</m> will tend to be to <m>p</m> in <xref ref="foundationsForInference">Chapter</xref>.
         </p>
       </solution>
     </example>
@@ -187,9 +200,18 @@
           Find the probability that less than 30% of a random sample of 400 people will be blood type O+ if the population proportion is 35%.
         </p>
       </statement>
-      <solution>
+      <solution xml:id="smokers">
         <p>
-          Find the probability that less than 30% of a random sample of 400 people will be blood type O+ if the population proportion is 35%.
+          In the previous section we verified that <m>np</m> and <m>n(1-p)</m> are at least 10.
+          The mean of the sample proportion is 0.35 and the standard deviation for the sample proportion is given by <m>\sqrt{\frac{0.35(1-0.35)}{400}}=0.024</m>.
+          We can find a Z-score and use our calculator to find the probability:
+          <md>
+            <mrow>Z \amp = \frac{\hat{p} - \mu_{\hat{p}}}{\sigma_{\hat{p}}} = \frac{0.30 - 0.35}{0.024} = -2.1</mrow>
+            <mrow>P(\amp Z \lt  -2.1) = 0.0179</mrow>
+          </md>
+        </p>
+        <p>
+          We leave it to the reader to construct a figure for this example.
         </p>
       </solution>
     </example>
@@ -202,8 +224,8 @@
       </statement>
       <solution>
         <p>
-          The probability 0.0179 is the same probability we calculated when we found the probability of getting fewer than 120 with blood type O+ out of 400!
-          Why is this?
+          Notice that <m>120/400=0.30</m>.
+          Using the binomial distribution to find the probability of fewer than 120 with blood type O+ in the sample is equivalent to using the distribution of <m>\hat{p}</m> to find the probability of a sample proportion less than 0.30.
         </p>
       </solution>
     </example>
@@ -293,170 +315,5 @@
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise>
-      <statement>
-        <p>
-          { <em>Suppose the true population proportion were <m>p = 0.95</m>.
-          The figure below shows what the distribution of a sample proportion looks like when the sample size is <m>n = 20</m>,
-          <m>n = 100</m>,
-          and <m>n = 500</m>. (a) What does each point (observation) in each of the samples represent? (b) Describe the distribution of the sample proportion,
-          <m>\hat{p}</m>.
-          How does the distribution of the sample proportion change as <m>n</m> becomes larger?Distribution of <m>\hat{p}</m></em>}<image width="85%" source="images/eoce-p-hat-simulations-p95.png" />
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          { <em>Suppose the true population proportion were <m>p = 0.5</m>.
-          The figure below shows what the distribution of a sample proportion looks like when the sample size is <m>n = 20</m>,
-          <m>n = 100</m>, and <m>n = 500</m>.
-          What does each point (observation) in each of the samples represent?
-          Describe how the distribution of the sample proportion,
-          <m>\hat{p}</m>,
-          changes as <m>n</m> becomes larger.Distribution of <m>\hat{p}</m></em>}<image width="85%" source="images/eoce-p-hat-simulations-p5.png" />
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          { <em>Distribution of <m>\hat{p}</m></em>}MISSINGVIDEOLINK<nbsp/> Suppose the true population proportion were <m>p = 0.5</m> and a researcher takes a simple random sample of size <m>n=50</m>.
-          <ol>
-            <li>
-              <p>
-                Find and interpret the standard deviation of the sample proportion <m>\hat{p}</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                Calculate the probability that the sample proportion will be larger than 0.55 for a random sample of size 50.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <statement>
-        <p>
-          { <em>Distribution of <m>\hat{p}</m></em>}Suppose the true population proportion were <m>p = 0.6</m> and a researcher takes a simple random sample of size <m>n=50</m>.
-          <ol>
-            <li>
-              <p>
-                Find and interpret the standard deviation of the sample proportion <m>\hat{p}</m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                Calculate the probability that the sample proportion will be larger than 0.65 for a random sample of size 50.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Nearsighted children</title>
-      <statement>
-        <p>
-          MISSINGVIDEOLINK<nbsp/> It is believed that nearsightedness affects about 8% of all children.
-          We are interested in finding the probability that fewer than 12 out of 200 randomly sampled children will be nearsighted.
-          <ol>
-            <li>
-              <p>
-                Estimate this probability using the normal approximation to the binomial distribution.
-              </p>
-            </li>
-            <li>
-              <p>
-                Estimate this probability using the distribution of the sample proportion.
-              </p>
-            </li>
-            <li>
-              <p>
-                How do your answers from parts (a) and (b) compare?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Social network use</title>
-      <statement>
-        <p>
-          The Pew Research Center estimates that as of January 2014, 89% of 18-29 year olds in the United States use social networking sites.\footfullcite{data:pewsocialnetwork:2014} Calculate the probability that at least 95% of 500 randomly sampled 18-29 year olds use social networking sites.
-        </p>
-      </statement>
-    </exercise>
-    <p>
-      \addvspace{8mm} {{\titlerule[1mm]} \setupfont {\titlerule[1mm]} }
-    </p>
-    <p>
-      This chapter began by introducing the normal distribution.
-      A common thread that ran through this chapter is the use of the
-      <term>normal approximation</term> in various contexts.
-      The key steps are included for each of the normal approximation scenarios below.
-      <ol>
-        <li>
-          <p>
-            Normal approximation for <term>data</term>: - Verify that population is approximately normal. - Use the given mean <m>\mu</m> and SD <m>\sigma</m> to find the Z-score for the given <m>x</m> value.
-          </p>
-        </li>
-        <li>
-          <p>
-            Normal approximation for a <em>sample mean/sum</em>
-              <idx><h>sample mean|textbf</h></idx>
-            :
-              <idx><h>sample sum|textbf</h></idx>
-            Verify that population is approximately normal or that <m>n\ge 30</m>.
-            Use <m>\mu_{\bar{x}}=\mu</m> and
-            <m>\sigma_{\bar{x}}=\frac{\sigma}{\sqrt{n}}</m> to find the Z-score for the given/calculated sample mean.
-          </p>
-        </li>
-        <li>
-          <p>
-            Normal approximation for the <term>number of successes</term>
-            (binomial): - Verify that <m>np\ge 10</m> and
-            <m>n(1-p)\ge 10</m>. - Use <m>\mu_{\scriptscriptstyle{X}} = np</m> and
-            <m>\sigma_{\scriptscriptstyle{X}} = \sqrt{np(1-p)}</m> to find the Z-score for the given number of successes.
-          </p>
-        </li>
-        <li>
-          <p>
-            Normal approximation for a <term>sample proportion</term>: - Verify that <m>np\ge 10</m> and
-            <m>n(1-p)\ge 10</m>. - Use <m>\mu_{\hat{p}} = p</m> and
-            <m>\sigma_{\hat{p}} = \sqrt{\frac{p(1-p)}{n}}</m> to find the Z-score for the given sample proportion.
-          </p>
-        </li>
-        <li>
-          <p>
-            Normal approximation for the <term>sum of two independent random variables</term>: - Verify that each random variable is approximately normal. - Use <m>E(X+Y)=E(X)+E(Y)</m> and
-            <m>SD(X+Y)=\sqrt{(SD(X))^2+(SD(Y))^2}</m> to find the Z-score for the given sum.
-          </p>
-        </li>
-      </ol>
-    </p>
-    <p>
-      Cases 1 and 2 apply to <term>numerical</term> variables,
-      while cases 3 and 4 are for <term>categorical</term> yes/no variables.
-      Case 5 applies to both numerical and categorical variables.
-    </p>
-    <p>
-      Note that in the binomial case and in the case of proportions,
-      we never look to see if the <em>population</em> is normal.
-      That would not make sense because the
-      <q>population</q>
-      is simply a bunch of no/yes, 0/1 values and could not possibly be normal.
-    </p>
-    <p>
-      The <term>Central Limit Theorem</term>
-      is the mathematical rule that ensures that when the sample size is sufficiently large,
-      the sample mean/sum and sample proportion/count will be approximately normal.
-    </p>
   </subsection>
 </section>

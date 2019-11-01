@@ -114,9 +114,12 @@
       </statement>
       <solution>
         <p>
-          Earlier we asked the question:
-          what is the average mercury content in swordfish in the Atlantic Ocean?
-          Identify the variable to be measured and the parameter and statistic of interest.
+          The variable is the level of mercury content in swordfish in the Atlantic Ocean.
+          It will be measured for each individual swordfish.
+          The parameter of interest is the average mercury content in <em>all</em>
+          swordfish in the Atlantic Ocean.
+          If we take a sample of 50 swordfish from the Atlantic Ocean,
+          the average mercury content among just those 50 swordfish will be the statistic.
         </p>
       </solution>
     </example>
@@ -163,9 +166,10 @@
       </statement>
       <solution>
         <p>
-          For the second question regarding time to complete a degree for a Duke undergraduate,
-          is the variable numerical or categorical?
-          What is the parameter of interest?
+          The characteristic that we record on each individual is the number of years until graduation,
+          which is a numerical variable.
+          The parameter of interest is the average time to degree for all Duke undergraduates,
+          and we use <m>\mu</m> to describe this quantity.
         </p>
       </solution>
     </example>
@@ -226,7 +230,7 @@
       \hspace{8mm}<image width="6000%" source="images/mnWinter.png" /> \hspace{4mm}
     </figure>
     <assemblage>
-      <title></title>
+      <title>Anecdotal evidence</title>
       <p>
         Be careful of making inferences based on anecdotal evidence.
         Such evidence may be true and verifiable,
@@ -277,7 +281,7 @@
           <idx><h>data</h><h>county</h></idx>
     </p>
     <assemblage>
-      <title></title>
+      <title>Explanatory and response variables</title>
       <p>
         When we suspect one variable might causally affect another,
         we label the first variable the explanatory variable and the second the response variable.
@@ -291,7 +295,7 @@
       </p>
     </assemblage>
     <assemblage>
-      <title></title>
+      <title>Association does not imply causation</title>
       <p>
         {Labeling variables as <em>explanatory</em> and <em>response</em>
         does not guarantee the relationship between the two is actually causal,
@@ -310,7 +314,7 @@
       That<nbsp/>is,
       we do not know if the lack of the protein is an explanatory variable or a response variable.
       Perhaps it is both.<fn>
-      MISSINGoiRedirect
+      \oiRedirect{textbook-nytimes_gene_alzheimers_study}{nytimes.com/2014/03/20/health/fetal-gene-may-protect-brain-from-alzheimers-study-finds.html}
       </fn>
     </p>
   </subsection>
@@ -360,13 +364,20 @@
       </statement>
       <solution>
         <p>
-          Suppose that a researcher is interested in the average tip customers at a particular restaurant give.
-          Should she carry out an observational study or an experiment?
+          In addressing this question, we ask,
+          <q>Will the researcher be imposing any treatment?</q>
+          Because there is no treatment or interference that would be applicable here,
+          it will be an observational study.
+          Additionally,
+          one consideration the researcher should be aware of is that,
+          if customers know their tips are being recorded,
+          it could change their behavior,
+          making the results of the study inaccurate.
         </p>
       </solution>
     </example>
     <assemblage>
-      <title></title>
+      <title>Association <m>\neq</m> causation</title>
       <p>
         In general, association does not imply causation,
         and causation can only be inferred from a randomized experiment.
@@ -425,189 +436,5 @@
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise xml:id="scope_airpoll">
-      <title>Air pollution and birth outcomes, scope of inference</title>
-      <statement>
-        <p>
-          <xref ref="study_components_airpoll">Exercise</xref>
-          introduces a study where researchers collected data to examine the relationship between air pollutants and preterm births in Southern California.
-          During the study air pollution levels were measured by air quality monitoring stations.
-          Length of gestation data were collected on 143,196 births between the years 1989 and 1993,
-          and air pollution exposure during gestation was calculated for each birth.
-          <ol>
-            <li>
-              <p>
-                Identify the population of interest and the sample in this study.
-              </p>
-            </li>
-            <li>
-              <p>
-                Comment on whether or not the results of the study can be generalized to the population,
-                and if the findings of the study can be used to establish causal relationships.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="scope_cheaters">
-      <title>Cheaters, scope of inference</title>
-      <statement>
-        <p>
-          <xref ref="study_components_cheaters">Exercise</xref>
-          introduces a study where researchers studying the relationship between honesty, age,
-          and self-control conducted an experiment on 160 children between the ages of 5 and 15.
-          The researchers asked each child to toss a fair coin in private and to record the outcome
-          (white or black)
-          on a paper sheet,
-          and said they would only reward children who report white.
-          Half the students were explicitly told not to cheat and the others were not given any explicit instructions.
-          Differences were observed in the cheating rates in the instruction and no instruction groups,
-          as well as some differences across children's characteristics within each group.
-          <ol>
-            <li>
-              <p>
-                Identify the population of interest and the sample in this study.
-              </p>
-            </li>
-            <li>
-              <p>
-                Comment on whether or not the results of the study can be generalized to the population,
-                and if the findings of the study can be used to establish causal relationships.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="scope_buteyko">
-      <title>Buteyko method, scope of inference</title>
-      <statement>
-        <p>
-          <xref ref="study_components_buteyko">Exercise</xref>
-          introduces a study on using the Buteyko shallow breathing technique to reduce asthma symptoms and improve quality of life.
-          As part of this study 600 asthma patients aged 18-69 who relied on medication for asthma treatment were recruited and randomly assigned to two groups:
-          one practiced the Buteyko method and the other did not.
-          Those in the Buteyko group experienced, on average,
-          a significant reduction in asthma symptoms and an improvement in quality of life.
-          <ol>
-            <li>
-              <p>
-                Identify the population of interest and the sample in this study.
-              </p>
-            </li>
-            <li>
-              <p>
-                Comment on whether or not the results of the study can be generalized to the population,
-                and if the findings of the study can be used to establish causal relationships.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="scope_stealers">
-      <title>Stealers, scope of inference</title>
-      <statement>
-        <p>
-          <xref ref="study_components_stealers">Exercise</xref>
-          introduces a study on the relationship between socio-economic class and unethical behavior.
-          As part of this study 129 University of California Berkeley undergraduates were asked to identify themselves as having low or high social-class by comparing themselves to others with the most (least) money,
-          most (least) education, and most (least) respected jobs.
-          They were also presented with a jar of individually wrapped candies and informed that the candies were for children in a nearby laboratory,
-          but that they could take some if they wanted.
-          After completing some unrelated tasks,
-          participants reported the number of candies they had taken.
-          It was found that those who were identified as upper-class took more candy than others.
-          <ol>
-            <li>
-              <p>
-                Identify the population of interest and the sample in this study.
-              </p>
-            </li>
-            <li>
-              <p>
-                Comment on whether or not the results of the study can be generalized to the population,
-                and if the findings of the study can be used to establish causal relationships.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="relax_after_work_definitions">
-      <title>Relaxing after work</title>
-      <statement>
-        <p>
-          The General Social Survey asked the question, ``After an average work day,
-          about how many hours do you have to relax or pursue activities that you enjoy?" to a random sample of 1,155 Americans.
-          The average relaxing time was found to be 1.65 hours.
-          Determine which of the following is an observation,
-          a variable, a sample statistic
-          (value calculated based on the observed sample),
-          or a population parameter.
-          <ol>
-            <li>
-              <p>
-                An American in the sample.
-              </p>
-            </li>
-            <li>
-              <p>
-                Number of hours spent relaxing after an average work day.
-              </p>
-            </li>
-            <li>
-              <p>
-                1.65.
-              </p>
-            </li>
-            <li>
-              <p>
-                Average number of hours all Americans spend relaxing after an average work day.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="cats_on_youtube_definitions">
-      <title>Cats on YouTube</title>
-      <statement>
-        <p>
-          Suppose you want to estimate the percentage of videos on YouTube that are cat videos.
-          It is impossible for you to watch all videos on YouTube so you use a random video picker to select 1000 videos for you.
-          You find that 2% of these videos are cat videos.Determine which of the following is an observation,
-          a variable, a sample statistic
-          (value calculated based on the observed sample),
-          or a population parameter.
-          <ol>
-            <li>
-              <p>
-                Percentage of all videos on YouTube that are cat videos.
-              </p>
-            </li>
-            <li>
-              <p>
-                2%.
-              </p>
-            </li>
-            <li>
-              <p>
-                A video in your sample.
-              </p>
-            </li>
-            <li>
-              <p>
-                Whether or not a video is a cat video.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>

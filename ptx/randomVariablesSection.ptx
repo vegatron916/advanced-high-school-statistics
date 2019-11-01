@@ -70,15 +70,13 @@
           how many books should the bookstore expect to sell to this class?
         </p>
       </statement>
-      <solution>
+      <solution xml:id="bookStoreSales">
         <p>
-          Two books are assigned for a statistics class:
-          a textbook and its corresponding study guide.
-          The university bookstore determined 20% of enrolled students do not buy either book, 55% buy the textbook only,
-          and 25% buy both books,
-          and these percentages are relatively constant from one term to another.
-          If<nbsp/>there are 100 students enrolled,
-          how many books should the bookstore expect to sell to this class?
+          Around 20 students will not buy either book (0 books total),
+          about 55 will buy one book (55 books total),
+          and approximately 25 will buy two books
+          (totaling 50 books for these 25 students).
+          The bookstore should expect to sell about 105 books for this class.
         </p>
       </solution>
     </example>
@@ -96,10 +94,24 @@
           How much revenue should the bookstore expect from this class of 100 students?
         </p>
       </statement>
-      <solution>
+      <solution xml:id="bookStoreRev">
         <p>
-          The textbook costs $137 and the study guide $33.
-          How much revenue should the bookstore expect from this class of 100 students?
+          About 55 students will just buy a textbook, providing revenue of
+          <md>
+            <mrow>\dollar137 \times  55 = \dollar7,535</mrow>
+          </md>
+        </p>
+        <p>
+          The roughly 25 students who buy both the textbook and the study guide would pay a total of
+          <md>
+            <mrow>(\dollar137 + \dollar33) \times  25 = \dollar170 \times  25 = \dollar4,250</mrow>
+          </md>
+        </p>
+        <p>
+          Thus, the bookstore should expect to generate about
+          <m>\dollar7,535 + \dollar4,250 = \dollar11,785</m> from these 100 students for this one class.
+          However, there might be some <em>sampling variability</em>
+          so the actual amount may differ by a little bit.
         </p>
       </solution>
     </example>
@@ -113,9 +125,10 @@
           What is the average revenue per student for this course?
         </p>
       </statement>
-      <solution>
+      <solution xml:id="revFromStudent">
         <p>
-          What is the average revenue per student for this course?
+          The expected total revenue is $11,785, and there are 100 students.
+          Therefore the expected revenue per student is <m>\dollar11,785/100 = \dollar117.85</m>.
         </p>
       </solution>
     </example>
@@ -129,7 +142,7 @@
       shows the probability distribution for the sum of two dice.
     </p>
     <assemblage>
-      <title></title>
+      <title>Rules for probability distributions</title>
       <p>
         A probability distribution is a list of the possible outcomes with corresponding probabilities that satisfies three rules:
         <ol>
@@ -161,8 +174,18 @@
           What is wrong with the other two?
         </p>
       </statement>
+      <answer>
+        <p>
+          The probabilities of (a) do not sum to 1.
+          The second probability in (b) is negative.
+          This leaves (c),
+          which sure enough satisfies the requirements of a distribution.
+          One of the three was said to be the actual distribution of US household incomes,
+          so it must be (c).
+        </p>
+      </answer>
     </exercise>
-    <table xml:id="diceProb">
+    <figure xml:id="diceProb">
       <caption>Probability distribution for the sum of two dice.</caption>
       <tabular>
         <row bottom="minor">
@@ -277,7 +300,7 @@
         </row>
       </tabular>
       \caption{Proposed distributions of US household incomes (Guided <xref ref="usHouseholdIncomeDistsExercise">Practice</xref>).}
-    </table>
+    </figure>
     <p>
       <xref ref="summarizingData">Chapter</xref>
       emphasized the importance of plotting data to provide quick summaries.
@@ -323,7 +346,7 @@
       and we represent it by <m>X</m>.
     </p>
     <assemblage>
-      <title></title>
+      <title>Random variable</title>
       <p>
         A random process or variable with a numerical outcome.
       </p>
@@ -337,7 +360,7 @@
       The distribution of <m>X</m> is summarized in <xref ref="bookCostDist">Figure</xref>
       and <xref ref="statSpendDist">Figure</xref>.
     </p>
-    <table xml:id="statSpendDist">
+    <figure xml:id="statSpendDist">
       <caption>The probability distribution for the random variable <m>X</m>, representing the bookstore's revenue from a single student. We use <m>P(x_i)</m> to represent the probability of <m>x_i</m>.</caption>
       <tabular>
         <row bottom="minor">
@@ -383,7 +406,7 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <p>
       We computed the average outcome of <m>X</m> as $117.85 in <xref ref="revFromStudent">Example</xref>.
       We call this average the <term>expected value</term>
@@ -396,7 +419,7 @@
       </md>
     </p>
     <assemblage>
-      <title></title>
+      <title>Expected value of a discrete random variable</title>
       <p>
         If <m>X</m> takes outcomes <m>x_1</m>,
         <m>x_2</m>, ..., <m>x_n</m> with probabilities <m>P(x_1)</m>,
@@ -472,7 +495,7 @@
       just as we did in <xref ref="variability">Section</xref>.
     </p>
     <assemblage>
-      <title></title>
+      <title>Variance and standard deviation of a discrete random variable</title>
       <p>
         If <m>X</m> takes outcomes <m>x_1</m>,
         <m>x_2</m>, ..., <m>x_n</m> with probabilities <m>P(x_1)</m>,
@@ -502,9 +525,147 @@
       </statement>
       <solution>
         <p>
-          Compute the expected value, variance,
-          and standard deviation of <m>X</m>,
-          the revenue of a single statistics student for the bookstore.
+          It is useful to construct a table that holds computations for each outcome separately,
+          then add up the results.
+        </p>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>i</m></cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>Total</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x_i</m></cell>
+            <cell>$0</cell>
+            <cell>$137</cell>
+            <cell>$170</cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>P(x_i)</m></cell>
+            <cell>0.20</cell>
+            <cell>0.55</cell>
+            <cell>0.25</cell>
+            <cell></cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x_i \cdot  P(x_i)</m></cell>
+            <cell>0</cell>
+            <cell>75.35</cell>
+            <cell>42.50</cell>
+            <cell>117.85</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <p>
+          Thus, the expected value is <m>\mu_{\scriptscriptstyle{X}}=117.85</m>,
+          which we computed earlier.
+          The variance can be constructed using a similar table:
+        </p>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>i</m></cell>
+            <cell>1</cell>
+            <cell>2</cell>
+            <cell>3</cell>
+            <cell>Total</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x_i</m></cell>
+            <cell>$0</cell>
+            <cell>$137</cell>
+            <cell>$170</cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>P(x_i)</m></cell>
+            <cell>0.20</cell>
+            <cell>0.55</cell>
+            <cell>0.25</cell>
+            <cell></cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>x_i - \mu_{\mbox{\tiny\textit X} }</m></cell>
+            <cell>-117.85</cell>
+            <cell>19.15</cell>
+            <cell>52.15</cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>(x_i-\mu_{\mbox{\tiny\textit X} })^2</m></cell>
+            <cell>13888.62</cell>
+            <cell>366.72</cell>
+            <cell>2719.62</cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell><m>(x_i-\mu_{\mbox{\tiny\textit X} })^2\cdot P(x_i)</m></cell>
+            <cell>2777.7</cell>
+            <cell>201.7</cell>
+            <cell>679.9</cell>
+            <cell>3659.3</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <p>
+          The variance of <m>X</m> is <m>\sigma_{\scriptscriptstyle{X}}^2 = 3659.3</m>,
+          which means the standard deviation is <m>\sigma_{\scriptscriptstyle{X}} = \sqrt{3659.3} = \dollar60.49</m>.
         </p>
       </solution>
     </example>
@@ -637,6 +798,13 @@
           </row>
         </tabular>
       </statement>
+      <answer>
+        <p>
+          <m>30 \times 1 + 5 = 35</m>;
+          <m>30 \times 2 + 5 = 65</m>;
+          <m>30 \times 3 + 5 = 95</m>
+        </p>
+      </answer>
     </exercise>
     <p>
       Using this new table,
@@ -658,7 +826,7 @@
       with a standard deviation of $20.10.
     </p>
     <assemblage>
-      <title></title>
+      <title>Linear transformations of a random variable</title>
       <p>
         If <m>X</m> is a random variable,
         then a linear transformation is given by <m>aX + b</m>,
@@ -690,11 +858,13 @@
       </statement>
       <solution>
         <p>
-          John travels to work five days a week.
-          We will use <m>X_1</m> to represent his travel time on Monday,
-          <m>X_2</m> to represent his travel time on Tuesday, and so on.
-          Write an equation using <m>X_1</m>, ..., <m>X_5</m> that represents his travel time for the week,
-          denoted by <m>W</m>.
+          His total weekly travel time is the sum of the five daily values:
+          <me>
+            W = X_1 + X_2 + X_3 + X_4 + X_5
+          </me>
+        </p>
+        <p>
+          Breaking the weekly travel time <m>W</m> into pieces provides a framework for understanding each source of randomness and is useful for modeling <m>W</m>.
         </p>
       </solution>
     </example>
@@ -707,8 +877,20 @@
       </statement>
       <solution>
         <p>
-          It takes John an average of 18 minutes each day to commute to work.
-          What would you expect his average commute time to be for the week?
+          We were told that the average (i.e. expected value) of the commute time is 18 minutes per day:
+          <m>E(X_i) = 18</m>.
+          To get the expected time for the sum of the five days,
+          we can add up the expected time for each individual day:
+          <md>
+            <mrow>E(W) \amp = E(X_1 + X_2 + X_3 + X_4 + X_5)</mrow>
+            <mrow>\amp = E(X_1) + E(X_2) + E(X_3) + E(X_4) + E(X_5)</mrow>
+            <mrow>\amp = 18 + 18 + 18 + 18 + 18 = 90\text{ minutes }</mrow>
+          </md>
+        </p>
+        <p>
+          The expectation of the total time is equal to the sum of the expected individual times.
+          More generally,
+          the expectation of a sum of random variables is always the sum of the expectation for each random variable.
         </p>
       </solution>
     </example>
@@ -720,6 +902,12 @@
           write an equation that represents the net change in Elena's cash.
         </p>
       </statement>
+      <answer>
+        <p>
+          She will make <m>X</m> dollars on the TV but spend <m>Y</m> dollars on the toaster oven:
+          <m>X-Y</m>.
+        </p>
+      </answer>
     </exercise>
     <exercise>
       <statement>
@@ -728,6 +916,12 @@
           In total, how much should she expect to make or spend?
         </p>
       </statement>
+      <answer>
+        <p>
+          <m>E(X-Y) = E(X) - E(Y) = 175 - 23 = \dollar152</m>.
+          She should expect to make about $152.
+        </p>
+      </answer>
     </exercise>
     <exercise xml:id="explainWhyThereIsUncertaintyInTheSum">
       <statement>
@@ -736,6 +930,13 @@
           Explain.
         </p>
       </statement>
+      <answer>
+        <p>
+          No, since there is probably some variability.
+          For example, the traffic will vary from one day to next,
+          and auction prices will vary depending on the quality of the merchandise and the interest of the attendees.
+        </p>
+      </answer>
     </exercise>
     <p>
       Two important concepts concerning combinations of random variables have so far been introduced.
@@ -773,7 +974,7 @@
       </fn>
     </p>
     <assemblage>
-      <title></title>
+      <title>Linear combinations of random variables and the average result</title>
       <p>
         If <m>X</m> and <m>Y</m> are random variables,
         then a linear combination of the random variables is given by <m>aX + bY</m>,
@@ -801,11 +1002,19 @@
       </statement>
       <solution>
         <p>
-          Leonard has invested $6000 in Google Inc.
-          (stock ticker: GOOG)
-          and $2000 in Exxon Mobil Corp. (XOM).
-          If <m>X</m> represents the change in Google's stock next month and <m>Y</m> represents the change in Exxon Mobil stock next month,
-          write an equation that describes how much money will be made or lost in Leonard's stocks for the month.
+          For simplicity,
+          we will suppose <m>X</m> and <m>Y</m> are not in percents but are in decimal form (e.g. if Google's stock increases 1%, then <m>X=0.01</m>;
+          or if it loses 1%, then <m>X=-0.01</m>).
+          Then we can write an equation for Leonard's gain as
+          <md>
+            <mrow>\dollar6000\times X + \dollar2000\times Y</mrow>
+          </md>
+        </p>
+        <p>
+          If we plug in the change in the stock value for <m>X</m> and <m>Y</m>,
+          this equation gives the change in value of Leonard's stock portfolio for the month.
+          A positive value represents a gain,
+          and a negative value represents a loss.
         </p>
       </solution>
     </example>
@@ -817,6 +1026,11 @@
           Compute the expected change in Leonard's stock portfolio for next month.
         </p>
       </statement>
+      <answer>
+        <p>
+          <m>E(\dollar6000\times X + \dollar2000\times Y) = \dollar6000\times 0.021 + \dollar2000\times 0.004 = \dollar134</m>.
+        </p>
+      </answer>
     </exercise>
     <exercise>
       <statement>
@@ -825,6 +1039,13 @@
           However, would you be surprised if he actually had a loss this month?
         </p>
       </statement>
+      <answer>
+        <p>
+          No.
+          While stocks tend to rise over time,
+          they are often volatile in the short term.
+        </p>
+      </answer>
     </exercise>
   </subsection>
   <subsection>
@@ -853,7 +1074,7 @@
       and these are shown in <xref ref="sumStatOfGOOGXOM">Figure</xref>.
       The stocks' returns are nearly independent.
     </p>
-    <table xml:id="sumStatOfGOOGXOM">
+    <figure xml:id="sumStatOfGOOGXOM">
       <caption>The mean, standard deviation, and variance of the GOOG and XOM stocks. These statistics were estimated from historical stock data, so notation used for sample statistics has been used.</caption>
       <tabular>
         <row bottom="minor">
@@ -893,7 +1114,7 @@
           <cell></cell>
         </row>
       </tabular>
-    </table>
+    </figure>
     <p>
       We want to describe the uncertainty of Leonard's monthly returns by finding the standard deviation of the return on his combined portfolio.
       First, we note that the variance of a sum has a nice property:
@@ -923,7 +1144,7 @@
       </fn>
     </p>
     <assemblage>
-      <title></title>
+      <title>Standard deviation of the sum and difference of random variables</title>
       <p>
         If X and Y are <em>independent</em> random variables:
         <md>
@@ -968,7 +1189,7 @@
       the monthly returns are so volatile that Leonard should not expect this income to be very stable.
     </p>
     <assemblage>
-      <title></title>
+      <title>Standard deviation of linear combinations of random variables</title>
       <p>
         To find the standard deviation of a linear combination of random variables,
         we first consider <m>aX</m> and <m>bY</m> separately.
@@ -990,10 +1211,23 @@
           What is the uncertainty in his total commute time for the week?
         </p>
       </statement>
-      <solution>
+      <solution xml:id="sdOfJohnsCommuteWeeklyTime">
         <p>
-          Suppose John's daily commute has a standard deviation of 4 minutes.
-          What is the uncertainty in his total commute time for the week?
+          The expression for John's commute time is
+          <md>
+            <mrow>X_1 + X_2 + X_3 + X_4 + X_5</mrow>
+          </md>
+        </p>
+        <p>
+          Each coefficient is 1, so the standard deviation of the total weekly commute time is
+          <md>
+            <mrow>\text{ SD } \amp = \sqrt{(1 \times 4)^2 + (1 \times 4)^2 + (1 \times 4)^2 + (1 \times 4)^2 + (1 \times 4)^2}</mrow>
+            <mrow>\amp = \sqrt{5\times (4)^2}</mrow>
+            <mrow>\amp = 8.94</mrow>
+          </md>
+        </p>
+        <p>
+          The standard deviation for John's weekly work commute time is about 9 minutes.
         </p>
       </solution>
     </example>
@@ -1007,6 +1241,16 @@
           Explain.
         </p>
       </statement>
+      <answer>
+        <p>
+          One concern is whether traffic patterns tend to have a weekly cycle (e.g.
+          Fridays may be worse than other days).
+          If that is the case, and John drives,
+          then the assumption is probably not reasonable.
+          However, if John walks to work,
+          then his commute is probably not affected by any weekly traffic cycle.
+        </p>
+      </answer>
     </exercise>
     <exercise xml:id="elenaIsSellingATVAndBuyingAToasterOvenAtAnAuctionVariability">
       <statement>
@@ -1133,204 +1377,5 @@
         The expected value properties hold true whether or not <m>X</m> and <m>Y</m> are independent.
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise xml:id="college_smokers">
-      <title>College smokers</title>
-      <statement>
-        <p>
-          At a university, 13% of students smoke.
-          <ol>
-            <li>
-              <p>
-                Calculate the expected number of smokers in a random sample of 100 students from this university.
-              </p>
-            </li>
-            <li>
-              <p>
-                The university gym opens at 9 am on Saturday mornings.
-                One Saturday morning at 8:55 am there are 27 students outside the gym waiting for it to open.
-                Should you use the same approach from part (a) to calculate the expected number of smokers among these 27 students?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="ace_of_clubs">
-      <title>Ace of clubs wins</title>
-      <statement>
-        <p>
-          Consider the following card game with a well-shuffled deck of cards.
-          If you draw a red card, you win nothing.
-          If you get a spade, you win $5.
-          For any club,
-          you win $10 plus an extra $20 for the ace of clubs.
-          <ol>
-            <li>
-              <p>
-                Create a probability model for the amount you win at this game.
-                Also, find the expected winnings for a single game and the standard deviation of the winnings.
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the maximum amount you would be willing to pay to play this game?
-                Explain your reasoning.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="hearts">
-      <title>Hearts win</title>
-      <statement>
-        <p>
-          In a new card game,
-          you start with a well-shuffled full deck and draw 3 cards without replacement.
-          If you draw 3 hearts, you win $50.
-          If you draw 3 black cards, you win $25.
-          For any other draws, you win nothing.
-          <ol>
-            <li>
-              <p>
-                Create a probability model for the amount you win at this game,
-                and find the expected winnings.
-                Also compute the standard deviation of this distribution.
-              </p>
-            </li>
-            <li>
-              <p>
-                If the game costs $5 to play,
-                what would be the expected value and standard deviation of the net profit (or loss)?
-                <em>(Hint: profit = winnings <m>-</m> cost; <m>X-5</m>)</em>
-              </p>
-            </li>
-            <li>
-              <p>
-                If the game costs $5 to play,
-                should you play this game?
-                Explain.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="worth_it">
-      <statement>
-        <p>
-          { <em>Is it worth it ?</em>} Andy is always looking for ways to make money fast.
-          Lately, he has been trying to make money by gambling.
-          Here is the game he is considering playing: The game costs $2 to play.
-          He draws a card from a deck.
-          If he gets a number card (2-10), he wins nothing.
-          For any face card ( jack, queen or king), he wins $3.
-          For any ace, he wins $5, and he wins an <em>extra</em>
-          $20 if he draws the ace of clubs.
-          <ol>
-            <li>
-              <p>
-                Create a probability model and find Andy's expected profit per game.
-              </p>
-            </li>
-            <li>
-              <p>
-                Would you recommend this game to Andy as a good way to make money?
-                Explain.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="portfolio_return">
-      <title>Portfolio return</title>
-      <statement>
-        <p>
-          A portfolio's value increases by 18% during a financial boom and by 9% during normal times.
-          It decreases by 12% during a recession.
-          What is the expected return on this portfolio if each scenario is equally likely?
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="baggage_fees">
-      <title>Baggage fees</title>
-      <statement>
-        <p>
-          An airline charges the following baggage fees: $25 for the first bag and $35 for the second.
-          Suppose 54% of passengers have no checked luggage, 34% have one piece of checked luggage and 12% have two pieces.
-          We suppose a negligible portion of people check more than two bags.
-          <ol>
-            <li>
-              <p>
-                Build a probability model,
-                compute the average revenue per passenger,
-                and compute the corresponding standard deviation.
-              </p>
-            </li>
-            <li>
-              <p>
-                About how much revenue should the airline expect for a flight of 120 passengers?
-                With what standard deviation?
-                Note any assumptions you make and if you think they are justified.
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="roulette_american">
-      <title>American roulette</title>
-      <statement>
-        <p>
-          The game of American roulette involves spinning a wheel with 38 slots: 18 red, 18 black,
-          and 2 green.
-          A ball is spun onto the wheel and will eventually land in a slot,
-          where each slot has an equal chance of capturing the ball.
-          Gamblers can place bets on red or black.
-          If the ball lands on their color, they double their money.
-          If it lands on another color, they lose their money.
-          Suppose you bet $1 on red.
-          What's the expected value and standard deviation of your winnings?
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="roulette_european">
-      <title>European roulette</title>
-      <statement>
-        <p>
-          The game of European roulette involves spinning a wheel with 37 slots: 18 red, 18 black,
-          and 1 green.
-          A ball is spun onto the wheel and will eventually land in a slot,
-          where each slot has an equal chance of capturing the ball.
-          Gamblers can place bets on red or black.
-          If the ball lands on their color, they double their money.
-          If it lands on another color, they lose their money.
-          <ol>
-            <li>
-              <p>
-                Suppose you play roulette and bet $3 on a single round.
-                What is the expected value and standard deviation of your total winnings?
-              </p>
-            </li>
-            <li>
-              <p>
-                Suppose you bet $1 in three different rounds.
-                What is the expected value and standard deviation of your total winnings?
-              </p>
-            </li>
-            <li>
-              <p>
-                How do your answers to parts (a) and (b) compare?
-                What does this say about the riskiness of the two games?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>

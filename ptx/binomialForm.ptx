@@ -69,12 +69,24 @@
           and Damian (<m>D</m>) for convenience.
         </p>
       </statement>
-      <solution>
+      <solution xml:id="insureOneOfFourExceedsDeductible">
         <p>
-          Suppose the insurance agency is considering a random sample of four individuals they insure.
-          What is the chance exactly one of them will exceed the deductible and the other three will not?
-          Let's call the four people Ariana (<m>A</m>), Brittany (<m>B</m>), Carlton (<m>C</m>),
-          and Damian (<m>D</m>) for convenience.
+          Let's consider a scenario where one person exceeds the deductible:
+          <md>
+            <mrow>\amp P(A=\text{\insureF{}} , \text{ } B=\text{\insureS{}} , \text{ } C=\text{\insureS{}} , \text{ } D=\text{\insureS{}} )</mrow>
+            <mrow>\amp  = P(A=\text{\insureF{}} )\ P(B=\text{\insureS{}} )\ P(C=\text{\insureS{}} )\ P(D=\text{\insureS{}} )</mrow>
+            <mrow>\amp  =  (\insureFprob{}) (\insureSprob{}) (\insureSprob{}) (\insureSprob{})</mrow>
+            <mrow>\amp  = (\insureSprob{})^3 (\insureFprob{})^1</mrow>
+            <mrow>\amp  = \insureBinomCinDSingleScenario{}</mrow>
+          </md>
+        </p>
+        <p>
+          But there are three other scenarios: Brittany, Carlton,
+          or Damian could have been the one to exceed the deductible.
+          In each of these cases,
+          the probability is again <m>(\insureSprob{})^3 (\insureFprob{})^1</m>.
+          These four scenarios exhaust all the possible ways that exactly one of these four people could have exceeded the deductible,
+          so the total probability is <m>4 \times (\insureSprob{})^3 (\insureFprob{})^1 = \insureBinomCinD{}</m>.
         </p>
       </solution>
     </example>
@@ -161,7 +173,7 @@
       <term>binomial formula</term>.
     </p>
     <assemblage>
-      <title></title>
+      <title>Binomial formula</title>
       <p>
         Suppose the probability of a single trial being a success is <m>p</m>.
         Then the probability of observing exactly <m>x</m> successes in <m>n</m> independent trials is given by
@@ -174,7 +186,7 @@
   <subsection xml:id="isItBinomialTipBox">
     <title>When and how to apply the formula</title>
     <assemblage>
-      <title></title>
+      <title>Is it binomial? Four conditions to check.</title>
       <p>
         (1) The trials are independent.
       </p>
@@ -200,9 +212,34 @@
       </statement>
       <solution>
         <p>
-          What is the probability that 3 of 8 randomly selected individuals will have exceeded the insurance deductible,
-          i.e. that 5 of 8 will not exceed the deductible?
-          Recall that 70% of individuals will not exceed the deductible.
+          We would like to apply the binomial model,
+          so we check the conditions.
+          The number of trials is fixed (<m>n = 8</m>) (condition 2) and each trial outcome can be classified as a success or failure
+          (condition 3).
+          Because the sample is random,
+          the trials are independent (condition<nbsp/>1) and the probability of a success is the same for each trial
+          (condition<nbsp/>4).
+        </p>
+        <p>
+          In the outcome of interest,
+          there are <m>x = 5</m> successes in <m>n = 8</m> trials (recall that a success is an individual who does
+          <em>not</em> exceed the deductible,
+          and the probability of a success is <m>p = \insureSprob{}</m>.
+          So the probability that 5 of 8 will not exceed the deductible and 3 will exceed the deductible is given by
+          <md>
+            <mrow>{ 8 \choose 5}(\insureSprob{})^5 (1-\insureSprob{})^{8-5} \amp = \frac{8!}{5!(5-3)!} (\insureSprob{})^5(1-\insureSprob{})^{8-5}</mrow>
+            <mrow>\amp = \frac{8!}{5!3!} (\insureSprob{})^5(\insureFprob{})^3</mrow>
+          </md>
+        </p>
+        <p>
+          Dealing with the factorial part:
+          <md>
+            <mrow>\frac{8!}{5!3!} = \frac{8\times7\times6\times5\times4\times3\times2\times1} {(5\times4\times3\times2\times1)(3\times2\times1)} = \frac{8\times7\times6}{3\times2\times1} = 56</mrow>
+          </md>
+        </p>
+        <p>
+          Using <m>(\insureSprob{})^5(\insureFprob{})^3 \approx \insureBinomEinHSingleScenario{}</m>,
+          the final probability is about <m>56\times \insureBinomEinHSingleScenario{} \approx \insureBinomEinH{}</m>.
         </p>
       </solution>
     </example>
@@ -213,7 +250,7 @@
       for how to evaluate the binomial coefficient and the binomial formula using a calculator.
     </p>
     <assemblage>
-      <title></title>
+      <title>Computing binomial probabilities</title>
       <p>
         The first step in using the binomial model is to check that the model is appropriate.
         The second step is to identify <m>n</m>, <m>p</m>, and <m>x</m>.
@@ -228,7 +265,38 @@
       </statement>
       <solution>
         <p>
-          Approximately 35% of a population has blood type O+. Suppose four people show up at a hospital and we want to find the probability that exactly one of them has blood type O+. Can we use the binomial formula?
+          To check if the binomial model is appropriate,
+          we must verify the conditions.
+          <ol>
+            <li>
+              <p>
+                If we suppose that these 4 people comprise a random sample,
+                then we can treat them as independent.
+                This seems reasonable,
+                since one person with a particular blood type showing up at a hospital seems unlikely to affect the chance that other people with that blood type would show up at the hospital.
+              </p>
+            </li>
+            <li>
+              <p>
+                We have a fixed number of trials
+                (<m>n=4</m>).
+              </p>
+            </li>
+            <li>
+              <p>
+                Each outcome is a success or failure
+                (blood type O+ or not blood type O+).
+              </p>
+            </li>
+            <li>
+              <p>
+                The probability of a success is the same for each trial since the individuals are like a random sample
+                (<m>p=0.35</m> if we say a
+                <q>success</q>
+                is someone having blood type O+).
+              </p>
+            </li>
+          </ol>
         </p>
       </solution>
     </example>
@@ -240,6 +308,16 @@
           can you apply the binomial formula?
         </p>
       </statement>
+      <answer>
+        <p>
+          While conditions (2) and (3) are met,
+          most likely the friends know each other,
+          so the independence assumption (1) is probably not satisfied.
+          For example, acquaintances may have similar smoking habits,
+          or those friends might make a pact to quit together.
+          Condition (4) is also not satisfied since this is not a random sample of people.
+        </p>
+      </answer>
     </exercise>
     <example xml:id="bloodTypeOPos">
       <statement>
@@ -338,6 +416,12 @@
           <m>{n \choose n}=1</m> for any number <m>n</m>?
         </p>
       </statement>
+      <answer>
+        <p>
+          Frame these expressions into words.
+          How many different ways are there to arrange 0 successes and <m>n</m> failures in <m>n</m> trials? (1 way.) How many different ways are there to arrange <m>n</m> successes and 0 failures in <m>n</m> trials? (1 way.)
+        </p>
+      </answer>
     </exercise>
     <exercise>
       <statement>
@@ -352,7 +436,7 @@
     <title>Calculator: binomial probabilities</title>
     <assemblage>
       <p>
-        {MISSINGVIDEOLINK TI-83/84: Computing the binomial coefficient {<m>{n\choose x}</m>}} Use <c>MATH</c>, <c>PRB</c>, <c>nCr</c> to evaluate <m>n</m> choose <m>r</m>.
+        {MISSINGVIDEOLINK ti84_binomial_coefficient TI-83/84: Computing the binomial coefficient {<m>{n\choose x}</m>}} Use <c>MATH</c>, <c>PRB</c>, <c>nCr</c> to evaluate <m>n</m> choose <m>r</m>.
         Here <m>r</m> and <m>x</m> are different letters for the same quantity.
         <ol>
           <li>
@@ -393,7 +477,7 @@
     </assemblage>
     <assemblage>
       <p>
-        {MISSINGVIDEOLINK Casio fx-9750GII: Computing the binomial coefficient {<m>{n\choose x}</m>}}
+        {MISSINGVIDEOLINK casio_binomial_coefficient Casio fx-9750GII: Computing the binomial coefficient {<m>{n\choose x}</m>}}
         <ol>
           <li>
             <p>
@@ -415,13 +499,13 @@
           <li>
             <p>
               Type <c>C</c> (hit the <c>ln</c> button),
-              then navigate down to the bolded <c><em>C</em></c> and hit <c>EXE</c>.
+              then navigate down to the bolded <c>C</c> and hit <c>EXE</c>.
             </p>
           </li>
           <li>
             <p>
               Enter the value of <m>x</m>.
-              Example of what it should look like: <c>7<em>C</em>3</c>.
+              Example of what it should look like: <c>7C3</c>.
             </p>
           </li>
           <li>
@@ -434,7 +518,7 @@
     </assemblage>
     <assemblage>
       <p>
-        {MISSINGVIDEOLINK TI-84: Computing the binomial formula,
+        {MISSINGVIDEOLINK ti84_binomial_formula TI-84: Computing the binomial formula,
         <m>P(X = {x)={n\choose x}p^x(1-p)^{n-x}}</m>} Use <c>2ND</c> <c>VARS</c>, <c>binompdf</c> to evaluate the probability of <em>exactly</em>
         <m>x</m> occurrences out of <m>n</m> independent trials of an event with probability <m>p</m>.
         <ol>
@@ -477,13 +561,13 @@
         and <m>x</m> separated by commas:
       </p>
       <p>
-         <c>binompdf(n,<nbsp/>p,<nbsp/>x)</c>.
+         <c>binompdf(n, p, x)</c>.
         Then hit <c>ENTER</c>.
       </p>
     </assemblage>
     <assemblage>
       <p>
-        {MISSINGVIDEOLINK TI-84: Computing
+        {MISSINGVIDEOLINK ti84_binomial_cdf TI-84: Computing
         <m>P(X \le {x)= {n\choose 0}p^0(1-p)^{n-0} + ... + {n\choose x}p^x(1-p)^{n-x}}</m> } Use <c>2ND</c> <c>VARS</c>, <c>binomcdf</c> to evaluate the cumulative probability of <em>at most</em>
         <m>x</m> occurrences out of <m>n</m> independent trials of an event with probability <m>p</m>.
         <ol>
@@ -522,12 +606,12 @@
       <p>
         TI-83: Do steps 1-2, then enter the values for <m>n</m>,
         <m>p</m>,
-        and <m>x</m> separated by commas as follows: <c>binomcdf(n,<nbsp/>p,<nbsp/>x)</c>.
+        and <m>x</m> separated by commas as follows: <c>binomcdf(n, p, x)</c>.
         Then hit <c>ENTER</c>.
       </p>
     </assemblage>
     <assemblage>
-      <title></title>
+      <title>MISSINGVIDEOLINK casio_binomial_calculations Casio fx-9750GII: Binomial calculations</title>
       <ol>
         <li>
           <p>
@@ -671,145 +755,5 @@
         </p>
       </li>
     </ul>
-    <p>
-      { \addvspace{8mm} {{\titlerule[1.0mm]} <em></em><em></em> }
-    </p>
-    <exercise>
-      <title>Exploring combinations</title>
-      <statement>
-        <p>
-          A coin is tossed 5 times.
-          How many sequences / combinations of Heads/Tails are there that have:
-          <ol>
-            <li>
-              <p>
-                Exactly 1 Tail?
-              </p>
-            </li>
-            <li>
-              <p>
-                Exactly 4 Tails?
-              </p>
-            </li>
-            <li>
-              <p>
-                Eactly 3 Tails?
-              </p>
-            </li>
-            <li>
-              <p>
-                At least 3 Tails?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise>
-      <title>Political affiliation</title>
-      <statement>
-        <p>
-          Suppose that in a large population, 51% identify as Democrat.
-          A researcher takes a random sample of 3 people.
-          <ol>
-            <li>
-              <p>
-                Use the binomial model to calculate the probability that two of them identify as Democrat.
-              </p>
-            </li>
-            <li>
-              <p>
-                Write out all possible orderings of 3 people, 2 of whom identify as Democrat.
-                Use these scenarios to calculate the same probability from part (a) but using the Addition Rule for disjoint events.
-                Confirm that your answers from parts (a) and (b) match.
-              </p>
-            </li>
-            <li>
-              <p>
-                If we wanted to calculate the probability that a random sample of 8 people will have 3 that identify as Democrat,
-                briefly describe why the approach from part (b) would be more tedious than the approach from part (a).
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="underage_drinking_intro">
-      <title>Underage drinking, Part I</title>
-      <statement>
-        <p>
-          MISSINGVIDEOLINK<nbsp/> Data collected by the Substance Abuse and Mental Health Services Administration (SAMSHA) suggests that 69.7% of 18-20 year olds consumed alcoholic beverages in any given year.\footfullcite{webpage:alcohol}
-          <ol>
-            <li>
-              <p>
-                Suppose a random sample of ten 18-20 year olds is taken.
-                Is the use of the binomial distribution appropriate for calculating the probability that exactly six consumed alcoholic beverages?
-                Explain.
-              </p>
-            </li>
-            <li>
-              <p>
-                Calculate the probability that exactly 6 out of 10 randomly sampled 18- 20 year olds consumed an alcoholic drink.
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that exactly four out of ten 18-20 year olds have <em>not</em>
-                consumed an alcoholic beverage?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that at most 2 out of 5 randomly sampled 18-20 year olds have consumed alcoholic beverages?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that at least 1 out of 5 randomly sampled 18-20 year olds have consumed alcoholic beverages?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
-    <exercise xml:id="chicken_pox_intro">
-      <title>Chicken pox, Part I</title>
-      <statement>
-        <p>
-          The National Vaccine Information Center estimates that 90% of Americans have had chickenpox by the time they reach adulthood. \footfullcite{webpage:chickenpox}
-          <ol>
-            <li>
-              <p>
-                Suppose we take a random sample of 100 American adults.
-                Is the use of the binomial distribution appropriate for calculating the probability that exactly 97 out of 100 randomly sampled American adults had chickenpox during childhood?
-                Explain.
-              </p>
-            </li>
-            <li>
-              <p>
-                Calculate the probability that exactly 97 out of 100 randomly sampled American adults had chickenpox during childhood.
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that exactly 3 out of a new sample of 100 American adults have <em>not</em>
-                had chickenpox in their childhood?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that at least 1 out of 10 randomly sampled American adults have had chickenpox?
-              </p>
-            </li>
-            <li>
-              <p>
-                What is the probability that at most 3 out of 10 randomly sampled American adults have
-                <em>not</em> had chickenpox?
-              </p>
-            </li>
-          </ol>
-        </p>
-      </statement>
-    </exercise>
   </subsection>
 </section>

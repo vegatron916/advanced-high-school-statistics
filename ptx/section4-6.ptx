@@ -1,0 +1,140 @@
+<section>
+  <title>Exercises</title>
+  <exercise>
+    <title>Exploring combinations</title>
+    <statement>
+      <p>
+        A coin is tossed 5 times.
+        How many sequences / combinations of Heads/Tails are there that have:
+        <ol>
+          <li>
+            <p>
+              Exactly 1 Tail?
+            </p>
+          </li>
+          <li>
+            <p>
+              Exactly 4 Tails?
+            </p>
+          </li>
+          <li>
+            <p>
+              Eactly 3 Tails?
+            </p>
+          </li>
+          <li>
+            <p>
+              At least 3 Tails?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Political affiliation</title>
+    <statement>
+      <p>
+        Suppose that in a large population, 51% identify as Democrat.
+        A researcher takes a random sample of 3 people.
+        <ol>
+          <li>
+            <p>
+              Use the binomial model to calculate the probability that two of them identify as Democrat.
+            </p>
+          </li>
+          <li>
+            <p>
+              Write out all possible orderings of 3 people, 2 of whom identify as Democrat.
+              Use these scenarios to calculate the same probability from part (a) but using the Addition Rule for disjoint events.
+              Confirm that your answers from parts (a) and (b) match.
+            </p>
+          </li>
+          <li>
+            <p>
+              If we wanted to calculate the probability that a random sample of 8 people will have 3 that identify as Democrat,
+              briefly describe why the approach from part (b) would be more tedious than the approach from part (a).
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="underage_drinking_intro">
+    <title>Underage drinking, Part I</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-underage_drinking_intro<nbsp/> Data collected by the Substance Abuse and Mental Health Services Administration (SAMSHA) suggests that 69.7% of 18-20 year olds consumed alcoholic beverages in any given year.\footfullcite{webpage:alcohol}
+        <ol>
+          <li>
+            <p>
+              Suppose a random sample of ten 18-20 year olds is taken.
+              Is the use of the binomial distribution appropriate for calculating the probability that exactly six consumed alcoholic beverages?
+              Explain.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the probability that exactly 6 out of 10 randomly sampled 18- 20 year olds consumed an alcoholic drink.
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the probability that exactly four out of ten 18-20 year olds have <em>not</em>
+              consumed an alcoholic beverage?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the probability that at most 2 out of 5 randomly sampled 18-20 year olds have consumed alcoholic beverages?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the probability that at least 1 out of 5 randomly sampled 18-20 year olds have consumed alcoholic beverages?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="chicken_pox_intro">
+    <title>Chicken pox, Part I</title>
+    <statement>
+      <p>
+        The National Vaccine Information Center estimates that 90% of Americans have had chickenpox by the time they reach adulthood. \footfullcite{webpage:chickenpox}
+        <ol>
+          <li>
+            <p>
+              Suppose we take a random sample of 100 American adults.
+              Is the use of the binomial distribution appropriate for calculating the probability that exactly 97 out of 100 randomly sampled American adults had chickenpox during childhood?
+              Explain.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the probability that exactly 97 out of 100 randomly sampled American adults had chickenpox during childhood.
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the probability that exactly 3 out of a new sample of 100 American adults have <em>not</em>
+              had chickenpox in their childhood?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the probability that at least 1 out of 10 randomly sampled American adults have had chickenpox?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the probability that at most 3 out of 10 randomly sampled American adults have
+              <em>not</em> had chickenpox?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</section>
