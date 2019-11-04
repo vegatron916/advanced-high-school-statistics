@@ -166,7 +166,7 @@
     <p>
       The <m>t</m>-distribution,
       always centered at zero, has a single parameter: degrees of freedom.
-      The <em>degrees of freedom (df)</em><idx><h>degrees of freedom (df)</h><h><m>t</m>-distribution|textbf</h></idx> describes the precise form of the bell-shaped <m>t</m>-distribution.
+      The <em>degrees of freedom (df)</em><idx><h>degrees of freedom (df)</h><h><m>t</m>-distribution</h></idx> describes the precise form of the bell-shaped <m>t</m>-distribution.
       Several <m>t</m>-distributions are shown in <xref ref="tDistConvergeToNormalDist">Figure</xref>.
       When there are more degrees of freedom,
       the <m>t</m>-distribution looks more like the standard normal distribution.
@@ -193,7 +193,7 @@
       We will find it useful to become familiar with the <m>t</m>-distribution,
       because it plays a very similar role to the normal distribution during inference.
       We use a <em><m>t</m>-table</em>,
-          <idx><h>t-table@<m>t</m>-table|textbf</h></idx>
+          <idx><h>t-table@<m>t</m>-table</h></idx>
       partially shown in <xref ref="tTableSample_ch_inf_means">Figure</xref>,
       in place of the normal probability table when the population standard deviation is unknown,
       especially when the sample size is small.
@@ -642,7 +642,7 @@
     <figure xml:id="rissosDolphin">
       <caption>A Risso's dolphin.\vspace{-1mm}
       <ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/>-\vspace{-2mm}
-      { Photo by Mike Baird (\oiRedirect{textbook-bairdphotos_com}{www.bairdphotos.com}). \oiRedirect{textbook-CC_BY_2}{CC<nbsp/>BY<nbsp/>2.0<nbsp/>license}.\vspace{-10mm}}</caption>
+      { Photo by Mike Baird ( XXoiRedirect{textbook-bairdphotos_com}{**}XX ).  XXoiRedirect{textbook-CC_BY_2}{**}XX .\vspace{-10mm}}</caption>
       <image width="70%" source="images/rissosDolphin.png" />
       \addvspace{2mm}
       \vspace{3mm}
@@ -704,9 +704,9 @@
     <p>
       With both conditions met, we will construct a 95% confidence interval.
       Recall that a confidence interval has the following form:
-      <md>
-        <mrow>\text{ point estimate }  \ \pm\  \text{ critical value } \times SE\text{ of estimate }</mrow>
-      </md>
+      <men>
+        \text{ point estimate }  \ \pm\  \text{ critical value } \times SE\text{ of estimate }
+      </men>
     </p>
     <p>
       The point estimate is the sample mean and the <m>SE</m> of the sample mean is given by <m>s/\sqrt{n}</m>.

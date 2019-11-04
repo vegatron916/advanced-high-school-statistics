@@ -1,0 +1,458 @@
+<section xml:id="basicsOfProbability_exer">
+  <title>Exercises</title>
+  <exercise xml:id="tf_prob_definitions">
+    <title>True or false</title>
+    <statement>
+      <p>
+        Determine if the statements below are true or false,
+        and explain your reasoning.
+        <ol>
+          <li>
+            <p>
+              If a fair coin is tossed many times and the last eight tosses are all heads,
+              then the chance that the next toss will be heads is somewhat less than 50%.
+            </p>
+          </li>
+          <li>
+            <p>
+              Drawing a face card (jack, queen,
+              or king) and drawing a red card from a full deck of playing cards are mutually exclusive events.
+            </p>
+          </li>
+          <li>
+            <p>
+              Drawing a face card and drawing an ace from a full deck of playing cards are mutually exclusive events.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="roulette_wheel">
+    <title>Roulette wheel</title>
+    <statement>
+      <p>
+        The game of roulette involves spinning a wheel with 38 slots: 18 red, 18 black,
+        and 2 green.
+        A ball is spun onto the wheel and will eventually land in a slot,
+        where each slot has an equal chance of capturing the ball.
+      </p>
+      <sidebyside>
+        <ol>
+          <li>
+            <p>
+              You watch a roulette wheel spin 3 consecutive times and the ball lands on a red slot each time.
+              What is the probability that the ball will land on a red slot on the next spin?
+            </p>
+          </li>
+          <li>
+            <p>
+              You watch a roulette wheel spin 300 consecutive times and the ball lands on a red slot each time.
+              What is the probability that the ball will land on a red slot on the next spin?
+            </p>
+          </li>
+          <li>
+            <p>
+              Are you equally confident of your answers to parts<nbsp/>(a) and<nbsp/>(b)?
+              Why or why not?
+            </p>
+          </li>
+        </ol>
+        \
+        <image width="73%" source="images/roulette_wheel.png" />
+        { Photo by H&#229;kan Dahlstr&#xf6;m
+        ( XXoiRedirect{textbook-flickr_hakan_dahlstrom_roulette_wheel}{**}XX )
+        XXoiRedirect{textbook-CC_BY_2}{**}XX }
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="four_games_one_winner">
+    <title>Four games, one winner</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-four_games_one_winner<nbsp/> Below are four versions of the same game.
+        Your archnemesis gets to pick the version of the game,
+        and then you get to choose how many times to flip a coin: 10 times or 100 times.
+        Identify how many coin flips you should choose for each version of the game.
+        It costs $1 to play each game.
+        Explain your reasoning.
+        <ol>
+          <li>
+            <p>
+              If the proportion of heads is larger than 0.60, you win $1.
+            </p>
+          </li>
+          <li>
+            <p>
+              If the proportion of heads is larger than 0.40, you win $1.
+            </p>
+          </li>
+          <li>
+            <p>
+              If the proportion of heads is between 0.40 and 0.60, you win $1.
+            </p>
+          </li>
+          <li>
+            <p>
+              If the proportion of heads is smaller than 0.30, you win $1.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="backgammon">
+    <title>Backgammon</title>
+    <statement>
+      <p>
+        Backgammon is a board game for two players in which the playing pieces are moved according to the roll of two dice.
+        Players win by removing all of their pieces from the board,
+        so it is usually good to roll high numbers.
+        You are playing backgammon with a friend and you roll two 6s in your first roll and two 6s in your second roll.
+        Your friend rolls two 3s in his first roll and again in his second row.
+        Your friend claims that you are cheating,
+        because rolling double 6s twice in a row is very unlikely.
+        Using probability,
+        show that your rolls were just as likely as<nbsp/>his.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="coin_flips">
+    <title>Coin flips</title>
+    <statement>
+      <p>
+        If you flip a fair coin 10 times,
+        what is the probability of
+        <ol>
+          <li>
+            <p>
+              getting all tails?
+            </p>
+          </li>
+          <li>
+            <p>
+              getting all heads?
+            </p>
+          </li>
+          <li>
+            <p>
+              getting at least one tails?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="dice_rolls">
+    <title>Dice rolls</title>
+    <statement>
+      <p>
+        If you roll a pair of fair dice,
+        what is the probability of
+        <ol>
+          <li>
+            <p>
+              getting a sum of 1?
+            </p>
+          </li>
+          <li>
+            <p>
+              getting a sum of 5?
+            </p>
+          </li>
+          <li>
+            <p>
+              getting a sum of 12?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="swing_voters">
+    <title>Swing voters</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-swing_voters<nbsp/> A Pew Research survey asked 2,373 randomly sampled registered voters their political affiliation (Republican, Democrat,
+        or Independent) and whether or not they identify as swing voters. 35% of respondents identified as Independent, 23% identified as swing voters,
+        and 11% identified as both.\footfullcite{indepSwing}
+        <ol>
+          <li>
+            <p>
+              Are being Independent and being a swing voter disjoint,
+              i.e. mutually exclusive?
+            </p>
+          </li>
+          <li>
+            <p>
+              Draw a Venn diagram summarizing the variables and their associated probabilities.
+            </p>
+          </li>
+          <li>
+            <p>
+              What percent of voters are Independent but not swing voters?
+            </p>
+          </li>
+          <li>
+            <p>
+              What percent of voters are Independent or swing voters?
+            </p>
+          </li>
+          <li>
+            <p>
+              What percent of voters are neither Independent nor swing voters?
+            </p>
+          </li>
+          <li>
+            <p>
+              Is the event that someone is a swing voter independent of the event that someone is a political Independent?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="poverty_language">
+    <title>Poverty and language</title>
+    <statement>
+      <p>
+        The American Community Survey is an ongoing survey that provides data every year to give communities the current information they need to plan investments and services.
+        The 2010 American Community Survey estimates that 14.6% of Americans live below the poverty line, 20.7% speak a language other than English
+        (foreign language)
+        at home, and 4.2% fall into both categories. \footfullcite{poorLang}
+        <ol>
+          <li>
+            <p>
+              Are living below the poverty line and speaking a foreign language at home disjoint?
+            </p>
+          </li>
+          <li>
+            <p>
+              Draw a Venn diagram summarizing the variables and their associated probabilities.
+            </p>
+          </li>
+          <li>
+            <p>
+              What percent of Americans live below the poverty line and only speak English at home?
+            </p>
+          </li>
+          <li>
+            <p>
+              What percent of Americans live below the poverty line or speak a foreign language at home?
+            </p>
+          </li>
+          <li>
+            <p>
+              What percent of Americans live above the poverty line and only speak English at home?
+            </p>
+          </li>
+          <li>
+            <p>
+              Is the event that someone lives below the poverty line independent of the event that the person speaks a foreign language at home?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="disjoint_indep">
+    <title>Disjoint vs. independent</title>
+    <statement>
+      <p>
+        In parts<nbsp/>(a) and<nbsp/>(b),
+        identify whether the events are disjoint, independent,
+        or neither
+        (events cannot be both disjoint and independent).
+        <ol>
+          <li>
+            <p>
+              You and a randomly selected student from your class both earn A's in this course.
+            </p>
+          </li>
+          <li>
+            <p>
+              You and your class study partner both earn A's in this course.
+            </p>
+          </li>
+          <li>
+            <p>
+              If two events can occur at the same time, must they be dependent?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="guessing_on_exam">
+    <title>Guessing on an exam</title>
+    <statement>
+      <p>
+        In a multiple choice exam,
+        there are 5 questions and 4 choices for each question (a, b, c, d).
+        Nancy has not studied for the exam at all and decides to randomly guess the answers.
+        What is the probability that:
+        <ol>
+          <li>
+            <p>
+              the first question she gets right is the <m>5^{th}</m> question?
+            </p>
+          </li>
+          <li>
+            <p>
+              she gets all of the questions right?
+            </p>
+          </li>
+          <li>
+            <p>
+              she gets at least one question right?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="edu_attain_couples">
+    <title>Educational attainment of couples</title>
+    <statement>
+      <p>
+        The table below shows the distribution of education level attained by US residents by gender based on data collected in the 2010 American Community Survey. \footfullcite{eduSex}
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>\multicolumn{2}{c}{<em>Gender</em>}</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>Male</cell>
+          <cell>Female</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Less than 9th grade</cell>
+          <cell>0.07</cell>
+          <cell>0.13</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>9th to 12th grade, no diploma</cell>
+          <cell>0.10</cell>
+          <cell>0.09</cell>
+        </row>
+        <row>
+          <cell><em>Highest</em></cell>
+          <cell>HS graduate (or equivalent)</cell>
+          <cell>0.30</cell>
+          <cell>0.20</cell>
+        </row>
+        <row>
+          <cell><em>education</em></cell>
+          <cell>Some college, no degree</cell>
+          <cell>0.22</cell>
+          <cell>0.24</cell>
+        </row>
+        <row>
+          <cell><em>attained</em></cell>
+          <cell>Associate's degree</cell>
+          <cell>0.06</cell>
+          <cell>0.08</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Bachelor's degree</cell>
+          <cell>0.16</cell>
+          <cell>0.17</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Graduate or professional degree</cell>
+          <cell>0.09</cell>
+          <cell>0.09</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Total</cell>
+          <cell>1.00</cell>
+          <cell>1.00</cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            What is the probability that a randomly chosen man has at least a Bachelor's degree?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen woman has at least a Bachelor's degree?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a man and a woman getting married both have at least a Bachelor's degree?
+            Note any assumptions you must make to answer this question.
+          </p>
+        </li>
+        <li>
+          <p>
+            If you made an assumption in part<nbsp/>(c),
+            do you think it was reasonable?
+            If you didn't make an assumption,
+            double check your earlier answer and then return to this part.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="school_absences">
+    <title>School absences</title>
+    <statement>
+      <p>
+        Data collected at elementary schools in DeKalb County, GA suggest that each year roughly 25% of students miss exactly one day of school, 15% miss 2 days,
+        and 28% miss 3 or more days due to sickness. \footfullcite{Mizan:2011}
+        <ol>
+          <li>
+            <p>
+              What is the probability that a student chosen at random doesn't miss any days of school due to sickness this year?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the probability that a student chosen at random misses no more than one day?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the probability that a student chosen at random misses at least one day?
+            </p>
+          </li>
+          <li>
+            <p>
+              If a parent has two kids at a DeKalb County elementary school,
+              what is the probability that neither kid will miss any school?
+              Note any assumption you must make to answer this question.
+            </p>
+          </li>
+          <li>
+            <p>
+              If a parent has two kids at a DeKalb County elementary school,
+              what is the probability that both kids will miss some school,
+              i.e. at least one day?
+              Note any assumption you make.
+            </p>
+          </li>
+          <li>
+            <p>
+              If you made an assumption in part<nbsp/>(d) or<nbsp/>(e),
+              do you think it was reasonable?
+              If you didn't make any assumptions,
+              double check your earlier answers.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</section>

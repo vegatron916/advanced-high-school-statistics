@@ -202,9 +202,11 @@
       medical researchers may identify and follow a group of similar individuals over many years to assess the possible influences of behavior on cancer risk.
       One example of such a study is The Nurses' Health Study,
       started in 1976 and expanded in 1989.<fn>
-      \oiRedirect{textbook-channing_nurse_study}{www.channing.harvard.edu/nhs}
+      XXoiRedirect{textbook-channing_nurse_study}{**}XX
       </fn> This prospective study recruits registered nurses and then collects data from them using questionnaires.
-      <em>Retrospective studies</em><idx><h>retrospective studies|textbf</h></idx> collect data after events have taken place,
+      <em>Retrospective studies</em>
+          <idx><h>retrospective studies</h></idx>
+      collect data after events have taken place,
       e.g. researchers may review past events in medical records.
       Some data sets,
       such as <c>county</c>,
@@ -265,7 +267,9 @@
     <p>
       If the student majoring in nutrition picked a disproportionate number of graduates from health-related fields,
       this would introduce undercoverage bias into the sample.
-      <em>Undercoverage bias</em><idx><h>undercoverage bias|textbf</h></idx> occurs when some individuals of the population are inherently less likely to be included in the sample than others,
+      <em>Undercoverage bias</em>
+          <idx><h>undercoverage bias</h></idx>
+      occurs when some individuals of the population are inherently less likely to be included in the sample than others,
       making the sample not representative of the population.
       In the example,
       this bias creates a problem because a degree in health-related fields might take more or less time to complete than a degree in other fields.
@@ -334,7 +338,7 @@
       however, bias can crop up in other ways.
       Even when people are picked at random, e.g. for surveys,
       caution must be exercised if the <term>non-response</term>
-          <idx><h>sample</h><h>non-response|textbf</h></idx>
+          <idx><h>sample</h><h>non-response</h></idx>
       is high.
       For instance,
       if only 30% of the people randomly sampled for a survey actually respond,
@@ -342,7 +346,7 @@
       <term>representative</term>
       of the entire population.
       This <term>non-response bias</term>
-          <idx><h>sample</h><h>non-response bias|textbf</h></idx>
+          <idx><h>sample</h><h>non-response bias</h></idx>
       can skew results.
     </p>
     <p>
@@ -350,7 +354,7 @@
       there is an additional type of bias that often crops up and undermines the validity of results,
       known as response bias.
       <em>Response bias</em>
-          <idx><h>response bias|textbf</h></idx>
+          <idx><h>response bias</h></idx>
       refers to a broad range of factors that influence how a person responds,
       such as question wording, question order,
       and influence of the interviewer.
@@ -443,7 +447,7 @@
       \Figures{0.9}{samplingMethodsFigure}{simple_systematic}
     </figure>
     <p>
-      <em>Simple random sampling</em><idx><h>sample</h><h>simple random sampling|textbf</h></idx> is probably the most intuitive form of random sampling.
+      <em>Simple random sampling</em><idx><h>sample</h><h>simple random sampling</h></idx> is probably the most intuitive form of random sampling.
       Consider the salaries of Major League Baseball (MLB) players,
       where each player is a member of one of the league's 30 teams.
       For the 2019 season, N, the population size or total number of players, is 750.
@@ -479,7 +483,7 @@
     </p>
     <p>
       Though less common than simple random sampling,
-      <em>systematic sampling</em><idx><h>sample</h><h>systematic sampling|textbf</h></idx> is sometimes used when there exists a convenient list of all of the individuals of the population.
+      <em>systematic sampling</em><idx><h>sample</h><h>systematic sampling</h></idx> is sometimes used when there exists a convenient list of all of the individuals of the population.
       Suppose we have a roster with the names of all the MLB players from the 2019 season.
       To take a systematic random sample,
       number them from 1 to 750.
@@ -512,9 +516,9 @@
     <p>
       Sometimes there is a variable that is known to be associated with the quantity we want to estimate.
       In this case, a stratified random sample might be selected.
-      <em>Stratified sampling</em><idx><h>sample</h><h>stratified sampling|textbf</h></idx> is a divide-and-conquer sampling strategy.
+      <em>Stratified sampling</em><idx><h>sample</h><h>stratified sampling</h></idx> is a divide-and-conquer sampling strategy.
       The population is divided into groups called <term>strata</term>.
-          <idx><h>sample</h><h>strata|textbf</h></idx>
+          <idx><h>sample</h><h>strata</h></idx>
       The strata are chosen so that similar cases are grouped together and a sampling method,
       usually simple random sampling,
       is employed to select a certain number or a certain proportion of the whole within each stratum.
@@ -568,7 +572,7 @@
     </example>
     <p>
       Next, let's consider a sampling technique that randomly selects groups of people.
-      <em>Cluster sampling</em><idx><h>sample</h><h>cluster sampling|textbf</h></idx> is much like simple random sampling,
+      <em>Cluster sampling</em><idx><h>sample</h><h>cluster sampling</h></idx> is much like simple random sampling,
       but instead of randomly selecting <em>individuals</em>,
       we randomly select groups or <term>clusters</term>.
       Unlike stratified sampling,
@@ -590,9 +594,9 @@
     </p>
     <p>
       <em>Multistage sampling</em>,
-          <idx><h>sample</h><h>multistage sampling|textbf</h></idx>
+          <idx><h>sample</h><h>multistage sampling</h></idx>
       also called <em>multistage cluster sampling</em>,
-          <idx><h>sample</h><h>multistage cluster sampling|textbf</h></idx>
+          <idx><h>sample</h><h>multistage cluster sampling</h></idx>
       is a two (or more) step strategy.
       The first step is to take a cluster sample, as described above.
       Then, instead of including all of the individuals in these clusters in our sample,
@@ -681,7 +685,7 @@
           In an <term>observational study</term>,
           one must always consider the existence of
           <em>confounding factors</em>.
-            <idx><h>confounding factor|textbf</h></idx>
+            <idx><h>confounding factor</h></idx>
         A confounding factor is a
           <q>spoiler variable</q>
           that could explain an observed relationship between the explanatory variable and the response.
@@ -692,9 +696,10 @@
       <li>
         <p>
           When taking a sample from a population,
-          avoid <em>convenience samples</em><idx><h>convenience sample|textbf</h></idx> and
-          <em>volunteer samples</em>,
-            <idx><h>volunteer sample|textbf</h></idx>
+          avoid <em>convenience samples</em>
+            <idx><h>convenience sample</h></idx>
+          and <em>volunteer samples</em>,
+            <idx><h>volunteer sample</h></idx>
           which likely introduce bias.
           Instead, use a <term>random</term> sampling method.
         </p>

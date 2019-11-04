@@ -177,9 +177,9 @@
       <p>
         Suppose the probability of a single trial being a success is <m>p</m>.
         Then the probability of observing exactly <m>x</m> successes in <m>n</m> independent trials is given by
-        <md>
-          <mrow>P(X=x)={n\choose x}p^x(1-p)^{n-x} = \frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}</mrow>
-        </md>
+        <men xml:id="binomialFormula">
+          P(X=x)={n\choose x}p^x(1-p)^{n-x} = \frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}
+        </men>
       </p>
     </assemblage>
   </subsection>
@@ -709,9 +709,9 @@
           <em>exactly x times in n trials</em>.
           Suppose the probability of a single trial being a success is <m>p</m>.
           Then the probability of observing exactly <m>x</m> successes in <m>n</m> independent trials is given by
-          <md>
-            <mrow>{n\choose x}p^x(1-p)^{n-x}   =   \frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}</mrow>
-          </md>
+          <men>
+            {n\choose x}p^x(1-p)^{n-x}   =   \frac{n!}{x!(n-x)!}p^x(1-p)^{n-x}
+          </men>
         </p>
       </li>
       <li>

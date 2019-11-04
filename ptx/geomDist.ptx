@@ -68,7 +68,7 @@
       often labeled as <c>success</c> or <c>failure</c>,
       it is called a
       <em>Bernoulli random variable</em>.
-          <idx><h>distribution</h><h>Bernoulli|textbf</h></idx>
+          <idx><h>distribution</h><h>Bernoulli</h></idx>
       We chose to label a person who does not exceed her deductible as a
       <q>success</q>
       and all others as
@@ -131,7 +131,7 @@
           <idx><h>distribution</h><h>geometric</h></idx>
     </p>
     <p>
-      The <em>geometric distribution</em><idx><h>distribution</h><h>geometric|textbf</h></idx> is used to describe how many trials it takes to observe a success.
+      The <em>geometric distribution</em><idx><h>distribution</h><h>geometric</h></idx> is used to describe how many trials it takes to observe a success.
       Let's first look at an example.
     </p>
     <example xml:id="waitForDeductible">
@@ -175,7 +175,7 @@
     <p>
       <xref ref="waitForDeductible">Example</xref>
       illustrates what the <em>geometric distribution</em>,
-          <idx><h>distribution</h><h>geometric|textbf</h></idx>
+          <idx><h>distribution</h><h>geometric</h></idx>
       which describes the waiting time until a success for
       <term>independent and identically distributed (iid)</term>
       Bernoulli random variables.
@@ -201,7 +201,7 @@
     <assemblage>
       <title>Geometric Distribution</title>
       <p>
-            <idx><h>distribution</h><h>geometric|textbf</h></idx>
+            <idx><h>distribution</h><h>geometric</h></idx>
         Let X have a geometric distribution with one parameter <m>p</m>, where <m>p</m> is the probability of a success in one trial.
         Then the probability of finding the first success in the <m>x^{th}</m> trial is given by
         <md>

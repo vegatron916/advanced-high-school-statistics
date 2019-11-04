@@ -114,7 +114,7 @@ IIIII
 \newcommand{\loanDdev}{-1.65}
 \newcommand{\termO}[1]{\textbf{\color{termOColor}#1}}
 \newcommand{\loanYdev}{-2.14}
-\newcommand{\datalink}[1]{\index{#1|textbf}\texttt{\oiRedirect{data_#1}{#1}}}
+\newcommand{\datalink}[1]{\index{#1|textbf}\texttt{ XXoiRedirect{data_#1}{**}XX }}
 \newcommand{\loanZdev}{-5.49}
 \newcommand{\lmlevel}[1]{:~\emph{#1}}
 \newcommand{\loanSmallestValue}{5.31}
@@ -128,7 +128,6 @@ IIIII
 \newcommand{\numcountieswithoutgains}{1672}
 \newcommand{\oiRedirectUrl}[1]{http://www.openintro.org/redirect.php?go=#1\amp referrer=ahss2_pdf}
 \newcommand{\numcountieswithoutgainsC}{1,672}
-\newcommand{\oiRedirect}[2]{\href{\oiRedirectUrl{#1}}{#2}}
 \newcommand{\npgpad}[1]{\hspace{2mm}#1\hspace{1.5mm}\ }
 \newcommand{\videoicon}[1][4.5mm]{\includegraphics[height=#1]{extraTeX/icons/video_camera.png}~}
 \newcommand{\loanapphomeAA}{3496}
@@ -312,7 +311,7 @@ IIIII
       <titlepage>
       </titlepage>
     </frontmatter>
-    <xi:include href="./chapter1.ptx" />
+    <xi:include href="./preface.ptx" />
     <xi:include href="./introductionToData.ptx" />
     <xi:include href="./summarizingData.ptx" />
     <xi:include href="./probability.ptx" />

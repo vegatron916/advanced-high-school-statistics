@@ -180,7 +180,7 @@
     <solution>
       <p>
         \item[<em>Direct Control.</em>
-            <idx><h>direct control|textbf</h></idx>
+            <idx><h>direct control</h></idx>
         ] Researchers assign treatments to cases,
         and they do their best to <term>control</term>
         any other differences in the groups.
@@ -453,7 +453,7 @@
       <li>
         <p>
           <em>Replication</em>,
-            <idx><h>replication|textbf</h></idx>
+            <idx><h>replication</h></idx>
           or imposing the treatments on many subjects,
           gives more data and decreases the likelihood that the treatment groups differ on some characteristic due to chance alone (i.e. in spite of the randomization).
         </p>
@@ -461,7 +461,7 @@
       <li>
         <p>
           An ideal experiment is <term>randomized</term>, <em>controlled</em>,
-            <idx><h>control|textbf</h></idx>
+            <idx><h>control</h></idx>
           and <term>double-blind</term>.
         </p>
       </li>

@@ -7,21 +7,21 @@
       the foundations for inference are the same throughout all of statistics.
       We start with a familiar topic:
       the idea of using a sample proportion to estimate a population proportion.
-      Next, we create what's called a
-      <em>confidence interval<idx><h>confidence interval|textbf</h></idx>
+      Next, we create what's called a <em>confidence interval
+          <idx><h>confidence interval</h></idx>
       </em>, which is a range of values where the true population value is likely to lie.
       Finally, we introduce a
-          <idx><h>hypothesis test|textbf</h></idx>
+          <idx><h>hypothesis test</h></idx>
       <em>hypothesis testing framework</em>,
       which allows us use data to formally evaluate claims about the population,
       such as whether a survey provides strong evidence that a candidate has the support of a majority of the voting population.
     </p>
   </introduction>
   <xi:include  href="pointEstimates.ptx" />
-  <xi:include  href="section6-2.ptx" />
+  <xi:include  href="pointEstimates_exer.ptx" />
   <xi:include  href="ConfidenceIntervals.ptx" />
-  <xi:include  href="section6-4.ptx" />
+  <xi:include  href="ConfidenceIntervals_exer.ptx" />
   <xi:include  href="hypothesisTesting.ptx" />
-  <xi:include  href="section6-6.ptx" />
-  <xi:include  href="section6-7.ptx" />
+  <xi:include  href="hypothesisTesting_exer.ptx" />
+  <xi:include  href="doesItMakeSense.ptx" />
 </chapter>

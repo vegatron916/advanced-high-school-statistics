@@ -141,7 +141,7 @@
     <figure xml:id="possumpic">
       <caption>The common brushtail possum of Australia.\vspace{-1mm}
       <ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/><ndash/>\vspace{-2mm}
-      { Photo by Peter Firminger on Flickr: \oiRedirect{textbook-flickr_com_wollombi_58499575}{http://flic.kr/p/6aPTn} \oiRedirect{textbook-CC_BY_2}{CC<nbsp/>BY<nbsp/>2.0<nbsp/>license}.}</caption>
+      { Photo by Peter Firminger on Flickr:  XXoiRedirect{textbook-flickr_com_wollombi_58499575}{**}XX   XXoiRedirect{textbook-CC_BY_2}{**}XX .}</caption>
       <image width="50%" source="images/possumPic.png" />
     </figure>
     <figure xml:id="scattHeadLTotalL">
@@ -164,9 +164,9 @@
       We could fit the linear relationship by eye,
       as in <xref ref="scattHeadLTotalLLine">Figure</xref>.
       The equation for this line is
-      <md>
-        <mrow>\hat{y} = 41 + 0.59x</mrow>
-      </md>
+      <men xml:id="headLLinModTotalL">
+        \hat{y} = 41 + 0.59x
+      </men>
     </p>
     <p>
       A
@@ -196,7 +196,7 @@
     </p>
     <p>
       <em>Residuals</em>
-          <idx><h>residual|textbf</h></idx>
+          <idx><h>residual</h></idx>
       are the leftover variation in the response variable after fitting a model.
       Each observation will have a residual,
       and three of the residuals for the linear model we fit for the <c>possum</c> data are shown in <xref ref="scattHeadLTotalLLine">Figure</xref>.
@@ -442,7 +442,7 @@
       <title>Correlation measures the strength of a linear relationship</title>
       <p>
         <em>Correlation</em>,
-            <idx><h>correlation|textbf</h></idx>
+            <idx><h>correlation</h></idx>
         which always takes values between -1 and 1, describes the direction and strength of the linear relationship between two numerical variables.
         The strength can be strong, moderate, or<nbsp/>weak.
       </p>
@@ -536,15 +536,13 @@
           This group of four graphs, known as Anscombe's Quartet,
           remind us that knowing the value of the correlation does not tell us what the corresponding scatterplot looks like.
           It is always important to first graph the data.
-          Investigate Anscombe's Quartet in Desmos:
-          <url href="\oiRedirectUrl{desmos-anscombe}">https://www.desmos.com/calculator/paknt6oneh.</url>
+          Investigate Anscombe's Quartet in Desmos: XXoiRedirect{desmos-anscombe}{**}XX
         </p>
       </answer>
     </example>
     <figure xml:id="anscombe">
       <caption>Four scatterplots from Desmos with best fit line drawn in.</caption>
-      \oiRedirect{desmos-anscombe}{
-      <image width="73%" source="images/anscombeDesmos.png" /> }
+      XXoiRedirect{desmos-anscombe}{**}XX
     </figure>
   </subsection>
   <subsection>
@@ -553,7 +551,7 @@
       <li>
         <p>
           In Chapter 2 we introduced a bivariate display called a <em>scatterplot</em>,
-            <idx><h>scatterplot|textbf</h></idx>
+            <idx><h>scatterplot</h></idx>
           which shows the relationship between two numerical variables.
           When we use <m>x</m> to predict <m>y</m>,
           we call <m>x</m> the <term>explanatory variable</term> or predictor variable,
@@ -615,7 +613,7 @@
       <li>
         <p>
           <em>Correlation</em>,
-            <idx><h>correlation|textbf</h></idx>
+            <idx><h>correlation</h></idx>
           denoted with the letter <m>r</m>,
           measures the strength and direction of a linear relationship.
           The following are some important facts about correlation.

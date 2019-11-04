@@ -1,0 +1,732 @@
+<section xml:id="conditionalProbabilitySection_exer">
+  <title>Exercises</title>
+  <exercise xml:id="joint_cond">
+    <title>Joint and conditional probabilities</title>
+    <statement>
+      <p>
+        P(A) = 0.3, P(B) = 0.7
+        <ol>
+          <li>
+            <p>
+              Can you compute P(A and B) if you only know P(A) and P(B)?
+            </p>
+          </li>
+          <li>
+            <p>
+              Assuming that events A and B arise from independent random processes,
+              <task>
+                what is P(A and B)?
+              </task>
+              <task>
+                what is P(A or B)?
+              </task>
+              <task>
+                what is P(A<m>|</m>B)?
+              </task>
+            </p>
+          </li>
+          <li>
+            <p>
+              If we are given that P(A and B) = 0.1, are the random variables giving rise to events A and B independent?
+            </p>
+          </li>
+          <li>
+            <p>
+              If we are given that P(A and B) = 0.1, what is P(A<m>|</m>B)?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="pbj">
+    <title>PB &amp; J</title>
+    <statement>
+      <p>
+        Suppose 80% of people like peanut butter, 89% like jelly,
+        and 78% like both.
+        Given that a randomly sampled person likes peanut butter,
+        what's the probability that he also likes jelly?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="global_warming">
+    <title>Global warming</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-global_warming<nbsp/> A Pew Research poll asked 1,306 Americans ``From what you've read and heard,
+        is there solid evidence that the average temperature on earth has been getting warmer over the past few decades,
+        or not?". The table below shows the distribution of responses by party and ideology,
+        where the counts have been replaced with relative frequencies. \footfullcite{globalWarming}
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>\multicolumn{3}{c}{<em>Response</em>}</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>Earth is</cell>
+          <cell>Not</cell>
+          <cell>Don't Know</cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>warming</cell>
+          <cell>warming</cell>
+          <cell>Refuse</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Conservative Republican</cell>
+          <cell>0.11</cell>
+          <cell>0.20</cell>
+          <cell>0.02</cell>
+          <cell>0.33</cell>
+        </row>
+        <row>
+          <cell><em>Party and</em></cell>
+          <cell>Mod/Lib Republican</cell>
+          <cell>0.06</cell>
+          <cell>0.06</cell>
+          <cell>0.01</cell>
+          <cell>0.13</cell>
+        </row>
+        <row>
+          <cell><em>Ideology</em></cell>
+          <cell>Mod/Cons Democrat</cell>
+          <cell>0.25</cell>
+          <cell>0.07</cell>
+          <cell>0.02</cell>
+          <cell>0.34</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Liberal Democrat</cell>
+          <cell>0.18</cell>
+          <cell>0.01</cell>
+          <cell>0.01</cell>
+          <cell>0.20</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Total</cell>
+          <cell>0.60</cell>
+          <cell>0.34</cell>
+          <cell>0.06</cell>
+          <cell>1.00</cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Are believing that the earth is warming and being a liberal Democrat mutually exclusive?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen respondent believes the earth is warming or is a liberal Democrat?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen respondent believes the earth is warming given that he is a liberal Democrat?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen respondent believes the earth is warming given that he is a conservative Republican?
+          </p>
+        </li>
+        <li>
+          <p>
+            Does it appear that whether or not a respondent believes the earth is warming is independent of their party and ideology?
+            Explain your reasoning.
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen respondent is a moderate/liberal Republican given that he does not believe that the earth is warming?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="health_coverage_rel_freqs">
+    <title>Health coverage, relative frequencies</title>
+    <statement>
+      <p>
+        The Behavioral Risk Factor Surveillance System (BRFSS) is an annual telephone survey designed to identify risk factors in the adult population and report emerging health trends.
+        The following table displays the distribution of health status of respondents to this survey (excellent,
+        very good,
+        good, fair,
+        poor) and whether or not they have health insurance.
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>\multicolumn{5}{c}{<em>Health Status</em>}</cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>Excellent</cell>
+          <cell>Very good</cell>
+          <cell>Good</cell>
+          <cell>Fair</cell>
+          <cell>Poor</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell><em>Health</em></cell>
+          <cell>No</cell>
+          <cell>0.0230</cell>
+          <cell>0.0364</cell>
+          <cell>0.0427</cell>
+          <cell>0.0192</cell>
+          <cell>0.0050</cell>
+          <cell>0.1262</cell>
+        </row>
+        <row>
+          <cell><em>Coverage</em></cell>
+          <cell>Yes</cell>
+          <cell>0.2099</cell>
+          <cell>0.3123</cell>
+          <cell>0.2410</cell>
+          <cell>0.0817</cell>
+          <cell>0.0289</cell>
+          <cell>0.8738</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Total</cell>
+          <cell>0.2329</cell>
+          <cell>0.3486</cell>
+          <cell>0.2838</cell>
+          <cell>0.1009</cell>
+          <cell>0.0338</cell>
+          <cell>1.0000</cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Are being in excellent health and having health coverage mutually exclusive?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen individual has excellent health?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen individual has excellent health given that he has health coverage?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen individual has excellent health given that he doesn't have health coverage?
+          </p>
+        </li>
+        <li>
+          <p>
+            Do having excellent health and having health coverage appear to be independent?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="burger_preferences">
+    <title>Burger preferences</title>
+    <statement>
+      <p>
+        A 2010 SurveyUSA poll asked 500 Los Angeles residents,
+        <q>What is the best hamburger place in Southern California?
+        Five Guys Burgers?
+        In-N-Out Burger?
+        Fat Burger?
+        Tommy's Hamburgers?
+        Umami Burger?
+        Or somewhere else?</q>
+        The distribution of responses by gender is shown below. \footfullcite{burgers}
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>\multicolumn{2}{c}{<em>Gender</em>}</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>Male</cell>
+          <cell>Female</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Five Guys Burgers</cell>
+          <cell>5</cell>
+          <cell>6</cell>
+          <cell>11</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>In-N-Out Burger</cell>
+          <cell>162</cell>
+          <cell>181</cell>
+          <cell>343</cell>
+        </row>
+        <row>
+          <cell><em>Best</em></cell>
+          <cell>Fat Burger</cell>
+          <cell>10</cell>
+          <cell>12</cell>
+          <cell>22</cell>
+        </row>
+        <row>
+          <cell><em>hamburger</em></cell>
+          <cell>Tommy's Hamburgers</cell>
+          <cell>27</cell>
+          <cell>27</cell>
+          <cell>54</cell>
+        </row>
+        <row>
+          <cell><em>place</em></cell>
+          <cell>Umami Burger</cell>
+          <cell>5</cell>
+          <cell>1</cell>
+          <cell>6</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Other</cell>
+          <cell>26</cell>
+          <cell>20</cell>
+          <cell>46</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Not Sure</cell>
+          <cell>13</cell>
+          <cell>5</cell>
+          <cell>18</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Total</cell>
+          <cell>248</cell>
+          <cell>252</cell>
+          <cell>500</cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Are being female and liking Five Guys Burgers mutually exclusive?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen male likes In-N-Out the best?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen female likes In-N-Out the best?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a man and a woman who are dating both like In-N-Out the best?
+            Note any assumption you make and evaluate whether you think that assumption is reasonable.
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen person likes Umami best or that person is female?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="assortative_mating">
+    <title>Assortative mating</title>
+    <statement>
+      <p>
+        Assortative mating is a nonrandom mating pattern where individuals with similar genotypes and/or phenotypes mate with one another more frequently than what would be expected under a random mating pattern.
+        Researchers studying this topic collected data on eye colors of 204 Scandinavian men and their female partners.
+        The table below summarizes the results.
+        For simplicity,
+        we only include heterosexual relationships in this exercise. \footfullcite{Laeng:2007}
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>\multicolumn{3}{c}{<em>Partner (female)</em>}</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>Blue</cell>
+          <cell>Brown</cell>
+          <cell>Green</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Blue</cell>
+          <cell>78</cell>
+          <cell>23</cell>
+          <cell>13</cell>
+          <cell>114</cell>
+        </row>
+        <row>
+          <cell>\multirow{2}{*}{<em>Self (male)</em>}</cell>
+          <cell>Brown</cell>
+          <cell>19</cell>
+          <cell>23</cell>
+          <cell>12</cell>
+          <cell>54</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Green</cell>
+          <cell>11</cell>
+          <cell>9</cell>
+          <cell>16</cell>
+          <cell>36</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Total</cell>
+          <cell>108</cell>
+          <cell>55</cell>
+          <cell>41</cell>
+          <cell>204</cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            What is the probability that a randomly chosen male respondent or his partner has blue eyes?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen male respondent with blue eyes has a partner with blue eyes?
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the probability that a randomly chosen male respondent with brown eyes has a partner with blue eyes?
+            What about the probability of a randomly chosen male respondent with green eyes having a partner with blue eyes?
+          </p>
+        </li>
+        <li>
+          <p>
+            Does it appear that the eye colors of male respondents and their partners are independent?
+            Explain your reasoning.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="marbles_in_urn">
+    <title>Marbles in an urn</title>
+    <statement>
+      <p>
+        Imagine you have an urn containing 5 red, 3 blue,
+        and 2 orange marbles in it.
+        <ol>
+          <li>
+            <p>
+              What is the probability that the first marble you draw is blue?
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose you drew a blue marble in the first draw.
+              If drawing with replacement,
+              what is the probability of drawing a blue marble in the second draw?
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose you instead drew an orange marble in the first draw.
+              If drawing with replacement,
+              what is the probability of drawing a blue marble in the second draw?
+            </p>
+          </li>
+          <li>
+            <p>
+              If drawing with replacement,
+              what is the probability of drawing two blue marbles in a row?
+            </p>
+          </li>
+          <li>
+            <p>
+              When drawing with replacement,
+              are the draws independent?
+              Explain.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="socks_in_drawer">
+    <title>Socks in a drawer</title>
+    <statement>
+      <p>
+        In your sock drawer you have 4 blue, 5 gray, and 3 black socks.
+        Half asleep one morning you grab 2 socks at random and put them on.
+        Find the probability you end up wearing
+        <ol>
+          <li>
+            <p>
+              2 blue socks
+            </p>
+          </li>
+          <li>
+            <p>
+              no gray socks
+            </p>
+          </li>
+          <li>
+            <p>
+              at least 1 black sock
+            </p>
+          </li>
+          <li>
+            <p>
+              a green sock
+            </p>
+          </li>
+          <li>
+            <p>
+              matching socks
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="chips_in_bag">
+    <title>Chips in a bag</title>
+    <statement>
+      <p>
+        Imagine you have a bag containing 5 red, 3 blue, and 2 orange chips.
+        <ol>
+          <li>
+            <p>
+              Suppose you draw a chip and it is blue.
+              If drawing without replacement,
+              what is the probability the next is also blue?
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose you draw a chip and it is orange,
+              and then you draw a second chip without replacement.
+              What is the probability this second chip is blue?
+            </p>
+          </li>
+          <li>
+            <p>
+              If drawing without replacement,
+              what is the probability of drawing two blue chips in a row?
+            </p>
+          </li>
+          <li>
+            <p>
+              When drawing without replacement,
+              are the draws independent?
+              Explain.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="books_on_shelf">
+    <title>Books on a bookshelf</title>
+    <statement>
+      <p>
+        The table below shows the distribution of books on a bookcase based on whether they are nonfiction or fiction and hardcover or paperback.
+      </p>
+      <tabular>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>\multicolumn{2}{c}{<em>Format</em>}</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell></cell>
+          <cell>Hardcover</cell>
+          <cell>Paperback</cell>
+          <cell>Total</cell>
+        </row>
+        <row>
+          <cell>\multirow{2}{*}{<em>Type</em>}</cell>
+          <cell>Fiction</cell>
+          <cell>13</cell>
+          <cell>59</cell>
+          <cell>72</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Nonfiction</cell>
+          <cell>15</cell>
+          <cell>8</cell>
+          <cell>23</cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Total</cell>
+          <cell>28</cell>
+          <cell>67</cell>
+          <cell>95</cell>
+        </row>
+        <row>
+          <cell></cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Find the probability of drawing a hardcover book first then a paperback fiction book second when drawing without replacement.
+          </p>
+        </li>
+        <li>
+          <p>
+            Determine the probability of drawing a fiction book first and then a hardcover book second,
+            when drawing without replacement.
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate the probability of the scenario in part<nbsp/>(b),
+            except this time complete the calculations under the scenario where the first book is placed back on the bookcase before randomly drawing the second book.
+          </p>
+        </li>
+        <li>
+          <p>
+            The final answers to parts<nbsp/>(b) and<nbsp/>(c) are very similar.
+            Explain why this is the case.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="student_outfits">
+    <title>Student outfits</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-student_outfits<nbsp/> In a classroom with 24 students, 7 students are wearing jeans, 4 are wearing shorts, 8 are wearing skirts,
+        and the rest are wearing leggings.
+        If we randomly select 3 students without replacement,
+        what is the probability that one of the selected students is wearing leggings and the other two are wearing jeans?
+        Note that these are mutually exclusive clothing options.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="birthday_problem">
+    <title>The birthday problem</title>
+    <statement>
+      <p>
+        Suppose we pick three people at random.
+        For each of the following questions,
+        ignore the special case where someone might be born on February 29th,
+        and assume that births are evenly distributed throughout the year.
+        <ol>
+          <li>
+            <p>
+              What is the probability that the first two people share a birthday?
+            </p>
+          </li>
+          <li>
+            <p>
+              What is the probability that at least two people share a birthday?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="tree_drawing_box_plots">
+    <title>Drawing box plots</title>
+    <statement>
+      <p>
+        After an introductory statistics course, 80% of students can successfully construct box plots.
+        Of those who can construct box plots, 86% passed,
+        while only 65% of those students who could not construct box plots passed.
+        <ol>
+          <li>
+            <p>
+              Construct a tree diagram of this scenario.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the probability that a student is able to construct a box plot if it is known that he passed.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="tree_thrombosis">
+    <title>Predisposition for thrombosis</title>
+    <statement>
+      <p>
+        A genetic test is used to determine if people have a predisposition for <em>thrombosis</em>,
+        which is the formation of a blood clot inside a blood vessel that obstructs the flow of blood through the circulatory system.
+        It is believed that 3% of people actually have this predisposition.
+        The genetic test is 99% accurate if a person actually has the predisposition,
+        meaning that the probability of a positive test result when a person actually has the predisposition is 0.99.
+        The test is 98% accurate if a person does not have the predisposition.
+        What is the probability that a randomly selected person who tests positive for the predisposition by the test actually has the predisposition?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="tree_lupus">
+    <title>It's never lupus</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-tree_lupus<nbsp/> Lupus is a medical phenomenon where antibodies that are supposed to attack foreign cells to prevent infections instead see plasma proteins as foreign bodies,
+        leading to a high risk of blood clotting.
+        It is believed tha t 2% of the population suffer from this disease.
+        The test is 98% accurate if a person actually has the disease.
+        The test is 74% accurate if a person does not have the disease.
+        There is a line from the Fox television show <em>House</em>
+        that is often used after a patient tests positive for lupus: ``It's never lupus." Do you think there is truth to this statement?
+        Use appropriate probabilities to support your answer.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="tree_exit_poll">
+    <title>Exit poll</title>
+    <statement>
+      <p>
+        Edison Research gathered exit poll results from several sources for the Wisconsin recall election of Scott Walker.
+        They found that 53% of the respondents voted in favor of Scott Walker.
+        Additionally,
+        they estimated that of those who did vote in favor for Scott Walker, 37% had a college degree,
+        while 44% of those who voted against Scott Walker had a college degree.
+        Suppose we randomly sampled a person who participated in the exit poll and found that he had a college degree.
+        What is the probability that he voted in favor of Scott Walker? \footfullcite{data:scott}
+      </p>
+    </statement>
+  </exercise>
+</section>

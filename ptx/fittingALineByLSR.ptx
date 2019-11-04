@@ -73,7 +73,7 @@
       This section considers family income and gift aid data from a random sample of fifty students in the freshman class of Elmhurst College in Illinois.<fn>
       These data were sampled from a table of data for all freshmen from the 2011 class at Elmhurst College that accompanied an article titled
       <em>What Students Really Pay to Go to College</em>
-      published online by <em>The<nbsp/>Chronicle of Higher Education</em>: \oiRedirect{textbook-chronicle_elmhurst_article}{chronicle.com/article/What-Students-Really-Pay-to-Go/131435}
+      published online by <em>The<nbsp/>Chronicle of Higher Education</em>: XXoiRedirect{textbook-chronicle_elmhurst_article}{**}XX
       </fn> Gift aid is financial aid that does not need to be paid back,
       as opposed to a loan.
       A scatterplot of the data is shown in <xref ref="elmhurstScatterW2Lines">Figure</xref> along with two linear fits.
@@ -88,16 +88,16 @@
       We begin by thinking about what we mean by
       <q>best</q>. Mathematically, we want a line that has small residuals.
       Perhaps our criterion could minimize the sum of the residual magnitudes:
-      <md>
-        <mrow>|y_1 - \hat{y}_1| + |y_2-\hat{y}_2| + \dots + |y_n-\hat{y}_n|</mrow>
-      </md>
+      <men xml:id="sumOfAbsoluteValueOfResiduals">
+        |y_1 - \hat{y}_1| + |y_2-\hat{y}_2| + \dots + |y_n-\hat{y}_n|
+      </men>
       which we could accomplish with a computer program.
       The resulting dashed line shown in <xref ref="elmhurstScatterW2Lines">Figure</xref>
       demonstrates this fit can be quite reasonable.
       However, a more common practice is to choose the line that minimizes the sum of the squared residuals:
-      <md>
-        <mrow>(y_1 - \hat{y}_1)^2 + (y_2-\hat{y}_2)^2+ \dots + (y_n-\hat{y}_n)^2</mrow>
-      </md>
+      <men xml:id="sumOfSquaresForResiduals">
+        (y_1 - \hat{y}_1)^2 + (y_2-\hat{y}_2)^2+ \dots + (y_n-\hat{y}_n)^2
+      </men>
     </p>
     <p>
       The line that minimizes the sum of the squared residuals is represented as the solid line in <xref ref="elmhurstScatterW2Lines">Figure</xref>.
@@ -122,10 +122,9 @@
       In the figure, the sum of the squared error is <m>4+1+1=6</m>.
       There is no other line about which the sum of the squared error will be smaller.
     </p>
-    <figure xml:id="leastSquares">
-      <caption>A visualization of least squares regression using Desmos.  Try out this and other interactive Desmos activities at \oiRedirect{openintro-ahss-desmos}openintro.org/ahss/desmos.</caption>
-      \oiRedirect{desmos-leastsquares}{
-      <image width="75%" source="images/leastSquares.png" /> }
+    <figure>
+      XXoiRedirect{desmos-leastsquares}{**}XX
+      A visualization of least squares regression using Desmos.  Try out this and other interactive Desmos activities at  XXoiRedirect{openintro-ahss-desmos}{**}XX
     </figure>
   </subsection>
   <subsection xml:id="findingTheLeastSquaresLineSection">
@@ -133,9 +132,9 @@
     <p>
       For the Elmhurst College data,
       we could fit a least squares regression line for predicting gift aid based on a student's family income and write the equation as:
-      <md>
-        <mrow>\widehat{\textit{aid}} = a  + b\times \textit{family_income}</mrow>
-      </md>
+      <men>
+        \widehat{\textit{aid}} = a  + b\times \textit{family_income}
+      </men>
     </p>
     <p>
       Here <m>a</m> is the <m>y</m>-intercept of the least squares regression line and <m>b</m> is the slope of the least squares regression line.
@@ -150,9 +149,9 @@
         <li>
           <p>
             The slope of the least squares line is given by
-            <md>
-              <mrow>b = r\frac{s_y}{s_x}</mrow>
-            </md>
+            <men xml:id="slopeOfLSRLine">
+              b = r\frac{s_y}{s_x}
+            </men>
             where <m>r</m> is the correlation between the variables <m>x</m> and <m>y</m>,
             and <m>s_x</m> and <m>s_y</m> are the sample standard deviations of <m>x</m>,
             the explanatory variable, and <m>y</m>, the response variable.
@@ -266,7 +265,7 @@
         </row>
       </tabular>
     </figure>
-    <example>
+    <example xml:id="findingTheSlopeOfTheLSRLineForIncomeAndAid">
       <statement>
         <p>
           Using the summary statistics in <xref ref="summaryStatsOfSATGPAData">Figure</xref>,
@@ -581,7 +580,7 @@
     </p>
     <p>
       April 6th, 2010<fn>
-      \oiRedirect{textbook-colbert_extrapolation}{www.cc.com/video-clips/l4nkoq/}
+      XXoiRedirect{textbook-colbert_extrapolation}{**}XX
       </fn>
     </p>
     <p>
@@ -635,7 +634,7 @@
       We evaluated the strength of the linear relationship between two variables earlier using the correlation,
       <m>r</m>.
       However, it is more common to explain the fit of a model using <m>R^2</m>,
-      called <em>R-squared</em><idx><h>least squares regression</h><h>R-squared (<m>R^2</m>)|textbf</h></idx> or the
+      called <em>R-squared</em><idx><h>least squares regression</h><h>R-squared (<m>R^2</m>)</h></idx> or the
       <term>explained variance</term>.
       If provided with a linear model,
       we might like to describe how closely the data cluster around the linear fit.
@@ -676,16 +675,10 @@
         <mrow>R^2=\frac{SSM - SSRes}{SSM} = 1-\frac{SSRes}{SSM}</mrow>
       </md>
     </p>
-    <figure xml:id="rsq1">
-      <caption>\subref{rsq1} The regression line is equivalent to <m>\bar{y}</m>; <m>R^2 = 0</m>.
-      \subref{rsq2} The regression line passes through all of the points; <m>R^2=1</m>.  Try out this and other interactive Desmos activities at \oiRedirect{openintro-ahss-desmos}openintro.org/ahss/desmos.</caption>
-      \oiRedirect{desmos-rsquared}{
-      \Figures{0.4}
-      {rSquared}
-      {rsq1} }
-      \Figures{0.4}
-      {rSquared}
-      {rsq2} }}
+    <figure>
+      XXoiRedirect{desmos-rsquared}{**}XX
+      \subref{rsq1} The regression line is equivalent to <m>\bar{y}</m>; <m>R^2 = 0</m>.
+      \subref{rsq2} The regression line passes through all of the points; <m>R^2=1</m>.  Try out this and other interactive Desmos activities at  XXoiRedirect{openintro-ahss-desmos}{**}XX
     </figure>
     <exercise>
       <statement>
@@ -1010,18 +1003,15 @@
     </figure>
     <example>
       <statement>
+        <answer>
+          <p>
+            begin{answer}label{loan50Desmos} Use the full <c>loan50</c> data set ( XXoiRedirect{data}{**}XX XXoiRedirect{desmos-loan50scatter}{**}XX
+          </p>
+        </answer>
         <p>
-          Use the full <c>loan50</c> data set (
-          <url href="\oiRedirectUrl{data}">openintro.org/ahss/data) and this
-          <url href="\oiRedirectUrl{desmos-linregcalculator}">Desmos Calculator</url>
-          \mbox{({openintro.org/ahss/desmos})} to draw the scatterplot and find the equation of the least squares regression line for prediction loan amount (<m>y</m>) from total income (<m>x</m>).</url>
+          \end{answer}
         </p>
       </statement>
-      <answer>
-        <p>
-          <url href="\oiRedirectUrl{desmos-loan50scatter}"><image width="75%" source="images/loan50Desmos.png" /></url>
-        </p>
-      </answer>
     </example>
   </subsection>
   <subsection xml:id="typesOfOutliersInLinearRegression">
@@ -1150,7 +1140,7 @@
       We'll consider eBay auctions for a video game,
       <em>Mario Kart</em> for the Nintendo Wii,
       where both the total price of the auction and the condition of the game were recorded.<fn>
-      These data were collected in Fall 2009 and may be found at \oiRedirect{textbook-openintro_org_stat}{openintro.org/stat}.
+      These data were collected in Fall 2009 and may be found at XXoiRedirect{textbook-openintro_org_stat}{**}XX .
       </fn> Here we want to predict total price based on game condition,
       which takes values <c>used</c> and <c>new</c>.
       A plot of the auction data is shown in <xref ref="marioKartNewUsed">Figure</xref>.
@@ -1290,9 +1280,9 @@
           We write the least squares regression line in the form:
           <m>\hat{y} = a  + bx</m>,
           and we can calculate <m>a</m> and <m>b</m> based on the summary statistics as follows:
-          <md>
-            <mrow>b=r\frac{s_y}{s_x} \qquad \text{ and }  \qquad a=\bar{y} - b\bar{x}</mrow>
-          </md>.
+          <men>
+            b=r\frac{s_y}{s_x} \qquad \text{ and }  \qquad a=\bar{y} - b\bar{x}
+          </men>.
         </p>
       </li>
       <li>
@@ -1395,7 +1385,7 @@
       <li>
         <p>
           <em>Outliers</em>
-            <idx><h>outlier|textbf</h></idx>
+            <idx><h>outlier</h></idx>
           in regression are observations that fall far from the
           <q>cloud</q>
           of points.

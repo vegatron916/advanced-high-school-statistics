@@ -98,7 +98,7 @@
       The overall quantity of interest may be the mean,
       median, proportion, or some other summary of a population.
       These population values are called <em>parameters</em>.
-          <idx><h>parameter|textbf</h></idx>
+          <idx><h>parameter</h></idx>
       We estimate the value of a parameter by taking a sample and computing a numerical summary called a
       <term>statistic</term> based on that sample.
       Note that the two p's (population,
@@ -266,9 +266,11 @@
       we are asking whether one variable affects another.
       If this is our underlying belief,
       then <em>median household income</em>
-      is the <em>explanatory</em><idx><h>explanatory variable|textbf</h></idx> variable and the
-      <em>population change</em>
-      is the <em>response</em><idx><h>response variable|textbf</h></idx> variable in the hypothesized relationship.<fn>
+      is the <em>explanatory</em>
+          <idx><h>explanatory variable</h></idx>
+      variable and the <em>population change</em> is the <em>response</em>
+          <idx><h>response variable</h></idx>
+      variable in the hypothesized relationship.<fn>
       Sometimes the explanatory variable is called the <term>independent</term>
       variable and the response variable is called the
       <term>dependent</term> variable.
@@ -314,7 +316,7 @@
       That<nbsp/>is,
       we do not know if the lack of the protein is an explanatory variable or a response variable.
       Perhaps it is both.<fn>
-      \oiRedirect{textbook-nytimes_gene_alzheimers_study}{nytimes.com/2014/03/20/health/fetal-gene-may-protect-brain-from-alzheimers-study-finds.html}
+      XXoiRedirect{textbook-nytimes_gene_alzheimers_study}{**}XX
       </fn>
     </p>
   </subsection>

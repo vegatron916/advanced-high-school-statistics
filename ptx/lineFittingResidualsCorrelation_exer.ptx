@@ -1,0 +1,338 @@
+<section xml:id="lineFittingResidualsCorrelation_exer">
+  <title>Exercises</title>
+  <exercise xml:id="visualize_residuals">
+    <title>Visualize the residuals</title>
+    <statement>
+      <p>
+        The scatterplots shown below each have a superimposed regression line.
+        If we were to construct a residual plot
+        (residuals versus <m>x</m>)
+        for each, describe what those plots would look like.
+        <image width="42%" source="images/visualize_residuals_linear.png" /> <image width="42%" source="images/visualize_residuals_fan_back.png" />
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="trends_in_residuals">
+    <title>Trends in the residuals</title>
+    <statement>
+      <p>
+        Shown below are two plots of residuals remaining after fitting a linear model to two different sets of data.
+        Describe important features and determine if a linear model would be appropriate for these data.
+        Explain your reasoning.
+        <image width="42%" source="images/trends_in_residuals_fan.png" /> <image width="42%" source="images/trends_in_residuals_log.png" />
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="identify_relationships_1">
+    <title>Identify relationships, Part I</title>
+    <statement>
+      <p>
+        For each of the six plots,
+        identify the strength of the relationship (e.g. weak, moderate,
+        or strong) in the data and whether fitting a linear model would be reasonable.
+        <image width="32%" source="images/identify_relationships_u.png" /> <image width="32%" source="images/identify_relationships_lin_pos_strong.png" /> <image width="32%" source="images/identify_relationships_lin_pos_weak.png" /> <image width="32%" source="images/identify_relationships_n.png" /> <image width="32%" source="images/identify_relationships_lin_neg_strong.png" /> <image width="32%" source="images/identify_relationships_none.png" />
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="identify_relationships_2">
+    <title>Identify relationships, Part II</title>
+    <statement>
+      <p>
+        For each of the six plots,
+        identify the strength of the relationship (e.g. weak, moderate,
+        or strong) in the data and whether fitting a linear model would be reasonable.
+        <image width="32%" source="images/identify_relationships_s.png" /> <image width="32%" source="images/identify_relationships_hockey_stick.png" /> <image width="32%" source="images/identify_relationships_pos_lin_strong.png" /> <image width="32%" source="images/identify_relationships_pos_weak.png" /> <image width="32%" source="images/identify_relationships_pos_weaker.png" /> <image width="32%" source="images/identify_relationships_neg_lin_weak.png" />
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="exams_grades_correlation">
+    <title>Exams and grades</title>
+    <statement>
+      <p>
+        The two scatterplots below show the relationship between final and mid-semester exam grades recorded during several years for a Statistics course at a university.
+        <ol>
+          <li>
+            <p>
+              Based on these graphs,
+              which of the two exams has the strongest correlation with the final exam grade?
+              Explain.
+            </p>
+          </li>
+          <li>
+            <p>
+              Can you think of a reason why the correlation between the exam you chose in part (a) and the final exam is higher?
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        <image width="48%" source="images/exam_grades_1.png" /> <image width="48%" source="images/exam_grades_2.png" />
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="husbands_wives_correlation">
+    <title>Spouses, Part I</title>
+    <statement>
+      <p>
+        The Great Britain Office of Population Census and Surveys once collected data on a random sample of 170 married women in Britain,
+        recording the age
+        (in years)
+        and heights
+        (converted here to inches)
+        of the women and their spouses.\footfullcite{Hand:1994} The scatterplot on the left shows the spouse's age plotted against the woman's age,
+        and the plot on the right shows spouse's height plotted against the woman's height.
+        <image width="36%" source="images/husbands_wives_age.png" /> <image width="36%" source="images/husbands_wives_height.png" />
+        <ol>
+          <li>
+            <p>
+              Describe the relationship between the ages of women in the sample and their spouses' ages.
+            </p>
+          </li>
+          <li>
+            <p>
+              Describe the relationship between the heights of women in the sample and their spouses' heights.
+            </p>
+          </li>
+          <li>
+            <p>
+              Which plot shows a stronger correlation?
+              Explain your reasoning.
+            </p>
+          </li>
+          <li>
+            <p>
+              Data on heights were originally collected in centimeters,
+              and then converted to inches.
+              Does this conversion affect the correlation between heights of women in the sample and their spouses' heights?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="match_corr_1">
+    <title>Match the correlation, Part I</title>
+    <statement>
+      <p>
+        Match each correlation to the corresponding scatterplot.
+      </p>
+      <sidebyside>
+        <ol>
+          <li>
+            <p>
+              <m>r = -0.7</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>r = 0.45</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>r = 0.06</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>r = 0.92</m>
+            </p>
+          </li>
+        </ol>
+        \vspace{3mm}
+        <image width="22%" source="images/match_corr_1_u.png" />
+        <image width="22%" source="images/match_corr_2_strong_pos.png" />
+        <image width="22%" source="images/match_corr_3_weak_pos.png" />
+        <image width="22%" source="images/match_corr_4_weak_neg.png" />
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="match_corr_2">
+    <title>Match the correlation, Part II</title>
+    <statement>
+      <p>
+        Match each correlation to the corresponding scatterplot.
+      </p>
+      <sidebyside>
+        <ol>
+          <li>
+            <p>
+              <m>r = 0.49</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>r = -0.48</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>r = -0.03</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>r = -0.85</m>
+            </p>
+          </li>
+        </ol>
+        \vspace{3mm}
+        <image width="24%" source="images/match_corr_1_strong_neg_curved.png" />
+        <image width="24%" source="images/match_corr_2_weak_pos.png" />
+        <image width="24%" source="images/match_corr_3_n.png" />
+        <image width="24%" source="images/match_corr_4_weak_neg.png" />
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="speed_height_gender">
+    <title>Speed and height</title>
+    <statement>
+      <p>
+        1,302 UCLA students were asked to fill out a survey where they were asked about their height,
+        fastest speed they have ever driven, and gender.
+        The scatterplot on the left displays the relationship between height and fastest speed,
+        and the scatterplot on the right displays the breakdown by gender in this relationship.
+        <image width="43%" source="images/speed_height.png" /> <image width="43%" source="images/speed_height_gender.png" />
+        <ol>
+          <li>
+            <p>
+              Describe the relationship between height and fastest speed.
+            </p>
+          </li>
+          <li>
+            <p>
+              Why do you think these variables are positively associated?
+            </p>
+          </li>
+          <li>
+            <p>
+              What role does gender play in the relationship between height and fastest driving speed?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="guess_correlation">
+    <title>Guess the correlation</title>
+    <statement>
+      <p>
+        Eduardo and Rosie are both collecting data on number of rainy days in a year and the total rainfall for the year.
+        Eduardo records rainfall in inches and Rosie in centimeters.
+        How will their correlation coefficients compare?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="coast_starlight_corr_units">
+    <title>The Coast Starlight, Part I</title>
+    <statement>
+      <p>
+        The Coast Starlight Amtrak train runs from Seattle to Los Angeles.
+        The scatterplot below displays the distance between each stop
+        (in miles)
+        and the amount of time it takes to travel from one stop to another
+        (in minutes).
+      </p>
+      <sidebyside>
+        <m>\:</m>
+        <image width="73%" source="images/coast_starlight.png" />
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="crawling_babies_corr_units">
+    <title>Crawling babies, Part I</title>
+    <statement>
+      <p>
+        A study conducted at the University of Denver investigated whether babies take longer to learn to crawl in cold months,
+        when they are often bundled in clothes that restrict their movement,
+        than in warmer months. \footfullcite{Benson:1993} Infants born during the study year were split into twelve groups,
+        one for each birth month.
+        We consider the average crawling age of babies in each group against the average temperature when the babies are six months old
+        (that's when babies often begin trying to crawl).
+        Temperature is measured in degrees Fahrenheit (^\circ F) and age is measured in weeks.
+      </p>
+      <sidebyside>
+        <m>\:</m>
+        <image width="73%" source="images/crawling_babies.png" />
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="body_measurements_shoulder_height_corr_units">
+    <title>Body measurements, Part I</title>
+    <statement>
+      <p>
+        Researchers studying anthropometry collected body girth measurements and skeletal diameter measurements,
+        as well as age, weight,
+        height and gender for 507 physically active individuals.\footfullcite{Heinz:2003} The scatterplot below shows the relationship between height and shoulder girth
+        (over deltoid muscles),
+        both measured in centimeters.
+      </p>
+      <sidebyside>
+        <m>\:</m>
+        <image width="73%" source="images/body_measurements_height_shoulder_girth.png" />
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="body_measurements_hip_weight_corr_units">
+    <title>Body measurements, Part II</title>
+    <statement>
+      <p>
+        The scatterplot below shows the relationship between weight measured in kilograms and hip girth measured in centimeters from the data described in <xref ref="body_measurements_shoulder_height_corr_units">Exercise</xref>.
+      </p>
+      <sidebyside>
+        <m>\:</m>
+        <image width="73%" source="images/body_measurements_weight_hip_girth.png" />
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="corr_husband_wife_age">
+    <title>Correlation, Part I</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-corr_husband_wife_age<nbsp/> What would be the correlation between the ages of a set of women and their spouses if the set of women always married someone who was
+        <ol>
+          <li>
+            <p>
+              3 years younger than themselves?
+            </p>
+          </li>
+          <li>
+            <p>
+              2 years older than themselves?
+            </p>
+          </li>
+          <li>
+            <p>
+              half as old as themselves?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="corr_men_women_salary">
+    <title>Correlation, Part II</title>
+    <statement>
+      <p>
+        What would be the correlation between the annual salaries of males and females at a company if for a certain type of position men always made
+        <ol>
+          <li>
+            <p>
+              $5,000 more than women?
+            </p>
+          </li>
+          <li>
+            <p>
+              25% more than women?
+            </p>
+          </li>
+          <li>
+            <p>
+              15% less than women?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</section>

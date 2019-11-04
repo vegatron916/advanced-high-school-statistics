@@ -89,9 +89,9 @@
       we add up all the character counts and divide by the number of emails.
       For computational convenience,
       the number of characters is listed in the thousands and rounded to the first decimal.
-      <md>
-        <mrow>\bar{x} = \frac{21.7 + 7.0 + \cdots + 15.8}{50} = 11.6</mrow>
-      </md>
+      <men xml:id="sampleMeanEquation">
+        \bar{x} = \frac{21.7 + 7.0 + \cdots + 15.8}{50} = 11.6
+      </men>
     </p>
     <p>
       The sample mean is often labeled <m>\bar{x}</m>.
@@ -102,9 +102,9 @@
       <title>Mean</title>
       <p>
         The sample mean of a numerical variable is computed as the sum of all of the observations divided by the number of observations:
-        <md>
-          <mrow>\bar{x} = \frac{1}{n}\sum{x_{i}} = \frac{\sum{x_i}}{n}=\frac{x_1+x_2+\cdots+x_n}{n}</mrow>
-        </md>
+        <men xml:id="meanEquation">
+          \bar{x} = \frac{1}{n}\sum{x_{i}} = \frac{\sum{x_i}}{n}=\frac{x_1+x_2+\cdots+x_n}{n}
+        </men>
         where <m>\sum</m> is the capital Greek letter sigma and
         <m>\sum{x_{i}}</m> means take the sum of all the individual <m>x</m> values.
         <m>x_1, x_2, \dots, x_n</m> represent the <m>n</m> observed values.
@@ -192,8 +192,7 @@
       used what is called a <term>weighted mean</term>,
           <idx><h>mean</h><h>weighted mean</h></idx>
       which will not be a key topic in this textbook.
-      However, we have provided an online supplement on weighted means for interested readers:
-      <url href="\oiRedirectUrl{textbook-weighted_mean_supplement}">www.openintro.org/stat/down/supp/wtdmean.pdf</url>
+      However, we have provided an online supplement on weighted means for interested readers: XXoiRedirect{textbook-weighted_mean_supplement}{**}XX
     </p>
     <p>
       The median provides another measure of center.
@@ -280,7 +279,7 @@
     <p>
       The U.S. Census Bureau reported that in 2017,
       the median family income was $73,891 and the mean family income was $99,114.<fn>
-      \oiRedirect{factfinder-gov-income2}{\mbox{\url{https://factfinder.census.gov/faces/tableservices/jsf/pages/productview.xhtml?pid=ACS_17_1YR_S1901}} }
+      XXoiRedirect{factfinder-gov-income2}{**}XX
       </fn> Is a family income of $60,000 far from the mean or somewhat close to the mean?
       In order to answer this question,
       it is not enough to know the center of the data set and its <term>range</term>
@@ -603,13 +602,13 @@
     <p>
       A <term>box plot</term> summarizes a data set using five summary statistics while also plotting unusual observations,
       called outliers.
-          <idx><h>outlier|textbf</h></idx>
+          <idx><h>outlier</h></idx>
       <xref ref="boxPlotLayoutNumVar">Figure</xref>
       provides a box plot of the <c>num_char</c> variable from the <c>email50</c> data set.
     </p>
     <figure xml:id="boxPlotLayoutNumVar">
       <caption>A labeled box plot for the number of characters in 50 emails. The median (6,890) splits the data into the bottom 50% and the top 50%.  Explore dozens of boxplots with histograms using American Community Survey data on Tableau Public<nbsp/>\tableauhref{tableau-boxplotschoose}.</caption>
-      \oiRedirect{tableau-boxplotschoose}{ <image width="90%" source="images/boxPlotLayoutNumVar.png" /> }
+      XXoiRedirect{tableau-boxplotschoose}{**}XX
     </figure>
     <p>
       The five summary statistics used in a box plot are known as the
@@ -644,7 +643,7 @@
     <p>
       We calculate the variability in the data using the range of the middle 50% of the data:
       <m>Q_3 - Q_1 = \text{ 13,375 }</m>.
-      This quantity is called the <em>interquartile range</em><idx><h>interquartile range (IQR)|textbf</h></idx> (IQR, for short).
+      This quantity is called the <em>interquartile range</em><idx><h>interquartile range (IQR)</h></idx> (IQR, for short).
       It, like the standard deviation,
       is a measure of variability
           <idx><h>variability</h></idx>
@@ -657,9 +656,9 @@
       <p>
         The IQR<idx><h>interquartile range (IQR)</h></idx> is the length of the box in a box plot.
         It is computed as
-        <md>
-          <mrow>IQR = Q_3 - Q_1</mrow>
-        </md>
+        <men>
+          IQR = Q_3 - Q_1
+        </men>
         where <m>Q_1</m> and <m>Q_3</m> are the <m>25^{th}</m> and <m>75^{th}</m> percentiles.
       </p>
     </assemblage>
@@ -819,8 +818,8 @@
       Python, SAS, and STATA.
     </p>
     <figure xml:id="desmos1VarStats">
-      <caption>Use this \oiRedirect{textbook-desmos-1varstats}{1-Var Stats calculator} ({openintro.org/ahss/desmos}) to graph and find summary statistics for a single variable in Desmos, as shown in the figure.</caption>
-      \oiRedirect{textbook-desmos-1varstats}{ <image width="85%" source="images/email50Desmos.png" /> }
+      <caption>Use this  XXoiRedirect{textbook-desmos-1varstats}{**}XX  ({openintro.org/ahss/desmos}) to graph and find summary statistics for a single variable in Desmos, as shown in the figure.</caption>
+      XXoiRedirect{textbook-desmos-1varstats}{**}XX
     </figure>
     <assemblage>
       <title>MISSINGVIDEOLINK ti84_entering_data TI-83/84: Entering data</title>
@@ -1062,9 +1061,7 @@
     <example>
       <statement>
         <p>
-          Enter the following 10 data points into a calculator or into this
-          <url href="\oiRedirectUrl{textbook-desmos-1varstatsdiscrete}">Desmos 1-Var Stats calculator</url>
-          \mbox{({openintro.org/ahss/desmos}):} {5, 8, 1, 19, 3, 1, 11, 18, 20, 5} Find the summary statistics and make a box plot of the data.
+          Enter the following 10 data points into a calculator or into this XXoiRedirect{textbook-desmos-1varstatsdiscrete}{**}XX \mbox{({openintro.org/ahss/desmos}):} {5, 8, 1, 19, 3, 1, 11, 18, 20, 5} Find the summary statistics and make a box plot of the data.
         </p>
       </statement>
       <answer>
@@ -1740,13 +1737,12 @@ Legend: 2 |1 = 21,000 median income
       and hollow histograms (right panel) for
 <c>med_hh_income</c>,
       where the counties are split by whether or not there was a population gain from 2010 to 2017.  Explore this data set on Tableau Public<nbsp/>\tableauhref{tableau-medianincome-gainnogain-all}.</caption>
-      \oiRedirect{tableau-medianincome-gainnogain-all}{
-      \Figure{1.00}{countyIncomeSplitByPopGain}}
+      XXoiRedirect{tableau-medianincome-gainnogain-all}{**}XX
     </figure>
     <p>
       Another useful plotting method uses
       <em>hollow histograms</em>
-          <idx><h>hollow histogram|textbf</h></idx>
+          <idx><h>hollow histogram</h></idx>
       to compare numerical data across groups.
       These are just the outlines of histograms of each group put on the same plot,
       as shown in the right panel of <xref ref="countyIncomeSplitByPopGain">Figure</xref>.
@@ -1894,31 +1890,19 @@ Legend: 2 |1 = 21,000 median income
         </p>
       </answer>
     </exercise>
-    <figure xml:id="countyPovertyMap">
+    <figure xml:id="countyIntensityMaps1">
       <caption>\subref{countyPovertyMap} Intensity map of
       poverty rate (percent).
       \subref{countyUnemploymentRateMap}<nbsp/>Intensity map of the
       unemployment rate (percent).  Explore dozens of intensity maps using American Community Survey data on Tableau Public<nbsp/>\tableauhref{tableau-intensitymapsall}.</caption>
-      \oiRedirect{tableau-intensitymapsall}{
-      \Figures{1.00}
-      {countyIntensityMaps}
-      {countyPovertyMap} }
-      \Figures{1.00}
-      {countyIntensityMaps}
-      {countyUnemploymentRateMap} }}
+      XXoiRedirect{tableau-intensitymapsall}{**}XX
     </figure>
-    <figure xml:id="countyHomeownershipMap">
+    <figure xml:id="countyIntensityMaps2">
       <caption>\subref{countyHomeownershipMap} Intensity map
       of homeownership rate (percent).
       \subref{countyMedIncomeMap}<nbsp/>Intensity map of median
       household income ($1000s).  Explore dozens of intensity maps using American Community Survey data on Tableau Public<nbsp/>\tableauhref{tableau-intensitymapsall}.</caption>
-      \oiRedirect{tableau-intensitymapsall}{
-      \Figures{1.00}
-      {countyIntensityMaps}
-      {countyHomeownershipMap} }
-      \Figures{1.00}
-      {countyIntensityMaps}
-      {countyMedIncomeMap} }}
+      XXoiRedirect{tableau-intensitymapsall}{**}XX
     </figure>
     <p>
           <idx><h>intensity map</h></idx>
@@ -1950,7 +1934,7 @@ Legend: 2 |1 = 21,000 median income
       <li>
         <p>
           <em>Mean</em>
-            <idx><h>mean|textbf</h></idx>
+            <idx><h>mean</h></idx>
           and <term>median</term> are measures of center. (A common mistake is to report
           <term>mode</term> as a measure of center.
           However, a mode can appear anywhere in a distribution.)
@@ -1989,8 +1973,9 @@ Legend: 2 |1 = 21,000 median income
       </li>
       <li>
         <p>
-          <em>Standard deviation (SD)</em><idx><h>standard deviation|textbf</h></idx> and
-          <em>Interquartile range (IQR)</em><idx><h>interquartile range (IQR)|textbf</h></idx> are measures of spread.
+          <em>Standard deviation (SD)</em>
+            <idx><h>standard deviation</h></idx>
+          and <em>Interquartile range (IQR)</em><idx><h>interquartile range (IQR)</h></idx> are measures of spread.
           SD measures the typical spread from the mean,
           whereas IQR measures the spread of the middle 50% of the data.
           <ul>
@@ -2025,7 +2010,7 @@ Legend: 2 |1 = 21,000 median income
       <li>
         <p>
           <em>Range</em>
-            <idx><h>range|textbf</h></idx>
+            <idx><h>range</h></idx>
           is also sometimes used as a measure of spread.
           The range of a data set is defined as the difference between the maximum value and the minimum value, i.e.
           <m>max - min</m>.
@@ -2034,7 +2019,7 @@ Legend: 2 |1 = 21,000 median income
       <li>
         <p>
           <em>Outliers</em>
-            <idx><h>outlier|textbf</h></idx>
+            <idx><h>outlier</h></idx>
           are observations that are extreme relative to the rest of the data.
           Two rules of thumb for identifying observations as outliers are:
           <ul>
@@ -2069,7 +2054,7 @@ Legend: 2 |1 = 21,000 median income
       <li>
         <p>
           <em>Linear transformations of data</em>.
-            <idx><h>linear transformations of data|textbf</h></idx>
+            <idx><h>linear transformations of data</h></idx>
         Adding a constant to every value in a data set shifts the mean but does not affect the standard deviation.
           Multiplying the values in a data set by a constant will multiply the mean and the standard deviation by that constant,
           except that the standard deviation must always remain positive.
@@ -2078,7 +2063,7 @@ Legend: 2 |1 = 21,000 median income
       <li>
         <p>
           <em>Box plots</em>
-            <idx><h>box plot|textbf</h></idx>
+            <idx><h>box plot</h></idx>
           do not show the <em>distribution</em>
           of a data set in the way that histograms do.
           Rather, they provide a visual depiction of the

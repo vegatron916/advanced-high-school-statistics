@@ -17,13 +17,13 @@
     </p>
   </introduction>
   <xi:include  href="normalDist.ptx" />
-  <xi:include  href="section5-2.ptx" />
+  <xi:include  href="normalDist_exer.ptx" />
   <xi:include  href="distributionofxbar.ptx" />
-  <xi:include  href="section5-4.ptx" />
+  <xi:include  href="distributionofxbar_exer.ptx" />
   <xi:include  href="geomDist.ptx" />
-  <xi:include  href="section5-6.ptx" />
+  <xi:include  href="geomDist_exer.ptx" />
   <xi:include  href="binomialModel.ptx" />
-  <xi:include  href="section5-8.ptx" />
+  <xi:include  href="binomialModel_exer.ptx" />
   <xi:include  href="distributionphat.ptx" />
-  <xi:include  href="section5-10.ptx" />
+  <xi:include  href="distributionphat_exer.ptx" />
 </chapter>

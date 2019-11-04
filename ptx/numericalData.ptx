@@ -115,9 +115,10 @@
       </p>
     </assemblage>
     <p>
-      The association between two variables can be
-      <em>positive</em><idx><h>positive association|textbf</h></idx> or <em>negative</em>,
-          <idx><h>negative association|textbf</h></idx>
+      The association between two variables can be <em>positive</em>
+          <idx><h>positive association</h></idx>
+      or <em>negative</em>,
+          <idx><h>negative association</h></idx>
       or there can be no association.
       Positive association means that larger values of the first variable are associated with larger values of the second variable.
       Additionally,
@@ -164,8 +165,7 @@
 <c>county</c> data set.
       A statistical model has also been fit to the data
       and is shown as a dashed line.  Explore dozens of scatterplots using American Community Survey data on Tableau Public<nbsp/>\tableauhref{tableau-scatterplotschoose}.</caption>
-      \oiRedirect{tableau-scatterplotschoose}{
-      \Figure{0.8}{medianHHIncomePoverty}}
+      XXoiRedirect{tableau-scatterplotschoose}{**}XX
     </figure>
     <exercise>
       <statement>
@@ -362,7 +362,7 @@ Legend: 1 | 2 = 12,000
       with the leaves from 0-4 on the first half and the leaves from 5-9 on the second half.
       The resulting graph is called a
       <em>split stem-and-leaf plot</em>.
-          <idx><h>stem-and-leaf plot</h><h>split stem-and-leaf plot|textbf</h></idx>
+          <idx><h>stem-and-leaf plot</h><h>split stem-and-leaf plot</h></idx>
       <xref ref="splitstemandleaf50email">Figure</xref>
       shows the previous stem-and-leaf redone as a split stem-and-leaf.
     </p>
@@ -451,7 +451,7 @@ Legend: 1 | 2 = 12,000
       Additionally,
       we can easily identify any observations that appear to be unusually distant from the rest of the data.
       Unusually distant observations are called <em>outliers</em>.
-          <idx><h>outlier|textbf</h></idx>
+          <idx><h>outlier</h></idx>
       Later in this chapter we will provide numerical rules of thumb for identifying outliers.
       For now, it is sufficient to identify them by observing gaps in the graph.
       In this case,
@@ -622,7 +622,7 @@ Legend: 1 | 2 = 12,000
     </figure>
     <figure xml:id="email50NumCharHist">
       <caption>A histogram of <c>num_char</c>. This histogram uses bins or class intervals of width 5.  Explore this histogram and dozens of histograms using American Community Survey data on Tableau Public<nbsp/>\tableauhref{tableau-histogramschoose}.</caption>
-      \oiRedirect{tableau-histogramschoose}{<image width="82%" source="images/email50NumCharHist.png" /> }
+      XXoiRedirect{tableau-histogramschoose}{**}XX
     </figure>
     <exercise>
       <statement>
@@ -788,8 +788,7 @@ Legend: 1 | 2 = 12,000
     </figure>
     <figure xml:id="email50NumCharCumulativeFreqHist">
       <caption>A cumulative frequency histogram of <c>num_char</c>. This histogram uses bins or class intervals of width 5.  Compare frequency, relative frequency, cumulative frequency, and cumulative relative frequency histograms on Tableau Public<nbsp/>\tableauhref{tableau-histograms}.</caption>
-      \oiRedirect{tableau-histograms}{
-      \Figures{0.8}{email50NumCharHist}{email50NumCharCumulativeFreqHist}}
+      XXoiRedirect{tableau-histograms}{**}XX
     </figure>
     <example>
       <statement>
@@ -844,7 +843,9 @@ Legend: 1 | 2 = 12,000
       <m>25 / 50 = 0.5 = 50\%</m> of the emails had fewer than a value between 5 and 10 thousand characters.
       When we want to know what fraction or percent of the data meet a certain criteria,
       we use relative frequency instead of frequency.
-      <em>Relative frequency</em><idx><h>relative frequency|textbf</h></idx> is a fancy term for percent or proportion.
+      <em>Relative frequency</em>
+          <idx><h>relative frequency</h></idx>
+      is a fancy term for percent or proportion.
       It tells us how large a number is relative to the total.
     </p>
     <p>
@@ -887,10 +888,10 @@ Legend: 1 | 2 = 12,000
       shows that most emails have a relatively small number of characters,
       while fewer emails have a very large number of characters.
       When data trail off to the right in this way and have a longer right tail
-          <idx><h>tail|textbf</h></idx>,
+          <idx><h>tail</h></idx>,
           <idx><h>skew</h><h>tail</h></idx>
       the shape is said to be <em>right skewed</em>.
-          <idx><h>skew</h><h>right skewed|textbf</h></idx>
+          <idx><h>skew</h><h>right skewed</h></idx>
       <fn>
       Other ways to describe data that are right skewed: \termni{skewed to the right}, \termni{skewed to the high end}, or \termni{skewed to the positive end}.
       </fn>
@@ -898,7 +899,7 @@ Legend: 1 | 2 = 12,000
     <p>
       Data sets with the reverse characteristic <mdash/> a long,
       thin tail to the left <mdash/> are said to be <em>left skewed</em>.
-          <idx><h>skew</h><h>left skewed|textbf</h></idx>
+          <idx><h>skew</h><h>left skewed</h></idx>
       We also say that such a distribution has a long left tail.
       Data sets that show roughly equal trailing off in both directions are called <term>symmetric</term>.
           <idx><h>skew</h><h>symmetric</h></idx>
@@ -908,7 +909,7 @@ Legend: 1 | 2 = 12,000
       <p>
         When data trail off in one direction,
         the distribution has a <term>long tail</term>.
-            <idx><h>skew</h><h>long tail|textbf</h></idx>
+            <idx><h>skew</h><h>long tail</h></idx>
         If a distribution has a long left tail, it is left skewed.
         If a distribution has a long right tail, it is right skewed.
       </p>
@@ -963,11 +964,11 @@ Legend: 1 | 2 = 12,000
       shows histograms that have one,
       two, or three prominent peaks.
       Such distributions are called <em>unimodal</em>,
-          <idx><h>modality</h><h>unimodal|textbf</h></idx>
+          <idx><h>modality</h><h>unimodal</h></idx>
       <em>bimodal</em>,
-          <idx><h>modality</h><h>bimodal|textbf</h></idx>
+          <idx><h>modality</h><h>bimodal</h></idx>
       and <em>multimodal</em>,
-          <idx><h>modality</h><h>multimodal|textbf</h></idx>
+          <idx><h>modality</h><h>multimodal</h></idx>
       respectively.
       Any distribution with more than 2 prominent peaks is called multimodal.
       Notice that in <xref ref="email50NumCharHist">Figure</xref>
@@ -1010,7 +1011,7 @@ Legend: 1 | 2 = 12,000
       Descriptive statistics is about describing or summarizing data;
       it does not attribute properties of the data to a larger population.
       <em>Inferential statistics</em>,
-          <idx><h>inferential statistics|textbf</h></idx>
+          <idx><h>inferential statistics</h></idx>
       on the other hand,
       uses samples to generalize or to infer something about a larger population.
       We will have to wait until Chapter<nbsp/>5 to enter the exciting world of inferential statistics.
@@ -1027,8 +1028,12 @@ Legend: 1 | 2 = 12,000
           which is to say that they correspond to the same case or individual.
           The linear association between two variables can be positive or negative,
           or there can be no association.
-          <em>Positive association</em><idx><h>positive association|textbf</h></idx> means that larger values of the first variable are associated with larger values of the second variable.
-          <em>Negative association</em><idx><h>negative association|textbf</h></idx> means that larger values of the first variable are associated with smaller values of the second variable.
+          <em>Positive association</em>
+            <idx><h>positive association</h></idx>
+          means that larger values of the first variable are associated with larger values of the second variable.
+          <em>Negative association</em>
+            <idx><h>negative association</h></idx>
+          means that larger values of the first variable are associated with smaller values of the second variable.
           Additionally,
           the association can follow a linear trend or a curved (nonlinear) trend.
         </p>
@@ -1042,7 +1047,7 @@ Legend: 1 | 2 = 12,000
           When looking at a distribution,
           note the presence of clusters,
           gaps, and <em>outliers</em>.
-            <idx><h>outlier|textbf</h></idx>
+            <idx><h>outlier</h></idx>
         </p>
       </li>
       <li>
@@ -1087,12 +1092,14 @@ Legend: 1 | 2 = 12,000
           <term>cumulative frequency histogram</term>.
           A <term>cumulative relative frequency histogram</term>
           is ideal for showing <em>percentiles</em>.
-            <idx><h>percentile|textbf</h></idx>
+            <idx><h>percentile</h></idx>
         </p>
       </li>
       <li>
         <p>
-          <em>Descriptive statistics</em><idx><h>descriptive statistics|textbf</h></idx> describes or summarizes data,
+          <em>Descriptive statistics</em>
+            <idx><h>descriptive statistics</h></idx>
+          describes or summarizes data,
           while <term>inferential statistics</term>
           uses samples to generalize or infer something about a larger population.
         </p>

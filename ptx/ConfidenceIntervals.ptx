@@ -5,13 +5,11 @@
           <idx><h>confidence interval</h></idx>
     </p>
     <p>
-      The site
-      <url href="\oiRedirectUrl{textbook-fivethirtyeight}">fivethirtyeight.com</url>
-      regularly forecasts support for each candidate in Congressional races,
+      The site XXoiRedirect{textbook-fivethirtyeight}{**}XX regularly forecasts support for each candidate in Congressional races,
       i.e. races in the US House of Representatives and the US Senate.
       In addition to point estimates,
       they report confidence intervals.<fn>
-      See: \oiRedirect{textbook-538-2018-midterm}{\url{https://projects.fivethirtyeight.com/2018-midterm-election-forecast/senate}}
+      See: XXoiRedirect{textbook-538-2018-midterm}{**}XX
       </fn> What are confidence intervals,
       and how do we interpret them?
     </p>
@@ -274,9 +272,9 @@
       <p>
         If the point estimate follows a normal model with standard error <m>SE</m>,
         then a confidence interval for the population parameter is
-        <md>
-          <mrow>\text{ point estimate } \ \pm\ z^{\star} \times SE \text{ of estimate }</mrow>
-        </md>
+        <men>
+          \text{ point estimate } \ \pm\ z^{\star} \times SE \text{ of estimate }
+        </men>
         where <m>z^{\star}</m> depends on the confidence level selected.
       </p>
     </assemblage>
@@ -680,14 +678,15 @@
       </li>
     </ul>
     <p>
-      Interpreting <em>confidence intervals</em><idx><h>confidence interval|textbf</h></idx> and
-      <em>confidence levels</em>
-          <idx><h>confidence level|textbf</h></idx>
+      Interpreting <em>confidence intervals</em>
+          <idx><h>confidence interval</h></idx>
+      and <em>confidence levels</em>
+          <idx><h>confidence level</h></idx>
       <ul>
         <li>
           <p>
             68% and 95% are examples of <em>confidence levels</em>.
-              <idx><h>confidence level|textbf</h></idx>
+              <idx><h>confidence level</h></idx>
           The confidence level tells us the
             <em>capture rate</em> with repeated sampling.
             For example,
@@ -711,7 +710,7 @@
     </p>
     <p>
       <em>Margin of error</em>
-          <idx><h>margin of error|textbf</h></idx>
+          <idx><h>margin of error</h></idx>
       <ul>
         <li>
           <p>
@@ -746,7 +745,7 @@
             it does not account for additional error introduced by response bias and non-response bias.
             Even with a perfectly random sample,
             the actual error in a poll is likely higher than the reported margin of error.<fn>
-            \oiRedirect{textbook-nytimes_moe_think_7_instead}{nytimes.com/2016/10/06/upshot/when-you-hear-the-margin-of-error-is-plus-or-minus-3-percent-think-7-instead.html}
+            XXoiRedirect{textbook-nytimes_moe_think_7_instead}{**}XX
             </fn>
           </p>
         </li>

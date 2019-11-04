@@ -48,7 +48,7 @@
           <idx><h>unit of observation</h></idx>
       The columns represent characteristics,
       called <em>variables</em>,
-          <idx><h>variable|textbf</h></idx>
+          <idx><h>variable</h></idx>
       for each of the loans.
       For example,
       the first row represents a loan of $7,500 with an interest rate of 7.34%, where the borrower is based in Maryland (MD) and has an income of $70,000.
@@ -301,7 +301,7 @@
       improve emergency services, build bridges,
       and inform businesses looking to add jobs and expand to new markets,
       and more."<fn>
-      \oiRedirect{textbook-acs}{\url{https://www.census.gov/programs-surveys/acs/about.html}}
+      XXoiRedirect{textbook-acs}{**}XX
       </fn> A small subset of the variables from the ACS are summarized in <xref ref="countyVariables">Figure</xref>.
     </p>
     <figure xml:id="countyDF">
@@ -748,8 +748,7 @@
       The highlighted dot represents Chattahoochee County, Georgia,
       which has a multi-unit rate of 39.4% and a homeownership rate
       of 31.3%. Explore this scatterplot and dozens of other scatterplots using American Community Survey data on Tableau Public\tableauhref{tableau-scatterplotschoose}.</caption>
-      \oiRedirect{tableau-scatterplotschoose}{
-      \Figure{0.79}{multiunitsVsOwnership}}
+      XXoiRedirect{tableau-scatterplotschoose}{**}XX
     </figure>
     <p>
       The multi-unit and homeownership rates are said to be associated because the plot shows a discernible pattern.
@@ -802,15 +801,13 @@
       Owsley County of Kentucky, is highlighted,
       which lost 3.63% of its population from 2010 to 2017
       and had median household income of $22,736.  Explore this scatterplot and dozens of other scatterplots using American Community Survey data on Tableau Public\tableauhref{tableau-scatterplotschoose}.</caption>
-      \oiRedirect{tableau-scatterplotschoose}{
-      \Figure{0.9}{pop_change_v_med_income}
-      }
+      XXoiRedirect{tableau-scatterplotschoose}{**}XX
     </figure>
     <p>
       Because there is a downward trend in <xref ref="multiunitsVsOwnership">Figure</xref>
       <mdash/> counties with more units in multi-unit structures are associated with lower homeownership <mdash/> these variables are said to be
       <em>negatively associated</em>.
-          <idx><h>negative association|textbf</h></idx>
+          <idx><h>negative association</h></idx>
       A<nbsp/><term>positive association</term>
       is shown in the relationship between the <c>median_hh_income</c> and <c>pop_change</c> in <xref ref="pop_change_v_med_income">Figure</xref>,
       where counties with higher median household income tend to have higher rates of population growth.
@@ -840,7 +837,7 @@
           Researchers often summarize data in a table,
           where the rows correspond to individuals or <term>cases</term>
           and the columns correspond to the <em>variables</em>,
-            <idx><h>variable|textbf</h></idx>
+            <idx><h>variable</h></idx>
           the values of which are recorded for each individual.
         </p>
       </li>

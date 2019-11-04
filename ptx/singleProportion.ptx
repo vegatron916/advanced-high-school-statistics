@@ -149,7 +149,7 @@
       The Gallup organization began measuring the public's view of the Supreme Court's job performance in 2000,
       and has measured it every year since then with the question: ``Do you approve or disapprove of the way the Supreme Court is handling its job?". In 2018,
       the Gallup poll randomly sampled 1,033 adults in the U.S. and found that 53% of them approved.<fn>
-      \oiRedirect{textbook-gallup_supreme_court_approval_2018}{ https://news.gallup.com/poll/237269/supreme-court-approval-highest-2009.aspx}
+      XXoiRedirect{textbook-gallup_supreme_court_approval_2018}{**}XX
       </fn> We know that 53% is just a point estimate.
       What range of values are reasonable estimates for the percent of the population that approved of the job the Supreme Court is doing?
       We can use the confidence interval procedure introduced in the previous chapter to answer this question,

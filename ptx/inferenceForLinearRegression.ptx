@@ -357,7 +357,7 @@
           <li class="custom-list-style-type" label="">
             <p>
               Here we use choose the <em><m>t</m>-interval for the slope</em>.
-    <idx><h>t-interval for the slope@<m>t</m>-interval for the slope|textbf</h></idx>
+    <idx><h>t-interval for the slope@<m>t</m>-interval for the slope</h></idx>
             </p>
           </li>
         </ul>
@@ -650,7 +650,7 @@
     </p>
     <figure xml:id="unemploymentAndChangeInHouse">
       <caption>The percent change in House seats for the President's party in each election from 1898 to 2018 plotted against the unemployment rate. The two points for the Great Depression have been removed, and a least squares regression line has been fit to the data.  Explore this data set on Tableau Public\tableauhref{tableau-scatter-changeinseats-unemployment}.</caption>
-      \oiRedirect{tableau-scatter-changeinseats-unemployment}{<image width="90%" source="images/unemploymentAndChangeInHouse.png" /> }
+      XXoiRedirect{tableau-scatter-changeinseats-unemployment}{**}XX
     </figure>
     <exercise>
       <statement>
@@ -713,8 +713,7 @@
       <p>
         What does it mean to say that the slope of the population regression line is significantly greater than 0?
         And why do we tend to use a cutoff of <m>\alpha = 0.05</m>?
-        This 5-minute interactive task will explain:
-        <url href="\oiRedirectUrl{textbook-why05}">www.openintro.org/why05</url>
+        This 5-minute interactive task will explain: XXoiRedirect{textbook-why05}{**}XX
       </p>
     </assemblage>
   </subsection>
@@ -730,7 +729,7 @@
     </p>
     <figure xml:id="unemploymentAndChangeInHouseResiduals">
       <caption>The residual plot shows no pattern that would indicate that a linear model is inappropriate.  Explore this data set on Tableau Public\tableauhref{tableau-residuals-changeinsets-unemployment}.</caption>
-      \oiRedirect{tableau-residuals-changeinsets-unemployment}{<image width="90%" source="images/unemploymentAndChangeInHouseResiduals.png" /> }
+      XXoiRedirect{tableau-residuals-changeinsets-unemployment}{**}XX
     </figure>
     <assemblage>
       <title>Hypothesis tests on the slope of the regression line</title>
@@ -913,8 +912,8 @@
           <li class="custom-list-style-type" label="">
             <p>
               Here we choose the <em><m>t</m>-test for the slope</em>.
-    <idx><h>t-test for the slope@<m>t</m>-test for the slope|textbf</h></idx>
-            </p>
+    <idx><h>t-test for the slope@<m>t</m>-test for the slope</h></idx>
+</p>
           </li>
         </ul>
       </p>
@@ -998,7 +997,7 @@
         </ul>
       </p>
     </assemblage>
-    <example>
+    <example xml:id="overallAidIncomeInformalAssessmentOfRegressionLineSlope">
       <statement>
         <p>
           The regression summary below shows statistical software output from fitting the least squares regression line for predicting gift aid based on family income for 50 freshman students at Elmhurst College.
@@ -1403,7 +1402,7 @@
             <p>
               Estimate <m>\beta</m> at the C% confidence level using a
               <em><m>t</m>-interval for the slope</em>.
-            <idx><h>t-interval for the slope@<m>t</m>-interval for the slope|textbf</h></idx>
+            <idx><h>t-interval for the slope@<m>t</m>-interval for the slope</h></idx>
             </p>
           </li>
           <li>
@@ -1411,8 +1410,8 @@
               Test <m>H_0</m>:
               <m>\beta=0</m> at the <m>\alpha</m> significance level using a
               <em><m>t</m>-test for the slope</em>.
-            <idx><h>t-test for the slope@<m>t</m>-test for the slope|textbf</h></idx>
-            </p>
+            <idx><h>t-test for the slope@<m>t</m>-test for the slope</h></idx>
+        </p>
           </li>
         </ul>
       </li>
