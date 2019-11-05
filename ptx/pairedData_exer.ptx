@@ -1,0 +1,283 @@
+<section xml:id="pairedData_exer">
+  <title>Exercises</title>
+  <exercise xml:id="air_quality_shortened">
+    <title>Air quality</title>
+    <statement>
+      <p>
+        Air quality measurements were collected in a random sample of 25 country capitals in 2013,
+        and then again in the same cities in 2014.
+        We would like to use these data to compare average air quality between the two years.
+        Should we use a paired or non-paired test?
+        Explain your reasoning.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="tf_paired">
+    <title>True / False: paired</title>
+    <statement>
+      <p>
+        Determine if the following statements are true or false.
+        If false, explain.
+        <ol>
+          <li>
+            <p>
+              In a paired analysis we first take the difference of each pair of observations,
+              and then we do inference on these differences.
+            </p>
+          </li>
+          <li>
+            <p>
+              Two data sets of different sizes cannot be analyzed as paired data.
+            </p>
+          </li>
+          <li>
+            <p>
+              Consider two sets of data that are paired with each other.
+              Each observation in one data set has a natural correspondence with exactly one observation from the other data set.
+            </p>
+          </li>
+          <li>
+            <p>
+              Consider two sets of data that are paired with each other.
+              Each observation in one data set is subtracted from the average of the other data set's observations.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="paired_or_not_1">
+    <title>Paired or not? Part I</title>
+    <statement>
+      <p>
+        In each of the following scenarios,
+        determine if the data are paired.
+        <ol>
+          <li>
+            <p>
+              Compare pre-
+              (beginning of semester)
+              and post-test
+              (end of semester)
+              scores of students.
+            </p>
+          </li>
+          <li>
+            <p>
+              Assess gender-related salary gap by comparing salaries of randomly sampled men and women.
+            </p>
+          </li>
+          <li>
+            <p>
+              Compare artery thicknesses at the beginning of a study and after 2 years of taking Vitamin E for the same group of patients.
+            </p>
+          </li>
+          <li>
+            <p>
+              Assess effectiveness of a diet regimen by comparing the before and after weights of subjects.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="paired_or_not_2">
+    <title>Paired or not? Part II</title>
+    <statement>
+      <p>
+        In each of the following scenarios,
+        determine if the data are paired.
+        <ol>
+          <li>
+            <p>
+              We would like to know if Intel's stock and Southwest Airlines' stock have similar rates of return.
+              To find out, we take a random sample of 50 days,
+              and record Intel's and Southwest's stock on those same days.
+            </p>
+          </li>
+          <li>
+            <p>
+              We randomly sample 50 items from Target stores and note the price for each.
+              Then we visit Walmart and collect the price for each of those same 50 items.
+            </p>
+          </li>
+          <li>
+            <p>
+              A school board would like to determine whether there is a difference in average SAT scores for students at one high school versus another high school in the district.
+              To check, they take a simple random sample of 100 students from each high school.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="global_warming_v2_1">
+    <title>Global warming, Part I</title>
+    <statement>
+      <p>
+        Let's consider a limited set of climate data,
+        examining temperature differences in 1948 vs<nbsp/>2018.
+        We randomly sampled 197 locations from the National Oceanic and Atmospheric Administration's (NOAA) historical data,
+        where the data was available for both years of interest.
+        We want to know:
+        were there more days with temperatures exceeding 90\textdegreeF in 2018 or in<nbsp/>1948?\footfullcite{webpage:noaa_1948_2018} The difference in number of days exceeding 90\textdegreeF
+        (number of days in 2018 - number of days in 1948)
+        was calculated for each of the 197 locations.
+        The average of these differences was 2.9 days with a standard deviation of 17.2 days.
+        We are interested in determining whether these data provide strong evidence that there were more days in 2018 that exceeded 90\textdegreeF from NOAA's weather stations.
+      </p>
+      <sidebyside>
+        <ol>
+          <li>
+            <p>
+              Is there a relationship between the observations collected in 1948 and 2018?
+              Or are the observations in the two groups independent?
+              Explain.
+            </p>
+          </li>
+          <li>
+            <p>
+              Write hypotheses for this research in symbols and in words.
+            </p>
+          </li>
+          <li>
+            <p>
+              Check the conditions required to complete this test.
+              A histogram of the differences is given to the right.
+            </p>
+          </li>
+          <li>
+            <p>
+              Calculate the test statistic and find the p-value.
+            </p>
+          </li>
+          <li>
+            <p>
+              Use <m>\alpha = 0.05</m> to evaluate the test,
+              and interpret your conclusion in context.
+            </p>
+          </li>
+          <li>
+            <p>
+              What type of error might we have made?
+              Explain in context what the error means.
+            </p>
+          </li>
+        </ol>
+        \
+        <image width="73%" source="images/global_warming_v2_1_diffs.png" />
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="hs_beyond_1">
+    <title>High School and Beyond, Part I</title>
+    <statement>
+      <p>
+        The National Center of Education Statistics conducted a survey of high school seniors,
+        collecting test data on reading,
+        writing, and several other subjects.
+        Here we examine a simple random sample of 200 students from this survey.
+        Side-by-side box plots of reading and writing scores as well as a histogram of the differences in scores are shown below.
+        <image width="44%" source="images/hs_beyond_read_write_box.png" /> <image width="54%" source="images/hs_beyond_diff_hist.png" />
+        <ol>
+          <li>
+            <p>
+              Is there a clear difference in the average reading and writing scores?
+            </p>
+          </li>
+          <li>
+            <p>
+              Are the reading and writing scores of each student independent of each other?
+            </p>
+          </li>
+          <li>
+            <p>
+              Create hypotheses appropriate for the following research question:
+              is there an evident difference in the average scores of students in the reading and writing exam?
+            </p>
+          </li>
+          <li>
+            <p>
+              Check the conditions required to complete this test.
+            </p>
+          </li>
+          <li>
+            <p>
+              The average observed difference in scores is <m>\bar{x}_{read-write} = -0.545</m>,
+              and the standard deviation of the differences is 8.887 points.
+              Do these data provide convincing evidence of a difference between the average scores on the two exams?
+            </p>
+          </li>
+          <li>
+            <p>
+              What type of error might we have made?
+              Explain what the error means in the context of the application.
+            </p>
+          </li>
+          <li>
+            <p>
+              Based on the results of this hypothesis test,
+              would you expect a confidence interval for the average difference between the reading and writing scores to include 0?
+              Explain your reasoning.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="global_warming_v2_2">
+    <title>Global warming, Part II</title>
+    <statement>
+      <p>
+        We considered the change in the number of days exceeding 90\textdegreeF from 1948 and 2018 at 197 randomly sampled locations from the NOAA database in <xref ref="global_warming_v2_1">Exercise</xref>.
+        The mean and standard deviation of the reported differences are 2.9 days and 17.2 days.
+        <ol>
+          <li>
+            <p>
+              Calculate a 90% confidence interval for the average difference between number of days exceeding 90\textdegreeF between 1948 and 2018.
+              We've already checked the conditions for you.
+            </p>
+          </li>
+          <li>
+            <p>
+              Interpret the interval in context.
+            </p>
+          </li>
+          <li>
+            <p>
+              Does the confidence interval provide convincing evidence that there were more days exceeding 90\textdegreeF in 2018 than in 1948 at NOAA stations?
+              Explain.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="hs_beyond_2">
+    <title>High school and beyond, Part II</title>
+    <statement>
+      <p>
+        We considered the differences between the reading and writing scores of a random sample of 200 students who took the High School and Beyond Survey in <xref ref="hs_beyond_1">Exercise</xref>.
+        The mean and standard deviation of the differences are <m>\bar{x}_{read-write} = -0.545</m> and 8.887 points.
+        <ol>
+          <li>
+            <p>
+              Calculate a 95% confidence interval for the average difference between the reading and writing scores of all students.
+            </p>
+          </li>
+          <li>
+            <p>
+              Interpret this interval in context.
+            </p>
+          </li>
+          <li>
+            <p>
+              Does the confidence interval provide convincing evidence that there is a real difference in the average scores?
+              Explain.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+</section>

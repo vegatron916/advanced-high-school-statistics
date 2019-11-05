@@ -43,7 +43,7 @@
       or even worse, a formula may not exist.
       In this case,
       one common approach is to estimate the probability using <em>simulations</em>.
-          <idx><h>simulation|textbf</h></idx>
+          <idx><h>simulation</h></idx>
     </p>
     <p>
       You may already be familiar with simulations.

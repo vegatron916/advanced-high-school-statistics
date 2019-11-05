@@ -589,7 +589,7 @@
       <m>H_0</m>: <m>p_1 = p_2</m>.
       We investigate whether the way a question is phrased can influence a person's response.
       Pew Research Center conducted a survey with the following question:<fn>
-      \oiRedirect{textbook-health_care_bill_2012}{www.people-press.org/2012/03/26/public-remains-split-on-health-care-bill-opposed-to-mandate}. sample<nbsp/>sizes for each polling group are approximate.
+      XXoiRedirect{textbook-health_care_bill_2012}{**}XX . sample<nbsp/>sizes for each polling group are approximate.
       </fn>
     </p>
     <blockquote>
@@ -740,9 +740,9 @@
       <p>
         When the null hypothesis is <m>p_1 = p_2</m>,
         it is useful to find the pooled sample proportion:
-        <md>
-          <mrow>\hat{p}_c = \frac{\text{ number of ``successes'' } }{\text{ number of cases } } = \frac{\text{x} _1+\text{x} _2}{n_1+n_2}=\frac{n_1\hat{p}_1 + n_2\hat{p}_2}{n_1 + n_2}</mrow>
-        </md>
+        <men>
+          \hat{p}_c = \frac{\text{ number of ``successes'' } }{\text{ number of cases } } = \frac{\text{x} _1+\text{x} _2}{n_1+n_2}=\frac{n_1\hat{p}_1 + n_2\hat{p}_2}{n_1 + n_2}
+        </men>
       </p>
       <p>
         Here <m>\text{x} _1</m> represents the number of successes in sample 1.
@@ -756,9 +756,9 @@
         {Use the pooled sample proportion when <m>H_0</m>:
         <m>{p}_1 = {p}_2</m>} When the null hypothesis states that the proportions are equal,
         we use the pooled sample proportion (<m>\hat{p}_c</m>) to check the success-failure condition and to estimate the standard error:
-        <md>
-          <mrow>SE =\sqrt{\hat{p}_c(1-\hat{p}_c)}\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}</mrow>
-        </md>
+        <men xml:id="seOfDiffInPropUsingPooledEstimate">
+          SE =\sqrt{\hat{p}_c(1-\hat{p}_c)}\sqrt{\frac{1}{n_1} + \frac{1}{n_2}}
+        </men>
       </p>
     </assemblage>
     <example>
@@ -798,9 +798,9 @@
         <p>
           We have already set up the hypotheses and verified that the difference of proportions can be modeled using a normal distribution.
           We can now calculate the test statistic and p-value.
-          <md>
-            <mrow>Z = \frac{\text{ point estimate }  - \text{ null value } }{SE\ \text{ of estimate } }= \frac{(0.47-0.34) - 0}{0.025} = 5.2</mrow>
-          </md>
+          <men>
+            Z = \frac{\text{ point estimate }  - \text{ null value } }{SE\ \text{ of estimate } }= \frac{(0.47-0.34) - 0}{0.025} = 5.2
+          </men>
         </p>
         <p>
           This is a two-tailed test as <m>H_A</m> is that <m>p_1\ne p_2</m>.

@@ -97,7 +97,7 @@
       <m>\sigma_{\hat{p}}</m>,
       as describing the uncertainty associated with the estimate <m>\hat{p}</m>.
       That is, <m>\sigma_{\hat{p}}</m> can be thought of as a way to quantify the typical error
-          <idx><h>error|textbf</h></idx>
+          <idx><h>error</h></idx>
       in our sample estimate <m>\hat{p}</m> of the true proportion <m>p</m>.
       Understanding the variability of statistics such as <m>\hat{p}</m> is a central component in the study of statistics.
     </p>

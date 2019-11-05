@@ -172,7 +172,9 @@
     <p>
       <xref ref="contTableOfFashionPhotos">Figure</xref>
       includes row and column totals for each variable separately in the <c>photo_classify</c> data set.
-      These totals represent <em>marginal probabilities</em><idx><h>marginal probability|textbf</h></idx> for the sample,
+      These totals represent <em>marginal probabilities</em>
+          <idx><h>marginal probability</h></idx>
+      for the sample,
       which are the probabilities based on a single variable without regard to any other variables.
       For instance,
       a probability based solely on the <c>mach_learn</c> variable is a marginal probability:
@@ -183,7 +185,7 @@
     <p>
       A probability of outcomes for two or more variables or processes is called a
       <em>joint \mbox{probability} </em>:
-          <idx><h>joint probability|textbf</h></idx>
+          <idx><h>joint probability</h></idx>
       <md>
         <mrow>P(\text{\texttt{mach_learn} is \texttt{pred_fashion} and \texttt{truth} is \texttt{fashion}} ) = \frac{\fashYY{}}{\fashN{}} = 0.11</mrow>
       </md>
@@ -206,10 +208,11 @@
       <title>Marginal and joint probabilities</title>
       <p>
         If a probability is based on a single variable,
-        it is a <em>marginal probability<idx><h>marginal probability|textbf</h></idx>
+        it is a <em>marginal probability
+            <idx><h>marginal probability</h></idx>
         </em>.
-        The probability of outcomes for two or more variables or processes is called a
-        <em>joint probability<idx><h>joint probability|textbf</h></idx>
+        The probability of outcomes for two or more variables or processes is called a <em>joint probability
+            <idx><h>joint probability</h></idx>
         </em>.
       </p>
     </assemblage>
@@ -637,9 +640,9 @@
       <title>General Multiplication Rule</title>
       <p>
         If <m>A</m> and <m>B</m> represent two outcomes or events, then
-        <md>
-          <mrow>P(A\text{ and } B) = P(A | B)\times P(B)</mrow>
-        </md>
+        <men>
+          P(A\text{ and } B) = P(A | B)\times P(B)
+        </men>
       </p>
       <p>
         For the term <m>P(A | B)</m>,
@@ -662,9 +665,9 @@
         <p>
           We will compute our answer using the General Multiplication Rule and then verify it using <xref ref="smallpoxProbabilityTable">Figure</xref>.
           We want to determine
-          <md>
-            <mrow>P(\text{\texttt{lived} and \texttt{not inoculated}} )</mrow>
-          </md>
+          <men>
+            P(\text{\texttt{lived} and \texttt{not inoculated}} )
+          </men>
           and we are given that
           <md>
             <mrow>P(\text{\texttt{lived}} \ |\ \text{\texttt{not inoculated}} )=0.8588</mrow>
@@ -673,9 +676,9 @@
         </p>
         <p>
           Among the 96.08% of people who were not inoculated, 85.88% survived:
-          <md>
-            <mrow>P(\text{\texttt{lived} and \texttt{not inoculated}} ) = 0.8588\times 0.9608 = 0.8251</mrow>
-          </md>
+          <men>
+            P(\text{\texttt{lived} and \texttt{not inoculated}} ) = 0.8588\times 0.9608 = 0.8251
+          </men>
         </p>
         <p>
           This is equivalent to the General Multiplication Rule.
@@ -1105,7 +1108,7 @@
     </p>
     <p>
       <em>Tree diagrams</em>
-          <idx><h>tree diagram|textbf</h></idx>
+          <idx><h>tree diagram</h></idx>
       are a tool to organize outcomes and probabilities around the structure of the data.
       They are most useful when two or more processes occur in a sequence and each process is conditioned on its predecessors.
     </p>
@@ -1321,7 +1324,7 @@
         </md>
         where <m>A_2</m>,
         <m>A_3</m>, ..., and <m>A_k</m> represent all other possible outcomes of the first variable.
-            <idx><h>Bayes' Theorem|textbf</h></idx>
+            <idx><h>Bayes' Theorem</h></idx>
       </p>
     </assemblage>
     <p>
@@ -1438,7 +1441,9 @@
         <p>
           When sampling <term>without replacement</term>,
           such as drawing cards from a deck,
-          make sure to use <em>conditional probabilities</em><idx><h>conditional probability|textbf</h></idx> when solving <em>and</em> problems.
+          make sure to use <em>conditional probabilities</em>
+            <idx><h>conditional probability</h></idx>
+          when solving <em>and</em> problems.
         </p>
       </li>
       <li>

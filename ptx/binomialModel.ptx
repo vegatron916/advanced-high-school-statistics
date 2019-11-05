@@ -132,7 +132,7 @@
       \Figure{0.7}{oPositive40}
     </figure>
   </subsection>
-  <subsection xml:id="exactbin">
+  <subsection>
     <title>Normal approximation to the binomial distribution</title>
     <p>
           <idx><h>distribution</h><h>binomial!normal approximation</h></idx>
@@ -141,7 +141,7 @@
       The binomial formula is cumbersome when the sample size (<m>n</m>) is large,
       particularly when we consider a range of observations.
     </p>
-    <example>
+    <example xml:id="exactbin">
       <statement>
         <p>
           Find the probability that fewer than 12 out of 40 randomly selected people would have blood type O+, where probability of blood type O+ is 0.35.
@@ -438,7 +438,7 @@
       </li>
       <li>
         <p>
-          It is often easier to use <em>normal approximation to the binomial distribution</em><idx><h>normal approximation</h><h>binomial distribution|textbf</h></idx> rather than evaluate the binomial formula many times.
+          It is often easier to use <em>normal approximation to the binomial distribution</em><idx><h>normal approximation</h><h>binomial distribution</h></idx> rather than evaluate the binomial formula many times.
           These three properties of the binomial distribution are used when solving the following type of problem.
           <em>Find the probability of getting more than / fewer than x yeses in <m>n</m> trials or in a sample of size <m>n</m></em>.
           <ol>

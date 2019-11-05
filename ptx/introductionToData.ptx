@@ -46,13 +46,13 @@
     </p>
   </introduction>
   <xi:include  href="basicExampleOfStentsAndStrokes.ptx" />
-  <xi:include  href="section2-2.ptx" />
+  <xi:include  href="sec_detacoll_exer.ptx" />
   <xi:include  href="dataBasics.ptx" />
-  <xi:include  href="section2-4.ptx" />
+  <xi:include  href="dataBasics_exer.ptx" />
   <xi:include  href="overviewOfDataCollectionPrinciples.ptx" />
-  <xi:include  href="section2-6.ptx" />
+  <xi:include  href="overviewOfDataCollectionPrinciples_exer.ptx" />
   <xi:include  href="section_obs_data_sampling.ptx" />
-  <xi:include  href="section2-8.ptx" />
+  <xi:include  href="sec_obs_data_sampling_exer.ptx" />
   <xi:include  href="experimentsSection.ptx" />
-  <xi:include  href="section2-10.ptx" />
+  <xi:include  href="experimentsSection_exer.ptx" />
 </chapter>

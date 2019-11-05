@@ -1,0 +1,461 @@
+<section xml:id="singleProportion_exer">
+  <title>Exercises</title>
+  <exercise xml:id="veg_coll_students_CLT">
+    <title>Vegetarian college students</title>
+    <statement>
+      <p>
+        Suppose that 8% of college students are vegetarians.
+        Determine if the following statements are true or false,
+        and explain your reasoning.
+        <ol>
+          <li>
+            <p>
+              The distribution of the sample proportions of vegetarians in random samples of size 60 is approximately normal since <m>n \ge 30</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              The distribution of the sample proportions of vegetarian college students in random samples of size 50 is right skewed.
+            </p>
+          </li>
+          <li>
+            <p>
+              A random sample of 125 college students where 12% are vegetarians would be considered unusual.
+            </p>
+          </li>
+          <li>
+            <p>
+              A random sample of 250 college students where 12% are vegetarians would be considered unusual.
+            </p>
+          </li>
+          <li>
+            <p>
+              The standard error would be reduced by one-half if we increased the sample size from 125 to<nbsp/>250.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="young_americans_CLT_1">
+    <title>Young Americans, Part I</title>
+    <statement>
+      <p>
+        About 77% of young adults think they can achieve the American dream.
+        Determine if the following statements are true or false,
+        and explain your reasoning. \footfullcite{news:youngAmericans1}
+        <ol>
+          <li>
+            <p>
+              The distribution of sample proportions of young Americans who think they can achieve the American dream in samples of size 20 is left skewed.
+            </p>
+          </li>
+          <li>
+            <p>
+              The distribution of sample proportions of young Americans who think they can achieve the American dream in random samples of size 40 is approximately normal since <m>n \ge 30</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              A random sample of 60 young Americans where 85% think they can achieve the American dream would be considered unusual.
+            </p>
+          </li>
+          <li>
+            <p>
+              A random sample of 120 young Americans where 85% think they can achieve the American dream would be considered unusual.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="orange_tabbies_CLT">
+    <title>Orange tabbies</title>
+    <statement>
+      <p>
+        Suppose that 90% of orange tabby cats are male.
+        Determine if the following statements are true or false,
+        and explain your reasoning.
+        <ol>
+          <li>
+            <p>
+              The distribution of sample proportions of random samples of size 30 is left skewed.
+            </p>
+          </li>
+          <li>
+            <p>
+              Using a sample size that is 4 times as large will reduce the standard error of the sample proportion by one-half.
+            </p>
+          </li>
+          <li>
+            <p>
+              The distribution of sample proportions of random samples of size 140 is approximately normal.
+            </p>
+          </li>
+          <li>
+            <p>
+              The distribution of sample proportions of random samples of size 280 is approximately normal.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="young_americans_CLT_2">
+    <title>Young Americans, Part II</title>
+    <statement>
+      <p>
+        About 25% of young Americans have delayed starting a family due to the continued economic slump.
+        Determine if the following statements are true or false,
+        and explain your reasoning.\footfullcite{news:youngAmericans2}
+        <ol>
+          <li>
+            <p>
+              The distribution of sample proportions of young Americans who have delayed starting a family due to the continued economic slump in random samples of size 12 is right skewed.
+            </p>
+          </li>
+          <li>
+            <p>
+              In order for the distribution of sample proportions of young Americans who have delayed starting a family due to the continued economic slump to be approximately normal,
+              we need random samples where the sample size is at least 40.
+            </p>
+          </li>
+          <li>
+            <p>
+              A random sample of 50 young Americans where 20% have delayed starting a family due to the continued economic slump would be considered unusual.
+            </p>
+          </li>
+          <li>
+            <p>
+              A random sample of 150 young Americans where 20% have delayed starting a family due to the continued economic slump would be considered unusual.
+            </p>
+          </li>
+          <li>
+            <p>
+              Tripling the sample size will reduce the standard error of the sample proportion by one-third.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="gender_equality">
+    <title>Gender equality</title>
+    <statement>
+      <p>
+        The General Social Survey asked a random sample of 1,390 Americans the following question:
+        <q>On the whole,
+        do you think it should or should not be the government's responsibility to promote equality between men and women?</q>
+        82% of the respondents said it
+        <q>should be</q>. At a 95% confidence level, this sample has 2% margin of error.
+        Based on this information,
+        determine if the following statements are true or false,
+        and explain your reasoning.\footfullcite{data:gss}
+        <ol>
+          <li>
+            <p>
+              We are 95% confident that between 80% and 84% of Americans in this sample think it's the government's responsibility to promote equality between men and women.
+            </p>
+          </li>
+          <li>
+            <p>
+              We are 95% confident that between 80% and 84% of all Americans think it's the government's responsibility to promote equality between men and women.
+            </p>
+          </li>
+          <li>
+            <p>
+              If we considered many random samples of 1,390 Americans,
+              and we calculated 95% confidence intervals for each, 95% of these intervals would include the true population proportion of Americans who think it's the government's responsibility to promote equality between men and women.
+            </p>
+          </li>
+          <li>
+            <p>
+              In order to decrease the margin of error to 1%, we would need to quadruple
+              (multiply by 4)
+              the sample size.
+            </p>
+          </li>
+          <li>
+            <p>
+              Based on this confidence interval,
+              there is sufficient evidence to conclude that a majority of Americans think it's the government's responsibility to promote equality between men and women.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="elderly_drivers_CI_concept">
+    <title>Elderly drivers</title>
+    <statement>
+      <p>
+        The Marist Poll published a report stating that 66% of adults nationally think licensed drivers should be required to retake their road test once they reach 65 years of age.
+        It was also reported that interviews were conducted on 1,018 American adults,
+        and that the margin of error was 3% using a 95% confidence level. \footfullcite{data:elderlyDriving}
+        <ol>
+          <li>
+            <p>
+              Verify the margin of error reported by The Marist Poll.
+            </p>
+          </li>
+          <li>
+            <p>
+              Based on a 95% confidence interval,
+              does the poll provide convincing evidence that <em>more than</em>
+              70% of the population think that licensed drivers should be required to retake their road test once they turn 65?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="fireworks_CI_concept">
+    <statement>
+      <p>
+        { <em>A localFireworks on July
+        <m>4^{\text{ th } }</m> </em>}news outlet reported that 56% of 600 randomly sampled Kansas residents planned to set off fireworks on July<nbsp/><m>4^{th}</m>.
+        Determine the margin of error for the 56% point estimate using a 95% confidence level.\footfullcite{data:july4}
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="greece_life_rating_CI">
+    <title>Life rating in Greece</title>
+    <statement>
+      <p>
+        Greece has faced a severe economic crisis since the end of 2009.
+        A Gallup poll surveyed 1,000 randomly sampled Greeks in 2011 and found that 25% of them said they would rate their lives poorly enough to be considered
+        <q>suffering</q>.\footfullcite{data:suffering}
+        <ol>
+          <li>
+            <p>
+              Describe the population parameter of interest.
+              What is the value of the point estimate of this parameter?
+            </p>
+          </li>
+          <li>
+            <p>
+              Check if the conditions required for constructing a confidence interval based on these data are met.
+            </p>
+          </li>
+          <li>
+            <p>
+              Construct a 95% confidence interval for the proportion of Greeks who are
+              <q>suffering</q>.
+            </p>
+          </li>
+          <li>
+            <p>
+              Without doing any calculations,
+              describe what would happen to the confidence interval if we decided to use a higher confidence level.
+            </p>
+          </li>
+          <li>
+            <p>
+              Without doing any calculations,
+              describe what would happen to the confidence interval if we used a larger sample.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="study_abroad_CI_decision">
+    <title>Study abroad</title>
+    <statement>
+      <p>
+        A survey on 1,509 high school seniors who took the SAT and who completed an optional web survey shows that 55% of high school seniors are fairly certain that they will participate in a study abroad program in college.\footfullcite{data:studyAbroad}
+        <ol>
+          <li>
+            <p>
+              Is this sample a representative sample from the population of all high school seniors in the US? Explain your reasoning.
+            </p>
+          </li>
+          <li>
+            <p>
+              Let's suppose the conditions for inference are met.
+              Even if your answer to part (a) indicated that this approach would not be reliable,
+              this analysis may still be interesting to carry out
+              (though not report).
+              Construct a 90% confidence interval for the proportion of high school seniors
+              (of those who took the SAT)
+              who are fairly certain they will participate in a study abroad program in college,
+              and interpret this interval in context.
+            </p>
+          </li>
+          <li>
+            <p>
+              What does
+              <q>90% confidence</q>
+              mean?
+            </p>
+          </li>
+          <li>
+            <p>
+              Based on this interval,
+              would it be appropriate to claim that the majority of high school seniors are fairly certain that they will participate in a study abroad program in college?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="legalize_marijuana_CI_decision">
+    <title>Legalization of marijuana, Part I</title>
+    <statement>
+      <p>
+        The General Social Survey asked 1,578 US residents:
+        <q>Do you think the use of marijuana should be made legal,
+        or not?</q>
+        61% of the respondents said it should be made legal.\footfullcite{data:gss}
+        <ol>
+          <li>
+            <p>
+              Is 61% a sample statistic or a population parameter?
+              Explain.
+            </p>
+          </li>
+          <li>
+            <p>
+              Construct a 95% confidence interval for the proportion of US residents who think marijuana should be made legal,
+              and interpret it in the context of the data.
+            </p>
+          </li>
+          <li>
+            <p>
+              A critic points out that this 95% confidence interval is only accurate if the statistic follows a normal distribution,
+              or if the normal model is a good approximation.
+              Is this true for these data?
+              Explain.
+            </p>
+          </li>
+          <li>
+            <p>
+              A news piece on this survey's findings states,
+              <q>Majority of Americans think marijuana should be legalized.</q>
+              Based on your confidence interval,
+              is this news piece's statement justified?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="national_health_plan_HT">
+    <title>National Health Plan, Part I</title>
+    <statement>
+      <p>
+        A <em>Kaiser Family Foundation</em>
+        poll for US adults in 2019 found that 79% of Democrats, 55% of Independents,
+        and 24% of Republicans supported a generic
+        <q>National Health Plan</q>. There were 347 Democrats, 298 Republicans,
+        and 617 Independents surveyed.\footfullcite{data:KFF2019_nat_health_plan}
+        <ol>
+          <li>
+            <p>
+              A political pundit on TV claims that a majority of Independents support a National Health Plan.
+              Do these data provide strong evidence to support this type of statement?
+            </p>
+          </li>
+          <li>
+            <p>
+              Would you expect a confidence interval for the proportion of Independents who oppose the public option plan to include 0.5?
+              Explain.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="college_worth_it_HT_CI">
+    <title>Is college worth it? Part I</title>
+    <statement>
+      <p>
+        Among a simple random sample of 331 American adults who do not have a four-year college degree and are not currently enrolled in school, 48% said they decided not to go to college because they could not afford school. \footfullcite{data:collegeWorthIt}
+        <ol>
+          <li>
+            <p>
+              A newspaper article states that only a minority of the Americans who decide not to go to college do so because they cannot afford it and uses the point estimate from this survey as evidence.
+              Conduct a hypothesis test to determine if these data provide strong evidence supporting this statement.
+            </p>
+          </li>
+          <li>
+            <p>
+              Would you expect a confidence interval for the proportion of American adults who decide not to go to college because they cannot afford it to include 0.5?
+              Explain.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="taste_test_HT_2_sided">
+    <title>Taste test</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-taste_test_HT<nbsp/> Some people claim that they can tell the difference between a diet soda and a regular soda in the first sip.
+        A researcher wanting to test this claim randomly sampled 80 such people.
+        He then filled 80 plain white cups with soda,
+        half diet and half regular through random assignment,
+        and asked each person to take one sip from their cup and identify the soda as diet or regular. 53 participants correctly identified the soda.
+        <ol>
+          <li>
+            <p>
+              Do these data provide strong evidence that these people are any better or worse than random guessing at telling the difference between diet and regular soda?
+            </p>
+          </li>
+          <li>
+            <p>
+              Interpret the p-value in this context.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="college_worth_it_CI_sample_size">
+    <title>Is college worth it? Part II</title>
+    <statement>
+      <p>
+        <xref ref="college_worth_it_HT_CI">Exercise</xref>
+        presents the results of a poll where 48% of 331 Americans who decide to not go to college do so because they cannot afford it.
+        <ol>
+          <li>
+            <p>
+              Calculate a 90% confidence interval for the proportion of Americans who decide to not go to college because they cannot afford it,
+              and interpret the interval in context.
+            </p>
+          </li>
+          <li>
+            <p>
+              Suppose we wanted the margin of error for the 90% confidence level to be about 1.5%. How large of a survey would you recommend?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="national_health_plan_CI_sample_size_replaced">
+    <title>National Health Plan,
+    Part II</title>
+    <statement>
+      <p>
+        <xref ref="national_health_plan_HT">Exercise</xref>
+        presents the results of a poll evaluating support for a generic
+        <q>National Health Plan</q>
+        in the US in 2019, reporting that 55% of Independents are supportive.
+        If we wanted to estimate this number to within 1% with 90% confidence,
+        what would be an appropriate sample size?
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="legalize_marijuana_CI_sample_size">
+    <title>Legalize Marijuana, Part II</title>
+    <statement>
+      <p>
+        As discussed in <xref ref="legalize_marijuana_CI_decision">Exercise</xref>,
+        the General Social Survey reported a sample where about 61% of US residents thought marijuana should be made legal.
+        If we wanted to limit the margin of error of a 95% confidence interval to 2%, about how many Americans would we need to survey?
+      </p>
+    </statement>
+  </exercise>
+</section>

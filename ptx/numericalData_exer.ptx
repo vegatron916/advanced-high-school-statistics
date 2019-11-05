@@ -1,0 +1,751 @@
+<section xml:id="numericalData_exer">
+  <title>Exercises</title>
+  <exercise xml:id="acs_age_income">
+    <title>ACS, Part I</title>
+    <statement>
+      <p>
+        Each year, the US Census Bureau surveys about 3.5 million households with The American Community Survey (ACS).
+        Data collected from the ACS have been crucial in government and policy decisions,
+        helping to determine the allocation of federal and state funds each year.
+        Some of the questions asked on the survey are about their income, age
+        (in years),
+        and gender.
+        The table below contains this information for a random sample of 20 respondents to the 2012 ACS. \footfullcite{data:acs:2012}
+      </p>
+      <sidebyside>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Income</cell>
+            <cell>Age</cell>
+            <cell>Gender</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>1</cell>
+            <cell>53,000</cell>
+            <cell>28</cell>
+            <cell>male</cell>
+          </row>
+          <row>
+            <cell>2</cell>
+            <cell>1600</cell>
+            <cell>18</cell>
+            <cell>female</cell>
+          </row>
+          <row>
+            <cell>3</cell>
+            <cell>70,000</cell>
+            <cell>54</cell>
+            <cell>male</cell>
+          </row>
+          <row>
+            <cell>4</cell>
+            <cell>12,800</cell>
+            <cell>22</cell>
+            <cell>male</cell>
+          </row>
+          <row>
+            <cell>5</cell>
+            <cell>1,200</cell>
+            <cell>18</cell>
+            <cell>female</cell>
+          </row>
+          <row>
+            <cell>6</cell>
+            <cell>30,000</cell>
+            <cell>34</cell>
+            <cell>male</cell>
+          </row>
+          <row>
+            <cell>7</cell>
+            <cell>4,500</cell>
+            <cell>21</cell>
+            <cell>male</cell>
+          </row>
+          <row>
+            <cell>8</cell>
+            <cell>20,000</cell>
+            <cell>28</cell>
+            <cell>female</cell>
+          </row>
+          <row>
+            <cell>9</cell>
+            <cell>25,000</cell>
+            <cell>29</cell>
+            <cell>female</cell>
+          </row>
+          <row>
+            <cell>10</cell>
+            <cell>42,000</cell>
+            <cell>33</cell>
+            <cell>male</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Income</cell>
+            <cell>Age</cell>
+            <cell>Gender</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>11</cell>
+            <cell>670</cell>
+            <cell>34</cell>
+            <cell>female</cell>
+          </row>
+          <row>
+            <cell>12</cell>
+            <cell>29,000</cell>
+            <cell>55</cell>
+            <cell>female</cell>
+          </row>
+          <row>
+            <cell>13</cell>
+            <cell>44,000</cell>
+            <cell>33</cell>
+            <cell>female</cell>
+          </row>
+          <row>
+            <cell>14</cell>
+            <cell>48,000</cell>
+            <cell>41</cell>
+            <cell>male</cell>
+          </row>
+          <row>
+            <cell>15</cell>
+            <cell>30,000</cell>
+            <cell>47</cell>
+            <cell>female</cell>
+          </row>
+          <row>
+            <cell>16</cell>
+            <cell>60,000</cell>
+            <cell>30</cell>
+            <cell>male</cell>
+          </row>
+          <row>
+            <cell>17</cell>
+            <cell>108,000</cell>
+            <cell>61</cell>
+            <cell>male</cell>
+          </row>
+          <row>
+            <cell>18</cell>
+            <cell>5,800</cell>
+            <cell>50</cell>
+            <cell>female</cell>
+          </row>
+          <row>
+            <cell>19</cell>
+            <cell>50,000</cell>
+            <cell>24</cell>
+            <cell>female</cell>
+          </row>
+          <row>
+            <cell>20</cell>
+            <cell>11,000</cell>
+            <cell>19</cell>
+            <cell>male</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </sidebyside>
+      <ol>
+        <li>
+          <p>
+            Create a scatterplot of income vs. age,
+            and describe the relationship between these two variables.
+          </p>
+        </li>
+        <li>
+          <p>
+            Now create two scatterplots:
+            one for income vs. age for males and another for females.
+          </p>
+        </li>
+        <li>
+          <p>
+            How, if at all,
+            do the relationships between income and age differ for males and females?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>MLB stats</title>
+    <statement>
+      <p>
+        A baseball team's success in a season is usually measured by their number of wins.
+        In order to win,
+        the team has to have scored more points (runs) than their opponent in any given game.
+        As such, number of runs is often a good proxy for the success of the team.
+        The table below shows number of runs, home runs,
+        and batting averages for a random sample of 10 teams in the 2014 Major League Baseball season. \footfullcite{data:MLB:2014}
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Team</cell>
+          <cell>Runs</cell>
+          <cell>Home runs</cell>
+          <cell>Batting avg.</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>1</cell>
+          <cell>Baltimore</cell>
+          <cell>705</cell>
+          <cell>211</cell>
+          <cell>0.256</cell>
+        </row>
+        <row>
+          <cell>2</cell>
+          <cell>Boston</cell>
+          <cell>634</cell>
+          <cell>123</cell>
+          <cell>0.244</cell>
+        </row>
+        <row>
+          <cell>3</cell>
+          <cell>Cincinnati</cell>
+          <cell>595</cell>
+          <cell>131</cell>
+          <cell>0.238</cell>
+        </row>
+        <row>
+          <cell>4</cell>
+          <cell>Cleveland</cell>
+          <cell>669</cell>
+          <cell>142</cell>
+          <cell>0.253</cell>
+        </row>
+        <row>
+          <cell>5</cell>
+          <cell>Detroit</cell>
+          <cell>757</cell>
+          <cell>155</cell>
+          <cell>0.277</cell>
+        </row>
+        <row>
+          <cell>6</cell>
+          <cell>Houston</cell>
+          <cell>629</cell>
+          <cell>163</cell>
+          <cell>0.242</cell>
+        </row>
+        <row>
+          <cell>7</cell>
+          <cell>Minnesota</cell>
+          <cell>715</cell>
+          <cell>128</cell>
+          <cell>0.254</cell>
+        </row>
+        <row>
+          <cell>8</cell>
+          <cell>NY Yankees</cell>
+          <cell>633</cell>
+          <cell>147</cell>
+          <cell>0.245</cell>
+        </row>
+        <row>
+          <cell>9</cell>
+          <cell>Pittsburgh</cell>
+          <cell>682</cell>
+          <cell>156</cell>
+          <cell>0.259</cell>
+        </row>
+        <row>
+          <cell>10</cell>
+          <cell>San Francisco</cell>
+          <cell>665</cell>
+          <cell>132</cell>
+          <cell>0.255</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Draw a scatterplot of runs vs. home runs.
+          </p>
+        </li>
+        <li>
+          <p>
+            Draw a scatterplot of runs vs. batting averages.
+          </p>
+        </li>
+        <li>
+          <p>
+            Are home runs or batting averages more strongly associated with number of runs?
+            Explain your reasoning.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="fiber_cereal">
+    <title>Fiber in your cereal</title>
+    <statement>
+      <p>
+        The Cereal FACTS report provides information on nutrition content of cereals as well as who they are targeted for
+        (adults, children, families).
+        We have selected a random sample of 20 cereals from the data provided in this report.
+        Shown below are the fiber contents
+        (percentage of fiber per gram of cereal)
+        for these cereals. \footfullcite{Harris:2012}
+      </p>
+      <sidebyside>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Brand</cell>
+            <cell>Fiber %</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>1</cell>
+            <cell>Pebbles Fruity</cell>
+            <cell>0.0%</cell>
+          </row>
+          <row>
+            <cell>2</cell>
+            <cell>Rice Krispies Treats</cell>
+            <cell>0.0%</cell>
+          </row>
+          <row>
+            <cell>3</cell>
+            <cell>Pebbles Cocoa</cell>
+            <cell>0.0%</cell>
+          </row>
+          <row>
+            <cell>4</cell>
+            <cell>Pebbles Marshmallow</cell>
+            <cell>0.0%</cell>
+          </row>
+          <row>
+            <cell>5</cell>
+            <cell>Frosted Rice Krispies</cell>
+            <cell>0.0%</cell>
+          </row>
+          <row>
+            <cell>6</cell>
+            <cell>Rice Krispies</cell>
+            <cell>3.0%</cell>
+          </row>
+          <row>
+            <cell>7</cell>
+            <cell>Trix</cell>
+            <cell>3.1%</cell>
+          </row>
+          <row>
+            <cell>8</cell>
+            <cell>Honey Comb</cell>
+            <cell>3.1%</cell>
+          </row>
+          <row>
+            <cell>9</cell>
+            <cell>Rice Krispies Gluten Free</cell>
+            <cell>3.3%</cell>
+          </row>
+          <row>
+            <cell>10</cell>
+            <cell>Frosted Flakes</cell>
+            <cell>3.3%</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Brand</cell>
+            <cell>Fiber %</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>11</cell>
+            <cell>Cinnamon Toast Crunch</cell>
+            <cell>3.3%</cell>
+          </row>
+          <row>
+            <cell>12</cell>
+            <cell>Reese's Puffs</cell>
+            <cell>3.4%</cell>
+          </row>
+          <row>
+            <cell>13</cell>
+            <cell>Cheerios Honey Nut</cell>
+            <cell>7.1%</cell>
+          </row>
+          <row>
+            <cell>14</cell>
+            <cell>Lucky Charms</cell>
+            <cell>7.4%</cell>
+          </row>
+          <row>
+            <cell>15</cell>
+            <cell>Pebbles Boulders Chocolate PB</cell>
+            <cell>7.4%</cell>
+          </row>
+          <row>
+            <cell>16</cell>
+            <cell>Corn Pops</cell>
+            <cell>9.4%</cell>
+          </row>
+          <row>
+            <cell>17</cell>
+            <cell>Frosted Flakes Reduced Sugar</cell>
+            <cell>10.0%</cell>
+          </row>
+          <row>
+            <cell>18</cell>
+            <cell>Clifford Crunch</cell>
+            <cell>10.0%</cell>
+          </row>
+          <row>
+            <cell>19</cell>
+            <cell>Apple Jacks</cell>
+            <cell>10.7%</cell>
+          </row>
+          <row>
+            <cell>20</cell>
+            <cell>Dora the Explorer</cell>
+            <cell>11.1%</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </sidebyside>
+      <ol>
+        <li>
+          <p>
+            Create a stem and leaf plot of the distribution of the fiber content of these cereals.
+          </p>
+        </li>
+        <li>
+          <p>
+            Create a dot plot of the fiber content of these cereals.
+          </p>
+        </li>
+        <li>
+          <p>
+            Create a histogram and a relative frequency histogram of the fiber content of these cereals.
+          </p>
+        </li>
+        <li>
+          <p>
+            What percent of cereals contain more than 7% fiber?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Sugar in your cereal</title>
+    <statement>
+      <p>
+        The Cereal FACTS report from <xref ref="fiber_cereal">Exercise</xref>
+        also provides information on sugar content of cereals.
+        We have selected a random sample of 20 cereals from the data provided in this report.
+        Shown below are the sugar contents
+        (percentage of sugar per gram of cereal)
+        for these cereals.
+      </p>
+      <sidebyside>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Brand</cell>
+            <cell>Sugar %</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>1</cell>
+            <cell>Rice Krispies Gluten Free</cell>
+            <cell>3%</cell>
+          </row>
+          <row>
+            <cell>2</cell>
+            <cell>Rice Krispies</cell>
+            <cell>12%</cell>
+          </row>
+          <row>
+            <cell>3</cell>
+            <cell>Dora the Explorer</cell>
+            <cell>22%</cell>
+          </row>
+          <row>
+            <cell>4</cell>
+            <cell>Frosted Flakes Red. Sugar</cell>
+            <cell>27%</cell>
+          </row>
+          <row>
+            <cell>5</cell>
+            <cell>Clifford Crunch</cell>
+            <cell>27%</cell>
+          </row>
+          <row>
+            <cell>6</cell>
+            <cell>Rice Krispies Treats</cell>
+            <cell>30%</cell>
+          </row>
+          <row>
+            <cell>7</cell>
+            <cell>Pebbles Boulders Choc. PB</cell>
+            <cell>30%</cell>
+          </row>
+          <row>
+            <cell>8</cell>
+            <cell>Cinnamon Toast Crunch</cell>
+            <cell>30%</cell>
+          </row>
+          <row>
+            <cell>9</cell>
+            <cell>Trix</cell>
+            <cell>31%</cell>
+          </row>
+          <row>
+            <cell>10</cell>
+            <cell>Honey Comb</cell>
+            <cell>31%</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Brand</cell>
+            <cell>Sugar %</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>11</cell>
+            <cell>Corn Pops</cell>
+            <cell>31%</cell>
+          </row>
+          <row>
+            <cell>12</cell>
+            <cell>Cheerios Honey Nut</cell>
+            <cell>32%</cell>
+          </row>
+          <row>
+            <cell>13</cell>
+            <cell>Reese's Puffs</cell>
+            <cell>34%</cell>
+          </row>
+          <row>
+            <cell>14</cell>
+            <cell>Pebbles Fruity</cell>
+            <cell>37%</cell>
+          </row>
+          <row>
+            <cell>15</cell>
+            <cell>Pebbles Cocoa</cell>
+            <cell>37%</cell>
+          </row>
+          <row>
+            <cell>16</cell>
+            <cell>Lucky Charms</cell>
+            <cell>37%</cell>
+          </row>
+          <row>
+            <cell>17</cell>
+            <cell>Frosted Flakes</cell>
+            <cell>37%</cell>
+          </row>
+          <row>
+            <cell>18</cell>
+            <cell>Pebbles Marshmallow</cell>
+            <cell>37%</cell>
+          </row>
+          <row>
+            <cell>19</cell>
+            <cell>Frosted Rice Krispies</cell>
+            <cell>40%</cell>
+          </row>
+          <row>
+            <cell>20</cell>
+            <cell>Apple Jacks</cell>
+            <cell>43%</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </sidebyside>
+      <ol>
+        <li>
+          <p>
+            Create a stem and leaf plot of the distribution of the sugar content of these cereals.
+          </p>
+        </li>
+        <li>
+          <p>
+            Create a dot plot of the sugar content of these cereals.
+          </p>
+        </li>
+        <li>
+          <p>
+            Create a histogram and a relative frequency histogram of the sugar content of these cereals.
+          </p>
+        </li>
+        <li>
+          <p>
+            What percent of cereals contain more than 30% sugar?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="mammal_life_spans">
+    <title>Mammal life spans</title>
+    <statement>
+      <p>
+        Data were collected on life spans
+        (in years)
+        and gestation lengths
+        (in days)
+        for 62 mammals.
+        A scatterplot of life span versus length of gestation is shown below. \footfullcite{Allison+Cicchetti:1975}
+      </p>
+      <sidebyside>
+        <ol>
+          <li>
+            <p>
+              What type of an association is apparent between life span and length of gestation?
+            </p>
+          </li>
+          <li>
+            <p>
+              What type of an association would you expect to see if the axes of the plot were reversed,
+              i.e. if we plotted length of gestation versus life span?
+            </p>
+          </li>
+          <li>
+            <p>
+              Are life span and length of gestation independent?
+              Explain your reasoning.
+            </p>
+          </li>
+        </ol>
+        <image width="86%" source="images/mammal_life_spans_scatterplot.png" />
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="association_plots">
+    <title>Associations</title>
+    <statement>
+      <p>
+        Indicate which of the plots show (a)<nbsp/>a positive association, (b)<nbsp/>a negative association,
+        or (c)<nbsp/>no<nbsp/>association.
+        Also determine if the positive and negative associations are linear or nonlinear.
+        Each part may refer to more than one plot.
+        <image width="95%" source="images/association_plots.png" />
+      </p>
+    </statement>
+  </exercise>
+</section>

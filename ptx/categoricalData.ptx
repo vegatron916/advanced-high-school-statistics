@@ -182,7 +182,7 @@
       Sometimes it is useful to understand the fractional breakdown of one variable in another,
       and we can modify our contingency table to provide such a view.
       <xref ref="rowPropAppTypeHomeownership">Figure</xref>
-      shows the <em>row proportions</em><idx><h>contingency table</h><h>row proportions|textbf</h></idx> for <xref ref="loan_home_app_type_totals">Figure</xref>,
+      shows the <em>row proportions</em><idx><h>contingency table</h><h>row proportions</h></idx> for <xref ref="loan_home_app_type_totals">Figure</xref>,
       which are computed as the counts divided by their row totals.
       The value 3496 at the intersection of <c>individual</c> and <c>rent</c> is replaced by <m>\loanapphomeAA{}/\loanapphomeAD{} = 0.411</m>,
       i.e. 3496 divided by its row total, 8505.
@@ -256,7 +256,7 @@
     </figure>
     <p>
       A contingency table of the column proportions is computed in a similar way,
-      where each <em>column proportion</em><idx><h>contingency table</h><h>column proportion|textbf</h></idx> is computed as the count divided by the corresponding column total.
+      where each <em>column proportion</em><idx><h>contingency table</h><h>column proportion</h></idx> is computed as the count divided by the corresponding column total.
       <xref ref="colPropAppTypeHomeownership">Figure</xref> shows such a table,
       and here the value 0.906 indicates that 90.6% of renters applied as individuals for the loan.
       This rate is higher compared to loans from people with mortgages (80.2%) or who own their home (85.1%).
@@ -490,7 +490,7 @@
     </p>
     <p>
       A <em>segmented bar<nbsp/>chart</em>,
-          <idx><h>bar chart</h><h>segmented|textbf</h></idx>
+          <idx><h>bar chart</h><h>segmented</h></idx>
       or stacked bar<nbsp/>chart,
       is a graphical display of contingency table information.
       For example,
@@ -501,7 +501,7 @@
     <p>
       One related visualization to the segmented bar<nbsp/>chart is the
       <em>side-by-side bar<nbsp/>chart</em>,
-          <idx><h>bar chart</h><h>side-by-side|textbf</h></idx>
+          <idx><h>bar chart</h><h>side-by-side</h></idx>
       where an example is shown in <xref ref="loan_app_type_home_sbs_bar">Figure</xref>.
     </p>
     <p>
@@ -512,7 +512,7 @@
       since the proportions of <c>joint</c> and <c>individual</c> vary across the groups,
       we can conclude that the two variables are associated.
     </p>
-    <figure xml:id="loan_app_type_home_seg_bar">
+    <figure xml:id="loan_app_type_home_seg_bar_plot">
       <caption>\subref{loan_app_type_home_seg_bar} segmented
       bar<nbsp/>chart for <c>homeownership</c>,
       where the counts have been further broken down
@@ -525,19 +525,7 @@
       \subref{loan_app_type_home_sbs_bar_standardized}<nbsp/>Standardized
       side-by-side bar<nbsp/>chart.
       See these bar charts on Tableau Public<nbsp/>\tableauhref{tableau-bargraphs2V}.</caption>
-      \oiRedirect{tableau-bargraphs2V}{
-      \Figuress{\loanapptypehomesegbarplotwidth}
-      {loan_app_type_home_seg_bar}
-      {loan_app_type_home_seg_bar} }
-      \Figuress{\loanapptypehomesegbarplotwidth}
-      {loan_app_type_home_seg_bar}
-      {loan_app_type_home_sbs_bar} }
-      \Figuress{\loanapptypehomesegbarplotwidth}
-      {loan_app_type_home_seg_bar}
-      {loan_app_type_home_seg_bar_standardized} }
-      \Figuress{\loanapptypehomesegbarplotwidth}
-      {loan_app_type_home_seg_bar}
-      {loan_app_type_home_sbs_bar_standardized} }}
+      XXoiRedirect{tableau-bargraphs2V}{**}XX
     </figure>
     <example>
       <statement>
@@ -658,8 +646,7 @@
     </p>
     <figure xml:id="loan_homeownership_pie_chart">
       <caption>A pie chart and bar<nbsp/>chart of <c>homeownership</c>.  Compare multiple ways of summarizing a single categorical variable on Tableau Public<nbsp/>\tableauhref{tableau-bargraphs1V}.</caption>
-      \oiRedirect{tableau-bargraphs1V}{
-      \Figure{loan_homeownership_pie_chart}}
+      XXoiRedirect{tableau-bargraphs1V}{**}XX
     </figure>
     <p>
           <idx><h>data</h><h>loans</h></idx>
@@ -671,11 +658,11 @@
       <li>
         <p>
           <em>Categorical variables</em>,
-            <idx><h>categorical variable|textbf</h></idx>
+            <idx><h>categorical variable</h></idx>
           unlike numerical variables, are simply summarized by <term>counts</term>
           (how many)
           and <em>proportions</em>.
-            <idx><h>proportion|textbf</h></idx>
+            <idx><h>proportion</h></idx>
         These are referred to as frequency and relative frequency,
           respectively.
         </p>
@@ -702,7 +689,7 @@
       <li>
         <p>
           <em>Pie charts</em>
-            <idx><h>pie chart|textbf</h></idx>
+            <idx><h>pie chart</h></idx>
           are another option for summarizing categorical data,
           but they are more difficult to read and bar<nbsp/>charts are generally a better option.
         </p>

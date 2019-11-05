@@ -1,0 +1,239 @@
+<section xml:id="transformationForNonlinearData_exer">
+  <title>Exercises</title>
+  <exercise>
+    <title>Used trucks</title>
+    <statement>
+      <p>
+        The scatterplot below shows the relationship between year and price
+        (in thousands of $)
+        of a random sample of 42 pickup trucks.
+        Also shown is a residuals plot for the linear model for predicting price from year.
+        XXoiRedirect{tableau-usedtrucks}{**}XX \oiRedirect{\includegraphics[height=tableau-usedtrucks]{extraTeX/icons/tableau}}
+        <ol>
+          <li>
+            <p>
+              Describe the relationship between these two variables and comment on whether a linear model is appropriate for modeling the relationship between year and price.
+            </p>
+          </li>
+          <li>
+            <p>
+              The scatterplot below shows the relationship between logged
+              (natural log)
+              price and year of these trucks,
+              as well as the residuals plot for modeling these data.
+              Comment on which model
+              (linear model from earlier or logged model presented here)
+              is a better fit for these data.
+              <image width="42%" source="images/pu_lin_scat_log.png" /> <image width="42%" source="images/pu_res_scat_log.png" />
+            </p>
+          </li>
+          <li>
+            <p>
+              The output for the logged model is given below.
+              Interpret the slope in context of the data.
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell></cell>
+                  <cell>Estimate</cell>
+                  <cell>Std. Error</cell>
+                  <cell>t value</cell>
+                  <cell>Pr(<m>></m><m>|</m>t<m>|</m>)</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>(Intercept)</cell>
+                  <cell>-271.981</cell>
+                  <cell>25.042</cell>
+                  <cell>-10.861</cell>
+                  <cell>0.000</cell>
+                </row>
+                <row>
+                  <cell>Year</cell>
+                  <cell>0.137</cell>
+                  <cell>0.013</cell>
+                  <cell>10.937</cell>
+                  <cell>0.000</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <exercise>
+    <title>Income and hours worked</title>
+    <statement>
+      <p>
+        The scatterplot below shows the relationship between income and years worked for a random sample of 787 Americans.
+        Also shown is a residuals plot for the linear model for predicting income from hours worked.
+        The data come from the 2012 American Community Survey.\footfullcite{data:acs:2012}
+        <url href="\oiRedirectUrl{tableau_income_hours_worked}"><image width="42%" source="images/acs_lin_scat.png" /></url>
+        <image width="42%" source="images/acs_lin_res_scat.png" />
+        <ol>
+          <li>
+            <p>
+              Describe the relationship between these two variables and comment on whether a linear model is appropriate for modeling the relationship between year and price.
+            </p>
+          </li>
+          <li>
+            <p>
+              The scatterplot below shows the relationship between logged
+              (natural log)
+              income and hours worked,
+              as well as the residuals plot for modeling these data.
+              Comment on which model
+              (linear model from earlier or logged model presented here)
+              is a better fit for these data.
+              <image width="42%" source="images/acs_log_scat.png" /> <image width="42%" source="images/acs_log_res_scat.png" />
+            </p>
+          </li>
+          <li>
+            <p>
+              The output for the logged model is given below.
+              Interpret the slope in context of the data.
+              <tabular>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell></cell>
+                  <cell>Estimate</cell>
+                  <cell>Std. Error</cell>
+                  <cell>t value</cell>
+                  <cell>Pr(<m>></m><m>|</m>t<m>|</m>)</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+                <row>
+                  <cell>(Intercept)</cell>
+                  <cell>1.017</cell>
+                  <cell>0.113</cell>
+                  <cell>9.000</cell>
+                  <cell>0.000</cell>
+                </row>
+                <row>
+                  <cell>hrs_work</cell>
+                  <cell>0.058</cell>
+                  <cell>0.003</cell>
+                  <cell>21.086</cell>
+                  <cell>0.000</cell>
+                </row>
+                <row bottom="minor">
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                  <cell></cell>
+                </row>
+              </tabular>
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    \clearpageforsection {{\titlerule[1mm]} \setupfont {\titlerule[1mm]} }
+  </p>
+  <p>
+    This chapter focused on describing the linear association between two numerical variables and fitting a linear model.
+    <ul>
+      <li>
+        <p>
+          The <em>correlation coefficient</em>,
+            <idx><h>correlation</h></idx>
+          <m>r</m>, measures the strength and direction of the linear association between two variables.
+          However, <m>r</m> alone cannot tell us whether data follow a linear trend or whether a linear model is appropriate.
+        </p>
+      </li>
+      <li>
+        <p>
+          The <term>explained variance</term>, <m>R^2</m>,
+          measures the proportion of variation in the <m>y</m> values explained by a given model.
+          Like <m>r</m>,
+          <m>R^2</m> alone cannot tell us whether data follow a linear trend or whether a linear model is appropriate.
+        </p>
+      </li>
+      <li>
+        <p>
+          Every analysis should begin with <em>graphing</em>
+          the data using a <term>scatterplot</term>
+          in order to see the association and any deviations from the trend
+          (outliers or influential values).
+          A <em>residual plot</em> helps us better see patterns in the data.
+        </p>
+      </li>
+      <li>
+        <p>
+          When the data show a linear trend,
+          we fit a <em>least squares regression line</em> of the form:
+          <m>\hat{y} = a+bx</m>,
+          where <m>a</m> is the <m>y</m>-intercept and <m>b</m> is the slope.
+          It is important to be able to <em>calculate</em>
+          <m>a</m> and <m>b</m> using the summary statistics and to <em>interpret</em>
+          them in the context of the data.
+        </p>
+      </li>
+      <li>
+        <p>
+          A <em>residual</em>, <m>y-\hat{y}</m>,
+          measures the error for an <em>individual point</em>.
+          The <em>standard deviation of the residuals</em>,
+          <m>s</m>, measures the typical size of the residuals.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\hat{y} = a+bx</m> provides the best fit line for the <em>observed data</em>.
+          To estimate or hypothesize about the slope of the population regression line,
+          first confirm that the residual plot has no pattern and that a linear model is reasonable,
+          then use a <em><m>t</m>-interval for the slope</em><idx><h>t-interval for the slope@<m>t</m>-interval for the slope</h></idx> or a
+          <em><m>t</m>-test for the slope</em><idx><h>t-test for the slope@<m>t</m>-test for the slope</h></idx> with <m>n-2</m> degrees of freedom.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    In this chapter we focused on simple linear models with one explanatory variable.
+    More complex methods of prediction,
+    such as multiple regression
+    (more than one explanatory variable)
+    and nonlinear regression can be studied in a future course.
+  </p>
+  <p>
+    \fancyhead[LO]
+  </p>
+  <p>
+    \titleformat{\chapter}[display] {}{\chaptertitlename\ \thechapter {#1}}{20pt}{} \titleformat{\section} {\bfseries} {\thesection<m></m>#1}{1em} \titleformat{\subsection} {\bfseries} {\thesubsection<m></m>#1}{1em}
+  </p>
+</section>

@@ -57,7 +57,7 @@
       Indeed it is so common,
       that people often know it as the <term>normal curve</term>
       or <em>normal distribution</em>.
-          <idx><h>distribution</h><h>normal|textbf</h></idx>
+          <idx><h>distribution</h><h>normal</h></idx>
       <fn>
       It is also introduced as the Gaussian distribution after Frederic Gauss,
       the first person to formalize its mathematical expression.
@@ -94,10 +94,10 @@
     <p>
       Because the mean and standard deviation describe a normal distribution exactly,
       they are called the distribution's <em>parameters</em>.
-          <idx><h>parameter|textbf</h></idx>
+          <idx><h>parameter</h></idx>
       The normal distribution with mean <m>\mu=0</m> and standard deviation <m>\sigma = 1</m> is called the
       <term>standard normal distribution</term>..
-          <idx><h>normal distribution</h><h>standard|textbf</h></idx>
+          <idx><h>normal distribution</h><h>standard</h></idx>
     </p>
     <assemblage>
       <title>Normal distribution facts</title>
@@ -497,9 +497,9 @@
           With <m>\mu=\satmean{}</m>, <m>\sigma=\satsd{}</m>,
           and the cutoff value <m>x=1190</m>,
           the Z-score is computed as
-          <md>
-            <mrow>Z = \frac{x - \mu}{\sigma} = \frac{1190 - \satmean{}}{\satsd{}} = \frac{90}{200} = 0.45</mrow>
-          </md>
+          <men>
+            Z = \frac{x - \mu}{\sigma} = \frac{1190 - \satmean{}}{\satsd{}} = \frac{90}{200} = 0.45
+          </men>
         </p>
         <p>
           We look up the percentile of <m>Z=0.45</m> in the normal probability table shown in <xref ref="zTableShort">Figure</xref>
@@ -549,9 +549,9 @@
           <image width="73%" source="images/satBelow1030.png" /> Identifying the mean <m>\mu=1100</m>,
           the standard deviation <m>\sigma=200</m>,
           and the cutoff for the tail area <m>x=1030</m> makes it easy to compute the Z-score:
-          <md>
-            <mrow>Z = \frac{x - \mu}{\sigma} = \frac{1030 - 1100}{200} = -0.35</mrow>
-          </md>
+          <men>
+            Z = \frac{x - \mu}{\sigma} = \frac{1030 - 1100}{200} = -0.35
+          </men>
         </p>
         <p>
           Using the normal probability table,

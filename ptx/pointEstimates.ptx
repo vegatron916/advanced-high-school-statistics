@@ -80,7 +80,7 @@
     </p>
     <p>
       <em>Bias</em>
-          <idx><h>bias|textbf</h></idx>
+          <idx><h>bias</h></idx>
       describes a systematic tendency to over- or under-estimate the true population value.
       For instance,
       if we took a political poll but our sample didn't include a roughly representative distribution of the political parties,
@@ -98,7 +98,7 @@
     </p>
     <p>
       <em>Sampling error</em>
-          <idx><h>sampling error|textbf</h></idx>
+          <idx><h>sampling error</h></idx>
       is uncertainty in a point estimate that happens naturally from one sample to the next.
       Much of statistics, including much of this book,
       is focused on understanding and quantifying sampling error.
@@ -217,7 +217,7 @@
       <term>code comment</term>,
       which is used to describe in regular language what the
       code is doing. We've provided software labs in \R at
-      \oiRedirect{openintroorg_labs}{openintro.org/stat/labs}
+      XXoiRedirect{openintroorg_labs}{**}XX
       for anyone interested in learning more.</caption>
 <c># 1. Create a set of 250 million entries,
 where \pewsolarparpercent of them are "support"
@@ -347,7 +347,7 @@ sum(sampled_entries == "support") / \pewsolarpollsize</c>
     <p>
       This estimate of the standard deviation is known as the
       <em>standard error</em>,
-          <idx><h>standard error|textbf</h></idx>
+          <idx><h>standard error</h></idx>
       or <m>SE</m> for short.
       <md>
         <mrow>SE_{\hat{p}}\amp =\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}</mrow>
@@ -414,10 +414,9 @@ sum(sampled_entries == "support") / \pewsolarpollsize</c>
       the sampling distribution will have a low standard error,
       and we call the method <term>precise</term>.
     </p>
-    <figure xml:id="fourSamplingDistributions">
-      <caption>Four sampling distributions shown, with parameter identified. Explore these distributions through a Desmos activity at \oiRedirect{openintro-ahss-desmos}openintro.org/ahss/desmos.</caption>
-      \oiRedirect{desmos-foursamplingdistributions}{
-      <image width="59%" source="images/fourSamplingDistributions.png" /> }
+    <figure>
+      XXoiRedirect{desmos-foursamplingdistributions}{**}XX
+      Four sampling distributions shown, with parameter identified. Explore these distributions through a Desmos activity at  XXoiRedirect{openintro-ahss-desmos}{**}XX
     </figure>
     <example>
       <statement>

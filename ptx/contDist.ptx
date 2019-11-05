@@ -68,9 +68,9 @@
           this can be done with the two shaded bins shown in <xref ref="usHeightsHist180185">Figure</xref>.
           The two bins in this region have counts of 195,307 and 156,239 people,
           resulting in the following estimate of the probability:
-          <md>
-            <mrow>\frac{195307+156239}{\text{ 3,000,000 } } = 0.1172</mrow>
-          </md>
+          <men>
+            \frac{195307+156239}{\text{ 3,000,000 } } = 0.1172
+          </men>
         </p>
         <p>
           This fraction is the same as the proportion of the histogram's area that falls in the range 180 to 185<nbsp/>cm.
@@ -110,9 +110,9 @@
     <title>Probabilities from continuous distributions</title>
     <p>
       We computed the proportion of individuals with heights 180 to 185 cm in <xref ref="contDistProb">Example</xref> as a fraction:
-      <md>
-        <mrow>\frac{\text{ number of people between 180 and 185 } }{\text{ total sample size } }</mrow>
-      </md>
+      <men>
+        \frac{\text{ number of people between 180 and 185 } }{\text{ total sample size } }
+      </men>
     </p>
     <p>
       We found the number of people with heights between 180 and 185 cm by determining the fraction of the histogram's area in this region.

@@ -202,9 +202,9 @@
     <p>
       Above we write <m>p</m> as the probability of rolling a <c>1</c>.
       We can also write this probability as
-      <md>
-        <mrow>P(\text{rolling a \texttt{1}} )</mrow>
-      </md>
+      <men>
+        P(\text{rolling a \texttt{1}} )
+      </men>
     </p>
     <p>
       As we become more comfortable with this notation,
@@ -264,9 +264,9 @@
       When rolling a die,
       the outcomes <c>1</c> and <c>2</c> are disjoint,
       and we compute the probability that one of these outcomes will occur by adding their separate probabilities:
-      <md>
-        <mrow>P(\text{\texttt{1} or \texttt{2}} ) = P(\text{\texttt{1}} )+P(\text{\texttt{2}} ) = 1/6 + 1/6 = 1/3</mrow>
-      </md>
+      <men>
+        P(\text{\texttt{1} or \texttt{2}} ) = P(\text{\texttt{1}} )+P(\text{\texttt{2}} ) = 1/6 + 1/6 = 1/3
+      </men>
     </p>
     <p>
       What about the probability of rolling a <c>1</c>, <c>2</c>, <c>3</c>, <c>4</c>, <c>5</c>,
@@ -286,9 +286,9 @@
       <p>
         If <m>A_1</m> and <m>A_2</m> represent two disjoint outcomes,
         then the probability that one of them occurs is given by
-        <md>
-          <mrow>P(A_1\text{ or }  A_2) = P(A_1) + P(A_2)</mrow>
-        </md>
+        <men>
+          P(A_1\text{ or }  A_2) = P(A_1) + P(A_2)
+        </men>
       </p>
       <p>
         If there are many disjoint outcomes <m>A_1</m>, ..., <m>A_k</m>,
@@ -337,7 +337,7 @@
       Let <m>A</m> represent the event where a die roll results in <c>1</c> or <c>2</c> and <m>B</m><nbsp/>represent the event that the die roll is a <c>4</c> or a <c>6</c>.
       We write <m>A</m> as the set of outcomes <m>\{</m><c>1</c>,<nbsp/><c>2</c><m>\}</m> and <m>B=\{</m><c>4</c>, <c>6</c><m>\}</m>.
       These sets are commonly called <em>events</em>.
-          <idx><h>event|textbf</h></idx>
+          <idx><h>event</h></idx>
       Because <m>A</m> and <m>B</m> have no elements in common,
       they are disjoint events.
       <m>A</m> and <m>B</m> are represented in <xref ref="disjointSets">Figure</xref>.
@@ -349,9 +349,9 @@
     <p>
       The Addition Rule applies to both disjoint outcomes and disjoint events.
       The probability that one of the disjoint events <m>A</m> or <m>B</m> occurs is the sum of the separate probabilities:
-      <md>
-        <mrow>P(A\text{ or } B) = P(A) + P(B) = 1/3 + 1/3 = 2/3</mrow>
-      </md>
+      <men>
+        P(A\text{ or } B) = P(A) + P(B) = 1/3 + 1/3 = 2/3
+      </men>
     </p>
     <exercise>
       <statement>
@@ -511,9 +511,9 @@
       Events <m>A</m> and <m>B</m> are not disjoint <mdash/> the cards {<m>J\diamondsuit</m>}, {<m>Q\diamondsuit</m>}, and {<m>K\diamondsuit</m>} fall into both categories <mdash/> so we cannot use the Addition Rule for disjoint events.
       Instead we use the Venn diagram.
       We start by adding the probabilities of the two events:
-      <md>
-        <mrow>P(A) + P(B) = P({\color{redcards}\diamondsuit}) + P(\text{ face card } ) = 13/52 + 12/52</mrow>
-      </md>
+      <men xml:id="overCountFaceDiamond">
+        P(A) + P(B) = P({\color{redcards}\diamondsuit}) + P(\text{ face card } ) = 13/52 + 12/52
+      </men>
     </p>
     <p>
       However, the three cards that are in both events were counted twice,
@@ -761,9 +761,9 @@
       <p>
         Similarly, if there are <m>k</m> events <m>A_1</m>, ..., <m>A_k</m> from <m>k</m> independent processes,
         then the probability they all occur is
-        <md>
-          <mrow>P(A_1) \times  P(A_2)\times  \cdots \times  P(A_k)</mrow>
-        </md>
+        <men>
+          P(A_1) \times  P(A_2)\times  \cdots \times  P(A_k)
+        </men>
       </p>
     </assemblage>
     <exercise xml:id="ex2Handedness">
@@ -962,8 +962,8 @@
         <p>
           To find the probability that <em>at least one</em>
           of several events occurs,
-          use a special case of the rule of
-          <em>complements</em><idx><h>rule of complements|textbf</h></idx>
+          use a special case of the rule of <em>complements</em>
+            <idx><h>rule of complements</h></idx>
           :
             <idx><h>complement</h></idx>
           <m>P(\text{ at least one } ) = 1- P(\text{ none } )</m>.

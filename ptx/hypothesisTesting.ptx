@@ -342,7 +342,7 @@
     <assemblage>
       <title>Finding and interpreting the p-value</title>
       <p>
-        We find and interpret the <term>p-value</term><idx><h>hypothesis testing</h><h>p-value|textbf</h></idx> according to the nature of the alternative hypothesis.
+        We find and interpret the <term>p-value</term><idx><h>hypothesis testing</h><h>p-value</h></idx> according to the nature of the alternative hypothesis.
       </p>
       <solution>
         <p>
@@ -386,7 +386,7 @@
       <p>
         If the p-value is less than the significance level <m>\alpha</m> (usually 0.05),
         we say that the result is <term>statistically significant</term>.
-            <idx><h>hypothesis testing</h><h>statistically significant|textbf</h></idx>
+            <idx><h>hypothesis testing</h><h>statistically significant</h></idx>
         We reject <m>H_0</m>,
         and we have strong evidence favoring<nbsp/><m>H_A</m>.
       </p>
@@ -501,9 +501,8 @@
         or maybe a smaller number.
         If you're a little puzzled,
         that probably means you're reading with a critical eye <mdash/> good job!
-        We've made a video to help clarify <em>why 0.05</em>:
-        <url href="\oiRedirectUrl{textbook-why05}">www.openintro.org/why05</url>
-        Sometimes it's a good idea to deviate from the standard.
+        We've made a video to help clarify
+        <em>why 0.05</em>: XXoiRedirect{textbook-why05}{**}XX Sometimes it's a good idea to deviate from the standard.
         We'll discuss when to choose a threshold different than 0.05 in <xref ref="significanceLevel">Section</xref>.
       </p>
     </assemblage>
@@ -887,7 +886,7 @@
       the probability of <em>not</em>
       making a Type<nbsp/>II Error is called <term>power</term>.
       It is common for researchers to perform a power analysis
-          <idx><h>power analysis|textbf</h></idx>
+          <idx><h>power analysis</h></idx>
       to ensure their study collects enough data to detect the effects they anticipate finding.
       As you might imagine, if the effect they care about is small or subtle,
       then if the effect is real,
@@ -1066,7 +1065,7 @@
       <li>
         <p>
           <em>Decision errors</em>.
-            <idx><h>decision errors|textbf</h></idx>
+            <idx><h>decision errors</h></idx>
         In a hypothesis test,
           there are two types of decision errors that could be made.
           These are called Type<nbsp/>I and Type<nbsp/>II Errors.

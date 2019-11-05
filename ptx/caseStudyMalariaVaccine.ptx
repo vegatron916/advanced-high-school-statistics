@@ -217,7 +217,7 @@
     <title>Simulating the study</title>
     <p>
       We're going to implement <em>simulations</em>,
-          <idx><h>simulation|textbf</h></idx>
+          <idx><h>simulation</h></idx>
       where we will pretend we know that the malaria vaccine being tested does <em>not</em> work.
       Ultimately, we want to understand if the large difference we observed is common in these simulations.
       If it is common,

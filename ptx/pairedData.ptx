@@ -181,9 +181,9 @@
       we look at the differences in prices,
       which is represented as the <c>diff</c> variable.
       Here, for each book, the differences are taken as
-      <md>
-        <mrow>\text{ UCLA Bookstore price }  - \text{ Amazon price }</mrow>
-      </md>
+      <men>
+        \text{ UCLA Bookstore price }  - \text{ Amazon price }
+      </men>
     </p>
     <p>
       It is important that we always subtract using a consistent order;
@@ -196,8 +196,7 @@
       each book sampled.
       These data are very strongly skewed.
       <idx><h>skew</h><h>example: very strong</h></idx>. Explore this data set on Tableau Public\tableauhref{tableau-hist-textbookdiff-summ}.</caption>
-      \oiRedirect{tableau-hist-textbookdiff-summ}{
-      <image width="55%" source="images/diffInTextbookPricesF18.png" /> }
+      XXoiRedirect{tableau-hist-textbookdiff-summ}{**}XX
     </figure>
     <exercise>
       <statement>
@@ -691,7 +690,7 @@
       where the null hypothesis was that the true average of the paired differences is zero.
       Sometimes we want to estimate the true average of paired differences with a confidence interval,
       and we use a <em>matched pairs <m>t</m>-interval</em>.
-          <idx><h>confidence interval</h><h>matched pairs|textbf</h></idx>
+          <idx><h>confidence interval</h><h>matched pairs</h></idx>
       Consider again the table summarizing data on: UCLA Bookstore price <m>-</m> Amazon price,
       for each of the 68 books sampled.
     </p>

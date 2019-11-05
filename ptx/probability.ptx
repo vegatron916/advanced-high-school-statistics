@@ -12,15 +12,15 @@
     </p>
   </introduction>
   <xi:include  href="basicsOfProbability.ptx" />
-  <xi:include  href="section4-2.ptx" />
+  <xi:include  href="basicsOfProbability_exer.ptx" />
   <xi:include  href="conditionalProbabilitySection.ptx" />
-  <xi:include  href="section4-4.ptx" />
+  <xi:include  href="conditionalProbabilitySection_exer.ptx" />
   <xi:include  href="binomialForm.ptx" />
-  <xi:include  href="section4-6.ptx" />
+  <xi:include  href="binomialForm_exer.ptx" />
   <xi:include  href="simulations.ptx" />
-  <xi:include  href="section4-8.ptx" />
+  <xi:include  href="simulations_exer.ptx" />
   <xi:include  href="randomVariablesSection.ptx" />
-  <xi:include  href="section4-10.ptx" />
+  <xi:include  href="randonVariablesSection_exer.ptx" />
   <xi:include  href="contDist.ptx" />
-  <xi:include  href="section4-12.ptx" />
+  <xi:include  href="contDist_exer.ptx" />
 </chapter>

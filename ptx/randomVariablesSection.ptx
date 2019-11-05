@@ -97,15 +97,15 @@
       <solution xml:id="bookStoreRev">
         <p>
           About 55 students will just buy a textbook, providing revenue of
-          <md>
-            <mrow>\dollar137 \times  55 = \dollar7,535</mrow>
-          </md>
+          <men>
+            \dollar137 \times  55 = \dollar7,535
+          </men>
         </p>
         <p>
           The roughly 25 students who buy both the textbook and the study guide would pay a total of
-          <md>
-            <mrow>(\dollar137 + \dollar33) \times  25 = \dollar170 \times  25 = \dollar4,250</mrow>
-          </md>
+          <men>
+            (\dollar137 + \dollar33) \times  25 = \dollar170 \times  25 = \dollar4,250
+          </men>
         </p>
         <p>
           Thus, the bookstore should expect to generate about
@@ -1330,8 +1330,8 @@
       </li>
       <li>
         <p>
-          <em>Combining random variables</em><idx><h>combining random variables|textbf</h></idx>.
-            <idx><h>random variable</h><h>combine|textbf</h></idx>
+          <em>Combining random variables</em><idx><h>combining random variables</h></idx>.
+            <idx><h>random variable</h><h>combine</h></idx>
         Let <m>X</m> and <m>Y</m> be random variables and let <m>a</m> and <m>b</m> be constants.
           <ul>
             <li>

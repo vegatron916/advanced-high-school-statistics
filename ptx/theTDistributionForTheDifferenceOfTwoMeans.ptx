@@ -123,7 +123,7 @@
     <p>
       Researchers at Yale carried out precisely this experiment.
       Their results were published in the Proceedings of the National Academy of Sciences (PNAS).<fn>
-      \oiRedirect{textbook-jennifer-john}{https://www.pnas.org/content/109/41/16474}
+      XXoiRedirect{textbook-jennifer-john}{**}XX
       </fn> The researchers sent out resumes to faculty at academic institutions for a lab manager position.
       The resumes were identical,
       except that on half of them the applicant's name was John and on the other half,
@@ -290,7 +290,8 @@
       A similar study sent out identical resumes with different names to investigate the importance of perceived race.
       Resumes with a name commonly perceived to be for a White person (e.g.
       Emily) were 50% more likely to receive a callback than the same resume with a name commonly perceived to be for a Black person (e.g.
-      Lakisha). \oiRedirect{textbook-emily-lakisha}{https://www.nber.org/papers/w9873}
+      Lakisha).
+      XXoiRedirect{textbook-emily-lakisha}{**}XX
       </fn> One aspect that makes this bias so difficult to address is that the experiment,
       as well-designed as it was,
       cannot send us much signal about <em>which</em>
@@ -992,9 +993,9 @@
           or that their difference equals 0.
           The null value for the difference, therefore is<nbsp/>0.
           We now have everything we need to compute the test statistic.
-          <md>
-            <mrow>T = \frac{\text{ point estimate }  - \text{ null value } }{SE \text{ of estimate } } = \frac{\ 0.40 - 0\ }{0.26} = 1.54</mrow>
-          </md>
+          <men>
+            T = \frac{\text{ point estimate }  - \text{ null value } }{SE \text{ of estimate } } = \frac{\ 0.40 - 0\ }{0.26} = 1.54
+          </men>
         </p>
       </solution>
     </example>

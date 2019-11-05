@@ -2,7 +2,7 @@
   <title>Introduction to linear regression</title>
   <introduction>
     <p>
-          <idx><h>linear regression|textbf</h></idx>
+          <idx><h>linear regression</h></idx>
     </p>
     <p>
       Linear regression is a very powerful statistical technique.
@@ -12,11 +12,11 @@
     </p>
   </introduction>
   <xi:include  href="lineFittingResidualsCorrelation.ptx" />
-  <xi:include  href="section9-2.ptx" />
+  <xi:include  href="lineFittingResidualsCorrelation_exer.ptx" />
   <xi:include  href="fittingALineByLSR.ptx" />
-  <xi:include  href="section9-4.ptx" />
+  <xi:include  href="fittingALineBySLR_exer.ptx" />
   <xi:include  href="inferenceForLinearRegression.ptx" />
-  <xi:include  href="section9-6.ptx" />
+  <xi:include  href="inferenceForLinearRegression_exer.ptx" />
   <xi:include  href="transformationForNonlinearData.ptx" />
-  <xi:include  href="section9-8.ptx" />
+  <xi:include  href="transformationForNonlinearData_exer.ptx" />
 </chapter>

@@ -347,7 +347,7 @@
       Recall a normal distribution had two parameters <mdash/> mean and standard deviation <mdash/> that could be used to describe its exact characteristics.
       The chi-square distribution has just one parameter called
       <em>degrees of freedom (df)</em>,
-          <idx><h>degrees of freedom (df)</h><h>chi-square|textbf</h></idx>
+          <idx><h>degrees of freedom (df)</h><h>chi-square</h></idx>
       which influences the shape, center,
       and spread of the distribution.
     </p>
@@ -819,7 +819,7 @@
     </figure>
     <p>
       The test that we just carried out regarding jury selection is known as the
-      <em><m>\chi^2</m> goodness of fit test</em><idx><h>chi-square goodness of fit test@<m>\chi^2</m> goodness of fit test|textbf</h></idx>.
+      <em><m>\chi^2</m> goodness of fit test</em><idx><h>chi-square goodness of fit test@<m>\chi^2</m> goodness of fit test</h></idx>.
       It is called
       <q>goodness of fit</q>
       because we test whether or not the proposed or expected distribution is a good fit for the observed data.
@@ -890,7 +890,7 @@
         <ul>
           <li class="custom-list-style-type" label="">
             <p>
-              Here we choose the <em><m>\chi^2</m> goodness of fit test</em><idx><h>chi-square goodness of fit test@<m>\chi^2</m> goodness of fit test|textbf</h></idx>.
+              Here we choose the <em><m>\chi^2</m> goodness of fit test</em><idx><h>chi-square goodness of fit test@<m>\chi^2</m> goodness of fit test</h></idx>.
             </p>
           </li>
         </ul>
@@ -1493,7 +1493,7 @@
       <li>
         <p>
           When we want to see if a model is a good fit for observed data or if data is representative of a particular population,
-          we can use a <em><m>\chi^2</m> goodness of fit test</em><idx><h>chi-square goodness of fit test@<m>\chi^2</m> goodness of fit test|textbf</h></idx>.
+          we can use a <em><m>\chi^2</m> goodness of fit test</em><idx><h>chi-square goodness of fit test@<m>\chi^2</m> goodness of fit test</h></idx>.
           This test is used when there is one variable with multiple categories (bins) that can be arranged in a
           <term>one-way table</term>.
         </p>
@@ -1502,7 +1502,7 @@
         <p>
           In a chi-square goodness of fit test,
           we calculate a <em><m>\chi^2</m>-statistic</em>,
-            <idx><h>chi-square statistic@<m>\chi^2</m>-statistic|textbf</h></idx>
+            <idx><h>chi-square statistic@<m>\chi^2</m>-statistic</h></idx>
           which is a measure of how far the observed values in the sample are from the expected values under the null hypothesis.
           <m>\chi^2 =\sum{ \frac{\text{ (observed } - \text{ expected } )^2}{\text{ expected } }}</m>
           <ul>
@@ -1557,7 +1557,7 @@
       </li>
       <li>
         <p>
-          <em><m>\chi^2</m> tests for a one-way table</em><idx><h>chi-square tests for a one-way table@<m>\chi^2</m> tests for a one-way table|textbf</h></idx>.
+          <em><m>\chi^2</m> tests for a one-way table</em><idx><h>chi-square tests for a one-way table@<m>\chi^2</m> tests for a one-way table</h></idx>.
           When there is one sample and we are comparing the distribution of a categorical variable to a specified or population distribution,
           e.g. using sample values to determine if a machine is producing M&amp;M's with the specified distribution of color,
           the hypotheses can often be written as:
@@ -1578,7 +1578,7 @@
       <li class="custom-list-style-type" label="">
         <p>
           We test these hypotheses at the <m>\alpha</m> significance level using a
-          <em><m>\chi^2</m> goodness of fit test</em><idx><h>chi-square goodness of fit test@<m>\chi^2</m> goodness of fit test|textbf</h></idx>.
+          <em><m>\chi^2</m> goodness of fit test</em><idx><h>chi-square goodness of fit test@<m>\chi^2</m> goodness of fit test</h></idx>.
         </p>
       </li>
       <li>

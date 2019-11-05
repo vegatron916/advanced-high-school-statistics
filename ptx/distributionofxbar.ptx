@@ -49,7 +49,7 @@
     <p>
       In this section we consider a data set called <c>run17</c>,
       which represents all 19,961 runners who finished the 2017 Cherry Blossom 10 mile run in Washington, DC.<fn>
-      \oiRedirect{textbook-cherryblossom_org}{www.cherryblossom.org}
+      XXoiRedirect{textbook-cherryblossom_org}{**}XX
       </fn> Part of this data set is shown in <xref ref="run17DF">Figure</xref>,
       and the variables are described in <xref ref="run17Variables">Figure</xref>.
     </p>
@@ -329,9 +329,9 @@
       <m>15.93/10 = 1.59</m>.
       In other words,
       the standard deviation of the sample mean based on 100 observations is equal to
-      <md>
-        <mrow>SD_{\bar{x}} = \sigma_{\bar{x}} = \frac{\sigma_{x}}{\sqrt{n}} = \frac{15.93}{\sqrt{100}} = 1.59</mrow>
-      </md>
+      <men>
+        SD_{\bar{x}} = \sigma_{\bar{x}} = \frac{\sigma_{x}}{\sqrt{n}} = \frac{15.93}{\sqrt{100}} = 1.59
+      </men>
       where <m>\sigma_{x}</m> is the standard deviation of the individual observations.
       This is no coincidence.
       We can show mathematically that this equation is correct when the observations are independent using the probability tools of <xref ref="randomVariablesSection">Section</xref>.

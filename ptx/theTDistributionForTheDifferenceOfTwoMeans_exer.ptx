@@ -1,0 +1,726 @@
+<section xml:id="theTDistributionForTheDifferenceOfTwoMeans_exer">
+  <title>Exercises</title>
+  <exercise xml:id="friday_13th_traffic">
+    <title>Friday the 13th, Part I</title>
+    <statement>
+      <p>
+        In the early 1990's, researchers in the UK collected data on traffic flow,
+        number of shoppers,
+        and traffic accident related emergency room admissions on Friday the 13<m>^{\text{ th } }</m> and the previous Friday, Friday the 6<m>^{\text{ th } }</m>.
+        The histograms below show the distribution of number of cars passing by a specific intersection on Friday the 6<m>^{\text{ th } }</m> and Friday the 13<m>^{\text{ th } }</m> for many such date pairs.
+        Also given are some sample statistics,
+        where the difference is the number of cars on the 6th minus the number of cars on the 13th.\footfullcite{Scanlon:1993} <image width="73%" source="images/friday_13th_traffic_hist.png" />
+      </p>
+      <p>
+        <m>\:</m>
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>6<m>^{\text{ th } }</m></cell>
+          <cell>13<m>^{\text{ th } }</m></cell>
+          <cell>Diff.</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell><m>\bar{x}</m></cell>
+          <cell>128,385</cell>
+          <cell>126,550</cell>
+          <cell>1,835</cell>
+        </row>
+        <row>
+          <cell><m>s</m></cell>
+          <cell>7,259</cell>
+          <cell>7,664</cell>
+          <cell>1,176</cell>
+        </row>
+        <row>
+          <cell><m>n</m></cell>
+          <cell>10</cell>
+          <cell>10</cell>
+          <cell>10</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+      <ol>
+        <li>
+          <p>
+            Are there any underlying structures in these data that should be considered in an analysis?
+            Explain.
+          </p>
+        </li>
+        <li>
+          <p>
+            What are the hypotheses for evaluating whether the number of people out on Friday the 6<m>^{\text{ th } }</m> is different than the number out on Friday the 13<m>^{\text{ th } }</m>?
+          </p>
+        </li>
+        <li>
+          <p>
+            Check conditions to carry out the hypothesis test from part<nbsp/>(b).
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate the test statistic and the p-value.
+          </p>
+        </li>
+        <li>
+          <p>
+            What is the conclusion of the hypothesis test?
+          </p>
+        </li>
+        <li>
+          <p>
+            Interpret the p-value in this context.
+          </p>
+        </li>
+        <li>
+          <p>
+            What type of error might have been made in the conclusion of your test?
+            Explain.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="diamonds_1">
+    <title>Diamonds, Part I</title>
+    <statement>
+      <p>
+        Prices of diamonds are determined by what is known as the 4 Cs:
+        cut, clarity, color, and carat weight.
+        The prices of diamonds go up as the carat weight increases,
+        but the increase is not smooth.
+        For example,
+        the difference between the size of a 0.99 carat diamond and a 1 carat diamond is undetectable to the naked human eye,
+        but the price of a 1 carat diamond tends to be much higher than the price of a 0.99 diamond.
+        In this question we use two random samples of diamonds, 0.99 carats and 1 carat,
+        each sample of size 23, and compare the average prices of the diamonds.
+        In order to be able to compare equivalent units,
+        we first divide the price for each diamond by 100 times its weight in carats.
+        That is, for a 0.99 carat diamond,
+        we divide the price by 99.
+        For a 1 carat diamond, we divide the price by 100.
+        The distributions and some sample statistics are shown below.\footfullcite{ggplot2}
+      </p>
+      <sidebyside>
+        Conduct a hypothesis test to evaluate if there is a difference between the
+        average standardized prices of 0.99 and 1 carat diamonds. Make sure to state
+        your hypotheses clearly, check relevant conditions, and interpret your results
+        in context of the data.
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>0.99 carats</cell>
+            <cell>1 carat</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Mean</cell>
+            <cell>$44.51</cell>
+            <cell>$56.81</cell>
+          </row>
+          <row>
+            <cell>SD</cell>
+            <cell>$13.32</cell>
+            <cell>$16.13</cell>
+          </row>
+          <row>
+            <cell>n</cell>
+            <cell>23</cell>
+            <cell>23</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <image width="85%" source="images/diamonds_box.png" />
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="friday_13th_accident">
+    <title>Friday the 13th, Part II</title>
+    <statement>
+      <p>
+        The Friday the <m>13^{th}</m> study reported in <xref ref="friday_13th_traffic">Exercise</xref>
+        also provides data on traffic accident related emergency room admissions.
+        The distributions of these counts from Friday the 6<m>^{\text{ th } }</m> and Friday the 13<m>^{\text{ th } }</m> are shown below for six such paired dates along with summary statistics.
+        You may assume that conditions for inference are met.
+        <image width="74%" source="images/friday_13th_accident_hist.png" />
+      </p>
+      <p>
+        <m>\:</m>
+      </p>
+      <sidebyside>
+        <image width="73%" source="images/friday_13th_accident_hist_diff.png" />
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>6<m>^{\text{ th } }</m></cell>
+            <cell>13<m>^{\text{ th } }</m></cell>
+            <cell>diff</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell>Mean</cell>
+            <cell>7.5</cell>
+            <cell>10.83</cell>
+            <cell>-3.33</cell>
+          </row>
+          <row>
+            <cell>SD</cell>
+            <cell>3.33</cell>
+            <cell>3.6</cell>
+            <cell>3.01</cell>
+          </row>
+          <row>
+            <cell>n</cell>
+            <cell>6</cell>
+            <cell>6</cell>
+            <cell>6</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+      </sidebyside>
+      <ol>
+        <li>
+          <p>
+            Conduct a hypothesis test to evaluate if there is a difference between the average numbers of traffic accident related emergency room admissions between Friday the 6<m>^{\text{ th } }</m> and Friday the<nbsp/>13<m>^{\text{ th } }</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            Calculate a 95% confidence interval for the difference between the average numbers of traffic accident related emergency room admissions between Friday the 6<m>^{\text{ th } }</m> and Friday the 13<m>^{\text{ th } }</m>.
+          </p>
+        </li>
+        <li>
+          <p>
+            The conclusion of the original study states,
+            <q>Friday 13th is unlucky for some.
+            The risk of hospital admission as a result of a transport accident may be increased by as much as 52%. Staying at home is recommended.</q>
+            Do you agree with this statement?
+            Explain your reasoning.
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="diamonds_2">
+    <title>Diamonds, Part II</title>
+    <statement>
+      <p>
+        In <xref ref="diamonds_1">Exercise</xref>,
+        we discussed diamond prices
+        (standardized by weight)
+        for diamonds with weights 0. 99 carats and 1 carat.
+        See the table for summary statistics,
+        and then construct a 95% confidence interval for the average difference between the standardized prices of 0.99 and 1 carat diamonds.
+        You may assume the conditions for inference are met.
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>0.99 carats</cell>
+          <cell>1 carat</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Mean</cell>
+          <cell>$44.51</cell>
+          <cell>$56.81</cell>
+        </row>
+        <row>
+          <cell>SD</cell>
+          <cell>$13.32</cell>
+          <cell>$16.13</cell>
+        </row>
+        <row>
+          <cell>n</cell>
+          <cell>23</cell>
+          <cell>23</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </statement>
+  </exercise>
+  <exercise xml:id="chick_wts_linseed_horsebean">
+    <title>Chicken diet and weight,
+    Part I</title>
+    <statement>
+      <p>
+        MISSINGVIDEOLINK ahss_eoce_sol-chick_wts_linseed_horsebean<nbsp/> Chicken farming is a multi-billion dollar industry,
+        and any methods that increase the growth rate of young chicks can reduce consumer costs while increasing company profits,
+        possibly by millions of dollars.
+        An experiment was conducted to measure and compare the effectiveness of various feed supplements on the growth rate of chickens.
+        Newly hatched chicks were randomly allocated into six groups,
+        and each group was given a different feed supplement.
+        Below are some summary statistics from this data set along with box plots showing the distribution of weights by feed type.\footfullcite{data:chickwts}
+      </p>
+      <sidebyside>
+        <image width="73%" source="images/chick_wts_box.png" />
+      </sidebyside>
+      <ol>
+        <li>
+          <p>
+            Describe the distributions of weights of chickens that were fed linseed and horsebean.
+          </p>
+        </li>
+        <li>
+          <p>
+            Do these data provide strong evidence that the average weights of chickens that were fed linseed and horsebean are different?
+            Use a 5% significance level.
+          </p>
+        </li>
+        <li>
+          <p>
+            What type of error might we have committed?
+            Explain.
+          </p>
+        </li>
+        <li>
+          <p>
+            Would your conclusion change if we used <m>\alpha = 0.01</m>?
+          </p>
+        </li>
+      </ol>
+    </statement>
+  </exercise>
+  <exercise xml:id="fuel_eff_city">
+    <title>Fuel efficiency of manual and automatic cars, Part I</title>
+    <statement>
+      <p>
+        Each year the US Environmental Protection Agency (EPA) releases fuel economy data on cars manufactured in that year.
+        Below are summary statistics on fuel efficiency
+        (in miles/gallon)
+        from random samples of cars with manual and automatic transmissions.
+        Do these data provide strong evidence of a difference between the average fuel efficiency of cars with manual and automatic transmissions in terms of their average city mileage?
+        Assume that conditions for inference are satisfied. \footfullcite{data:epaMPG}
+      </p>
+      <sidebyside>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>City MPG</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Automatic</cell>
+            <cell>Manual</cell>
+          </row>
+          <row>
+            <cell>Mean</cell>
+            <cell>16.12</cell>
+            <cell>19.85</cell>
+          </row>
+          <row>
+            <cell>SD</cell>
+            <cell>3.58</cell>
+            <cell>4.51</cell>
+          </row>
+          <row>
+            <cell>n</cell>
+            <cell>26</cell>
+            <cell>26</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <image width="70%" source="images/fuel_eff_city_box.png" />
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="chick_wts_casein_soybean">
+    <title>Chicken diet and weight, Part II</title>
+    <statement>
+      <p>
+        Casein is a common weight gain supplement for humans.
+        Does it have an effect on chickens?
+        Using data provided in <xref ref="chick_wts_linseed_horsebean">Exercise</xref>,
+        test the hypothesis that the average weight of chickens that were fed casein is different than the average weight of chickens that were fed soybean.
+        If your hypothesis test yields a statistically significant result,
+        discuss whether or not the higher average weight of chickens can be attributed to the casein diet.
+        Assume that conditions for inference are satisfied.
+      </p>
+    </statement>
+  </exercise>
+  <exercise xml:id="fuel_eff_hway">
+    <title>Fuel efficiency of manual and automatic cars, Part II</title>
+    <statement>
+      <p>
+        The table provides summary statistics on highway fuel economy of the same 52 cars from <xref ref="fuel_eff_city">Exercise</xref>.
+        Use these statistics to calculate a 98% confidence interval for the difference between average highway mileage of manual and automatic cars,
+        and interpret this interval in the context of the data.\footfullcite{data:epaMPG}
+      </p>
+      <sidebyside>
+        <tabular>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Hwy MPG</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell>Automatic</cell>
+            <cell>Manual</cell>
+          </row>
+          <row>
+            <cell>Mean</cell>
+            <cell>22.92</cell>
+            <cell>27.88</cell>
+          </row>
+          <row>
+            <cell>SD</cell>
+            <cell>5.29</cell>
+            <cell>5.01</cell>
+          </row>
+          <row>
+            <cell>n</cell>
+            <cell>26</cell>
+            <cell>26</cell>
+          </row>
+          <row bottom="minor">
+            <cell></cell>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell></cell>
+          </row>
+          <row>
+            <cell></cell>
+            <cell></cell>
+          </row>
+        </tabular>
+        <image width="70%" source="images/fuel_eff_hway_box.png" />
+      </sidebyside>
+    </statement>
+  </exercise>
+  <exercise xml:id="prison_isolation_T">
+    <title>Prison isolation experiment, Part I</title>
+    <statement>
+      <p>
+        Subjects from Central Prison in Raleigh, NC, volunteered for an experiment involving an
+        <q>isolation</q>
+        experience.
+        The goal of the experiment was to find a treatment that reduces subjects' psychopathic deviant T scores.
+        This score measures a person's need for control or their rebellion against control,
+        and it is part of a commonly used mental health test called the Minnesota Multiphasic Personality Inventory (MMPI) test.
+        The experiment had three treatment groups:
+        <ol type="1">
+          <li>
+            <p>
+              Four hours of sensory restriction plus a 15 minute
+              <q>therapeutic</q>
+              tape advising that professional help is available.
+            </p>
+          </li>
+          <li>
+            <p>
+              Four hours of sensory restriction plus a 15 minute
+              <q>emotionally neutral</q>
+              tape on training hunting dogs.
+            </p>
+          </li>
+          <li>
+            <p>
+              Four hours of sensory restriction but no taped message.
+            </p>
+          </li>
+        </ol>
+      </p>
+      <p>
+        Forty-two subjects were randomly assigned to these treatment groups,
+        and an MMPI test was administered before and after the treatment.
+        Distributions of the differences between pre and post treatment scores (pre - post) are shown below,
+        along with some sample statistics.
+        Use this information to independently test the effectiveness of each treatment.
+        Make sure to clearly state your hypotheses, check conditions,
+        and interpret results in the context of the data.\footfullcite{data:prison}
+      </p>
+      <p>
+        <image width="73%" source="images/prison_isolation_hist.png" />
+      </p>
+      <p>
+        <m>\:</m>
+      </p>
+      <tabular>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell></cell>
+          <cell>Tr 1</cell>
+          <cell>Tr 2</cell>
+          <cell>Tr 3</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+        <row>
+          <cell>Mean</cell>
+          <cell>6.21</cell>
+          <cell>2.86</cell>
+          <cell>-3.21</cell>
+        </row>
+        <row>
+          <cell>SD</cell>
+          <cell>12.3</cell>
+          <cell>7.94</cell>
+          <cell>8.57</cell>
+        </row>
+        <row>
+          <cell>n</cell>
+          <cell>14</cell>
+          <cell>14</cell>
+          <cell>14</cell>
+        </row>
+        <row bottom="minor">
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+          <cell></cell>
+        </row>
+      </tabular>
+    </statement>
+  </exercise>
+  <exercise xml:id="tf_compare_means">
+    <title>True / False: comparing means</title>
+    <statement>
+      <p>
+        Determine if the following statements are true or false,
+        and explain your reasoning for statements you identify as false.
+        <ol>
+          <li>
+            <p>
+              When comparing means of two samples where <m>n_1 = 20</m> and <m>n_2 = 40</m>,
+              we can use the normal model for the difference in means since <m>n_2 \ge 30</m>.
+            </p>
+          </li>
+          <li>
+            <p>
+              As the degrees of freedom increases,
+              the <m>t</m>-distribution approaches normality.
+            </p>
+          </li>
+          <li>
+            <p>
+              We use a pooled standard error for calculating the standard error of the difference between means when sample sizes of groups are equal to each other.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+  </exercise>
+  <p>
+    \clearpageforsection {{\titlerule[1mm]} \setupfont {\titlerule[1mm]} }
+  </p>
+  <p>
+    We've reviewed a wide set of inference procedures over the last 3 chapters.
+    Let's revisit each and discuss the similarities and differences among them.
+    The following confidence intervals and tests are structurally the same <mdash/> they all involve inference on a population parameter,
+    where that parameter is a proportion,
+    a difference of proportions,
+    a mean, a mean of differences, or a difference of means.
+    <ul>
+      <li>
+        <p>
+          1-proportion <m>z</m>-test/interval
+        </p>
+      </li>
+      <li>
+        <p>
+          2-proportion <m>z</m>-test/interval
+        </p>
+      </li>
+      <li>
+        <p>
+          1-sample <m>t</m>-test/interval
+        </p>
+      </li>
+      <li>
+        <p>
+          matched pairs <m>t</m>-test/interval
+        </p>
+      </li>
+      <li>
+        <p>
+          2-sample <m>t</m>-test/interval
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    The above inferential procedures all involve a
+    <term>point estimate</term>,
+    a <term>standard error</term> of the estimate,
+    and an assumption about the <term>shape of the sampling distribution</term> of the point estimate.
+  </p>
+  <p>
+    From <xref ref="inferenceForCategoricalData">Chapter</xref>,
+    the <m>\chi^2</m> tests and their uses are as follows:
+    <ul>
+      <li>
+        <p>
+          <m>\chi^2</m> goodness of fit - compares a categorical variable to a known/fixed distribution.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\chi^2</m> test of homogeneity - compares a categorical variable across multiple groups.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\chi^2</m> test of independence - looks for association between two categorical variables.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    <m>\chi^2</m> is a measure of <em>overall</em>
+    deviation between observed values and expected values.
+    These tests stand apart from the others because when using <m>\chi^2</m> there is not a parameter of interest.
+    For this reason there are no confidence intervals using <m>\chi^2</m>.
+    Also, for <m>\chi^2</m> tests,
+    the hypotheses are usually written in words,
+    because they are about the <em>distribution</em>
+    of one or more categorical variables,
+    not about a single parameter.
+  </p>
+  <p>
+    While formulas and conditions vary,
+    all of these procedures follow the same basic logic and process.
+    <ul>
+      <li>
+        <p>
+          For a confidence interval,
+          identify the parameter to be estimated and the confidence level.
+          For a hypothesis test,
+          identify the hypotheses to be tested and the significance level.
+        </p>
+      </li>
+      <li>
+        <p>
+          Choose the correct procedure.
+        </p>
+      </li>
+      <li>
+        <p>
+          Check that both conditions for its use are met.
+        </p>
+      </li>
+      <li>
+        <p>
+          Calculate the confidence interval or the test statistic and p-value,
+          as well as the <m>df</m> if applicable.
+        </p>
+      </li>
+      <li>
+        <p>
+          Interpret the results and draw a conclusion based on the data.
+        </p>
+      </li>
+    </ul>
+  </p>
+  <p>
+    For a summary of these hypothesis test and confidence interval procedures
+    (including one more that we will encounter in <xref ref="inferenceForLinearRegression">Section</xref>),
+    see the Inference Guide in <xref ref="inferenceGuide">Appendix</xref>.
+  </p>
+</section>

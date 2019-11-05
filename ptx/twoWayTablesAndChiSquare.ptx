@@ -587,7 +587,7 @@
         <ul>
           <li class="custom-list-style-type" label="">
             <p>
-              Here we choose the <em><m>\chi^2</m> test of homogeneity</em><idx><h>chi-square test of homogeneity@<m>\chi^2</m> test of homogeneity|textbf</h></idx>.
+              Here we choose the <em><m>\chi^2</m> test of homogeneity</em><idx><h>chi-square test of homogeneity@<m>\chi^2</m> test of homogeneity</h></idx>.
             </p>
           </li>
         </ul>
@@ -1070,7 +1070,7 @@
         <ul>
           <li class="custom-list-style-type" label="">
             <p>
-              Here we choose the <em><m>\chi^2</m> test of independence</em><idx><h>chi-square test of independence@<m>\chi^2</m> test of independence|textbf</h></idx>.
+              Here we choose the <em><m>\chi^2</m> test of independence</em><idx><h>chi-square test of independence@<m>\chi^2</m> test of independence</h></idx>.
             </p>
           </li>
         </ul>
@@ -1617,7 +1617,7 @@
             <li class="custom-list-style-type" label="">
               <p>
                 We test these hypotheses at the <m>\alpha</m> significance level using a
-                <em><m>\chi^2</m> test of homogeneity</em><idx><h>chi-square test of homogeneity@<m>\chi^2</m> test of homogeneity|textbf</h></idx>.
+                <em><m>\chi^2</m> test of homogeneity</em><idx><h>chi-square test of homogeneity@<m>\chi^2</m> test of homogeneity</h></idx>.
               </p>
             </li>
           </ul>
@@ -1646,7 +1646,7 @@
       <li class="custom-list-style-type" label="">
         <p>
           We test these hypotheses at the <m>\alpha</m> significance level using a
-          <em><m>\chi^2</m> test of independence</em><idx><h>chi-square test of independence@<m>\chi^2</m> test of independence|textbf</h></idx>.
+          <em><m>\chi^2</m> test of independence</em><idx><h>chi-square test of independence@<m>\chi^2</m> test of independence</h></idx>.
         </p>
       </li>
       <li>
